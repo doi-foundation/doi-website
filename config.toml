@@ -1,0 +1,4 @@
+baseURL = 'http://doifoundation-wsl.com'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "doi-theme"
