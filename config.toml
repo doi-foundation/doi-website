@@ -12,11 +12,13 @@ order = [".jpg$", ".gif$"]
 
 
 [[deployment.targets]]
-# An arbitrary name for this target.
 name = "s3_staging"
-# S3; see https://gocloud.dev/howto/blob/#s3
-# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
 URL = "s3://staging.doi.org?region=us-west-2"
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "s3_live"
+URL = "s3://www-new.doi.org?region=us-west-2"
 
 
 # [[deployment.matchers]] configure behavior for files that match the Pattern.
