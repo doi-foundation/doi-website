@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
       - name: Install Hugo
         run: |
           HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
@@ -32,6 +34,8 @@ jobs:
     if: github.ref_name == 'main'
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
       - name: Install Hugo
         run: |
           HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
