@@ -19,7 +19,7 @@ jobs:
       - name: Hugo Build
         run: $HOME/hugo -v --baseURL "https://staging.doi.org/"
       - name: Deploy to S3
-        run: $HOME/hugo -v deploy --target=s3_staging --maxDeletes -1
+        run: $HOME/hugo -v deploy --force --target=s3_staging --maxDeletes -1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -44,7 +44,7 @@ jobs:
         run: $HOME/hugo -v --baseURL "https://www-new.doi.org/"
       - name: Deploy to S3
         if: github.ref_name == 'main'
-        run: $HOME/hugo  -v deploy --target=s3_live --maxDeletes -1 
+        run: $HOME/hugo  -v deploy --force --target=s3_live --maxDeletes -1 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
