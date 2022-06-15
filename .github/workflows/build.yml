@@ -17,7 +17,7 @@ jobs:
         env:
           HUGO_VERSION: 0.99.1
       - name: Hugo Build
-        run: $HOME/hugo -v --baseURL "https://staging.doi.org/"
+        run: $HOME/hugo -v --baseURL "https://staging.doi.org/" --config $HOME/config.toml
       - name: Deploy to S3
         run: $HOME/hugo -v deploy --force --target=s3_staging --maxDeletes -1
         env:
@@ -41,7 +41,7 @@ jobs:
         env:
           HUGO_VERSION: 0.99.1
       - name: Hugo Build
-        run: $HOME/hugo -v --baseURL "https://www-new.doi.org/"
+        run: $HOME/hugo -v --baseURL "https://www-new.doi.org/" --config $HOME/config.toml
       - name: Deploy to S3
         if: github.ref_name == 'main'
         run: $HOME/hugo  -v deploy --force --target=s3_live --maxDeletes -1 
