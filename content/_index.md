@@ -6,7 +6,7 @@ draft = false
 
 {{% row %}}
 {{% column %}}
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ut odio vestibulum, feugiat erat eget, aliquam nisi. Nam in ante eu est consectetur varius. Vestibulum id mi lorem. Phasellus eu dui gravida, tincidunt eros et, malesuada orci. Aliquam aliquet velit elit, id pellentesque lacus iaculis eget. Aenean arcu sem, luctus non rhoncus sit amet, suscipit sit amet metus.
+Vertially centered - Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ut odio vestibulum, feugiat erat eget, aliquam nisi. Nam in ante eu est consectetur varius. Vestibulum id mi lorem. Phasellus eu dui gravida, tincidunt eros et, malesuada orci. Aliquam aliquet velit elit, id pellentesque lacus iaculis eget. Aenean arcu sem, luctus non rhoncus sit amet, suscipit sit amet metus.
 {{% /column %}}
 {{% column %}}
 {{< figure width="100%" src="/images/diwali-1179941.jpg" title="demo image" >}}
