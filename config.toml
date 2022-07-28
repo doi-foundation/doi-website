@@ -1,4 +1,5 @@
-baseURL = 'http://doifoundation-wsl.com'
+#baseURL = 'http://doifoundation-wsl.com'
+baseURL = 'https://staging.doi.com'
 languageCode = 'en-us'
 title = 'DOI Foundation WIP site'
 theme = "doi-theme"
