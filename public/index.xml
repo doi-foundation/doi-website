@@ -16,5 +16,15 @@
       <description>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ut odio vestibulum, feugiat erat eget, aliquam nisi. Nam in ante eu est consectetur varius. Vestibulum id mi lorem. Phasellus eu dui gravida, tincidunt eros et, malesuada orci. Aliquam aliquet velit elit, id pellentesque lacus iaculis eget. Aenean arcu sem, luctus non rhoncus sit amet, suscipit sit amet metus.</description>
     </item>
     
+    <item>
+      <title>My Second Post</title>
+      <link>http://doifoundation-wsl.com/posts/my-second-post/</link>
+      <pubDate>Tue, 24 May 2022 10:45:14 +0100</pubDate>
+      
+      <guid>http://doifoundation-wsl.com/posts/my-second-post/</guid>
+      <description>Nam in ante eu est consectetur varius. Vestibulum id mi lorem. Phasellus eu dui gravida, tincidunt eros et, malesuada orci. Aliquam aliquet velit elit, id pellentesque lacus iaculis eget. Aenean arcu sem, luctus non rhoncus sit amet, suscipit sit amet metus.
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ut odio vestibulum, feugiat erat eget, aliquam nisi.</description>
+    </item>
+    
   </channel>
 </rss>
