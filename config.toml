@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'DOI Foundation WIP site'
 theme = "doi-theme"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 
 [deployment]
 # By default, files are uploaded in an arbitrary order.
