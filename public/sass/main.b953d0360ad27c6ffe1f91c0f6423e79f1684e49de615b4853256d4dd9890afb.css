@@ -1,0 +1,11 @@
+.row {
+  border: 1px solid orange;
+  display: flex; }
+
+.column {
+  border: 1px solid green;
+  flex: 1; }
+
+@media screen and (max-width: 720px) {
+  .column {
+    flex: none; } }
