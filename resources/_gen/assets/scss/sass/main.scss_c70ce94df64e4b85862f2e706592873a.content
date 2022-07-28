@@ -1,0 +1,15 @@
+.row {
+  display: flex; }
+
+.column {
+  flex: 1; }
+  .column .content {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+@media screen and (max-width: 720px) {
+  .column {
+    flex: none; } }
