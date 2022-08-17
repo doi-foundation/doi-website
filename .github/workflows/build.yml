@@ -16,9 +16,9 @@ jobs:
           hugo-version: '0.101.0'
           extended: true
       - name: Hugo Build
-        run: $HOME/hugo -v --baseURL "https://staging.doi.org/"
+        run: hugo -v --baseURL "https://staging.doi.org/"
       - name: Deploy to S3
-        run: $HOME/hugo -v deploy --target=s3_staging --maxDeletes -1 --force
+        run: hugo -v deploy --target=s3_staging --maxDeletes -1 --force
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -39,10 +39,10 @@ jobs:
           hugo-version: '0.101.0'
           extended: true
       - name: Hugo Build
-        run: $HOME/hugo -v --baseURL "https://www-new.doi.org/"
+        run: hugo -v --baseURL "https://www-new.doi.org/"
       - name: Deploy to S3
         if: github.ref_name == 'main'
-        run: $HOME/hugo  -v deploy --target=s3_live --maxDeletes -1 
+        run: hugo  -v deploy --target=s3_live --maxDeletes -1 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
