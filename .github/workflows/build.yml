@@ -10,18 +10,15 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
-      - name: Install Hugo
-        run: |
-          HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-          wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_DOWNLOAD}
-          tar xvzf ${HUGO_DOWNLOAD} hugo
-          mv hugo $HOME/hugo
-        env:
-          HUGO_VERSION: 0.99.1
+      - name: Hugo Setup
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.101.0'
+          extended: true
       - name: Hugo Build
-        run: $HOME/hugo -v --baseURL "https://staging.doi.org/"
+        run: hugo -v --baseURL "https://staging.doi.org/"
       - name: Deploy to S3
-        run: $HOME/hugo -v deploy --target=s3_staging --maxDeletes -1
+        run: hugo -v deploy --target=s3_staging --maxDeletes -1 --force
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -36,19 +33,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
-      - name: Install Hugo
-        run: |
-          HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-          wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_DOWNLOAD}
-          tar xvzf ${HUGO_DOWNLOAD} hugo
-          mv hugo $HOME/hugo
-        env:
-          HUGO_VERSION: 0.99.1
+      - name: Hugo Setup
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.101.0'
+          extended: true
       - name: Hugo Build
-        run: $HOME/hugo -v --baseURL "https://www-new.doi.org/"
+        run: hugo -v --baseURL "https://www-new.doi.org/"
       - name: Deploy to S3
         if: github.ref_name == 'main'
-        run: $HOME/hugo  -v deploy --target=s3_live --maxDeletes -1 
+        run: hugo  -v deploy --target=s3_live --maxDeletes -1 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
