@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="314" height="63" viewBox="0 0 314 63">
+  <g id="Group_25" data-name="Group 25" transform="translate(-733 -1610)">
+    <g id="Group_8" data-name="Group 8" transform="translate(0 -39)">
+      <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(733 1649)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="253" height="63" stroke="none"/>
+        <rect x="1" y="1" width="251" height="61" fill="none"/>
+      </g>
+      <text id="More_Information" data-name="More Information" transform="translate(860 1687)" fill="#fff" font-size="18" font-family="FuturaPT-Bold, Futura PT" font-weight="700"><tspan x="-91" y="0">MORE INFORMATION</tspan></text>
+    </g>
+    <g id="Group_24" data-name="Group 24" transform="translate(253 -39)">
+      <g id="Rectangle_7-2" data-name="Rectangle 7" transform="translate(731 1649)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="63" height="63" stroke="none"/>
+        <rect x="1" y="1" width="61" height="61" fill="none"/>
+      </g>
+    </g>
+    <text id="_" data-name="" transform="translate(1006 1631)" fill="#fff" font-size="20" font-family="FontAwesome5Pro-Regular, 'Font Awesome \35  Pro'"><tspan x="0" y="18"></tspan></text>
+  </g>
+</svg>
