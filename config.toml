@@ -51,3 +51,22 @@ gzip = true
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
 gzip = true
+
+
+[menu]
+[[menu.main]]
+  name = 'The Foundation'
+  url = '/#/'
+  weight = 1
+[[menu.main]]
+  name = 'The Community'
+  url = '/#/'
+  weight = 2
+[[menu.main]]
+  name = 'The Identifier'
+  url = '/#/'
+  weight = 3
+[[menu.main]]
+  name = 'Resources'
+  url = '/#/'
+  weight = 4

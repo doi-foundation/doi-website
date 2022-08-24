@@ -1,0 +1,13 @@
+social:
+  - title: "Twitter"
+    icon: "<i class='fa fa-twitter'></i>"
+    url: "https://www.google.com"
+  - title: "Instagram"
+    icon: "<i class='fa fa-instagram'></i>"
+    url: "https://www.google.com"
+  - title: "facebook"
+    icon: "<i class='fa fa-facebook'></i>"
+    url: "https://www.google.com"
+  - title: "youtube"
+    icon: "<i class='fa fa-youtube'></i>"
+    url: "https://www.google.com"
