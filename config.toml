@@ -56,17 +56,17 @@ gzip = true
 [menu]
 [[menu.main]]
   name = 'The Foundation'
-  url = '/#/'
+  url = '/the-foundation/'
   weight = 1
 [[menu.main]]
   name = 'The Community'
-  url = '/#/'
+  url = '/the-community/'
   weight = 2
 [[menu.main]]
   name = 'The Identifier'
-  url = '/#/'
+  url = '/the-identifier/'
   weight = 3
 [[menu.main]]
   name = 'Resources'
-  url = '/#/'
+  url = '/resources/'
   weight = 4
