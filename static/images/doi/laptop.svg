@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117.007" height="118.404" viewBox="0 0 117.007 118.404">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_601" data-name="Rectangle 601" width="117.007" height="118.404" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_598" data-name="Rectangle 598" width="103.351" height="68.052" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_600" data-name="Rectangle 600" width="93.955" height="18.162" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1744" data-name="Group 1744" transform="translate(-1087.993 -1226)">
+    <g id="Group_1714" data-name="Group 1714" transform="translate(1087.993 1226)">
+      <g id="Group_1713" data-name="Group 1713" clip-path="url(#clip-path)">
+        <g id="Group_1709" data-name="Group 1709" transform="translate(7.303 9.842)" opacity="0.2">
+          <g id="Group_1708" data-name="Group 1708">
+            <g id="Group_1707" data-name="Group 1707" clip-path="url(#clip-path-2)">
+              <path id="Path_758" data-name="Path 758" d="M120.353,90.964H17V22.911H120.353Z" transform="translate(-17.002 -22.912)" fill="#5c7392"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_1712" data-name="Group 1712" transform="translate(15.8 94.136)" opacity="0.2">
+          <g id="Group_1711" data-name="Group 1711">
+            <g id="Group_1710" data-name="Group 1710" clip-path="url(#clip-path-3)">
+              <rect id="Rectangle_599" data-name="Rectangle 599" width="93.955" height="18.162" transform="translate(0 0)" fill="#5c7392"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <rect id="Rectangle_602" data-name="Rectangle 602" width="93.955" height="18.162" transform="translate(1099.519 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <g id="Group_1716" data-name="Group 1716" transform="translate(1087.993 1226)">
+      <g id="Group_1715" data-name="Group 1715" clip-path="url(#clip-path)">
+        <path id="Path_759" data-name="Path 759" d="M117.58,78.811H4.066V4.066H117.58Z" transform="translate(-2.319 -2.32)" fill="none" stroke="#05171d" stroke-width="3"/>
+        <path id="Path_760" data-name="Path 760" d="M117.58,225.662H4.066V191.084H117.58Z" transform="translate(-2.319 -109.005)" fill="none" stroke="#05171d" stroke-width="3"/>
+      </g>
+    </g>
+    <rect id="Rectangle_604" data-name="Rectangle 604" width="97.797" height="53.788" transform="translate(1096.376 1237.177)" fill="#5c7392"/>
+    <rect id="Rectangle_605" data-name="Rectangle 605" width="97.797" height="53.788" transform="translate(1096.376 1237.177)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_10" data-name="Line 10" y1="0.043" x2="84.33" transform="translate(1099.17 1325.5)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_11" data-name="Line 11" y2="19.21" transform="translate(1110.696 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_12" data-name="Line 12" y2="19.21" transform="translate(1122.571 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_13" data-name="Line 13" y2="10.129" transform="translate(1134.272 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_14" data-name="Line 14" y2="10.129" transform="translate(1146.147 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_15" data-name="Line 15" y2="19.21" transform="translate(1158.547 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_16" data-name="Line 16" y2="19.21" transform="translate(1170.422 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <line id="Line_17" data-name="Line 17" y2="9.688" transform="translate(1182.297 1316.812)" fill="none" stroke="#05171d" stroke-width="3"/>
+    <rect id="Rectangle_606" data-name="Rectangle 606" width="11.875" height="2.794" transform="translate(1181.599 1294.108)" fill="#3d4451"/>
+    <rect id="Rectangle_607" data-name="Rectangle 607" width="117.007" height="118.404" transform="translate(1087.993 1226)" fill="none"/>
+  </g>
+</svg>
