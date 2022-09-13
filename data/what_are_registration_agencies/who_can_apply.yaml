@@ -1,0 +1,17 @@
+title: "WHO CAN APPLY TO BE A REGISTRATION AGENCY?"
+toptext: "
+Any organization from any sector that is willing to make long-term commitments to the persistence and sustainability of the DOI System. They can be commercial, governmental, or not-for-profit. 
+
+New RAs tend to be a group of organizations within a particular sector who are collaborating to solve a common problem together - a solution to persistent identification. Often, a representative of such a community group will join as a DOI Foundation member, before making a detailed business case to apply to become an RA.
+
+Applications are considered by the Board, based on a thorough review of their case. 
+ 
+Our experience is that the key to becoming a successful and sustainable Registration Agency is the development of additional services that add clear value on top of DOI registration for a unique new community group. For example:"
+
+keypoints:
+  - text: "An existing registry of identifiers which wishes to add DOI functionality and services to their existing registry"
+    icon: "/images/plus@2x.png"
+  - text: "An existing aggregator of information which wishes to use DOIs to improve its services and add new features"
+    icon: "/images/linky@2x.png"
+  - text: "A start-up which has a business model suggesting a novel DOI application. Note that in view of the importance of persistence, this is likely to require significant guarantees of continuity planning."
+    icon: "/images/leaf@2x.png"
