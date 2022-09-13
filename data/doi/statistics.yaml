@@ -1,2 +1,4 @@
-left: 1000000
-right: 2340940
+left: "1,000,000,000+"
+lefttext: DOI resolutions per month
+right: "292,000,000+"
+righttext: DOI assigned to date

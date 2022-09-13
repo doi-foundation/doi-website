@@ -1,1 +1,11 @@
-test: ''
+title: 'THE BENEFITS: WHAT PROBLEMS CAN DOIS SOLVE?'
+benefits:
+  - title: 'KNOWING WHAT’S WHAT, NOW AND IN THE FUTURE'
+    text: 'The DOI is a persistent identifier, it is a long-lasting reference to an object or to information about an object. The object can be anything physical, digital, or abstract. Keeping track of objects like this over time is a problem. And that’s what the DOI is designed to solve.'
+    icon: "<span class='material-symbols-outlined'>info</span>"
+  - title: 'FINDING WHAT YOU NEED, WHEREVER IT IS OR HAS MOVED TO'
+    text: 'The DOI is not only persistent but it is “actionable” which means that you use it and something useful will happen. For instance, you can plug it into a web browser and be taken to an object. We call this resolving the DOI. Here is a chart of the resolutions over time:'
+    icon: "<span class='material-symbols-outlined'>where_to_vote</span>"
+  - title: 'FILLING IN PAST GAPS'
+    text: 'In many sectors, a reliable archive is important and denoting the provenance of a record is imperative. Metadata, applications, and services associated with DOIs can be updated without having to change the DOI itself, so for instance as new information becomes available, past records can be updated even decades after they were first created.'
+    icon: "<span class='material-symbols-outlined'>select_all</span>"
