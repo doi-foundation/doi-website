@@ -50,7 +50,6 @@ gzip = true
 
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
-<<<<<<< HEAD
 gzip = true
 
 
@@ -114,5 +113,3 @@ gzip = true
   weight = 4
   identifier = 'submenu1'
   parent = 'resources'
-=======
->>>>>>> main
