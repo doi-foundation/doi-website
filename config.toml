@@ -22,7 +22,7 @@ URL = "s3://staging.doi.org?region=us-west-2"
 [[deployment.targets]]
 # An arbitrary name for this target.
 name = "s3_live"
-URL = "s3://www-new.doi.org?region=us-west-2"
+URL = "s3://www-doi-org?region=us-west-2"
 
 
 # [[deployment.matchers]] configure behavior for files that match the Pattern.
