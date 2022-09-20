@@ -61,27 +61,15 @@ gzip = true
   identifier = 'foundation'
 [[menu.main]]
   name = 'Sub Menu2'
-  url = '/submenu2/'
+  url = '/the-foundation/submenu2/'
   weight = 4
   identifier = 'submenu2'
   parent = 'foundation'
 [[menu.main]]
   name = 'Sub Menu3'
-  url = '/submenu3/'
+  url = '/the-foundation/submenu3/'
   weight = 4
   identifier = 'submenu3'
-  parent = 'foundation'
-[[menu.main]]
-  name = 'Sub Menu4'
-  url = '/submenu4/'
-  weight = 4
-  identifier = 'submenu4'
-  parent = 'foundation'
-[[menu.main]]
-  name = 'Sub Menu5'
-  url = '/submenu5/'
-  weight = 4
-  identifier = 'submenu5'
   parent = 'foundation'
 
 
@@ -91,25 +79,19 @@ gzip = true
   weight = 2
   identifier = 'community'
 [[menu.main]]
+  name = 'What Are...'
+  url = '/the-community/what-are-registration-agencies/'
+  weight = 4
+  identifier = 'whatare'
+  parent = 'community'
+
+[[menu.main]]
   name = 'The Identifier'
   url = '/the-identifier/'
   weight = 3
-  identifier = 'identifier'
 
 [[menu.main]]
   name = 'Resources'
   url = '/resources/'
   weight = 4
   identifier = 'resources'
-[[menu.main]]
-  name = 'Sub Menu'
-  url = '/submenu/'
-  weight = 4
-  identifier = 'submenu'
-  parent = 'resources'
-[[menu.main]]
-  name = 'Sub Menu1'
-  url = '/submenu1/'
-  weight = 4
-  identifier = 'submenu1'
-  parent = 'resources'
