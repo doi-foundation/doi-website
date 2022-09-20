@@ -59,36 +59,48 @@ gzip = true
   url = '/the-foundation/'
   weight = 1
   identifier = 'foundation'
+  [menu.main.params]
+    nolink = true
 [[menu.main]]
-  name = 'Sub Menu2'
-  url = '/the-foundation/submenu2/'
+  name = 'Governance & Sustainability'
+  url = '/the-foundation/governance-and-sustainability/'
   weight = 4
   identifier = 'submenu2'
   parent = 'foundation'
-[[menu.main]]
-  name = 'Sub Menu3'
-  url = '/the-foundation/submenu3/'
-  weight = 4
-  identifier = 'submenu3'
-  parent = 'foundation'
-
-
+  
 [[menu.main]]
   name = 'The Community'
   url = '/the-community/'
   weight = 2
   identifier = 'community'
+  [menu.main.params]
+    nolink = true
 [[menu.main]]
-  name = 'What Are...'
+  name = 'Existing Registration Agencies'
   url = '/the-community/what-are-registration-agencies/'
-  weight = 4
+  weight = 3
   identifier = 'whatare'
+  parent = 'community'
+[[menu.main]]
+  name = 'Who Are The Members'
+  url = '/the-community/who-are-the-members/'
+  weight = 4
+  identifier = 'whoare'
   parent = 'community'
 
 [[menu.main]]
   name = 'The Identifier'
   url = '/the-identifier/'
   weight = 3
+  identifier = 'identifier'
+  [menu.main.params]
+    nolink = true
+[[menu.main]]
+  name = 'What is a DOI'
+  url = '/the-identifier/what-is-a-doi/'
+  weight = 4
+  identifier = 'whatisadoi'
+  parent = 'identifier'
 
 [[menu.main]]
   name = 'Resources'
