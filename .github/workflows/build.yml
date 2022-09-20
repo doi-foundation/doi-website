@@ -30,7 +30,6 @@ jobs:
   livebuild:
     name: Live Build and Deploy
     runs-on: ubuntu-latest
-    needs: stagingbuild
 
     if: github.ref_name == 'main'
     steps:
