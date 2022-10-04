@@ -1,11 +1,10 @@
 +++
-title = "content"
-date = "2019-03-26T08:47:11+01:00"
+title = "Resources"
+date = "2022-10-04"
 draft = false
-
 # the following section is for the header
-maintext = "Aenean pharetra sapien in tellus mollis blandit. Donec malesuada ante quis velit viverra, a pellentesque dolor dignissim. Duis euismod, nunc tincidunt feugiat convallis, nisl ex scelerisque lacus, id scelerisque magna sapien sed nisi. Phasellus scelerisque consequat consectetur. Etiam sit amet lacus et ante vulputate maximus finibus sed risus."
-subtext = "subtext smaller here"
+maintext = "This is where you will find shareable resources regarding the foundation, the community, and the identifier. Please download and share these items, they include factsheets about technical specifications, an archive of policies and statements, and quick flash oviewers to introduce the DOI Foundation in your commuityies and work. Everything on this time is under a CC-4.0 attribution license."
+subtext = "Let us know what other resources you'd like to see here"
 imagetop = "Resources"
 imagemain = "content"
 
@@ -13,7 +12,8 @@ imagemain = "content"
 
 ## header 1
 
-with some content
+testing editing the page
+
 ## header 2
 
 with some content
