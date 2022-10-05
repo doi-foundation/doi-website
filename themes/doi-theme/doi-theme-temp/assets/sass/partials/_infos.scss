@@ -1,0 +1,27 @@
+section.home-infos {
+    background-color: $background-grey;
+    .title, .maintext, .link {
+        margin-top:20px;
+    }
+    .title {        
+        font-family: "Futura Bold";
+        font-size:21px;
+        color:#000;
+    }
+    .maintext {
+    }
+    .row {
+        width: $content-width;
+        margin:0 auto;
+        column-gap:80px;
+    }
+    .icon {
+        display:inline-block;
+        padding: 10px;
+        border-radius:50%;
+        background-color: $background-orange;
+    }
+    .link {        
+        font-family: "Futura Bold";
+    }
+}

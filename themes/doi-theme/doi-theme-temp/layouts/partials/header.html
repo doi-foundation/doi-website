@@ -1,0 +1,46 @@
+<header>
+	<div class="row">
+		<div class="col logo">			
+			<a href="{{ .Site.BaseURL }}"><img class='header-logo' src="/images/logos/header_logo_cropped.png" /></a>			
+		</div>
+	</div>
+	
+	<div class="navigation-container">
+		<div class="nav">
+			<nav>
+				<input type="checkbox" name="" id="">
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<ul class="menu-items">
+					{{ with .Site.Menus.main }}
+						{{ range . }}				
+
+							<li>
+								{{ if .Params.nolink }}
+								<span class='nolink'>{{ .Name }}</span>
+								<span class="more material-symbols-outlined">
+									expand_more
+								</span>
+								{{ else }}
+								<a href="{{ .URL | relURL }}">{{ .Name }}</a>
+								{{ end }}
+    							{{ if .HasChildren }}
+									<ul class="submenu">
+										{{ range .Children }}
+											<li><a href="{{ .URL | relURL }}">{{ .Name }}</a>
+										{{ end }}
+									</ul>
+								{{ end }}
+							</li>
+						{{ end }}
+					{{ end }}
+				</ul>
+
+				
+			</nav>
+		</div>
+	</div>
+</header>

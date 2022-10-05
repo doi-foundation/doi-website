@@ -1,0 +1,7 @@
+<div class="sticky-socials">
+    <ul class="socials-side">
+        {{ range .Site.Data.socials.social }}				
+            <li><a href="{{ .url }}">{{ .icon |safeHTML }}</a></li>
+        {{ end }}
+    </ul>
+</div>

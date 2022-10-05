@@ -1,0 +1,18 @@
+<section class="what-is">
+    <div class="row">
+        <div class="col left">
+            <span class='title'>WHAT IS THE</span>
+            <img class='what-is-logo' src="/images/logos/DOI Logo-Landscape RGB.svg" />
+        </div>
+        <div class="col">
+            {{ range $index, $element := .points }}
+            <div class='point'>
+                <span class='index' style='background-color: {{ $element.color }};'>{{ add $index 1 }}</span>
+                <span class='text'>{{ $element.point }}</span>
+
+            </div>
+
+            {{ end }}
+        </div>
+    </div>
+</section>

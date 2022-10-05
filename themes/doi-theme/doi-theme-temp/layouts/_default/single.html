@@ -1,0 +1,18 @@
+{{ define "main" }}	
+	<main aria-role="main">
+		<header class="single-header">
+		</header>
+		{{ with .Params }}
+			{{ partial "single/top.html" . }}
+		{{ end }}
+		<div class="page-content">
+			<article>
+				<div>
+					{{ .Content }}
+				</div>
+				
+			</article>
+		</div>
+        {{ partial "socials-side.html" . }}
+	</main>
+{{ end }}

@@ -1,0 +1,15 @@
+<section class="benefits">
+    <div class="row">
+        <div class="col heading">{{ .title }}</div>
+    </div>
+    <div class="row">
+        {{ range .benefits }}
+        <div class="col">
+            <div class="icon">{{ .icon |safeHTML }}</div>
+            <div class="title">{{ .title }}</div>    
+            <div class="text">{{ .text }}</div>    
+            
+        </div>
+        {{ end }}
+    </div>
+</section>

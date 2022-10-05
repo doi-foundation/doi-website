@@ -1,0 +1,54 @@
+section.communities {
+    background-color: $background-grey;
+    
+    min-height:60vh;
+    .row {
+        width: $content-width;
+        margin:0 auto;
+        column-gap: 20px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        padding: 120px 0;
+        .col {
+            
+            @media (max-width: $break-large) {
+                width:100%;
+                margin-bottom:40px;
+            }
+            flex-basis:49%;
+            text-align:center;
+            background-color:#fff;
+            box-shadow: 0 0 6px rgba(0,0,0,0.15);
+            height:443px;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            padding:40px;
+            .logo {
+                flex:1;
+                align-items:center;
+                display:flex;
+                justify-content: center;
+                div {
+                    width:50%;
+                    height:50%;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position:center;
+                    
+                    
+                }
+            }
+            .texts {
+                flex:1;
+                .title {
+                    font-family: 'Futura Bold';
+                    font-size:21px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+        
+    }
+}

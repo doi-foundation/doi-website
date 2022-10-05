@@ -1,0 +1,20 @@
+<section class="home-infos">
+    
+    <div class="row">
+
+    {{ range sort .Site.Data.home.infos "weight" }}
+        <div class="col" >
+            <div class='icon'><img src="{{ .icon }}"/></div>
+            <div class="title">{{ .title }}</div>
+            <div class="maintext">{{ .maintext | markdownify }}</div>
+
+            <div class='link'>
+                <a href="{{ .linkurl }}">{{ .linktext }}</a>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>           
+            </div>
+        </div>
+    {{ end }}
+    
+</section>

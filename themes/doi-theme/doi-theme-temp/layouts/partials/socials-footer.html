@@ -1,0 +1,5 @@
+<ul class="socials-footer">
+    {{ range .Site.Data.socials.social }}				
+        <li><a href="{{ .url }}">{{ .icon |safeHTML }}</a></li>
+    {{ end }}
+</ul>

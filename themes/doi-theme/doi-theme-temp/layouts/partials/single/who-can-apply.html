@@ -1,0 +1,32 @@
+<section class="who-can-apply">
+    <div class="row">
+        <div class="col left">
+            <div class="title">
+                {{ .title }}
+            </div>
+            <div class="toptext">
+                {{ .toptext | markdownify}}
+            </div>
+            <div class="specials">
+                {{ range .keypoints }}
+                    <div class="col" >
+                            <div class="icon-wrapper">
+                                <div class="icon" style="background-image: url({{ .icon }});"></div>
+                            </div>
+                            <div class="text">{{ .text }}</div>
+                    </div>
+                {{ end }}
+            </div>
+            <div class='bottomtext'>{{ .bottomtext }}</div>
+
+            <div class='link'>
+                <a href="{{ .linkurl }}">{{ .linktext }}</a>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>           
+            </div>
+        </div>
+        <div class="col right"></div>
+        
+    </div>
+</section>

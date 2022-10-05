@@ -1,0 +1,35 @@
+section.single-two-column {
+    
+    min-height:70vh;
+    background-repeat:no-repeat;
+    background-position-y: 57vh;
+    background-size:50%;
+    &.image-left {
+        background-position-x:right;
+    }
+    .row {
+        width: $content-width;
+        margin:0 auto;
+        align-items:center;
+    }
+    .image {
+        opacity: 0;
+        img {
+            display:block;
+            height:80%;
+            margin:0 auto;
+        }
+    }
+    .title {
+        color:#000;
+        font-family: 'Futura Bold';
+        font-size:55px;
+        line-height:55px;
+        margin-bottom:20px;
+        @media (max-width: $break-small) {
+            font-size:40px;
+            line-height:42px;
+        }
+    }
+    
+}

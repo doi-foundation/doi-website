@@ -1,0 +1,23 @@
+{{ with .Site.Data.home.announcement }}
+<section class='home-announcement'>
+    <div class="row">
+        <div class="col left">
+            <div class="wrapper">
+                <img src="{{ .image }}"/>
+            </div>
+        </div>
+        <div class="col right">
+            <div class="title">{{ .title }}</div>
+            <div class="maintext">{{ .maintext }}</div>
+
+            <div class='link-alt'>
+                <a href="{{ .linkurl }}">{{ .linktext }}</a>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>           
+            </div>
+        </div>
+
+    </div>
+</section>
+{{ end }}

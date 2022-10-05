@@ -1,0 +1,31 @@
+<footer>
+	<div class="row">
+		<div class="col">
+			<a href="{{ .Site.BaseURL }}"><img class='footer-logo' src="/images/logos/DOI Logo-Stacked Reversed RGB.svg" /></a>
+		</div>
+		<div class="col">
+			<ul>
+			{{ range .Site.Data.footer.links_column_left.links}}
+				<li><a href="{{ .url }}">{{ .title }}</a></li>
+			{{ end }}
+			</ul>
+		</div>
+		<div class="col">
+			<ul>
+			{{ range .Site.Data.footer.links_column_right.links}}				
+				<li><a href="{{ .url }}">{{ .title }}</a></li>
+			{{ end }}
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col copyright">
+			<p>Copyright © 2022 DOI. The content of this site is licensed under a Creative Commons Attribution 4.0 International License</p>
+		</div>
+		<div class="col socials">
+			{{ partial "socials-footer.html" . }}
+		</div>
+	</div>
+</footer>
+
+<script src="/js/script.js"></script>

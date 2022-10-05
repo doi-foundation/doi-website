@@ -1,0 +1,19 @@
+<section class="communities">
+    
+    <div class="row">
+
+    {{ range sort . "weight" }}
+        <div class="col" >
+            <div class="logo">
+                <div style="background-image: url({{ .logo }});">
+                </div>
+            </div>
+            <div class="texts">
+                <div class="title">{{ .title }}&nbsp;</div>
+                <div class="maintext">{{ .maintext | markdownify }}</div>
+            </div>
+
+        </div>
+    {{ end }}
+    
+</section>

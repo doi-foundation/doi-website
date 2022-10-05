@@ -1,0 +1,55 @@
+footer {
+
+    background: #000;
+    color:#fff;
+    position:relative;
+    .footer-logo {
+        position:absolute;
+        left:74px;
+        top:0;
+        width:500px;
+        @media (max-width: $break-medium) {
+            width:300px;
+            position:relative;
+            left:0;
+        }
+    }
+    
+    .row {
+        width: $content-width;
+        margin:0 auto;
+        
+    }
+    ul li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul li a {
+        line-height:40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Futura Bold";
+        color:#fff;
+    }
+    .copyright {
+        flex-basis:80%;
+        font-size:0.9rem;
+    }
+    .socials {
+        flex-basis:20%;
+        text-align:right;
+       
+        ul {
+            li {
+                list-style:none;
+                display:inline-block;
+                margin-left:20px;
+                font-size:1.5rem;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,26 @@
+<section class="single-top">
+    <div class="row">
+        <div class="col left" style="background-image:url({{ .image }})">
+            <div class="circle-wrapper">
+                <div class="circle"></div>
+                <div class="texts">
+                    <h1>{{ .imagetop }}</h1>
+                    <h2>{{ .imagemain   | markdownify}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col right">
+            <div class="maintext">{{ .maintext }}</div>
+            <div class="subtext">{{ .subtext  | markdownify  }}</div>
+            {{ if .linkurl }}
+            <div class='link'>
+                <a href="{{ .linkurl }}">{{ .linktext }}</a>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>           
+            </div>
+            {{ end }}
+        </div>        
+
+    </div>
+</section>

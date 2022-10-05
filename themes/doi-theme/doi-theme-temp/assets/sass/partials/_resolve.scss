@@ -1,0 +1,61 @@
+section.home-resolve {
+    width: $content-width;
+    margin:0 auto;
+    height:50vh;
+    .title {
+        text-transform:uppercase;
+        font-family: "Futura Bold";
+        font-size:21px;
+        color:#000;
+    }
+
+    .row {
+        align-items: center;
+        height: 100%;
+    }
+    .left, .right {
+        padding:40px;
+    }
+    .left {
+        flex-basis:60%;
+        padding-right:140px;
+    }
+    
+    .right {
+        flex-basis:40%;
+        background-position:top center;
+        background-repeat:no-repeat;
+        height:100%;
+        margin-right:-110px;
+    }
+    form {
+        width: 100%;
+        display:flex;
+        padding: 20px 0;
+    }
+    .submit {
+        text-transform:uppercase;
+        font-family: "Futura Bold";
+        color:#000;
+    }
+    .input-content, .submit {
+        flex:1;
+        display:block;
+    }
+    .input-content {
+        flex-basis:70%;
+        padding:12px;
+        border:2px solid $main-font-color;
+        margin-right:20px;
+    }
+    .submit {
+        background-color: $background-orange;
+        flex-basis:30%;
+        padding:12px 0;
+        font-weight:bold;
+        border:0;
+    }
+    .maintext {
+        font-weight:bold;
+    }
+}

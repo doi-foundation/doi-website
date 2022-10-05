@@ -1,0 +1,83 @@
+@import "partials/variables",
+        "partials/fonts",
+        "partials/reset",
+        "partials/animations",
+        "partials/top",
+        "partials/infos",
+        "partials/announcement",
+        "partials/resolve",
+        "partials/footer",
+        "partials/header",
+        "partials/socials_side",
+        "partials/single/top",
+        "partials/single/two_column",
+        "partials/communities",
+        "partials/who_can_apply",
+        "partials/doi",
+        "partials/responsive",
+        "partials/single/page";
+
+body::-webkit-scrollbar:horizontal {
+    display: none;
+}
+body{
+    overflow-x:hidden;
+}
+
+.link {
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $link-color;
+        font-weight:bold;
+        &:hover {
+            color: initial;
+        }
+    }
+    span {
+        color:$link-arrow;
+        font-size:1rem;
+    }
+}
+
+a {
+    color: $link-blue;
+    text-decoration:none;
+    &:hover {
+        color: $link-blue;
+        text-decoration:underline;
+    }
+}
+.link-alt {    
+    border:2px solid #fff;
+    display:inline-block;
+    a, span {
+        color:#fff;
+        display: inline-block;
+        padding:10px;
+
+    }
+    a {
+        
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight:bold;
+        border-right:2px solid #fff;
+        padding:12px 40px 10px 40px;
+        line-height: 2rem;
+    }
+    span {
+        font-size:1rem;
+        
+        padding:12px 40px 10px 40px;
+    }
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

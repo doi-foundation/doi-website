@@ -1,0 +1,41 @@
+section.home-announcement {
+    background-color: $background-blue;
+    
+    height:60vh;
+    .row {
+        width: $content-width;
+        margin:0 auto;
+        color:#fff;
+        align-items: center;
+        height: 100%;
+    }
+    .title {        
+        font-family: "Futura Bold";       
+        font-size:21px;
+    }
+    .link-alt {
+        font-family: "Futura Bold";
+    }
+    .title, .maintext, .link-alt {
+        margin-bottom:20px;
+    }
+    .left, .right {
+        padding:40px;
+    }
+    .left {
+        flex-basis:40%;
+        height:100%;
+        .wrapper {
+            background-color:#fff;
+            display:inline-block;
+            border-radius: 50%;
+            img {
+                padding:30px;
+            }
+        }
+    }
+    
+    .right {
+        flex-basis:60%;
+    }
+}

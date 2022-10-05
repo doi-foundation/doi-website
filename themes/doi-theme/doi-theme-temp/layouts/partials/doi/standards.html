@@ -1,0 +1,11 @@
+<section class="standards">
+    <div class="row">
+        <div class="col left">
+            <div class="title">{{ .title}}</div>
+            <div class="content">{{ .text | markdownify }}</div>
+        </div>
+        <div class="col right">
+            <img src="{{ .image }}" />
+        </div>
+    </div>
+</section>
