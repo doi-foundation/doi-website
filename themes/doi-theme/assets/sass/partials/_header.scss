@@ -16,6 +16,11 @@ header {
         }
         nav ul.menu-items li ul.submenu {
             display:block;
+        
+            li {
+                margin-top: 1em;
+            }
+        
         }
     }
     
@@ -98,7 +103,7 @@ header {
                     display:inline-block;
                     margin-left:60px;
                     text-transform: uppercase;
-                    width:160px;
+                    width:180px;
                     span.nolink {
                         display:inline-block;
                         margin-bottom:10px;

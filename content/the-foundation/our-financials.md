@@ -1,6 +1,11 @@
 +++
 title = "Our Board"
 draft = false
+# the following section is for the header
+maintext = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+subtext = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+imagetop = "The Foundation"
+imagemain = "Our Financials"
 +++
 
 The DOI Foundation is governed by its members, through an elected Board of Directors. The members of the Board are not remunerated for their services to the Foundation. The Board appoints a Managing Agent to manage the day-to-day operations and is responsible for all aspects of management of the DOI system, including policy formulation and standards maintenance. Board meetings are open to all but only the Board Directors vote. 

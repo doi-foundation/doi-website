@@ -1,6 +1,11 @@
 +++
-title = "Our Financials"
+title = "Our Board"
 draft = false
+# the following section is for the header
+maintext = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+subtext = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+imagetop = "The Foundation"
+imagemain = "Our Board"
 +++
 
 The DOI Foundation operates on an annual budget of around $1 million USD. All revenues come from annual fees paid by the Registration Agencies and members. These fees are set and reviewed annually by the Board.
