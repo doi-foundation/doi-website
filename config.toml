@@ -74,17 +74,23 @@ gzip = true
   weight = 2
   identifier = 'community'
   [menu.main.params]
-    nolink = true
+  nolink = true
 [[menu.main]]
-  name = 'Existing Registration Agencies'
+  name = 'What are Registration Agencies'
   url = '/the-community/what-are-registration-agencies/'
   weight = 3
   identifier = 'whatare'
   parent = 'community'
 [[menu.main]]
+  name = 'Existing Registration Agencies'
+  url = '/the-community/existing-registration-agencies/'
+  weight = 4
+  identifier = 'whatare2'
+  parent = 'community'
+[[menu.main]]
   name = 'Who Are The Members'
   url = '/the-community/who-are-the-members/'
-  weight = 4
+  weight = 5
   identifier = 'whoare'
   parent = 'community'
 
