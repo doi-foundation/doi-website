@@ -6,12 +6,126 @@
     </div>
     <div class="row numbers">
         <div class="col">
-            <span id='leftbignumber' class='bignumber'>0</span>
+            <span id='resolutions_clock_rate' class='bignumber'></span>
             <span class='subtext'>{{ .lefttext }}</span>
         </div>
         <div class="col">            
-            <span id='rightbignumber' class='bignumber'>0</span>
+            <span id='resolutions_clock_count' class='bignumber'></span>
             <span class='subtext'>{{ .righttext }}</span>
         </div>
     </div><div id="el"></div>
 </section>
+<script>
+
+    const STATS_REFRESH_INTERVAL = 1000 * 60 * 60; //one hour in ms
+    const RESOLUTIONS_CLOCK_UPDATE_INTERVAL = 500; //half a second in ms
+
+    let resolutionsClockIntervalId = null;
+
+    let doiResolutions = null;
+    let counts = null;
+    let mapMode = "logScale";
+
+
+
+    async function getDoiValueAsJson(doi, type) {
+        let url = 'https://doi.org/api/handles/' + doi + '?type=' + type + "&auth";
+        const response = await fetch(url);
+        let handleRecord = await response.json();
+        let handleValue = handleRecord.values[0];
+        let valueJson = handleValue.data.value;
+        let result = JSON.parse(valueJson);
+        console.log("Fetching stats");
+        return result;
+    }
+
+    async function fetchStats() {
+        doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');
+        counts = await getDoiValueAsJson('10.1000/1000', 'DOI_COUNTS');
+        console.log("Stats loaded");
+        console.log(doiResolutions);
+        console.log(counts);
+        //renderResults(doiResolutions, counts);
+        renderResolutionsClock(doiResolutions);
+        setTimeout(fetchStats, STATS_REFRESH_INTERVAL);
+    }
+    fetchStats();
+
+    function renderResults(doiResolutions, counts) {
+        renderResolutionsClock(doiResolutions);
+        renderResolutionsUptime(doiResolutions);
+        renderResolutionsBotPercent(doiResolutions);
+        renderResolutionsConnegPercent(doiResolutions);
+        renderResolutionsMap(doiResolutions);
+        renderResolutionsChart(doiResolutions);
+        renderTotalHandlesChart(counts);
+        renderResolutionsByDoisChart(doiResolutions, counts);
+    }
+
+    function renderResolutionsClock(doiResolutions) {
+        let resolutionsTotalAndRate = doiResolutions.resolutionsTotalAndRate;
+        let clockElement = document.getElementById('resolutions_clock_count');
+        let rateElement = document.getElementById('resolutions_clock_rate');
+
+        let ratePerSecond = resolutionsTotalAndRate.resolutionsPerSecondLastCompleteMonth;
+        let incrementPerMs = ratePerSecond / 1000;
+        rateElement.textContent = ratePerSecond + "/second"
+
+        let start = new Date(resolutionsTotalAndRate.asOfTimestamp);
+        let currentCount = calculateResolutionsClock(start, incrementPerMs, resolutionsTotalAndRate.allTime);
+        clockElement.textContent = getClockText(currentCount);
+        clearInterval(resolutionsClockIntervalId);
+        resolutionsClockIntervalId = setInterval(function() {
+            let currentCount = calculateResolutionsClock(start, incrementPerMs, resolutionsTotalAndRate.allTime);
+            let clockText = getClockText(currentCount);
+            clockElement.textContent = clockText;
+            let clockTextHuman = getClockTextHuman(currentCount);
+        }, RESOLUTIONS_CLOCK_UPDATE_INTERVAL);
+    }
+
+    function calculateResolutionsClock(start, incrementPerMs, initialCount) {
+        let timeSinceStartMs = Date.now() - start;
+        let increment = Math.round(incrementPerMs * timeSinceStartMs);
+        let currentCount = initialCount + increment;
+        return currentCount;
+    }
+
+    function getClockText(count) {
+        let clockText = count.toLocaleString("en-US");
+        return clockText;
+    }
+
+    function getClockTextHuman(count) {
+        let countInBillions = count/1_000_000_000;
+        let text = "(" + countInBillions.toPrecision(4) + " billion)";
+        return text;
+    }
+
+    function renderResolutionsUptime(doiResolutions) {
+        let uptimeElement = document.getElementById('uptime_percent');
+        let uptimePercent = doiResolutions.uptime.uptimePercentage;
+        let uptimeText =  "Uptime over last 90 days " + uptimePercent + "%";
+        uptimeElement.textContent = uptimeText;
+    }
+
+    function renderResolutionsBotPercent(doiResolutions) {
+        let botPercentElement = document.getElementById('bot_percent');
+        let botPercent = doiResolutions.botPercent.botPercent;
+        let month = doiResolutions.botPercent.month;
+        let botPercentText =  botPercent + "% of the resolutions performed in " + month + " were from bots";
+        botPercentElement.textContent = botPercentText;
+    }
+
+    function renderResolutionsConnegPercent(doiResolutions) {
+        let connegPercentElement = document.getElementById('conneg_percent');
+        let connegPercent = doiResolutions.connegPercent.connegPercent;
+        let month = doiResolutions.connegPercent.month;
+        let connegPercentText =  connegPercent + "% of the resolutions performed in " + month + " used content negotiation";
+        connegPercentElement.textContent = connegPercentText;
+    }
+
+    
+
+
+
+</script>
