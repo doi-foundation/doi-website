@@ -95,4 +95,151 @@
       
       observerlower.observe(document.querySelector('.circle-line-lower'));
       </script>
+
+
+      <script>
+
+        const STATS_REFRESH_INTERVAL = 1000 * 60 * 60; //one hour in ms
+        const RESOLUTIONS_CLOCK_UPDATE_INTERVAL = 500; //half a second in ms
+
+        let resolutionsClockIntervalId = null;
+
+        let doiResolutions = null;
+        let counts = null;
+        let mapMode = "logScale";
+
+
+
+        async function getDoiValueAsJson(doi, type) {
+            let url = 'https://doi.org/api/handles/' + doi + '?type=' + type + "&auth";
+            const response = await fetch(url);
+            let handleRecord = await response.json();
+            let handleValue = handleRecord.values[0];
+            let valueJson = handleValue.data.value;
+            let result = JSON.parse(valueJson);
+            console.log("Fetching stats");
+            return result;
+        }
+
+        async function fetchStats() {
+            doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');
+            console.log("Stats loaded");
+            renderResults(doiResolutions);
+            setTimeout(fetchStats, STATS_REFRESH_INTERVAL);
+        }
+        fetchStats();
+
+        function renderResults(doiResolutions) {
+            renderResolutionsClock(doiResolutions);
+            google.charts.load('current', { 'packages': ['corechart','line','table'] });
+            google.charts.setOnLoadCallback(renderResolutionsChart(doiResolutions)); 
+        }
+
+        function renderResolutionsClock(doiResolutions) {
+            let resolutionsTotalAndRate = doiResolutions.resolutionsTotalAndRate;
+            let clockElement = document.getElementById('resolutions_clock_count');
+            let rateElement = document.getElementById('resolutions_clock_rate');
+
+            let ratePerSecond = resolutionsTotalAndRate.resolutionsPerSecondLastCompleteMonth;
+            let incrementPerMs = ratePerSecond / 1000;
+            rateElement.textContent = ratePerSecond + "/second"
+
+            let start = new Date(resolutionsTotalAndRate.asOfTimestamp);
+            let currentCount = calculateResolutionsClock(start, incrementPerMs, resolutionsTotalAndRate.allTime);
+            clockElement.textContent = getClockText(currentCount);
+            clearInterval(resolutionsClockIntervalId);
+            resolutionsClockIntervalId = setInterval(function() {
+                let currentCount = calculateResolutionsClock(start, incrementPerMs, resolutionsTotalAndRate.allTime);
+                let clockText = getClockText(currentCount);
+                clockElement.textContent = clockText;
+            }, RESOLUTIONS_CLOCK_UPDATE_INTERVAL);
+        }
+
+        function calculateResolutionsClock(start, incrementPerMs, initialCount) {
+            let timeSinceStartMs = Date.now() - start;
+            let increment = Math.round(incrementPerMs * timeSinceStartMs);
+            let currentCount = initialCount + increment;
+            return currentCount;
+        }
+
+        function getClockText(count) {
+            let clockText = count.toLocaleString("en-US");
+            return clockText;
+        }  
+
+        function renderResolutionsChart(doiResolutions) {
+            let monthlyResolutions = doiResolutions.monthlyResolutions;
+
+            monthLabels = [];
+            resolutions = [];
+            both = [];
+            
+            var data = new google.visualization.DataTable();
+            data.addColumn('date', 'date');
+            data.addColumn('number', 'resolutions');
+
+            for (var key in monthlyResolutions) {
+              if (!monthlyResolutions[key].isIncompleteMonth) {
+                if(key.substr(5)=='01') {
+                  monthLabels.push(key.substr(0,4));
+                } else {
+                  monthLabels.push("");
+                }
+                //monthLabels.push(key);
+                resolutions.push(monthlyResolutions[key].resolutions) 
+                both.push([key, monthlyResolutions[key].resolutions ]) ; 
+                
+                //console.log('adding row');
+                datestring = key + "-01";
+                var dateobj = new Date(datestring);
+                //console.log("datestring= " , datestring);
+                data.addRow([dateobj, monthlyResolutions[key].resolutions ]);
+                          
+              }
+            }
+            //console.log(both);
+            // Define the chart to be drawn.
+            console.log("drawing google chart");
+              
+            // Set chart options
+            var options = {
+              hAxis: {
+                format: 'Y',
+                slantedText:true,
+                slantedTextAngle:45
+              },
+              fontName:'futura-pt',
+              title:'DOI Resolutions', 
+              responsive: true,        
+              height:600,
+              timeline: {
+                groupByRowLabel: true
+              },
+              legend: { position: 'bottom'},
+              trendlines : { 
+                0: 
+                  {
+                    type: 'polynomial',
+                    degree: 3,
+                    color: 'green'
+                  }
+              }	// Draw a trendline for data series 0.
+            };
+
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.LineChart(document.getElementById('doi-resolutions'));
+            chart.draw(data, options);
+
+            return;
+        }
+
+      </script>
+
+      
+      <script>
+          
+      </script>
+
+
+
 {{ end }}
