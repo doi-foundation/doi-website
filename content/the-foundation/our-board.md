@@ -10,18 +10,18 @@ imagemain = "Our Board"
 
 ## Current DOI Foundation Board of Directors
 
-- David Lai, Airiti
+- [David Lai, Airiti](/Airiti, David Lai)
 - Will Johnson-Marshall, BSI Identify 
 - Rachel Kessler, Clarivate
 - Ke Chun-Xiao, CNKI
-- Ed Pentz, Crossref (Treasuruer)
+- Ed Pentz, Crossref [**Treasuruer**]
 - Matt Buys, DataCite
 - Dimitris Koureas, DiSSCo
 - Raymond Drewry, EIDR
 - Guo Xiaofeng, ISTIC
 - Ritsuko Nakajima, JaLC
 - Jinseop Shin, KISTI
-- Paola Mazzucchi, mEDRA (Chair)
+- Paola Mazzucchi, mEDRA [**Chair**]
 - Carol Riccalton, Publications Office of the European Union
 
 
@@ -29,7 +29,7 @@ imagemain = "Our Board"
 
 The Board appoints a Managing Agent to manage the day-to-day operations and is responsible for all aspects of management of the DOI system, including policy formulation and standards maintenance. Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jonathan also works as an independent advisor on strategy and innovation. He is a Guest Lecturer and External Examiner for the Masters in Imagineering and the Strategic Events Management programmes at the Breda University of Applied Sciences. Prior to this he worked at Elsevier for 20 years in various positions in publishing, marketing and technology. He holds a BSc and PhD in Chemical Engineering from the University of Newcastle-upon-Tyne. Jonathan was Chair and Director of the DOI Foundation from 2005-2010. He lives mostly in Croatia.
 
-ORCID ID: orcid.org/0000-0001-9551-9662
+ORCID iD: https://orcid.org/0000-0001-9551-9662
 LinkedIn: http://www.linkedin.com/in/jonathanmtclark
 
 ## Airiti, David Lai
@@ -46,8 +46,10 @@ Bio TK
 
 ## CNKI, Ke Chun-Xiao
 
+Bio TK
+
 ## Crosssref, Ed Pentz
-[**Treasuruer** and **Executive Committee member**]
+**Treasuruer** and **Executive Committee member**
 
 Bio TK
 
@@ -60,7 +62,7 @@ Bio TK
 Bio TK
 
 ## EIDR, Raymond Drewry
-[**Executive Committee member**]
+**Executive Committee member**
 
 Bio TK
 
@@ -73,12 +75,12 @@ Bio TK
 Bio TK
 
 ## KISTI, Jinseop Shin
-[**Executive Committee member**]
+**Executive Committee member**
 
 Bio TK
 
 ## Paola Mazzucchi, mEDRA 
-[**Chair** and **Executive Committee member**]
+**Chair** and **Executive Committee member**
 
 ## Publications Office of the European Union (OP), Carol Riccalton
 
