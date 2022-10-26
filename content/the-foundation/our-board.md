@@ -78,7 +78,7 @@ Bio TK
 
 Bio TK
 
-##Paola Mazzucchi, mEDRA 
+## Paola Mazzucchi, mEDRA 
 [**Chair** and **Executive Committee member**]
 
 ## Publications Office of the European Union (OP), Carol Riccalton
