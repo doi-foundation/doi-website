@@ -1,5 +1,5 @@
 +++
-title = "Our Board"
+title = "Our Financials"
 draft = false
 # the following section is for the header
 maintext = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
@@ -8,31 +8,19 @@ imagetop = "The Foundation"
 imagemain = "Our Financials"
 +++
 
-The DOI Foundation is governed by its members, through an elected Board of Directors. The members of the Board are not remunerated for their services to the Foundation. The Board appoints a Managing Agent to manage the day-to-day operations and is responsible for all aspects of management of the DOI system, including policy formulation and standards maintenance. Board meetings are open to all but only the Board Directors vote. 
+The DOI Foundation operates on an annual budget of around $1 million USD. All revenues come from annual fees paid by the Registration Agencies and members. These fees are set and reviewed annually by the Board.
 
-The current Board members are:
+About 70% of our expenses are used for the running and maintenance of the DOI System infrastructure. 
 
-[Portrait and attributions, link to ORCID record if available, and link to LinkedIn]
+We maintain a reserve fund to support long-term sustainability. This is managed by the Executive Committee and overseen by the Audit Committee 
 
-- David Lai, Airiti
-- Will Johnson-Marshall, BSI Identify 
-- Rachel Kessler, Clarivate
-- Ke Chun-Xiao, CNKI
-- Ed Pentz, Crossref
-- Matt Buys, DataCite
-- Dimitris Koureas, DiSSCo
-- Raymond Drewry, EIDR
-- Guo Xiaofeng, ISTIC
-- Ritsuko Nakajima, JaLC
-- Jinseop Shin, KISTI
-- Paola Mazzucchi, mEDRA
-- Carol Riccalton, OP
+[Add Historic numbers as image / graph] TK
 
-The appointed Managing Agent since 2015 is:
+The DOI Foundation is a not-for-profit organization and is therefore prohibited from activities not permitted to be carried on by a corporation exempt from US federal income tax under Section 501(c)(6) of the Internal Revenue Code of 1986 et seq. 
 
-[Portrait and attributions, link to ORCID record if available, and link to LinkedIn]
 
-- Jonathan Clark, Jonathan Clark & Partners B.V.
-- Jonathan Clark is the Managing Agent for the DOI Foundation. Jonathan also works as an independent advisor on strategy and innovation. He is a Guest Lecturer and External Examiner for the Masters in Imagineering and the Strategic Events Management programmes at the Breda University of Applied Sciences. Prior to this he worked at Elsevier for 20 years in various positions in publishing, marketing and technology. He holds a BSc and PhD in Chemical Engineering from the University of Newcastle-upon-Tyne. Jonathan was Chair and Director of the DOI Foundation from 2005-2010. He lives mostly in Croatia.
-- ORCID ID: orcid.org/0000-0001-9551-9662
-- LinkedIn: http://www.linkedin.com/in/jonathanmtclark
+
+## Recent Form 990s. [Links to PDFs]
+Our auditors prepare our Form 990, which the US IRS requires and is made publicly available. It gives an overview of what we do, how we are governed, and detailed financial information.
+
+
