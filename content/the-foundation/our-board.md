@@ -23,7 +23,7 @@ imagemain = "Our Board"
 - Ritsuko Nakajima, JaLC
 - Jinseop Shin, KISTI
 - Paola Mazzucchi, mEDRA (Chair)
-- Carol Riccalton, OP
+- Carol Riccalton, Publications Office of the European Union
 
 
 ## Managing Agent, Jonathan Clark
@@ -81,6 +81,6 @@ Bio TK
 ##Paola Mazzucchi, mEDRA 
 [**Chair** and **Executive Committee member**]
 
-## Office of Publications of the European Union (OP), Carol Riccalton
+## Publications Office of the European Union (OP), Carol Riccalton
 
 Bio TK
