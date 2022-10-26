@@ -2,9 +2,8 @@
 title = "Our Board"
 draft = false
 # the following section is for the header
-maintext = "The elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent."
-subtext = "The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, and a Treasurer. 
-The members of the Board are not remunerated for their services to the foundation."
+maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent."
+subtext = "The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
 imagetop = "The Foundation"
 imagemain = "Our Board"
 +++
