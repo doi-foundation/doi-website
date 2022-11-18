@@ -11,10 +11,10 @@ imagemain = "Our Board"
 ## Current DOI Foundation Board of Directors
 
 - [David Lai, Airiti](/Airiti, David Lai)
-- Will Johnson-Marshall, BSI Identify 
+- Will Johnson-Marshall, BSI Identify
 - Rachel Kessler, Clarivate
 - Ke Chun-Xiao, CNKI
-- Ed Pentz, Crossref [**Treasuruer**]
+- Ed Pentz, Crossref [**Treasurer**]
 - Matt Buys, DataCite
 - Dimitris Koureas, DiSSCo
 - Raymond Drewry, EIDR
@@ -36,7 +36,7 @@ LinkedIn: http://www.linkedin.com/in/jonathanmtclark
 
 Bio TK
 
-## BSI Identify, Will Johnson-Marshall, 
+## BSI Identify, Will Johnson-Marshall,
 
 Bio TK
 
@@ -79,7 +79,7 @@ Bio TK
 
 Bio TK
 
-## Paola Mazzucchi, mEDRA 
+## Paola Mazzucchi, mEDRA
 **Chair** and **Executive Committee member**
 
 ## Publications Office of the European Union (OP), Carol Riccalton
