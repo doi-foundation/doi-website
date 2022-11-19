@@ -87,7 +87,7 @@ Bio TK
 Bio TK
 
 ## Crosssref, Ed Pentz
-**Treasuruer** and **Executive Committee member**
+*Treasuruer*
 
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}} 
 Ed Pentz became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the International DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
@@ -101,7 +101,6 @@ Bio TK
 Bio TK
 
 ## EIDR, Raymond Drewry
-**Executive Committee member**
 
 Bio TK
 
@@ -111,12 +110,11 @@ Bio TK
 Bio TK
 
 ## KISTI, Jinseop Shin
-**Executive Committee member**
 
 Bio TK
 
 ## Paola Mazzucchi, mEDRA
-**Chair** and **Executive Committee member**
+*Chair*
 
 ## Publications Office of the European Union (OP), Carol Riccalton
 
