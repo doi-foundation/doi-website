@@ -10,19 +10,52 @@ imagemain = "Our Board"
 
 ## Current DOI Foundation Board of Directors
 
-- [David Lai, Airiti](#Airiti)
-- Will Johnson-Marshall, BSI Identify
-- [Guo Xiaofeng, Chinese DOI](#Chinese)
-- Rachel Kessler, Clarivate
-- Ke Chun-Xiao, CNKI
-- [Ed Pentz, Crossref](#Crossref) **Treasurer**
-- Matt Buys, DataCite
-- Dimitris Koureas, DiSSCo
-- Raymond Drewry, EIDR
-- Ritsuko Nakajima, JaLC
-- Jinseop Shin, KISTI
-- Paola Mazzucchi, mEDRA **Chair**
-- Carol Riccalton, Publications Office of the European Union
+
+<table>
+  <tr>
+   <td>David Lai, Airiti
+   </td>
+   <td>Dimitris Koureas, DiSSCo
+   </td>
+  </tr>
+  <tr>
+   <td>Will Johnson-Marshall, BSI Identify
+   </td>
+   <td>Raymond Drewry, EIDR
+   </td>
+  </tr>
+  <tr>
+   <td>Guo Xiaofeng, Chinese DOI
+   </td>
+   <td>Ritsuko Nakajima, JaLC
+   </td>
+  </tr>
+  <tr>
+   <td>Rachel Kessler, Clarivate
+   </td>
+   <td>Jinseop Shin, KIST
+   </td>
+  </tr>
+  <tr>
+   <td>Ke Chun-Xiao, CNKI
+   </td>
+   <td>Paola Mazzucchi, mEDRA **Chair**
+   </td>
+  </tr>
+  <tr>
+   <td>Ed Pentz, Crossref **Treasurer**
+   </td>
+   <td>Carol Riccalton, Publications Office of the European Union
+   </td>
+  </tr>
+  <tr>
+   <td>Matt Buys, DataCite
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
 
 
 ## Managing Agent, Jonathan Clark
