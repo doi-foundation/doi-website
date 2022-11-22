@@ -44,7 +44,10 @@
           {{ with .standards }}
             {{ partial "doi/standards.html" . }}
           {{ end }}
-
+          
+          {{ with .visualisations }}
+            {{ partial "doi/visualisations.html" . }}
+          {{ end }}
           
         {{ end }}
 
