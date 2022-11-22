@@ -43,6 +43,7 @@ body{
 a {
     color: $link-blue;
     text-decoration:none;
+    font-family: 'futura-pt-bold';
     &:hover {
         color: $link-blue;
         text-decoration:underline;
@@ -81,3 +82,4 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+

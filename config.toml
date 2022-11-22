@@ -4,8 +4,15 @@ languageCode = 'en-us'
 title = 'DOI Foundation WIP site'
 theme = "doi-theme"
 
-[markup.goldmark.renderer]
-unsafe= true
+[markup]
+
+  [markup.goldmark]
+
+    [markup.goldmark.renderer]
+    unsafe = true
+    
+    [markup.goldmark.extensions]
+    typographer = true
 
 
 [deployment]

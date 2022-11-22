@@ -1,4 +1,4 @@
-/*Fonts pulled from TypeKit that belongs to Reeve's design team*/
+/*Futura Fonts pulled from TypeKit that belongs to Reeve's design team*/
 @import url("https://use.typekit.net/gcr6xms.css");
 
 .material-symbols-outlined {
@@ -12,10 +12,22 @@
 
 body {
   font-family: 'futura-pt';
-  font-size:18px;
+  font-size: 18px;
 }
 
 strong {
   font-family: 'futura-pt-bold';
   font-weight: 700;
+}
+
+.page-content {
+  
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    margin-top: 2rem !important;
+  }
 }

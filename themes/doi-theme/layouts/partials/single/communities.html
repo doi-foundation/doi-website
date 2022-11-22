@@ -9,10 +9,14 @@
                 </div>
             </div>
             <div class="texts">
-                <div class="title">{{ .title }}&nbsp;</div>
                 <div class="maintext">{{ .maintext | markdownify }}</div>
+                {{ if .linkurl }}
+                <a class="linkurl" href="{{ .linkurl }}">
+                    <span>{{ .linktext }}</span>
+                    <span class="material-symbols-outlined">arrow_right_alt</span> 
+                </a>
+                {{ end }}
             </div>
-
         </div>
     {{ end }}
     
