@@ -15,4 +15,4 @@ We use Handle System technology for the resolution part of the DOI System. We be
 
 In order to guarantee persistence, the DOI Foundation has built a social infrastructure on top of the technical infrastructure of the Handle System. Persistence is a function of organizations, not of technology; a persistent identifier system requires a persistent organization, agreed policies and defined processes.
 "
-image: "/images/dot-pattern@2x.png"
+image: "/images/dot-pattern.svg"

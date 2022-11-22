@@ -2,4 +2,4 @@ title: "Resolve a doi name"
 maintext: "Type or paste a DOI name, e.g., 10.1000/xyz123, into the text box below. (Make sure you enter all the characters before and after the slash. Do not include extra characters or sentence punctuation marks.)"
 subtext: "Clicking on a DOI link (try this one: https://doi.org/10.1109/5.771073) will take you directly to the resource or to information about the resource or to a service related to the resource. If the resource moves, this same DOI will continue to resolve in the same way to the new location."
 
-image: "/images/dot-pattern@2x.png"
+image: "/images/dot-pattern.svg"
