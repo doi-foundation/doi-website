@@ -5,9 +5,7 @@ footer {
     position:relative;
     .footer-logo {
         position:absolute;
-        left:74px;
-        top:0;
-        width:500px;
+        width:320px;
         @media (max-width: $break-medium) {
             width:300px;
             position:relative;

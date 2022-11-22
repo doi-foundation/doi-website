@@ -1,7 +1,7 @@
 <footer>
 	<div class="row">
 		<div class="col">
-			<a href="{{ .Site.BaseURL }}"><img class='footer-logo' src="/images/logos/DOI Logo-Stacked Reversed RGB.svg" /></a>
+			<a href="{{ .Site.BaseURL }}"><img class='footer-logo' src="/images/logos/footer_logo_cropped.svg" /></a>
 		</div>
 		<div class="col">
 			<ul>
@@ -20,7 +20,9 @@
 	</div>
 	<div class="row">
 		<div class="col copyright">
-			<p>Copyright © 2022 DOI. The content of this site is licensed under a Creative Commons Attribution 4.0 International License</p>
+			{{ with .Site.Data.footer.copyright_text }}
+				{{ partial "footer-partials/copyright_text.html" . }}
+			  {{ end }}
 		</div>
 		<div class="col socials">
 			{{ partial "socials-footer.html" . }}
