@@ -10,6 +10,10 @@ imagemain = "Resources"
 
 +++
 
+{{% row %}}
+
+{{% column %}}
+
 ## Factsheets
 
 Over the years we’ve developed fact sheets to support:
@@ -27,6 +31,10 @@ Over the years we’ve developed fact sheets to support:
 - [DOI System and OpenURL](https://www.doi.org/factsheets/DOI_OpenURL.html)
 - [DOI Foundation and Topics](https://www.doi.org/factsheets/DOI_Topics.html)
 
+{{% /column %}}
+
+{{% column %}}
+
 ## FAQs
 Coming soon!
 
@@ -35,4 +43,7 @@ Coming soon!
 
 ## DOI Foundation in the news
 Coming soon!
+{{% /column %}}
+
+{{% /row %}}
 

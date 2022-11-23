@@ -41,11 +41,14 @@ section.communities {
             }
             .texts {
                 flex:1;
-                .title {
-                    font-family: 'futura-pt-bold';
-                    font-size:21px;
-                    text-transform: uppercase;
+
+                .linkurl {
                 }
+
+                .material-symbols-outlined {
+                    vertical-align: middle;
+                }
+
             }
         }
         
