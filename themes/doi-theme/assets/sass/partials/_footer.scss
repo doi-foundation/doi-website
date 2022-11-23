@@ -6,7 +6,7 @@ footer {
     .footer-logo {
         position:relative;
         width:320px;
-        margin-bottom:40px;
+        margin-bottom:30px;
         @media (max-width: $break-medium) {
             width:300px;
             position:relative;
@@ -18,19 +18,28 @@ footer {
         width: $content-width;
         margin:0 auto;
     }
+    @media (max-width: $break-large) {
+        ul {
+            padding-left:0;
+            margin-bottom:0;
+        }
+    }
     ul li {
         list-style: none;
+        a {
+            line-height:40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "futura-pt-bold";
+            color:#fff;
+        }
     }
+
     a {
         text-decoration: none;
     }
-    ul li a {
-        line-height:40px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: "futura-pt-bold";
-        color:#fff;
-    }
+
+
     .copyright {
         flex-basis:80%;
         font-size:0.9rem;
