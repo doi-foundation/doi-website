@@ -4,8 +4,9 @@ footer {
     color:#fff;
     position:relative;
     .footer-logo {
-        position:absolute;
+        position:relative;
         width:320px;
+        margin-bottom:40px;
         @media (max-width: $break-medium) {
             width:300px;
             position:relative;
@@ -16,7 +17,6 @@ footer {
     .row {
         width: $content-width;
         margin:0 auto;
-        
     }
     ul li {
         list-style: none;
