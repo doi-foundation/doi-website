@@ -91,3 +91,23 @@ a {
         }
     }
 }
+td, th {
+    padding: 3px 8px;
+    vertical-align: top;
+}
+  
+thead tr, thead tr:hover {
+    background-color: $background-blue;
+    border: 1px solid $background-blue;
+    color: #fff;
+}
+td {
+    border: 1px solid #d8d2c4;
+}
+tr:nth-child(2n+2) {
+    background-color: $background-grey;
+}
+  
+table.no-zebra tr:nth-child(2n+2) {
+    background-color: #fff;
+}
