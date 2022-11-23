@@ -294,9 +294,12 @@
         
             
         margin: 80px 0 0;
-        background-size: contain;
-        background-position:100% 100px;
+        
+        
+        background-position:bottom right;
         background-repeat:no-repeat;
+        background-position-y: 40px;
+        background-size: 500px;
         
         @media (max-width: $break-large) {
             background-size: 0;

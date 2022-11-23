@@ -81,3 +81,13 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.row.board {
+    flex-wrap:wrap;
+    .column {
+        flex-basis:50%;
+        height:auto;
+        figure img{
+            border-radius:50%;
+        }
+    }
+}
