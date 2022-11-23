@@ -15,12 +15,43 @@ body {
   font-size: 18px;
 }
 
-strong {
-  font-family: 'futura-pt-bold';
-  font-weight: 700;
-}
-
 .page-content {
+
+  strong {
+    font-family: 'futura-pt-bold';
+    font-weight: 700;
+  }
+
+  code {
+    font-size: 1em;
+    font-family: 'futura-pt';
+    display: inline;
+    background-color: $background-grey;
+    padding: 2px 4px;
+    margin: 0 -2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  pre {
+    display: block!important;
+    font-size: 1em;
+    font-family: 'futura-pt';
+    display: inline;
+    background-color: $background-grey;
+    padding: 2px 4px;
+    margin: 0 -2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+    code {
+      display: block;
+      background-color: none;
+      border: 0;   
+    }
+    
+  }
+
   
   & h1,
   & h2,
@@ -28,6 +59,23 @@ strong {
   & h4,
   & h5,
   & h6 {
-    margin-top: 2rem !important;
+    font-family: 'futura-pt-bold';
+    color: #000;
+    margin-top: 2rem;
   }
+
+  & h1,
+  & h2 {
+    text-transform: uppercase;
+  }
+  
+
+
+  ol, ul {
+    padding-left: 1rem;
+  
+    li {
+      margin-bottom: .5rem
+    }
+  }  
 }

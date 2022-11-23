@@ -10,12 +10,14 @@
             <div class="title">{{ .title }}</div>
             <div class="maintext">{{ .maintext }}</div>
 
+            {{ if .linkurl }}
             <div class='link-alt'>
                 <a href="{{ .linkurl }}">{{ .linktext }}</a>
                 <span class="material-symbols-outlined">
                     arrow_right_alt
                 </span>           
             </div>
+            {{ end }}
         </div>
 
     </div>

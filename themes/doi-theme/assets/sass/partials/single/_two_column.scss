@@ -1,9 +1,9 @@
 section.single-two-column {
     
-    min-height:70vh;
     background-repeat:no-repeat;
     background-position-y: 57vh;
     background-size:50%;
+
     &.image-left {
         background-position-x:right;
     }

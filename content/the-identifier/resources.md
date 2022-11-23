@@ -43,7 +43,8 @@ Coming soon!
 
 ## DOI Foundation in the news
 Coming soon!
-{{% /column %}}
+
+{{% /column %}}
 
 {{% /row %}}
 

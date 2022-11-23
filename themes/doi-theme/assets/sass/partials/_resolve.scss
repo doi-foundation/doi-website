@@ -8,6 +8,8 @@ section.home-resolve {
     @media (max-width: $break-large) {
         background-size: 0;
     }
+    width: $content-width;
+    margin:0 auto;
 
     .title {
         text-transform:uppercase;
