@@ -1,7 +1,7 @@
 <section class="communities">
     
     <div class="row">
-
+    {{ $length := len . }}
     {{ range sort . "weight" }}
         <div class="col" >
             <div class="logo">
@@ -19,5 +19,9 @@
             </div>
         </div>
     {{ end }}
+    {{ if not (modBool $length 2)}}
+        <div class="col last-odd-filler"></div>
+    {{ end }}
+
     
 </section>
