@@ -126,17 +126,21 @@
 
         async function fetchStats() {
             doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');
+            counts = await getDoiValueAsJson('10.1000/1000', 'DOI_COUNTS');
             console.log("Stats loaded");
-            renderResults(doiResolutions);
+            renderResults(doiResolutions,counts);
             setTimeout(fetchStats, STATS_REFRESH_INTERVAL);
         }
         fetchStats();
 
-        function renderResults(doiResolutions) {
+        function renderResults(doiResolutions,counts) {
             renderResolutionsClock(doiResolutions);
             google.charts.load('current', { 'packages': ['corechart','line','table'] });
             google.charts.setOnLoadCallback(renderResolutionsChart(doiResolutions)); 
+            google.charts.setOnLoadCallback(renderTotalHandlesChart(counts)); 
         }
+
+
 
         function renderResolutionsClock(doiResolutions) {
             let resolutionsTotalAndRate = doiResolutions.resolutionsTotalAndRate;
@@ -169,6 +173,37 @@
             let clockText = count.toLocaleString("en-US");
             return clockText;
         }  
+
+        function renderTotalHandlesChart(counts) {
+          let totalDois = convertTotalDoisDataForGoogleCharts(counts);
+          var data = google.visualization.arrayToDataTable(totalDois);
+          var options = {
+            
+              backgroundColor: 'transparent',
+              title: 'Total DOIs',
+              legend: { position: 'bottom' },
+              trendlines: {
+                  0: {
+                      type: 'exponential',
+                      color: 'green'
+                  }
+              }
+          };
+          
+          var chart = new google.visualization.LineChart(document.getElementById('total-dois'));
+          chart.draw(data, options);
+        }
+        function convertTotalDoisDataForGoogleCharts(monthlyCounts) {
+            let result = [];
+            let columns = ["Date", "Total DOIs"];
+            result.push(columns);
+            for (let month in monthlyCounts) {
+                let value = monthlyCounts[month].doiCount;
+                let row = [new Date(month), value];
+                result.push(row);
+            }
+            return result;
+        }
 
         function renderResolutionsChart(doiResolutions) {
             let monthlyResolutions = doiResolutions.monthlyResolutions;

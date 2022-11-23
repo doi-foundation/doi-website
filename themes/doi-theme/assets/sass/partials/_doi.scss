@@ -274,8 +274,13 @@
     }
     .hits-graph {
         background-color:$background-grey;
-        .row {
-            
+        .graph {
+            text-align:center;
+            #total-dois {
+                min-height:50vh;
+            }
+        }
+        .row {            
             width:$content-width;
             margin:0 auto;
         }
