@@ -5,11 +5,11 @@ header {
     top:0;
     left:0;
     z-index:200;
-    &:hover {
+    .navigation-container .nav:hover {
         background:white;
         box-shadow: 0 0 6px rgba(0,0,0,0.15);
     }
-    &:hover .navigation-container {
+    .navigation-container .nav:hover {
         background:white;
         .menu-items {
             z-index:200;
@@ -66,6 +66,7 @@ header {
 
     .navigation-container {
         
+        border:2px dotted orange;
         
         position:relative;
         top:0;

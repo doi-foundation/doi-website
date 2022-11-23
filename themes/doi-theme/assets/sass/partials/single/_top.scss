@@ -30,7 +30,16 @@ section.single-top {
             a {
                 font-family: "futura-pt-bold";
             }
-        }        
+        }     
+        @media (max-width: $break-xxlarge) {
+            padding-left:100px;
+        } 
+        @media (max-width: $break-xlarge) {
+            padding-left:200px;
+        }  
+        @media (max-width: $break-large) {   
+            padding-left: calc(var(--bs-gutter-x) * .5);         
+        }  
     }
     .left {
         position:relative;
