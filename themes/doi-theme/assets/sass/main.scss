@@ -83,16 +83,7 @@ a {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.row.board {
-    flex-wrap:wrap;
-    .column {
-        flex-basis:50%;
-        height:auto;
-        figure img{
-            border-radius:50%;
-        }
-    }
-}
+
 td, th {
     padding: 3px 8px;
     vertical-align: top;
