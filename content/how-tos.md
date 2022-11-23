@@ -56,6 +56,18 @@ For the most part, content is automatically styled. For example the font, font c
 
 Basic styling such as **bold**, *italics* and headings are done via Markdown. Markdown is a very simple "language" for setting the style of content. For more information about how to use Markdown visit the [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 
+Tables are styled automatically so you can use standard Markdown to add them to any page. See an example of this below, and a sample of a table on the [Samples page](/sampler).
+
+<pre>
+  heading | heading | heading
+  ---|---|---
+  cell 1|cell 2|cell 3
+  cell 1|cell 2|cell 3
+  cell 1|cell 2|cell 3
+</pre>
+
+
+
 ### Shortcodes
 Shortcodes provide a simple way for editors to apply more advanced formatting and layouts to content. For example, on the [Sampler page](/sampler#two-column-layout) you can see that its possible to create a two-column layout, or wrap a block of text with a grey or blue box. Shortcodes are custom to this site, though they may work similarly to other Hugo-based sites you've worked with. 
 

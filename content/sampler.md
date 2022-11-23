@@ -50,7 +50,8 @@ choice: either accept structuralist subcapitalist theory or conclude that
 narrative comes from the masses. It could be said that Sartre promotes the use
 of subsemiotic deconstructivist theory to attack capitalism. Lyotard’s analysis
 of postcultural theory implies that class, somewhat surprisingly, has intrinsic
-meaning.
+meaning.
+
 ## Bold, italics, links
 *If one examines subsemiotic deconstructivist theory,* one is faced with a
 choice: either accept structuralist subcapitalist theory or conclude that
@@ -131,4 +132,14 @@ of subsemiotic deconstructivist theory to attack capitalism.** Lyotard’s analy
 of postcultural theory implies that class, somewhat surprisingly, has [intrinsic
 meaning](#).
 
-{{% /block-blue %}}
+{{% /block-blue %}}
+
+## Tables
+
+Table styling is applied automatically. You can use either Markdown table markup or standard HTML. Keep in mind that tables sometimes often don't work well on devices with narrow screens like mobiles. 
+
+heading | heading | heading
+---|---|---
+cell 1|cell 2|cell 3
+cell 1|cell 2|cell 3
+cell 1|cell 2|cell 3

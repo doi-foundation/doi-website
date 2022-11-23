@@ -149,7 +149,7 @@
           var data = google.visualization.arrayToDataTable(resolutionsByCountry);
           var options = {
               backgroundColor: 'transparent',
-              colorAxis: {colors: ['white', 'green']},
+              colorAxis: {colors: ['white', '#5C7392']},
               legend: 'none'
           };
           var chart = new google.visualization.GeoChart(document.getElementById('world_map'));
@@ -214,12 +214,13 @@
           var options = {
             
               backgroundColor: 'transparent',
+              colors: ['#5C7392'],
               title: 'Total DOIs',
               legend: { position: 'bottom' },
               trendlines: {
                   0: {
                       type: 'exponential',
-                      color: 'green'
+                      color: '#FAB70C'
                   }
               }
           };
