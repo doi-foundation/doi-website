@@ -45,6 +45,8 @@
             {{ partial "doi/standards.html" . }}
           {{ end }}
           
+          {{ partial "doi/world_map.html" . }}
+          
           {{ with .visualisations }}
             {{ partial "doi/visualisations.html" . }}
           {{ end }}
@@ -138,9 +140,41 @@
             google.charts.load('current', { 'packages': ['corechart','line','table'] });
             google.charts.setOnLoadCallback(renderResolutionsChart(doiResolutions)); 
             google.charts.setOnLoadCallback(renderTotalHandlesChart(counts)); 
+            renderResolutionsMap(doiResolutions);
         }
 
-
+        function renderResolutionsMap(doiResolutions) {
+          let mode = mapMode;
+          let resolutionsByCountry = convertResolutionsByCountryForGoogleMap(doiResolutions.resolutionsByCountryLastMonth, mode);
+          var data = google.visualization.arrayToDataTable(resolutionsByCountry);
+          var options = {
+              backgroundColor: 'transparent',
+              colorAxis: {colors: ['white', 'green']},
+              legend: 'none'
+          };
+          var chart = new google.visualization.GeoChart(document.getElementById('world_map'));
+          chart.draw(data, options);
+        }
+        function convertResolutionsByCountryForGoogleMap(resolutionsByCountry, mode) {
+          let result = [];
+          let columns = ['Country', 'Resolutions'];
+          result.push(columns);
+          let count = 0;
+          for (let country of resolutionsByCountry) {
+              let code = country.countryCode;
+              let rawValue = parseInt(country.resolutions);
+              let formattedValue = "" + rawValue;
+              let value = Math.log(rawValue);
+              let item = {
+                  v: value,
+                  f: formattedValue
+              };
+              let row = [code, item];
+              result.push(row);
+              count++;
+          }
+          return result;
+        }
 
         function renderResolutionsClock(doiResolutions) {
             let resolutionsTotalAndRate = doiResolutions.resolutionsTotalAndRate;
