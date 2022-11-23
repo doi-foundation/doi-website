@@ -14,6 +14,15 @@ section.home-announcement {
     }
     .link-alt {
         font-family: "futura-pt-bold";
+        transition: all 0.2s ease-in-out; 
+        a + .hover-move-right {
+            transition: all 0.1s ease-in-out; 
+        }
+        a:hover + .hover-move-right {
+            padding-right:0;
+            padding-left:80px;            
+            transition: all 0.2s ease-in-out; 
+        }
     }
     .title, .maintext, .link-alt {
         margin-bottom:20px;
