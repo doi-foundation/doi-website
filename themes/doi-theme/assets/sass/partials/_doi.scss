@@ -259,8 +259,20 @@
     
 
     .growth-graph {
-        width:$content-width;
-        margin:0 auto;
+        .row {
+            width:$content-width;
+            margin:0 auto;
+        }
+        
+        .row:first-of-type {
+            padding-bottom:0;
+        }
+        .row:last-of-type {
+            padding-top:0;
+        }
+        .title {
+            text-align:center;
+        }
         .heading {
             font-family: "futura-pt-bold";
             font-size:21px;
@@ -273,10 +285,32 @@
         }
     }
     .map-graph {
-        width:60%;
-        margin:0 auto;
+        background-color:$background-grey;
+        .row {
+            width:$content-width;
+            margin:0 auto;
+        }
+        .row:first-of-type {
+            padding-bottom:0;
+        }
+        .title {
+            text-align:center;
+        }
     }
     .hits-graph {
+        .row {
+            width:$content-width;
+            margin:0 auto;
+        }
+        .row:first-of-type {
+            padding-bottom:0;
+        }
+        .row:last-of-type {
+            padding-top:0;
+        }
+        .title {
+            text-align:center;
+        }
         background-color:$background-grey;
         .graph {
             text-align:center;
