@@ -97,6 +97,7 @@ choice: either accept structuralist subcapitalist theory or conclude that
 narrative comes from the masses.
 {{% /column %}}
 
+{{% /row %}}
 
 ## Highlight blocks
 
@@ -132,7 +133,8 @@ of subsemiotic deconstructivist theory to attack capitalism.** Lyotard’s analy
 of postcultural theory implies that class, somewhat surprisingly, has [intrinsic
 meaning](#).
 
-{{% /block-blue %}}
+{{% /block-blue %}}
+
 
 ## Tables
 
