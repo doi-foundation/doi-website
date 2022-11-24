@@ -19,8 +19,8 @@ section.home-announcement {
             transition: all 0.1s ease-in-out; 
         }
         a:hover + .hover-move-right {
-            padding-right:0;
-            padding-left:80px;            
+            padding-right:30px;
+            padding-left:50px;            
             transition: all 0.2s ease-in-out; 
         }
     }
