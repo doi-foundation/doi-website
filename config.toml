@@ -4,6 +4,17 @@ languageCode = 'en-us'
 title = 'DOI Foundation WIP site'
 theme = "doi-theme"
 
+enableRobotsTXT = true
+
+[params]
+  robots = [
+    "User-agent: *",
+    "Allow: /",
+    "Disallow: /_",
+  ]
+
+
+
 [markup]
 
   [markup.goldmark]
@@ -20,6 +31,8 @@ theme = "doi-theme"
 # Files that match the regular expressions in the "Order" list
 # will be uploaded first, in the listed order.
 order = [".jpg$", ".gif$"]
+
+
 
 
 [[deployment.targets]]
@@ -138,3 +151,5 @@ gzip = true
   weight = 5
   identifier = 'resources'
   parent = 'identifier'
+
+

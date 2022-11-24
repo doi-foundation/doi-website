@@ -128,6 +128,11 @@
 
     .how-many {
         background-color: $background-blue;
+        #bot_percent_text, 
+        #content_negotiation_text {
+            opacity:0;
+            transition: all 0.2s;
+        }
         .title {
             color:#fff;
             font-size: 40px;            
@@ -401,6 +406,9 @@
            
         }
 
+    }
+    .visualisations .row .content {
+        text-align:center;
     }
     
 }
