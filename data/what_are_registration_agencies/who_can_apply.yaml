@@ -16,6 +16,6 @@ keypoints:
   - text: "A start-up which has a business model suggesting a novel DOI application. Note that in view of the importance of persistence, this is likely to require significant guarantees of continuity planning."
     icon: "/images/leaf@2x.png"
 
-bottomtext: "Please contact the DOI Foundation if you represent a community in search of a persistence identification solution."
+bottomtext: "Please contact the DOI Foundation if you represent a community in search of a persistent identification solution."
 linktext: "Contact Us"
 linkurl: "/"
