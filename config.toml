@@ -142,13 +142,19 @@ gzip = true
 [[menu.main]]
   name = 'What is a DOI'
   url = '/the-identifier/what-is-a-doi/'
-  weight = 4
+  weight = 2
   identifier = 'whatisadoi'
+  parent = 'identifier'
+[[menu.main]]
+  name = 'DOI Handbook'
+  url = '/the-identifier/doi-handbook/'
+  weight = 4
+  identifier = 'doi-handbook'
   parent = 'identifier'
 [[menu.main]]
   name = 'Resources'
   url = '/the-identifier/resources/'
-  weight = 5
+  weight = 6
   identifier = 'resources'
   parent = 'identifier'
 
