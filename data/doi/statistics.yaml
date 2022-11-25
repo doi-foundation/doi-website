@@ -4,5 +4,5 @@ toprighttext: Total DOI resolutions to date (all time)
 # these bottom two are slightly cleverer in that they need
 # a place holder for the month so we arbitrarily use **MONTH**
 # this will be replace with the month on the page
-bottomlefttext: Of the DOIs resolved in **MONTH** were from bots
-bottomrighttext: Of the DOIs resolved in **MONTH** used Content Negotiation
+bottomlefttext: Percentage of all DOIs resolved during **MONTH** that came from bots 
+bottomrighttext: Percentage of all DOIs resolved during **MONTH** that used Content Negotiation
