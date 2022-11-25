@@ -1,8 +1,8 @@
 title: "How Many are in use?"
-toplefttext: Current Resolution Rate
-toprighttext: DOI resolutions to date
+toplefttext: Average resolution rate
+toprighttext: Total DOI resolutions to date (all time)
 # these bottom two are slightly cleverer in that they need
 # a place holder for the month so we arbitrarily use **MONTH**
 # this will be replace with the month on the page
 bottomlefttext: Of the resolutions performed in **MONTH** were from bots
-bottomrighttext: Of the resolutions performed in **MONTH** used content negotiation
+bottomrighttext: Of the resolutions performed in **MONTH** used Content Negotiation
