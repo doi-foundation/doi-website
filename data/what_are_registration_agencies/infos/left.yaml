@@ -1,7 +1,7 @@
 weight: 1
 title: "WHAT DO RAs COMMIT TO?"
 maintext: "
-RAs commit to delivering a reliable and consistent DOI service to their users. They agree to abide by our common agreements and policies. They sign an Agreement (here is a sample) to sign which: 
+RAs commit to delivering a reliable and consistent DOI service to their users. They agree to abide by our common agreements and policies. They sign an Agreement (here is a sample) which: 
 
 - grants a set of rights; 
 
@@ -9,7 +9,7 @@ RAs commit to delivering a reliable and consistent DOI service to their users. T
 
 - makes clear the intellectual property rights; and 
 
-- details change and termination procedures as well as continuity considerations.
+- details change and termination procedures; as well as continuity considerations.
 "
 linktext: "learn more"
 linkurl: "/about"
