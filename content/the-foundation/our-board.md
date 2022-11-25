@@ -25,7 +25,7 @@ LinkedIn: http://www.linkedin.com/in/jonathanmtclark
 
 {{% block-blue %}}
 
-## Current Directors
+## Board Directors
 
 {{% row %}}
 
@@ -52,53 +52,78 @@ LinkedIn: http://www.linkedin.com/in/jonathanmtclark
 
 {{% /block-blue %}}
 
-## Director Biographies
+## Current Director Biographies
 
 {{% bios %}}
 
 
-### Airiti, David Lai
+### Airiti
+
+David Lai
 Bio TK
 
-### BSI Identify, Will Johnson-Marshall,
+### BSI Identify
+
+Will Johnson-Marshall,
 Bio TK
 
-### Chinese DOI, Guo Xiaofeng
+### China DOI
+
+Guo Xiaofeng
 Bio TK
 
-### Clarivate, Rachel Kessler
+### Clarivate
+
+Rachel Kessler
 Bio TK
 
-### CNKI, Ke Chun-Xiao
+### CNKI 
+
+Ke Chun-Xiao
 Bio TK
 
-### Crosssref, Ed Pentz
-*Treasuruer*
+### Crossref
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}} 
+*Treasurer*
 Ed Pentz became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the International DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
 
 ORCID iD: https://orcid.org/0000-0002-5993-8592
 LinkedIn: https://www.linkedin.com/in/ed-pentz-3816223
 
-### DataCite, Matt Buys
+### DataCite
+
+Matt Buys
 Bio TK
 
-### DiSSCo, Dimitris Koureas
+### DiSSCo
+
+Dimitris Koureas
 Bio TK
 
-### EIDR, Raymond Drewry
+### EIDR
+
+Raymond Drewry
 Bio TK
 
-### JaLC, Ritsuko Nakajima
+### JaLC
+
+Ritsuko Nakajima
 Bio TK
 
-### KISTI, Jinseop Shin
+### KISTI
+
+Jinseop Shin
 Bio TK
 
-### Paola Mazzucchi, mEDRA
+### mEDRA
+
+Paola Mazzucchi
 *Chair*
+Bio TK
 
-### Publications Office of the European Union (OP), Carol Riccalton
+### Publications Office of the European Union (OP)
+
+Carol Riccalton
 Bio TK
 
 {{% /bios %}}
