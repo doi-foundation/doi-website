@@ -114,7 +114,7 @@ gzip = true
   [menu.main.params]
   nolink = true
 [[menu.main]]
-  name = 'What are Registration Agencies'
+  name = 'What are Registration Agencies?'
   url = '/the-community/what-are-registration-agencies/'
   weight = 3
   identifier = 'whatare'
@@ -140,7 +140,7 @@ gzip = true
   [menu.main.params]
   nolink = true
 [[menu.main]]
-  name = 'What is a DOI'
+  name = 'What is a DOI?'
   url = '/the-identifier/what-is-a-doi/'
   weight = 2
   identifier = 'whatisadoi'
