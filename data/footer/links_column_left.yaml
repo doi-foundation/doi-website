@@ -1,9 +1,9 @@
 links:
-  - title: Email us
-    url: "mailto:info@doi.org"
-  - title: Email an issue
-    url: "mailto:info@doi.org"
+  - title: Resources
+    url: "/the-identifier/resources/"
+  - title: Governing Board
+    url: "/the-community/existing-registration-agencies/"
   - title: Status page
     url: "https://doi.statuspage.io/"
-  - title: Trademarks (PDF)
-    url: "/resources/130718-trademark-policy.pdf"
+  - title: Email us
+    url: "mailto:contact@doi.org"
