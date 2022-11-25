@@ -1,5 +1,5 @@
 title: "How Many are in use?"
-toplefttext: Average resolution rate
+toplefttext: Average resolution rate over last 24 hours
 toprighttext: Total DOI resolutions to date (all time)
 # these bottom two are slightly cleverer in that they need
 # a place holder for the month so we arbitrarily use **MONTH**
