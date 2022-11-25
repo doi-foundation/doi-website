@@ -1,2 +1,3 @@
 text: "<p>Copyright © 2022 DOI Foundation. The content of this site is licensed under a Creative Commons Attribution 4.0 International License.</p>
 <p>DOI<sup>&reg;</sup>, DOI.ORG<sup>&reg;</sup>, and shortDOI<sup>&reg;</sup> are trademarks of the DOI Foundation.</p>"
+<script src="https://doi.statuspage.io/embed/script.js"></script>
