@@ -1,5 +1,5 @@
 title: "Try resolving a DOI"
 maintext: "DOIs include a prefix (which _always_ start `10.`) and a suffix. Type or paste a known DOI, including prefix and suffix, into the text box below to resolve it. Enter all the characters before and after the slash exactly."
-subtext: "Prefacing the DOI with `doi.org` will turn it into an actionable link. Clicking that link will 'resolve' it, which means it will it take you to the latest information about the object it identifies, even if the object changes or moves elsewhere online."
+subtext: "Prefacing the DOI with `doi.org` will turn it into an actionable link. Clicking that link will 'resolve' it, which means it will it take you to the latest information about the object it identifies, even if the object changes or moves elsewhere online. Try this example from the scientific research community: http://doi.org/10.47366/sabia.v5n1a3."
 
 image: "/images/dot-pattern.svg"
