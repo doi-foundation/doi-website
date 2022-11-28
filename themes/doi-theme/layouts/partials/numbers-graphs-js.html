@@ -36,7 +36,7 @@
         
         renderResolutionsBotPercent(doiResolutions);
         renderResolutionsConnegPercent(doiResolutions);
-        //renderResolutionsUptime(doiResolutions);
+        renderResolutionsUptime(doiResolutions);
 
         google.charts.load('current', { 'packages': ['corechart','line','table','geochart'] });
 
@@ -49,24 +49,32 @@
         }
     }
 
-    /*function renderResolutionsUptime(doiResolutions) {
+    function renderResolutionsUptime(doiResolutions) {
+      try {
         let uptimeElement = document.getElementById('uptime_percent');
         let uptimePercent = doiResolutions.uptime.uptimePercentage;
         let uptimeText =  "Uptime over last 90 days " + uptimePercent + "%";
         uptimeElement.textContent = uptimeText;
-    }*/
+      } catch {
+
+      }
+    }
 
     function renderResolutionsMap(doiResolutions) {
-      let mode = mapMode;
-      let resolutionsByCountry = convertResolutionsByCountryForGoogleMap(doiResolutions.resolutionsByCountryLastMonth, mode);
-      var data = google.visualization.arrayToDataTable(resolutionsByCountry);
-      var options = {
-          backgroundColor: 'transparent',
-          colorAxis: {colors: ['white', '#5C7392']},
-          legend: 'none'
-      };
-      var chart = new google.visualization.GeoChart(document.getElementById('world_map'));
-      chart.draw(data, options);
+      try {
+        let mode = mapMode;
+        let resolutionsByCountry = convertResolutionsByCountryForGoogleMap(doiResolutions.resolutionsByCountryLastMonth, mode);
+        var data = google.visualization.arrayToDataTable(resolutionsByCountry);
+        var options = {
+            backgroundColor: 'transparent',
+            colorAxis: {colors: ['white', '#5C7392']},
+            legend: 'none'
+        };
+        var chart = new google.visualization.GeoChart(document.getElementById('world_map'));
+        chart.draw(data, options);
+      } catch {
+        
+      }
     }
     function convertResolutionsByCountryForGoogleMap(resolutionsByCountry, mode) {
       let result = [];
@@ -227,6 +235,7 @@
     }
 
     function renderResolutionsBotPercent(doiResolutions) {
+      try {
         let botPercentElement = document.getElementById('bot_percent');
         let botPercentTextElement = document.getElementById('bot_percent_text');
         let botPercent = doiResolutions.botPercent.botPercent;
@@ -236,7 +245,10 @@
         botPercentElement.textContent = botPercentContent;
         botPercentTextElement.textContent = botPercentTextContent;
         botPercentTextElement.style.opacity=1;
-    }
+      } catch {
+
+      }
+    }    
 
     function replaceWildCards(theString, find, replace) {
       return theString.replace(find, replace);
@@ -264,6 +276,7 @@
     }
 
     function renderResolutionsConnegPercent(doiResolutions) {
+      try {
         let connegPercentElement = document.getElementById('content_negotiation_percent');
         let connegPercentTextElement = document.getElementById('content_negotiation_text');
 
@@ -274,6 +287,9 @@
         connegPercentElement.textContent = connegPercentContent;
         connegPercentTextElement.textContent = connegPercentTextContent;
         connegPercentTextElement.style.opacity=1;
+      } catch {
+
+      }
     }
 
   </script>
