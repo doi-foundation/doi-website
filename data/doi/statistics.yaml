@@ -6,3 +6,5 @@ toprighttext: DOI resolutions to date
 # this will be replace with the month on the page
 bottomlefttext: Of the resolutions performed in **MONTH** were from bots
 bottomrighttext: Of the resolutions performed in **MONTH** used content negotiation
+# footnote is only used on homepage
+footnote: "The total DOI resolutions to date is calculated using actual number of DOI resolutions recorded up until yesterday and the average resolution rate recorded over the past 24 hours (currently this is "

@@ -1,3 +1,5 @@
+@import 'mixins/basics';
+
 @import "partials/variables",
         "partials/fonts",
         "partials/reset",
@@ -18,7 +20,7 @@
         "partials/single/page",
         "partials/blocks-colored",
         "partials/bios",
-        "partials/homepage_how_many";
+        "partials/_how_many";
 
 body::-webkit-scrollbar:horizontal {
     display: none;

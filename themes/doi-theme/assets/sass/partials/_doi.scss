@@ -126,45 +126,9 @@
     }
 
 
-    .how-many {
-        background-color: $background-blue;
-        #bot_percent_text, 
-        #content_negotiation_text {
-            opacity:0;
-            transition: all 0.2s;
-        }
-        .title {
-            color:#fff;
-            font-size: 40px;            
-            font-family: "futura-pt-bold";
-            text-align:center;
-            text-transform: uppercase;
-        }
-        .row.titlerow {
-            padding-top:80px;
-            padding-bottom:0;
-        }
-        .row.numbers {
-            padding-top:20px;
-            padding-bottom:80px;
-        }
-        .row {
-            width:$content-width;
-            margin:0 auto;
-            .col {
-                text-align: center;
-                .bignumber {
-                    color: $background-orange;
-                    font-family: "futura-pt-bold";
-                    font-size: 40px;
-                    display:block;
-                }
-                .subtext {
-                    color:#fff;
-                }
-            }
-        }
-    }
+    // .doi .how-many has been moved to _how-many.scss since it is now shared with home
+  
+  
     .what-is {
         background-color: $background-grey;
 
