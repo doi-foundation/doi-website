@@ -1,0 +1,23 @@
+{{ define "main" }}	
+	<main aria-role="main">
+		<header class="single-header">
+		</header>
+			{{ partial "single/top.html" ( dict 
+                "imagetop" "subtext" 
+                "imagemain" "main text" 
+                "maintext" "Lots of text here"
+                "subtext" "wee bit of subtext here"
+                "linkurl" "/"
+                "linktext" "head home"
+            )}}
+		<div class="page-content">
+			<article>
+				<div>
+					404 Page Content here 
+				</div>
+				
+			</article>
+		</div>
+        {{ partial "socials-side.html" . }}
+	</main>
+{{ end }}
