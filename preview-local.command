@@ -23,4 +23,4 @@ fi
 
 cd -- "$(dirname "$BASH_SOURCE")"
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome http://localhost:1313/ &
-hugo serve --config config.toml
+hugo serve --ignoreCache --disableFastRender --config config.toml
