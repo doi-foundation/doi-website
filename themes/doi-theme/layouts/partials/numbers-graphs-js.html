@@ -94,7 +94,8 @@
         let clockElement = document.getElementById('resolutions_clock_count');
         let rateElement = document.getElementById('resolutions_clock_rate');
 
-        let ratePerSecond = resolutionsTotalAndRate.resolutionsPerSecondLastCompleteMonth;
+        // let ratePerSecond = resolutionsTotalAndRate.resolutionsPerSecondLastCompleteMonth;
+        let ratePerSecond = resolutionsTotalAndRate.resolutionsPerSecondLast24Hours;
         let incrementPerMs = ratePerSecond / 1000;
         rateElement.textContent = ratePerSecond + "/second"
 
