@@ -227,7 +227,7 @@
         let botPercentElement = document.getElementById('bot_percent');
         let botPercentTextElement = document.getElementById('bot_percent_text');
         let botPercent = doiResolutions.botPercent.botPercent;
-        let month = doiResolutions.botPercent.month;
+        let month = reformatMonth(doiResolutions.botPercent.month);
         let botPercentContent =  botPercent + "%";
         let botPercentTextContent = replaceWildCards(botPercentTextElement.textContent, "**MONTH**", month);
         botPercentElement.textContent = botPercentContent;
@@ -239,12 +239,33 @@
       return theString.replace(find, replace);
     }
 
+    function reformatMonth(monthYear) {
+      const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+      ]
+      let d = new Date(monthYear);
+      let year = d.getFullYear();
+      let monthName = months[d.getMonth()];
+      return monthName + " " + year;
+    }
+
     function renderResolutionsConnegPercent(doiResolutions) {
         let connegPercentElement = document.getElementById('content_negotiation_percent');
         let connegPercentTextElement = document.getElementById('content_negotiation_text');
 
         let connegPercent = doiResolutions.connegPercent.connegPercent;
-        let month = doiResolutions.connegPercent.month;
+        let month = reformatMonth(doiResolutions.connegPercent.month);
         let connegPercentContent =  connegPercent + "%";
         let connegPercentTextContent = replaceWildCards(connegPercentTextElement.textContent,"**MONTH**", month);
         connegPercentElement.textContent = connegPercentContent;
