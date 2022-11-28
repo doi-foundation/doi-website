@@ -67,7 +67,6 @@ Tables are styled automatically so you can use standard Markdown to add them to 
 </pre>
 
 
-
 ### Shortcodes
 Shortcodes provide a simple way for editors to apply more advanced formatting and layouts to content. For example, on the [Sampler page](/sampler#two-column-layout) you can see that its possible to create a two-column layout, or wrap a block of text with a grey or blue box. Shortcodes are custom to this site, though they may work similarly to other Hugo-based sites you've worked with. 
 
@@ -95,4 +94,17 @@ You may sometimes want to highlight certain text by setting it apart. The `block
     This content will end up in a full-width blue block. 
 &#123;&#123;% /block-blue %&#125;&#125;  
 </pre>
+
+#### Social links in Bios
+Links to the social networking presence (or any website) for any team member can be easily added using the `social-links` shortcode. Using this you can specify the link title (visible on the page), the URL of the link, and optionally the icon to use. It works like this:
 
+<pre>
+&#123;&#123;% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" %&#125;&#125;  
+</pre>
+
+
+the default icon is a <i class="fa fa-link"></i> but you can optionally specify any icon from the [FontAwesome free library](https://fontawesome.com/search?o=r&m=free) like so: 
+
+<pre>
+&#123;&#123;%social-link <strong>icon="linkedin"</strong> title="LinkedIn" url="http://www.linkedin.com/in/jonathanmtclark"%&#125;&#125;  
+</pre>
