@@ -4,4 +4,13 @@
         border-radius: 50%;
     }
     
+    .social-link {
+        display: block;
+        
+        .fa {
+            min-width: 1.5em;
+            margin-right: .5em;
+        }
+    }
+    
 }
