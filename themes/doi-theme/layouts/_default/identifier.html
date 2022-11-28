@@ -39,8 +39,8 @@
             {{ partial "doi/how_get.html" . }}
           {{ end }}
 
-          {{ with .hits_graph }}
-            {{ partial "doi/hits_graph.html" . }}
+          {{ with .total_graph }}
+            {{ partial "doi/total_graph.html" . }}
           {{ end }}
 
           {{ with .standards }}
