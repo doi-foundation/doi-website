@@ -1,6 +1,7 @@
 <section class="hits-graph">
     <div class="row title">
-        <h3>TOTAL DOIS</h3>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text | markdownify }}</p>
     </div>
     <div class="row">
         <div class="col graph">

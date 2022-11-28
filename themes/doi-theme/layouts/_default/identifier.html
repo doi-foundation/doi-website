@@ -27,8 +27,9 @@
             {{ partial "doi/benefits.html" . }}
           {{ end }}
 
-          
-          {{ partial "doi/growth_graph.html" . }}
+          {{ with .growth_graph }}          
+            {{ partial "doi/growth_graph.html" . }}
+          {{ end }}
 
           {{ with .infos }}
             {{ partial "single/infos.html" . }}
@@ -38,14 +39,17 @@
             {{ partial "doi/how_get.html" . }}
           {{ end }}
 
-          
-          {{ partial "doi/hits_graph.html" . }}
+          {{ with .hits_graph }}
+            {{ partial "doi/hits_graph.html" . }}
+          {{ end }}
 
           {{ with .standards }}
             {{ partial "doi/standards.html" . }}
           {{ end }}
           
-          {{ partial "doi/world_map.html" . }}
+          {{ with .world_map }}
+            {{ partial "doi/world_map.html" . }}
+          {{ end }}
           
           {{ with .visualisations }}
             {{ partial "doi/visualisations.html" . }}

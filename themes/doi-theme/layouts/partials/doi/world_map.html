@@ -1,7 +1,7 @@
 <section class="map-graph">
     <div class="row title">
-        <h3>RESOLUTIONS TO DATE PER COUNTRY</h3>
-        <p>Darker shades show higher number of total resolutions to date (all time). Mousing over the map will show individual country totals</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text | markdownify }}</p>
     </div>
     <div class="row">
         <div class="col graph">
