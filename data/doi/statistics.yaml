@@ -1,8 +1,9 @@
 title: "How Many are in use?"
 toplefttext: Average resolution rate over last 24 hours
 toprighttext: Total DOI resolutions to date (all time)
-# these bottom two are slightly cleverer in that they need
+# these next two are slightly cleverer in that they need
 # a place holder for the month so we arbitrarily use **MONTH**
-# this will be replaced with the month on the page
-bottomlefttext: Percentage of all DOIs resolved during **MONTH** that came from bots 
-bottomrighttext: Percentage of all DOIs resolved during **MONTH** that used Content Negotiation
+bottomlefttext: Of the resolutions performed in **MONTH** were from bots
+bottomrighttext: Of the resolutions performed in **MONTH** used content negotiation
+# footnote is only used on homepage
+footnote: "The total DOI resolutions to date is calculated using actual number of DOI resolutions recorded up until yesterday and the average resolution rate recorded over the past 24 hours (currently this is "

@@ -1,0 +1,106 @@
+.how-many {
+    
+    .row.titlerow {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+    
+    .row.numbers {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+    
+    .doi & {
+        background-color: $background-blue;
+        
+        .title {
+            color: #fff;
+            font-size: 40px;
+            font-family: "futura-pt-bold";
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        #bot_percent_text,
+        #content_negotiation_text {
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        
+        .row {
+            width: $content-width;
+            margin: 0 auto;
+        
+            .col {
+                text-align: center;
+        
+                .bignumber {
+                    color: $background-orange;
+                    font-family: "futura-pt-bold";
+                    font-size: 40px;
+                    display: block;
+                }
+        
+                .subtext {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    .homepage-content & {
+        background-color: $background-grey;
+        
+        .title {
+            color: #000;
+            font-size: 21px;
+            font-family: "futura-pt-bold";
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .footnote {
+            padding-top: 1rem;
+            font-style: italic;
+            font-size: .9rem;
+            margin: 0 auto;
+            width: 75%;
+        }
+        
+        .row {
+            width: $content-width;
+            margin: 0 auto;
+        
+            .col {
+                text-align: center;
+        
+                .bignumber {
+                    color: $background-blue;
+                    font-family: "futura-pt-bold";
+                    font-size: 60px;
+                    display: block;
+        
+                    @include screen-max(1080px) {
+                        font-size: 10vw;
+                    }
+        
+                }
+        
+                .subtext {
+                    color: $main-font-color;
+                    font-size: 20px;
+                    font-family: "futura-pt-bold";
+        
+                    @include screen-max(1080px) {
+                        font-size: 5vw;
+                    }
+        
+                }
+        
+               
+            }
+        }
+    }
+    
+}
+
