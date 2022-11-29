@@ -2,6 +2,7 @@
 title = "Sampler Page"
 date = "2022-11-22"
 draft = false
+noindex = true
 # the following section is for the header
 imagetop = "Editors Docs"
 imagemain = "Sampler Page"
