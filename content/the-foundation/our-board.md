@@ -2,14 +2,11 @@
 title = "Governance & Sustainability"
 draft = false
 # the following section is for the header
-maintext = "Lorem ipsum. "
-subtext = "Lorem ipsum."
+-maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent."
+subtext = "The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
 imagetop = "The Foundation"
 imagemain = "Our Board"
 +++
-
-
-## The Board
 
 The Board appoints a Managing Agent to manage the day-to-day operations and is responsible for all aspects of management of the DOI system, including policy formulation and standards maintenance. 
 
@@ -28,10 +25,6 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 {{% block-blue %}}
 
 ### Board Directors
-
-The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent.
-
-The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, and a Treasurer. The members of the Board are not remunerated for their services to the foundation.
 
 {{% row %}}
 
@@ -58,7 +51,7 @@ The Board meets several times a year to oversee the strategic and fiscal health 
 
 {{% /block-blue %}}
 
-### Current Director Biographies
+#### Board Biographies
 
 {{% bios %}}
 
@@ -66,32 +59,57 @@ The Board meets several times a year to oversee the strategic and fiscal health 
 
 {{% column %}}
 
-#### Airiti
+##### Airiti
 
 David Lai
 Bio TK
 
-#### BSI Identify
-
-Will Johnson-Marshall,
-Bio TK
-
-#### China DOI
+##### China DOI
 
 Guo Xiaofeng
 Bio TK
 
-#### Clarivate
-
-Rachel Kessler
-Bio TK
-
-#### CNKI 
+##### CNKI 
 
 Ke Chun-Xiao
 Bio TK
 
-#### Crossref
+##### DataCite
+
+Matt Buys
+Bio TK
+
+##### EIDR
+
+Raymond Drewry
+Bio TK
+
+##### JaLC
+
+Ritsuko Nakajima
+Bio TK
+
+##### mEDRA
+
+Paola Mazzucchi
+*Chair*
+Bio TK
+
+{{% /column %}}
+
+{{% column %}}
+
+##### BSI Identify
+
+Will Johnson-Marshall
+Bio TK
+
+##### Clarivate
+
+Rachel Kessler
+Bio TK
+
+##### Crossref
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}} 
 *Treasurer*
 Ed Pentz became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the International DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
@@ -99,42 +117,21 @@ Ed Pentz became Crossref's first Executive Director when the organization was fo
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-5993-8592" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/ed-pentz-3816223" icon="linkedin" %}}
 
-#### DataCite
 
-Matt Buys
-Bio TK
 
-{{% /column %}}
-
-{{% column %}}
-
-#### DiSSCo
+##### DiSSCo
 
 Dimitris Koureas
 Bio TK
 
-#### EIDR
 
-Raymond Drewry
-Bio TK
-
-#### JaLC
-
-Ritsuko Nakajima
-Bio TK
-
-#### KISTI
+##### KISTI
 
 Jinseop Shin
 Bio TK
 
-#### mEDRA
 
-Paola Mazzucchi
-*Chair*
-Bio TK
-
-#### Publications Office of the European Union (OP)
+##### Publications Office of the European Union (OP)
 
 Carol Riccalton
 Bio TK
