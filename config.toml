@@ -82,8 +82,8 @@ gzip = true
   [menu.main.params]
     nolink = true
 [[menu.main]]
-  name = 'Governance & Sustainability'
-  url = '/the-foundation/governance-and-sustainability/'
+  name = 'About Us'
+  url = '/the-foundation/about-us/'
   weight = 2
   identifier = 'governance'
   parent = 'foundation'
@@ -92,20 +92,13 @@ gzip = true
   url = '/the-foundation/our-board/'
   weight = 3
   identifier = 'our-board'
-  parent = 'foundation'
+  parent = 'foundation'  
 [[menu.main]]
-  name = 'Our Financials'
-  url = '/the-foundation/our-financials/'
+  name = 'Governance & Sustainability'
+  url = '/the-foundation/governance-sustainability/'
   weight = 4
-  identifier = 'our-financials'
-  parent = 'foundation'
-[[menu.main]]
-  name = 'Our Governing Documents'
-  url = '/the-foundation/our-governing-documents/'
-  weight = 4
-  identifier = 'our-governing-documents'
-  parent = 'foundation'
-  
+  identifier = 'governance-sustainability'
+  parent = 'foundation'  
 [[menu.main]]
   name = 'The Community'
   url = '/the-community/'

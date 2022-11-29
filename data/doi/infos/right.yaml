@@ -1,6 +1,6 @@
 weight: 2
 title: ""
-maintext: "Sometimes there are multiple links behind a DOI (we call this multiple resolution) and you will be redirected to the appropriate one."
+maintext: "Sometimes there are multiple links behind a DOI (we call this multiple resolution) and users will be redirected to the appropriate one."
 linktext: "learn more"
 linkurl: "/the-identifier/"
 icon: "/images/target.svg"

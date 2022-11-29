@@ -1,7 +1,7 @@
 points:
-  - point: "A not for profit organisation that governs and manages the DOI system"
+  - point: "A not for profit organisation that governs the DOI system"
     color: "#5c7292"
-  - point: "We comply with iso 26324, which defines the syntax for a DOI name"
+  - point: "We comply with ISO 26324, which defines the syntax for a DOI name"
     color: "#707070"
-  - point: "$884k operating costs in 2021*"
+  - point: "We had $884k operating costs in 2021*"
     color: "#b3453d"
