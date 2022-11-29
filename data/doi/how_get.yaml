@@ -1,18 +1,18 @@
 title: "HOW CAN I GET A DOI?"
 text: "
-Our DOI Registration Agencies provide services that allow you to register a DOI or many DOIs. You can contact any of them to see how they can help you . Some online repositories (such as Zenodo, Figshare, Mendeley Data, Dryad and many more) register DOIs. The cost of registering new DOI names depends on the services offered by the RA. Resolution of existing DOI names is, and will always be, free of charge. 
+You need to work with one of our [DOI Registration Agencies](/the-community/existing-registration-agencies) who offer services that allow you to register a DOI or many DOIs and metadata specialised to their communities. You can contact any of them to see how they can help you.
 
 
 ## What is the DOI Handbook? 
 
-The DOI Handbook is the main source of information about the DOI® System. You can find the latest version here: https://doi.org/10.1000/182 [make into a link, but show the URL] 
+The DOI Handbook is the main source of information about the DOI® System. You can find the latest version here: [https://doi.org/10.1000/182](https://doi.org/10.1000/182).
 
 
-## DOI and the Handle system
+## DOIs and the Handle system
 
 We use Handle System technology for the resolution part of the DOI System. We believe it is the best infrastructure available today for managing digital objects. The Handle System was developed by CNRI and is currently administered and maintained by the DONA Foundation 
 
 
-In order to guarantee persistence, the DOI Foundation has built a social infrastructure on top of the technical infrastructure of the Handle System. Persistence is a function of organizations, not of technology; a persistent identifier system requires a persistent organization, agreed policies and defined processes.
+In order to guarantee persistence, the DOI Foundation has built a social infrastructure on top of the technical infrastructure of the Handle System. Persistence is a function of organizations, not of technology; a persistent identifier system requires a persistent organization, agreed policies and defined processes. [Read more about our Registration Agencies' committments}(/the-community/existing-registration-agencies).
 "
 image: "/images/dot-pattern.svg"
