@@ -94,7 +94,8 @@ You may sometimes want to highlight certain text by setting it apart. The `block
     This content will end up in a full-width blue block. 
 &#123;&#123;% /block-blue %&#125;&#125;  
 </pre>
-
+
+
 #### Social links in Bios
 Links to the social networking presence (or any website) for any team member can be easily added using the `social-links` shortcode. Using this you can specify the link title (visible on the page), the URL of the link, and optionally the icon to use. It works like this:
 
