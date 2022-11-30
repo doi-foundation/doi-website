@@ -2,4 +2,7 @@ social:
   - title: "Twitter"
     icon: "<i class='fa fa-twitter'></i>"
     url: "https://twitter.com/DOI_Foundation"
+  - title: "LinkedIn"
+    icon: "<i class='fa fa-LinkedIn'></i>"
+    url: ""
   

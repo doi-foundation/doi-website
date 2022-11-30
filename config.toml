@@ -145,6 +145,12 @@ gzip = true
   identifier = 'doi-handbook'
   parent = 'identifier'
 [[menu.main]]
+  name = 'Statistics'
+  url = '/the-identifier/statistics/'
+  weight = 6
+  identifier = 'statistics'
+  parent = 'identifier'
+[[menu.main]]
   name = 'Resources'
   url = '/the-identifier/resources/'
   weight = 6
