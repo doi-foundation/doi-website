@@ -1,4 +1,9 @@
 .page-content {
     width: $content-width;
     margin:0 auto;
+    padding-bottom: 40px;
+    
+    [class~='row']:last-of-type {
+        padding-bottom: 0;
+    }
 }

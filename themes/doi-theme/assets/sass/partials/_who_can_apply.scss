@@ -4,7 +4,6 @@ section.who-can-apply {
     background-repeat:no-repeat;
     background-size:contain;
     background-position: 65vw 0;
-    margin:80px 0;
 
     .title {        
         font-family: "futura-pt-bold";
@@ -32,7 +31,6 @@ section.who-can-apply {
             display:flex;
             div {
                 display:inline-block;
-                margin: 80px 0 0;
             }
             .icon-wrapper {                
                 background-color: $background-orange;
