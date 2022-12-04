@@ -16,7 +16,7 @@ The Board appoints a Managing Agent to manage the day-to-day operations and is r
 {{< figure src="/images/board/jclark.jpg" title="Jonathan Clark" height="100px" >}} 
 Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jonathan also works as an independent advisor on strategy and innovation. He is a Guest Lecturer and External Examiner for the Masters in Imagineering and the Strategic Events Management programmes at the Breda University of Applied Sciences. Prior to this he worked at Elsevier for 20 years in various positions in publishing, marketing and technology. He holds a BSc and PhD in Chemical Engineering from the University of Newcastle-upon-Tyne. Jonathan was Chair and Director of the DOI Foundation from 2005-2010. He lives mostly in Croatia.
 
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="fa-brands fa-orcid" %}}
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="orcid" %}}
 {{% social-link title="LinkedIn" url="http://www.linkedin.com/in/jonathanmtclark" icon="linkedin" %}}
 
 {{% /bios %}}

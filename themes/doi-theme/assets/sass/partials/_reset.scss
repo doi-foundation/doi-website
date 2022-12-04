@@ -11,6 +11,14 @@ body {
 .row {
     display:flex;
     padding: 40px 0;
+
+    @include screen-max(1260px) {
+        padding: 0;
+        
+        .col {
+            padding: 40px 0;
+        }
+    }
 }
 .column {
     flex:1;

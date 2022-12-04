@@ -27,8 +27,7 @@
 	google.charts.load('current', { 'packages': ['corechart','line','table', 'geochart'] });    
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script src="https://kit.fontawesome.com/731b8140c4.js" crossorigin="anonymous"></script>
 	{{ $sass := resources.Get "sass/main.scss" }}
 	{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
 	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">

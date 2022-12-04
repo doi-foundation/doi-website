@@ -39,7 +39,7 @@ body{
             color: initial;
         }
     }
-    span {
+    span, i {
         color:$link-arrow;
         font-size:1rem;
     }
@@ -72,9 +72,8 @@ a {
         padding:12px 40px 10px 40px;
         line-height: 2rem;
     }
-    span {
+    span,i {
         font-size:1rem;
-        
         padding:12px 40px 10px 40px;
     }
 }
