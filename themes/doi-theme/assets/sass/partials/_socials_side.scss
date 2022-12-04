@@ -5,8 +5,13 @@
     z-index:100;
     background-color:transparent;
 
+    .socials-side {
+        
+    }
    
-    ul {
+    ul.socials-side {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+        
         padding: 16px;
         background-color:#fff;
         li {
