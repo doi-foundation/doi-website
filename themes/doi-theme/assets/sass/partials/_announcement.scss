@@ -8,9 +8,10 @@ section.home-announcement {
         align-items: center;
         height: 100%;
     }
-    .title {        
-        font-family: "futura-pt-bold";       
-        font-size:21px;
+    h2.title {        
+        font-family: "futura-pt-bold"; 
+        font-size: 21px;      
+        color: #fff;
     }
     .link-alt {
         font-family: "futura-pt-bold";
@@ -26,9 +27,6 @@ section.home-announcement {
     }
     .title, .maintext, .link-alt {
         margin-bottom:20px;
-    }
-    .left, .right {
-        padding:40px;
     }
     .left {
         flex-basis:40%;
