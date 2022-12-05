@@ -3,8 +3,8 @@
     <div class="background" style="background-image:url({{ .image }})"></div>
     <div class="row">
         <div class="col left">
-            <div class="maintext">{{ .maintext }}</div>
-            <div class="subtext">{{ .subtext }}</div>
+            <div class="maintext">{{ .maintext | markdownify }}</div>
+            <div class="subtext">{{ .subtext | markdownify }}</div>
 
             <div class='link'>
                 <a href="{{ .linkurl }}">{{ .linktext }}</a>

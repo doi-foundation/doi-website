@@ -1,11 +1,15 @@
 section.single-top {
     width: $content-width;
-    margin:70px auto 0;
+    margin: ($standard-padding * 2) auto 0;
     
     .row {
         align-items: stretch;
         height: 100%;
-        padding:80px 0;
+        padding: ($standard-padding * 2) 0 $standard-padding  0;
+        
+        @media (max-width: $break-medium) {
+            padding: $mobile-padding 0;
+        }
     }
     .col {
     }
@@ -45,7 +49,8 @@ section.single-top {
         position:relative;
         min-height:400px;
         
-        @media (max-width: $break-medium) {
+        @media (max-width: $break-large) {
+            min-height: 240px;
         }
         
         .circle-wrapper {
@@ -60,6 +65,12 @@ section.single-top {
                 background-color: $background-orange;
                 border-radius:50%;
                 z-index:-1;
+                
+                @media (max-width: $break-large) {
+                    width: 240px;
+                    height: 240px;
+                    top:-60px;
+                }
             }
             .texts {
                 position:absolute;
@@ -67,7 +78,8 @@ section.single-top {
                 left:0;
                 right:0;
                 bottom:0;
-                width:600px;
+                width: 80%;
+
                 h1 {
                     font-size:23px;
                     font-weight:bold;
@@ -75,13 +87,14 @@ section.single-top {
                     margin-bottom:12px;
                     color:$sub-font-color;
                     text-transform: none;
-                    margin-bottom: -.25em;
+                    margin-bottom: 0;
+                    margin-top: 0;
         
                 }
                 h2 {
                     color:#000;
-                    font-size:72px;
-                    line-height:80px;
+                    font-size:62px;
+                    line-height:1em;
                     text-transform: uppercase;
                     font-family: 'futura-pt-bold';
                     margin-top: 0;

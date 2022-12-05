@@ -4,27 +4,30 @@ section.block-blue {
     width: 100vw; 
     position: relative; 
     left: calc(-50vw + 50%); 
-    margin: 40px 0;
+    // these need margin because surrounding text content won't have internal padding
+    margin: $standard-padding 0;
         
     .title, .maintext, .link {
         margin-top:20px;
     }
-    .title {        
+    h2 {        
         font-family: "futura-pt-bold";
         font-size:21px;
         color:#000;
     }
-    .maintext {
-    }
-    .row {
+   
+    >.row {
         width: $content-width;
         margin:0 auto;
         column-gap:80px;
     
         .row {
+            padding-top: 0;
             margin-left: 0;
             margin-right: 0;
-            padding-bottom: 40px;
+            padding-bottom: $standard-padding;
+            column-gap:80px;
+
         }
     }
     .icon {

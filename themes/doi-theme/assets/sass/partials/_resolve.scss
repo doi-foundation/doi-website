@@ -20,6 +20,12 @@ section.home-resolve {
         height: 100%;
         width: $content-width;
         margin:0 auto;
+        padding: ($standard-padding * 2) 0;
+        
+        @media (max-width: $break-large) {            
+            padding: $mobile-padding 0;
+        }
+
     }
     .left {
         flex-basis:60%;

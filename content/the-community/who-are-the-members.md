@@ -9,12 +9,27 @@ imagemain = "Who are the members?"
 +++
 
 {{% block-grey %}}
+
+{{% row %}}
+
+{{% column %}}
+
 - There are four classes of membership: General, Registration Agency, Charter, and Affiliate. General, RA and Charter Members are entitled to vote, Affiliate members are not. Note that membership is NOT required in order to be a customer of a DOI Registration Agency and to assign DOI names.
 - General Membership is open to any organization supporting the development of the DOI system. It is a prerequisite for any organization applying to become a Registration Agency as a first step. The annual fee for General Members is $US 35,000. This file may be reduced by the Board, subject to a minimum fee of $US 11,500 per annum.
+
+{{% /column %}}
+
+{{% column %}}
+
 - Charter Membership was initially established for the founding organizations to support the development of the DOI through loans. There are currently no Charter Members and all loans have been repaid. 
 - Affiliate Membership is open to any organization interested in the DOI system. The annual fee is $US 2000. Affiliate members are not eligible for Board membership and cannot vote.
-{{% /block-grey %}}
+
+{{% /column %}}
+
+{{% /row %}}
  
+{{% /block-grey %}}
+
 ## Existing General Members 
 
 **Clarivate** is a global leader in providing trusted insights and analytics to accelerate the pace of innovation. Their vision is to improve the way the world creates, protects and advances innovation. They deliver data, information, workflow solutions and deep domain expertise. They are a trusted, indispensable global partner to our customers, including universities, nonprofits, funding organizations, publishers, corporations, government organizations and law firms
@@ -30,4 +45,4 @@ There are two kinds of users of DOI. There are those that wish to uniquely ident
 
 The registrant can be any individual or organization. They register DOI names with a Registration Agency. If a registrant has multiple types of content or application requirements, they may choose to use several RAs to provide services. Registrants make sure their content is accessible (e.g. by keeping the URLs up to date). Registrants do not have to be members of the DOI Foundation, they are customers or clients of a Registration Agency. They may or may not pay for their services depending on the business model of the RA
 
-Users can be any person or machine that wants to resolve a DOI. They do not have to be members and may use the DOI Fondation proxy as often as they like. DOIs are, and will always be, free to resolve. 
+Users can be any person or machine that wants to resolve a DOI. They do not have to be members and may use the DOI Fondation proxy as often as they like. DOIs are, and will always be, free to resolve. 

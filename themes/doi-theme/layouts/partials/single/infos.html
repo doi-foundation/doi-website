@@ -1,13 +1,28 @@
 <section class="home-infos">
     
+    {{ if .title }}
+    <div class="row">
+        
+        <div class="col heading">
+            <h2 class="title">{{ .title }}</h2>
+        </div>
+    
+    </div>
+    {{ end }}
+    
+    
     <div class="row">
 
-    {{ range sort . "weight" }}
         <div class="col" >
-            <h2 class="title">{{ .title }}</h2>
-            <div class="maintext">{{ .maintext | markdownify }}</div>
-
+            {{ if .left.title }}<h3 class="title">{{ .left.title }}</h3>{{ end }}
+            <div class="maintext">{{ .left.maintext | markdownify }}</div>
         </div>
-    {{ end }}
+
+        <div class="col" >
+            {{ if .right.title }}<h3 class="title">{{ .right.title }}</h3>{{ end }}
+            <div class="maintext">{{ .right.maintext | markdownify }}</div>
+        </div>
+
+    </div>
     
 </section>

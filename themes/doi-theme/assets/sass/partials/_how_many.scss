@@ -1,13 +1,36 @@
 .how-many {
     
-    .row.titlerow {
-        padding-top: 80px;
-        padding-bottom: 0;
+    padding-bottom: $standard-padding;
+    
+    @media (max-width: $break-large) {
+        padding-bottom: $mobile-padding;
     }
     
-    .row.numbers {
-        padding-top: 20px;
-        padding-bottom: 80px;
+    .row {
+        padding: $standard-padding 0 0 0;
+
+        @media (max-width: $break-large) {
+            padding: $mobile-padding 0 0 0;
+        }
+
+    }
+    
+    .row.titlerow {
+        padding: $standard-padding 0 0 0;
+        h2 {
+            margin-bottom: 0;
+        }
+    
+        @media (max-width: $break-large) {            
+            padding: $mobile-padding 0 0 0;
+        }
+    }
+
+    .row.numbers.right {
+        
+        @media (max-width: $break-large) {
+            padding-top: 0;
+        }
     }
     
     .doi & {
@@ -80,10 +103,6 @@
                     font-size: 60px;
                     display: block;
         
-                    @include screen-max(1080px) {
-                        font-size: 10vw;
-                    }
-        
                 }
         
                 .subtext {
@@ -91,13 +110,17 @@
                     font-size: 20px;
                     font-family: "futura-pt-bold";
         
-                    @include screen-max(1080px) {
-                        font-size: 4vw;
-                    }
-        
                 }
         
                
+            }
+        }
+        #resolutions_clock_count {
+            @media (max-width: $break-medium) {
+                font-size: 40px;
+            }
+            @media (max-width: $break-xsmall) {
+                font-size: 30px;
             }
         }
     }

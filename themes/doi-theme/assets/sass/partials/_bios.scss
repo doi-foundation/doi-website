@@ -4,6 +4,10 @@
         border-radius: 50%;
     }
     
+    >[class~='row']:first-of-type {
+        padding-top: 0;
+    }
+    
     .bio-link {
         display: block;
         

@@ -7,41 +7,44 @@ section.home-announcement {
         color:#fff;
         align-items: center;
         height: 100%;
+        padding: ($standard-padding * 2) 0;
+        
+        @media (max-width: $break-large) {            
+            padding: $mobile-padding 0;
+        }
     }
     h2.title {        
         font-family: "futura-pt-bold"; 
         font-size: 21px;      
         color: #fff;
     }
-    .link-alt {
-        font-family: "futura-pt-bold";
-        transition: all 0.2s ease-in-out; 
-        a + .hover-move-right {
-            transition: all 0.1s ease-in-out; 
-        }
-        a:hover + .hover-move-right {
-            padding-right:30px;
-            padding-left:50px;            
-            transition: all 0.2s ease-in-out; 
-        }
-    }
-    .title, .maintext, .link-alt {
-        margin-bottom:20px;
-    }
+
     .left {
         flex-basis:40%;
         height:100%;
+        
         .wrapper {
             background-color:#fff;
             display:inline-block;
             border-radius: 50%;
+            margin-bottom: ($standard-padding);
+        
             img {
                 padding:30px;
+        
+                @media (max-width: $break-small) {
+                    width: 200px;
+                }
+        
             }
         }
     }
     
     .right {
         flex-basis:60%;
+    }
+    
+    .maintext {
+        padding-bottom: 20px;
     }
 }

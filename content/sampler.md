@@ -5,11 +5,12 @@ draft = false
 noindex = true
 # the following section is for the header
 imagetop = "Editors Docs"
-imagemain = "Sampler Page"
-maintext = "This page provides a 'sampler' of content styles."
+imagemain = "Sampler Page (Heading 1)"
+maintext = "This page provides a 'sampler' of content styles. This is the `maintext`, managed in frontmatter."
+subtext = "This is the `subtext`, also managed in frontmatter."
 +++
 
-NB: You should not use a Heading 1 in page content. These should exclusive exist in the banner area of a page, and will be added automatically based on frontmatter. 
+_NB: You should not use a Heading 1 in page content. These should exclusive exist in the banner area of a page, and will be added automatically based on frontmatter._
 
 ## Heading 2
 If one examines subsemiotic deconstructivist theory, one is faced with a

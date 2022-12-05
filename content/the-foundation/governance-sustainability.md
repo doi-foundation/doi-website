@@ -5,7 +5,7 @@ draft = false
 maintext = ""
 subtext = ""
 imagetop = "The Foundation"
-imagemain = "Governance & Sustainability"
+imagemain = "Governance&nbsp;& Sustainability"
 +++
 
 ## Financials
@@ -38,5 +38,3 @@ The Foundation is controlled by a Board elected by the members of the Foundation
 ### Registration Authority Agreement
 
 The DOI Foundation is the ISO 26324 Registration Authority, governed by an agreement between ISO and the Foundation here [link to PDF] TK
-
-

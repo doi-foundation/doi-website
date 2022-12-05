@@ -2,7 +2,7 @@
 title = "Governance & Sustainability"
 draft = false
 # the following section is for the header
--maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent."
+maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent."
 subtext = "The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
 imagetop = "The Foundation"
 imagemain = "Our Board"
@@ -12,7 +12,7 @@ The Board appoints a Managing Agent to manage the day-to-day operations and is r
 
 {{% bios %}}
 
-### Managing Agent
+## Managing Agent
 {{< figure src="/images/board/jclark.jpg" title="Jonathan Clark" height="100px" >}} 
 Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jonathan also works as an independent advisor on strategy and innovation. He is a Guest Lecturer and External Examiner for the Masters in Imagineering and the Strategic Events Management programmes at the Breda University of Applied Sciences. Prior to this he worked at Elsevier for 20 years in various positions in publishing, marketing and technology. He holds a BSc and PhD in Chemical Engineering from the University of Newcastle-upon-Tyne. Jonathan was Chair and Director of the DOI Foundation from 2005-2010. He lives mostly in Croatia.
 
@@ -51,7 +51,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 
 {{% /block-blue %}}
 
-### Board Biographies
+## Board Biographies
 
 {{% bios %}}
 
@@ -59,42 +59,42 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 
 {{% column %}}
 
-#### Airiti
+### Airiti
 
 David Lai
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-#### China DOI
+### China DOI
 
 Guo Xiaofeng
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-#### CNKI 
+### CNKI 
 
 Ke Chun-Xiao
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-#### DataCite
+### DataCite
 
 Matt Buys
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-#### EIDR
+### EIDR
 
 Raymond Drewry
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-#### JaLC
+### JaLC
 
 Ritsuko Nakajima
 Bio TK
@@ -102,7 +102,7 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 
-#### mEDRA
+### mEDRA
 
 Paola Mazzucchi
 
@@ -116,21 +116,21 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 {{% column %}}
 
-#### BSI Identify
+### BSI Identify
 
 Will Johnson-Marshall
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-#### Clarivate
+### Clarivate
 
 Rachel Kessler
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-#### Crossref
+### Crossref
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}} 
 
 *Treasurer*
@@ -142,7 +142,7 @@ Ed Pentz became Crossref's first Executive Director when the organization was fo
 
 
 
-#### DiSSCo
+### DiSSCo
 
 Dimitris Koureas
 Bio TK
@@ -150,7 +150,7 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 
-#### KISTI
+### KISTI
 
 Jinseop Shin
 Bio TK
@@ -158,7 +158,7 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 
-#### Publications Office of the European Union (OP)
+### Publications Office of the European Union (OP)
 
 Carol Riccalton
 Bio TK

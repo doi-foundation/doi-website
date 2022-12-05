@@ -1,16 +1,20 @@
 section.home-top {
     
-    margin-top:70px;
+    margin-top: $standard-padding * 2;
 
     .background {
         position:absolute;
         width:50%;
         height:100%;
+        //top: -($standard-padding * .5);
         right:0;
         background-size:contain;
         background-position:center;
         background-repeat:no-repeat;
         z-index: -2;
+        @media (max-width: $break-large) {
+            opacity: .3;
+        }
         @media (max-width: $break-medium) {            
             display:none;
         }
@@ -38,27 +42,28 @@ section.home-top {
         padding-bottom:0;
         padding-top:0;
     }
-    .col {
-    }
+
     .left {
         display:flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding:80px 0;
+        padding: ($standard-padding * 2) 0;
+        @media (max-width: $break-large) {
+            padding: $standard-padding 0;
+        }
         .maintext {
             flex-basis:30%;
             font-size:1.5rem;
+            padding-bottom: 20px;
         }
         .subtext {
-            padding: 10px 0 5px;
-            flex-basis: 10%;
+            padding: 10px 0 20px;
+            flex-basis: 10%;            
         }
         .link {
             flex-basis: 20%;
             padding-top:10px;
             font-family: "futura-pt-bold";
         }        
-    }
-    .right {
     }
 }

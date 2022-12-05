@@ -57,11 +57,13 @@ a {
 .link-alt {    
     border:2px solid #fff;
     display:inline-block;
+    font-family: "futura-pt-bold";
+    transition: all 0.2s ease-in-out; 
+    
     a, span {
         color:#fff;
         display: inline-block;
         padding:10px;
-
     }
     a {
         
@@ -69,14 +71,46 @@ a {
         text-decoration: none;
         font-weight:bold;
         border-right:2px solid #fff;
-        padding:12px 40px 10px 40px;
+        padding:12px 40px;
         line-height: 2rem;
+        
+        @media (max-width: $break-xsmall) {
+            padding: 12px 10px; 
+        }
     }
     span,i {
         font-size:1rem;
-        padding:12px 40px 10px 40px;
+        padding:12px 40px;
+    
+        @media (max-width: $break-small) {
+            padding: 12px 20px; 
+        }
+        
+        @media (max-width: $break-xsmall) {
+            padding: 12px 10px; 
+        }
+    }
+    a + .hover-move-right {
+        transition: all 0.1s ease-in-out; 
+    }
+    a:hover + .hover-move-right {
+        padding-right:30px;
+        padding-left:50px;            
+        transition: all 0.2s ease-in-out; 
+    
+        @media (max-width: $break-small) {
+            padding-right:10px;
+            padding-left:30px;
+        }
+        
+        @media (max-width: $break-xsmall) {
+            padding-right:5px;
+            padding-left:15px;
+        }
+        
     }
 }
+
 
 .fa {
     display: inline-block;

@@ -5,7 +5,7 @@
     .graphics-what {
         z-index:0;
         position:relative;
-        padding-bottom:100px;
+        padding: $standard-padding 0;
         background-color:$background-grey;
         .image {
             transition: all 0.2s;
@@ -23,21 +23,21 @@
             color: $background-blue;
         }
         .title {     
-            padding-top:80px;       
             font-size: 40px;            
             font-family: "futura-pt-bold";
             text-transform: uppercase;
             text-align:center;
-            padding-bottom:40px;            
+            padding-bottom:$standard-padding;            
             position:relative;
             background-color:$background-grey;
+            margin: 0;
             color:#000;
         }
         .graphics-wrapper {
             position:relative;
             background-color:$background-grey;
             z-index:-3;
-            padding-top:40px;
+            padding-top:$standard-padding;
             .row {
                 width: $content-width;
                 margin: 0 auto;
@@ -63,16 +63,15 @@
     .graphics-why {
         z-index:0;
         position:relative;
-        padding-bottom:100px;
+        padding-bottom:$standard-padding;
         .title {           
-            padding-top:80px;  
             font-size: 40px;            
             font-family: "futura-pt-bold";
             text-transform: uppercase;
             text-align:center;
-            padding-bottom:40px;            
             position:relative;
             color:#000;
+            margin-top: 0;
         }
         .image {
             
@@ -136,16 +135,14 @@
             display:block;            
             font-family: "futura-pt-bold";
             font-size:21px;
+            margin-bottom: $standard-padding;
         }
         .what-is-logo {
-            left:-80px;
-            top:-40px;
             position:relative;
-            width:600px;
+            width:500px;
             
             @media (max-width: $break-large) {                
                 width:500px;
-                left:-64px;
             }
         }
     
@@ -156,12 +153,12 @@
             margin: 0 auto;
             .col {
                 align-self: center;
-                .point {                    
+                .bullet-wrapper {                    
                     font-family: "futura-pt-bold";
                     color:#000;
                     display:flex;
                     align-items: center;
-                    margin:80px 0;
+                    margin:$standard-padding 0 0;
                     .index {
                         color:#fff;
                         width:70px;
@@ -172,17 +169,18 @@
                         display: inline-flex; /* or inline-flex */
                         align-items: center; 
                         justify-content: center;
-                        margin-right:40px;
+                        margin-right:$standard-padding;
                         flex-shrink:0;
                         transition: all 0.2s;
                     }
-                    &:hover {
-                        .index {
-                        }
-                    }
-                    .text {
-                        
-                    }
+                }
+            }
+            .col.left {
+                padding-right: 120px;               
+            }
+            .col.right {
+                @media (max-width: $break-large) {
+                    padding-top: 0;
                 }
             }
         }
@@ -196,6 +194,22 @@
             font-size:21px;
         }
         .row {
+            
+            padding: $standard-padding 0 0 0;
+            
+            @media (max-width: $break-large) {
+                padding: $mobile-padding 0 0 0;
+            }
+            
+            &.benefit-wrappers {
+                padding-top: 0;
+                padding-bottom: $standard-padding;
+                
+                @media (max-width: $break-large) {
+                    padding-bottom: $mobile-padding;
+                }
+            }
+            
             .col {
                 .title {                             
                     font-family: "futura-pt-bold";
@@ -212,10 +226,9 @@
                     padding: 11px 7px;
                     border-radius:50%;
                     background-color: $background-orange;
-                    margin-bottom:20px;
 
                     @media (max-width: $break-large) {
-                        margin-top:40px;
+                        margin-top:$standard-padding;
                     }
 
                 }
@@ -247,7 +260,7 @@
         .graph {
             text-align:center;
             #doi-resolutions {
-                min-height:50vh;
+                //min-height:50vh;
             }
         }
     }
@@ -282,7 +295,7 @@
         .graph {
             text-align:center;
             #total-dois {
-                min-height:50vh;
+                //min-height:50vh;
             }
         }
         .row {            
@@ -316,9 +329,12 @@
             font-size:21px;
         }
         h2 {
-                                
-            font-family: "futura-pt-bold";
-            font-size:18px;
+            font-size:21px;
+        }
+        h3 {
+            font-size: 18px;
+            color: $main-font-color;
+            margin-bottom: 0;
         }
         .row {
             width:$content-width;
@@ -338,12 +354,7 @@
         .title {                               
             font-family: "futura-pt-bold";
             font-size:21px;
-            margin-bottom:40px;
-        }
-        h2 {
-                                
-            font-family: "futura-pt-bold";
-            font-size:18px;
+            margin-bottom:20px;
         }
         .row {
             align-items: center;

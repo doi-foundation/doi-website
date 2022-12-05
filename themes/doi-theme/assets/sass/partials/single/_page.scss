@@ -1,9 +1,108 @@
+body {
+  font-family: 'futura-pt';
+  font-size: 18px;
+}
+
 .page-content {
+
     width: $content-width;
     margin:0 auto;
-    padding-bottom: 40px;
+    padding-bottom: $standard-padding;
+
+
+  strong {
+    font-family: 'futura-pt-bold';
+    font-weight: 700;
+  }
+
+
+
+  ol, ul {
+    padding-left: 1rem;
+  }  
+
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+  font-family: 'futura-pt-bold';
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 20px;
+
+  [class~='row']:first-of-type & {
+      margin-top: 0;
+  }
     
-    [class~='row']:last-of-type {
-        padding-bottom: 0;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+
+    @media (max-width: $break-large) {
+      
+      [class~='col']:first-of-type & {
+        margin-bottom: 30px;
+      }
     }
+
+}
+
+.maintext p:last-of-type {
+  margin-bottom: 0;
+}
+
+.row [class~='row']:last-of-type {
+  padding-bottom: 0!important;
+}
+
+
+
+
+
+code {
+  color: red;
+  font-size: 1em;
+  font-family: 'futura-pt';
+  display: inline;
+  background-color: $background-grey;
+  padding: 2px 4px;
+  margin: 0 -2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+pre {
+  color: red;
+  display: block!important;
+  font-size: 1em;
+  font-family: 'futura-pt';
+  display: inline;
+  background-color: $background-grey;
+  padding: 2px 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+  code {
+    display: block;
+    background-color: none;
+    border: 0;   
+  }
+  
 }

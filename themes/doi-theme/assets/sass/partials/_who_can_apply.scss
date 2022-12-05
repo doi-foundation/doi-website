@@ -3,7 +3,11 @@ section.who-can-apply {
     background-image:url("/images/dot-pattern.svg");
     background-repeat:no-repeat;
     background-size:contain;
-    background-position: 65vw 0;
+    background-position: 65vw 10vw;
+    
+    @media (max-width: $break-large) {
+        background-image: none;
+    }
 
     .title {        
         font-family: "futura-pt-bold";
@@ -27,7 +31,8 @@ section.who-can-apply {
         }
     }
     .specials {
-        .col {
+        .bullet-wrapper {
+            padding: $standard-padding 0 0;
             display:flex;
             div {
                 display:inline-block;
@@ -38,7 +43,11 @@ section.who-can-apply {
                 height:50px;
                 width:50px;
                 display:block;
-                margin-right:40px;
+                margin:0 30px;
+                
+                @media (max-width: $break-small) {
+                    margin: 0 30px 0 0;
+                }
             }
             .icon {
                 display:block;

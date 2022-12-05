@@ -10,14 +10,20 @@
             </div>
         </div>
         <div class="col right">
-            <div class="maintext">{{ .maintext }}</div>
-            <div class="subtext">{{ .subtext  | markdownify  }}</div>
-            {{ if .linkurl }}
-            <div class='link'>
-                <a href="{{ .linkurl }}">{{ .linktext }}</a>
-                <i class="fa-solid fa-fw fa-arrow-right-long"></i>           
+            
+            <div>
+            
+                <div class="maintext">{{ .maintext | markdownify }}</div>
+                <div class="subtext">{{ .subtext  | markdownify  }}</div>
+                {{ if .linkurl }}
+                <div class='link'>
+                    <a href="{{ .linkurl }}">{{ .linktext }}</a>
+                    <i class="fa-solid fa-fw fa-arrow-right-long"></i>           
+                </div>
+                {{ end }}
+            
             </div>
-            {{ end }}
+            
         </div>        
 
     </div>

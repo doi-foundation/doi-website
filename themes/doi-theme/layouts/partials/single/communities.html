@@ -9,7 +9,9 @@
                 </div>
             </div>
             <div class="texts">
-                <div class="maintext">{{ .maintext | markdownify }}</div>
+                <div class="maintext">
+                    <p>{{ .maintext | markdownify }}</p>
+                </div>
                 {{ if .linkurl }}
                 <a class="linkurl" href="{{ .linkurl }}">
                     <span>{{ .linktext }}</span>

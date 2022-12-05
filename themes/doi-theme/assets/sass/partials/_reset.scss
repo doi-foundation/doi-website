@@ -10,13 +10,10 @@ body {
 
 .row {
     display:flex;
-    padding: 40px 0;
+    padding: $standard-padding 0;
 
-    @include screen-max(1260px) {
-        padding: 0;
-        
+    @media (max-width: $break-large) {
         .col {
-            padding: 40px 0;
         }
     }
 }

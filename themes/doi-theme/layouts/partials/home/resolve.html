@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col left">
             <h2 class="title">{{ .title }}</h2>
-            <div class="maintext">{{ .maintext }}</div>
+            <div class="maintext">{{ .maintext | markdownify }}</div>
             <div class="form">
                 <form method="post" action="https://doi.org" id="resolveID" accept-charset="utf-8">
 
