@@ -5,3 +5,6 @@ social:
   - title: "LinkedIn"
     icon: "<i class='fa-brands fa-fw fa-linkedin'></i>"
     url: "https://www.linkedin.com/company/doi-foundation-inc/"
+  - title: "Email"
+    icon: "<i class='fa-solid fa-fw fa-envelope'></i>"
+    url: "mailto:info@doi.org"
