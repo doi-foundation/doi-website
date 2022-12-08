@@ -176,7 +176,7 @@
             width:500px;
             
             @media (max-width: $break-large) {                
-                width:500px;
+                width:80%;
             }
         }
     
@@ -185,6 +185,7 @@
         .row {
             width: $content-width;
             margin: 0 auto;
+            column-gap: 80px;
             .col {
                 align-self: center;
                 .bullet-wrapper {                    
@@ -208,9 +209,6 @@
                         transition: all 0.2s;
                     }
                 }
-            }
-            .col.left {
-                padding-right: 120px;               
             }
             .col.right {
                 @media (max-width: $break-large) {
