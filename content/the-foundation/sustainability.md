@@ -5,7 +5,7 @@ draft = false
 maintext = ""
 subtext = ""
 imagetop = "The Foundation"
-imagemain = "Governance&nbsp;& Sustainability"
+imagemain = "Sustainability"
 +++
 
 

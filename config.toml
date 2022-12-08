@@ -88,13 +88,13 @@ gzip = true
   identifier = 'governance'
   parent = 'foundation'
 [[menu.main]]
-  name = 'Our Board'
+  name = 'Board & Governance'
   url = '/the-foundation/board-and-governance/'
   weight = 3
   identifier = 'board-and-governance'
   parent = 'foundation'  
 [[menu.main]]
-  name = 'Governance & Sustainability'
+  name = 'Sustainability'
   url = '/the-foundation/sustainability/'
   weight = 4
   identifier = 'sustainability'
