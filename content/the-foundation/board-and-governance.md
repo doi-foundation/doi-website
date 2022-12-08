@@ -29,12 +29,12 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 {{% row %}}
 
 {{% column %}}
-- David Lai, Airiti
+- [David Lai, Airiti](#Airiti)
 - Will Johnson-Marshall, BSI Identify
 - Guo Xiaofeng, Chinese DOI
 - Rachel Kessler, Clarivate
 - Ke Chun-Xiao, CNKI
-- Ed Pentz, Crossref Treasurer*
+- Ed Pentz, Crossref *(Treasurer)*
 - Matt Buys, DataCite
 {{% /column %}}
 
@@ -43,7 +43,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - Raymond Drewry, EIDR
 - Ritsuko Nakajima, JaLC
 - Jinseop Shin, KIST
-- Paola Mazzucchi, mEDRA *Chair*
+- Paola Mazzucchi, mEDRA *(Chair)*
 - Carol Riccalton, Publications Office of the European Union
 {{% /column %}}
 
@@ -131,9 +131,7 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 ### Crossref
-{{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}} 
-
-*Treasurer*
+{{< figure src="/images/board/epentz.png" title="Ed Pentz (*Treasurer*" height="100px" >}} 
 
 Ed Pentz became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the International DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
 
