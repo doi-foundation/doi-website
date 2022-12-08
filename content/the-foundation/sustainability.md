@@ -1,5 +1,5 @@
 +++
-title = "Governance & Sustainability"
+title = "Sustainability"
 draft = false
 # the following section is for the header
 maintext = ""
@@ -8,7 +8,6 @@ imagetop = "The Foundation"
 imagemain = "Governance&nbsp;& Sustainability"
 +++
 
-## Financials
 
 The DOI Foundation operates on an annual budget of around $1 million USD. All revenues come from annual fees paid by the [Registration Agencies]() and members. These fees are set and reviewed annually by the Board.
 
@@ -25,16 +24,3 @@ Each year, our auditors prepare our Form 990, which the United States' IRS requi
 
 [Forms TK]
 
-## Governing Documents
-
-### Charter
-
-The DOI Foundation is a non-stock membership corporation organized and existing under and by virtue of the General Corporation Law of the State of Delaware, USA, registered on 10 October 1997. The Charter is here  [Link to PDF] TK
-
-### By-Laws
-
-The Foundation is controlled by a Board elected by the members of the Foundation. The By-Laws are here [link to PDF] TK
-
-### Registration Authority Agreement
-
-The DOI Foundation is the ISO 26324 Registration Authority, governed by an agreement between ISO and the Foundation here [link to PDF] TK

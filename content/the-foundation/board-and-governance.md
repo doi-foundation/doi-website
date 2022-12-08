@@ -1,10 +1,11 @@
 +++
-title = "Governance & Sustainability"
+title = "Board & Governance"
 draft = false
 # the following section is for the header
 maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent."
 subtext = "The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
-imagetop = "The Foundation"
+subtext = "Scroll down to view current board directors and see our founding and governing documents such as charter and by-laws."
+imagetop = "The Foundation
 imagemain = "Our Board"
 +++
 
@@ -170,3 +171,18 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 {{% /row %}}
 
 {{% /bios %}}
+
+## Governing Documents
+
+### Charter
+
+The DOI Foundation is a non-stock membership corporation organized and existing under and by virtue of the General Corporation Law of the State of Delaware, USA, registered on 10 October 1997. The Charter is here  [Link to PDF] TK
+
+### By-Laws
+
+The Foundation is controlled by a Board elected by the members of the Foundation. The By-Laws are here [link to PDF] TK
+
+### Registration Authority Agreement
+
+The DOI Foundation is the ISO 26324 Registration Authority, governed by an agreement between ISO and the Foundation here [link to PDF] TK
+
