@@ -21,12 +21,18 @@ section.home-top {
     }
 
     .background {
+        animation-name: fadeIn, rotate;
+        animation-duration:5s, 360s;
+        animation-iteration-count:1, infinite;
+        animation-timing-function:linear, linear;
+        
         -webkit-animation-name: fadeIn, rotate;
-        -webkit-animation-duration:5s, 120s;
+        -webkit-animation-duration:5s, 360s;
         -webkit-animation-iteration-count:1, infinite;
         -webkit-animation-timing-function:linear, linear;
+        
         -moz-animation-name: fadeIn, rotate;
-        -moz-animation-duration:5s, 120s;
+        -moz-animation-duration:5s, 360s;
         -moz-animation-iteration-count:1, infinite;
         -moz-animation-timing-function:linear, linear;
       }
