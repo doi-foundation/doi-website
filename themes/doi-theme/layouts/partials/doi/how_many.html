@@ -1,17 +1,28 @@
 <section class="how-many">
     <div class="row titlerow">
-        <div class="title">
-            How Many are in use?
-        </div>
+        <h2 class="title">{{ .title }}</h2>
     </div>
-    <div class="row numbers">
+    <div class="row numbers left">
         <div class="col">
-            <span id='leftbignumber' class='bignumber'>0</span>
-            <span class='subtext'>{{ .lefttext }}</span>
+            <span id='resolutions_clock_rate' class='bignumber'></span>
+            <span class='subtext'>{{ .toplefttext }}</span>
         </div>
         <div class="col">            
-            <span id='rightbignumber' class='bignumber'>0</span>
-            <span class='subtext'>{{ .righttext }}</span>
+            <span id='resolutions_clock_count' class='bignumber'></span>
+            <span class='subtext'>{{ .toprighttext }}</span>
         </div>
-    </div><div id="el"></div>
+    </div>
+    
+    <div class="row numbers right">
+        <div class="col">
+            <span id='bot_percent' class='bignumber'></span>
+            <span class='subtext' id="bot_percent_text">{{ .bottomlefttext }}</span>
+        </div>
+        <div class="col">            
+            <span id='content_negotiation_percent' class='bignumber'></span>
+            <span class='subtext' id="content_negotiation_text">{{ .bottomrighttext }}</span>
+        </div>
+    </div>
+    
+    <div id="el"></div>
 </section>

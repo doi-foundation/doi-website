@@ -1,9 +1,9 @@
 links:
-  - title: Contact us
-    url: "/"
-  - title: Report an issue
-    url: "/"
+  - title: Resources
+    url: "/the-identifier/resources/"
+  - title: Governing Board
+    url: "/the-foundation/board-and-governance/"
   - title: Status page
-    url: "/"
-  - title: Trademarks
-    url: "/"
+    url: "https://doi.statuspage.io/"
+  - title: Email us
+    url: "mailto:info@doi.org"

@@ -1,15 +1,13 @@
 <section class="who-can-apply">
     <div class="row">
         <div class="col left">
-            <div class="title">
-                {{ .title }}
-            </div>
+            <h2 class="title">{{ .title }}</h2>
             <div class="toptext">
                 {{ .toptext | markdownify}}
             </div>
             <div class="specials">
                 {{ range .keypoints }}
-                    <div class="col" >
+                    <div class="bullet-wrapper" >
                             <div class="icon-wrapper">
                                 <div class="icon" style="background-image: url({{ .icon }});"></div>
                             </div>
@@ -21,9 +19,7 @@
 
             <div class='link'>
                 <a href="{{ .linkurl }}">{{ .linktext }}</a>
-                <span class="material-symbols-outlined">
-                    arrow_right_alt
-                </span>           
+               <i class="fa-solid fa-fw fa-arrow-right-long"></i>           
             </div>
         </div>
         <div class="col right"></div>

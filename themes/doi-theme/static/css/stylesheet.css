@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Futura Bk BT';
+    font-family: 'future-pt';
     src: url('FuturaBT-Book.woff2') format('woff2'),
         url('FuturaBT-Book.woff') format('woff');
     font-weight: normal;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Futura BdCn BT';
+    font-family: 'future-pt';
     src: url('FuturaBT-BoldCondensed.woff2') format('woff2'),
         url('FuturaBT-BoldCondensed.woff') format('woff');
     font-weight: bold;

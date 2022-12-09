@@ -1,7 +1,7 @@
 <section class="communities">
     
     <div class="row">
-
+    {{ $length := len . }}
     {{ range sort . "weight" }}
         <div class="col" >
             <div class="logo">
@@ -9,11 +9,21 @@
                 </div>
             </div>
             <div class="texts">
-                <div class="title">{{ .title }}&nbsp;</div>
-                <div class="maintext">{{ .maintext | markdownify }}</div>
+                <div class="maintext">
+                    <p>{{ .maintext | markdownify }}</p>
+                </div>
+                {{ if .linkurl }}
+                <a class="linkurl" href="{{ .linkurl }}">
+                    <span>{{ .linktext }}</span>
+                    <i class="fa-solid fa-fw fa-arrow-right-long"></i> 
+                </a>
+                {{ end }}
             </div>
-
         </div>
     {{ end }}
+    {{ if not (modBool $length 2)}}
+        <div class="col last-odd-filler"></div>
+    {{ end }}
+
     
 </section>

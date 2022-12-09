@@ -1,0 +1,295 @@
+<script>
+
+    const STATS_REFRESH_INTERVAL = 1000 * 60 * 60; //one hour in ms
+    const RESOLUTIONS_CLOCK_UPDATE_INTERVAL = 500; //half a second in ms
+
+    let resolutionsClockIntervalId = null;
+
+    let doiResolutions = null;
+    let counts = null;
+    let mapMode = "logScale";
+
+
+
+    async function getDoiValueAsJson(doi, type) {
+        let url = 'https://doi.org/api/handles/' + doi + '?type=' + type + "&auth";
+        const response = await fetch(url);
+        let handleRecord = await response.json();
+        let handleValue = handleRecord.values[0];
+        let valueJson = handleValue.data.value;
+        let result = JSON.parse(valueJson);
+        console.log("Fetching stats");
+        return result;
+    }
+
+    async function fetchStats() {
+        doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');
+        counts = await getDoiValueAsJson('10.1000/1000', 'DOI_COUNTS');
+        console.log("Stats loaded");
+        renderResults(doiResolutions,counts);
+        setTimeout(fetchStats, STATS_REFRESH_INTERVAL);
+    }
+    fetchStats();
+
+    function renderResults(doiResolutions,counts) {
+        renderResolutionsClock(doiResolutions);
+        
+        renderResolutionsBotPercent(doiResolutions);
+        renderResolutionsConnegPercent(doiResolutions);
+        renderResolutionsUptime(doiResolutions);
+
+        google.charts.load('current', { 'packages': ['corechart','line','table','geochart'] });
+
+        try{
+          google.charts.setOnLoadCallback(renderResolutionsChart(doiResolutions)); 
+          google.charts.setOnLoadCallback(renderTotalHandlesChart(counts)); 
+          google.charts.setOnLoadCallback(renderResolutionsMap(doiResolutions)); 
+        } catch(err) {
+          //console.log(err);
+        }
+    }
+
+    function renderResolutionsUptime(doiResolutions) {
+      try {
+        let uptimeElement = document.getElementById('uptime_percent');
+        let uptimePercent = doiResolutions.uptime.uptimePercentage;
+        let uptimeText =  uptimePercent + "%";
+        uptimeElement.textContent = uptimeText;
+      } catch {
+
+      }
+    }
+
+    function renderResolutionsMap(doiResolutions) {
+      try {
+        let mode = mapMode;
+        let resolutionsByCountry = convertResolutionsByCountryForGoogleMap(doiResolutions.resolutionsByCountryLastMonth, mode);
+        var data = google.visualization.arrayToDataTable(resolutionsByCountry);
+        var options = {
+            backgroundColor: 'transparent',
+            colorAxis: {colors: ['white', '#5C7392']},
+            legend: 'none'
+        };
+        var chart = new google.visualization.GeoChart(document.getElementById('world_map'));
+        chart.draw(data, options);
+      } catch {
+        
+      }
+    }
+    function convertResolutionsByCountryForGoogleMap(resolutionsByCountry, mode) {
+      let result = [];
+      let columns = ['Country', 'Resolutions'];
+      result.push(columns);
+      let count = 0;
+      for (let country of resolutionsByCountry) {
+          let code = country.countryCode;
+          let rawValue = parseInt(country.resolutions);
+          let formattedValue = "" + rawValue;
+          let value = Math.log(rawValue);
+          let item = {
+              v: value,
+              f: formattedValue
+          };
+          let row = [code, item];
+          result.push(row);
+          count++;
+      }
+      return result;
+    }
+
+    function renderResolutionsClock(doiResolutions) {
+        let resolutionsTotalAndRate = doiResolutions.resolutionsTotalAndRate;
+        let clockElement = document.getElementById('resolutions_clock_count');
+        let rateElement = document.getElementById('resolutions_clock_rate');
+
+        // let ratePerSecond = resolutionsTotalAndRate.resolutionsPerSecondLastCompleteMonth;
+        let ratePerSecond = resolutionsTotalAndRate.resolutionsPerSecondLast24Hours;
+        let incrementPerMs = ratePerSecond / 1000;
+        rateElement.textContent = ratePerSecond + "/second"
+
+        let start = new Date(resolutionsTotalAndRate.asOfTimestamp);
+        let currentCount = calculateResolutionsClock(start, incrementPerMs, resolutionsTotalAndRate.allTime);
+        clockElement.textContent = getClockText(currentCount);
+        clearInterval(resolutionsClockIntervalId);
+        resolutionsClockIntervalId = setInterval(function() {
+            let currentCount = calculateResolutionsClock(start, incrementPerMs, resolutionsTotalAndRate.allTime);
+            let clockText = getClockText(currentCount);
+            clockElement.textContent = clockText;
+        }, RESOLUTIONS_CLOCK_UPDATE_INTERVAL);
+    }
+
+    function calculateResolutionsClock(start, incrementPerMs, initialCount) {
+        let timeSinceStartMs = Date.now() - start;
+        let increment = Math.round(incrementPerMs * timeSinceStartMs);
+        let currentCount = initialCount + increment;
+        return currentCount;
+    }
+
+    function getClockText(count) {
+        let clockText = count.toLocaleString("en-US");
+        return clockText;
+    }  
+
+    function renderTotalHandlesChart(counts) {
+      let totalDois = convertTotalDoisDataForGoogleCharts(counts);
+      var data = google.visualization.arrayToDataTable(totalDois);
+      var options = {
+          chartArea: {'height': '80%'},
+          backgroundColor: 'transparent', 
+          responsive: true,        
+          height:600,
+          colors: ['#5C7392'],
+          title: 'Total DOIs',
+          legend: { position: 'bottom' },
+          trendlines: {
+              0: {
+                  type: 'exponential',
+                  color: '#FAB70C',
+                  tooltip: false
+              }
+          }
+      };
+      
+      var chart = new google.visualization.LineChart(document.getElementById('total-dois'));
+      chart.draw(data, options);
+    }
+    function convertTotalDoisDataForGoogleCharts(monthlyCounts) {
+        let result = [];
+        let columns = ["Date", "Total DOIs"];
+        result.push(columns);
+        for (let month in monthlyCounts) {
+            let value = monthlyCounts[month].doiCount;
+            let row = [new Date(month), value];
+            result.push(row);
+        }
+        return result;
+    }
+
+    function renderResolutionsChart(doiResolutions) {
+        let monthlyResolutions = doiResolutions.monthlyResolutions;
+
+        monthLabels = [];
+        resolutions = [];
+        both = [];
+        
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'date');
+        data.addColumn('number', 'resolutions');
+
+        for (var key in monthlyResolutions) {
+          if (!monthlyResolutions[key].isIncompleteMonth) {
+            if(key.substr(5)=='01') {
+              monthLabels.push(key.substr(0,4));
+            } else {
+              monthLabels.push("");
+            }
+            //monthLabels.push(key);
+            resolutions.push(monthlyResolutions[key].resolutions) 
+            both.push([key, monthlyResolutions[key].resolutions ]) ; 
+            
+            //console.log('adding row');
+            datestring = key + "-01";
+            var dateobj = new Date(datestring);
+            //console.log("datestring= " , datestring);
+            data.addRow([dateobj, monthlyResolutions[key].resolutions ]);
+                      
+          }
+        }
+        //console.log(both);
+        // Define the chart to be drawn.
+        console.log("drawing google chart");
+          
+        // Set chart options
+        var options = {
+          hAxis: {
+            format: 'Y',
+            slantedText:true,
+            slantedTextAngle:45
+          },
+          chartArea: {'height': '80%'},
+          fontName:'futura-pt',
+          colors: ['#5C7392'],
+          title:'DOI Resolutions', 
+          responsive: true,        
+          height:600,
+          timeline: {
+            groupByRowLabel: true
+          },
+          legend: { position: 'bottom'},
+          trendlines : { 
+            0: 
+              {
+                type: 'polynomial',
+                degree: 3,
+                color: '#FAB70C',
+                tooltip: false
+              }
+          }	// Draw a trendline for data series 0.
+        };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.LineChart(document.getElementById('doi-resolutions'));
+        chart.draw(data, options);
+
+        return;
+    }
+
+    function renderResolutionsBotPercent(doiResolutions) {
+      try {
+        let botPercentElement = document.getElementById('bot_percent');
+        let botPercentTextElement = document.getElementById('bot_percent_text');
+        let botPercent = doiResolutions.botPercent.botPercent;
+        let month = reformatMonth(doiResolutions.botPercent.month);
+        let botPercentContent =  botPercent + "%";
+        let botPercentTextContent = replaceWildCards(botPercentTextElement.textContent, "**MONTH**", month);
+        botPercentElement.textContent = botPercentContent;
+        botPercentTextElement.textContent = botPercentTextContent;
+        botPercentTextElement.style.opacity=1;
+      } catch {
+
+      }
+    }    
+
+    function replaceWildCards(theString, find, replace) {
+      return theString.replace(find, replace);
+    }
+
+    function reformatMonth(monthYear) {
+      const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+      ]
+      let d = new Date(monthYear);
+      let year = d.getFullYear();
+      let monthName = months[d.getMonth()];
+      return monthName + " " + year;
+    }
+
+    function renderResolutionsConnegPercent(doiResolutions) {
+      try {
+        let connegPercentElement = document.getElementById('content_negotiation_percent');
+        let connegPercentTextElement = document.getElementById('content_negotiation_text');
+
+        let connegPercent = doiResolutions.connegPercent.connegPercent;
+        let month = reformatMonth(doiResolutions.connegPercent.month);
+        let connegPercentContent =  connegPercent + "%";
+        let connegPercentTextContent = replaceWildCards(connegPercentTextElement.textContent,"**MONTH**", month);
+        connegPercentElement.textContent = connegPercentContent;
+        connegPercentTextElement.textContent = connegPercentTextContent;
+        connegPercentTextElement.style.opacity=1;
+      } catch {
+
+      }
+    }
+
+  </script>

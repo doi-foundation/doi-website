@@ -7,15 +7,18 @@
             </div>
         </div>
         <div class="col right">
-            <div class="title">{{ .title }}</div>
-            <div class="maintext">{{ .maintext }}</div>
+            <h2 class="title">{{ .title }}</h2>
+            <div class="maintext">
+                <p>{{ .maintext | markdownify }}</p>
+            </div>
 
+            {{ if .linkurl }}
             <div class='link-alt'>
                 <a href="{{ .linkurl }}">{{ .linktext }}</a>
-                <span class="material-symbols-outlined">
-                    arrow_right_alt
-                </span>           
+                <i class="fa-solid fa-arrow-right-long hover-move-right"></i>
             </div>
+
+            {{ end }}
         </div>
 
     </div>

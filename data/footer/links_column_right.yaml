@@ -1,9 +1,11 @@
 links:
-  - title: IS 26324
-    url: "/"
+  
   - title: The DOI Handbook
-    url: "/"
+    url: "https://doi.org/10.1000/182"
+  - title: ISO 26324
+    url: "https://www.iso.org/standard/81599.html"
   - title: Privacy Policy
-    url: "/"
-  - title: 404 Page
-    url: "/"
+    url: "/privacy-policy/"
+  - title: Trademarks (PDF)
+    url: "/resources/130718-trademark-policy.pdf"
+  

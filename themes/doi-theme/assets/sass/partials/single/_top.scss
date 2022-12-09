@@ -1,11 +1,15 @@
 section.single-top {
     width: $content-width;
-    margin:0 auto;
+    margin: ($standard-padding * 2) auto 0;
     
     .row {
         align-items: stretch;
         height: 100%;
-        padding:80px 0;
+        padding: ($standard-padding * 2) 0 $standard-padding  0;
+        
+        @media (max-width: $break-medium) {
+            padding: $mobile-padding 0;
+        }
     }
     .col {
     }
@@ -17,8 +21,8 @@ section.single-top {
         }
         .maintext {
             flex-basis:30%;
-            font-size:32px;
-            line-height:40px;
+            font-size:1.5rem;
+
         }
         .subtext {
             padding: 10px 0 5px;
@@ -28,15 +32,25 @@ section.single-top {
             flex-basis: 20%;
             padding-top:10px;
             a {
-                font-family: "Futura Bold";
+                font-family: "futura-pt-bold";
             }
-        }        
+        }     
+        @media (max-width: $break-xxlarge) {
+            padding-left:100px;
+        } 
+        @media (max-width: $break-xlarge) {
+            padding-left:200px;
+        }  
+        @media (max-width: $break-large) {   
+            padding-left: calc(var(--bs-gutter-x) * .5);         
+        }  
     }
     .left {
         position:relative;
         min-height:400px;
         
-        @media (max-width: $break-medium) {
+        @media (max-width: $break-large) {
+            min-height: 240px;
         }
         
         .circle-wrapper {
@@ -51,6 +65,12 @@ section.single-top {
                 background-color: $background-orange;
                 border-radius:50%;
                 z-index:-1;
+                
+                @media (max-width: $break-large) {
+                    width: 240px;
+                    height: 240px;
+                    top:-60px;
+                }
             }
             .texts {
                 position:absolute;
@@ -58,21 +78,26 @@ section.single-top {
                 left:0;
                 right:0;
                 bottom:0;
-                width:410px;
+                width: 80%;
+
                 h1 {
                     font-size:23px;
                     font-weight:bold;
-                    font-family: "Futura Bold";
+                    font-family: "futura-pt-bold";
                     margin-bottom:12px;
                     color:$sub-font-color;
+                    text-transform: none;
+                    margin-bottom: 0;
+                    margin-top: 0;
         
                 }
                 h2 {
                     color:#000;
-                    font-size:72px;
-                    line-height:80px;
+                    font-size:62px;
+                    line-height:1em;
                     text-transform: uppercase;
-                    font-family: 'Futura Bold';
+                    font-family: 'futura-pt-bold';
+                    margin-top: 0;
                     
                     @media (max-width: $break-small) {
                         font-size:40px;

@@ -1,0 +1,20 @@
+<section class="how-many">
+    <div class="row titlerow">
+        <h2 class="title">{{ .title }}</h2>
+    </div>
+    <div class="row numbers">
+        <div class="col">
+            <span id='resolutions_clock_count' class='bignumber'></span>
+            <span class='subtext'>{{ .toprighttext }}</span>          
+            <p class='footnote'>{{ .footnote }}<span id='resolutions_clock_rate' class='smallnumber'></span></p>
+        </div>
+    </div>    
+    <div class="row numbers">
+        <div class="col">
+            <span id='uptime_percent' class='bignumber'></span>
+            <span class='subtext'>{{ .uptimetext }}</span>          
+            <p class='footnote'>{{ .uptime_footnote }}<span id='resolutions_clock_rate' class='smallnumber'></span></p>
+        </div>
+    </div>
+    <div id="el"></div>
+</section>

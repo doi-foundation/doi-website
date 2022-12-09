@@ -1,6 +1,6 @@
 body {
     color: $main-font-color;
-    font-size:16px;
+    font-size:18px;
     font-weight:300;
 }
 .homepage-header, .single-header {
@@ -10,7 +10,12 @@ body {
 
 .row {
     display:flex;
-    padding: 40px 0;
+    padding: $standard-padding 0;
+
+    @media (max-width: $break-large) {
+        .col {
+        }
+    }
 }
 .column {
     flex:1;

@@ -1,0 +1,19 @@
+.bios {
+    
+    figure img {
+        border-radius: 50%;
+    }
+    
+    >[class~='row']:first-of-type {
+        padding-top: 0;
+    }
+    
+    .bio-link {
+        display: block;
+        
+        .fa, .fa-brands {
+            margin-right: .75em;
+        }
+    }
+    
+}

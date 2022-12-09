@@ -1,12 +1,14 @@
 <section class="benefits">
     <div class="row">
-        <div class="col heading">{{ .title }}</div>
+        <div class="col heading">
+            <h2>{{ .title }}</h2>
+        </div>
     </div>
-    <div class="row">
+    <div class="row benefit-wrappers">
         {{ range .benefits }}
         <div class="col">
             <div class="icon">{{ .icon |safeHTML }}</div>
-            <div class="title">{{ .title }}</div>    
+            <h3 class="title">{{ .title }}</h3>    
             <div class="text">{{ .text }}</div>    
             
         </div>

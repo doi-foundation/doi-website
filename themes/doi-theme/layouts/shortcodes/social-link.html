@@ -1,0 +1,1 @@
+<a href='{{ .Get "url" }}' class='bio-link'><i class='fa-brands fa-fw fa-{{ with .Get "icon" }}{{ . }}{{ else }}link{{ end }}'></i>{{ .Get "title" }}</a>

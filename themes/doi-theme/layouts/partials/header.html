@@ -1,7 +1,7 @@
 <header>
 	<div class="row">
 		<div class="col logo">			
-			<a href="{{ .Site.BaseURL }}"><img class='header-logo' src="/images/logos/header_logo_cropped.png" /></a>			
+			<a href="{{ .Site.BaseURL }}"><img class="header-logo" src="/images/logos/header_logo_cropped.svg" /></a>			
 		</div>
 	</div>
 	
@@ -21,9 +21,7 @@
 							<li>
 								{{ if .Params.nolink }}
 								<span class='nolink'>{{ .Name }}</span>
-								<span class="more material-symbols-outlined">
-									expand_more
-								</span>
+								<i class="fa-solid fa-fw fa-angle-down"></i>
 								{{ else }}
 								<a href="{{ .URL | relURL }}">{{ .Name }}</a>
 								{{ end }}

@@ -5,14 +5,12 @@
     {{ range sort .Site.Data.home.infos "weight" }}
         <div class="col" >
             <div class='icon'><img src="{{ .icon }}"/></div>
-            <div class="title">{{ .title }}</div>
+            <h2 class="title">{{ .title }}</h2>
             <div class="maintext">{{ .maintext | markdownify }}</div>
 
             <div class='link'>
                 <a href="{{ .linkurl }}">{{ .linktext }}</a>
-                <span class="material-symbols-outlined">
-                    arrow_right_alt
-                </span>           
+                <i class="fa-solid fa-fw fa-arrow-right-long"></i>
             </div>
         </div>
     {{ end }}

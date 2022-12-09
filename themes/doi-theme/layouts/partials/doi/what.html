@@ -1,12 +1,12 @@
 <section class="what-is">
     <div class="row">
         <div class="col left">
-            <span class='title'>WHAT IS THE</span>
-            <img class='what-is-logo' src="/images/logos/DOI Logo-Landscape RGB.svg" />
+            <h2 class='title'>WHAT IS THE</h2>
+            <img class='what-is-logo' src="/images/logos/DOI Logo-Landscape RGB cropped.svg" />
         </div>
-        <div class="col">
+        <div class="col right">
             {{ range $index, $element := .points }}
-            <div class='point'>
+            <div class='bullet-wrapper'>
                 <span class='index' style='background-color: {{ $element.color }};'>{{ add $index 1 }}</span>
                 <span class='text'>{{ $element.point }}</span>
 

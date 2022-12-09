@@ -27,8 +27,9 @@
             {{ partial "doi/benefits.html" . }}
           {{ end }}
 
-          
-          {{ partial "doi/growth_graph.html" . }}
+          {{ with .growth_graph }}          
+            {{ partial "doi/growth_graph.html" . }}
+          {{ end }}
 
           {{ with .infos }}
             {{ partial "single/infos.html" . }}
@@ -38,13 +39,21 @@
             {{ partial "doi/how_get.html" . }}
           {{ end }}
 
-          
-          {{ partial "doi/hits_graph.html" . }}
+          {{ with .total_graph }}
+            {{ partial "doi/total_graph.html" . }}
+          {{ end }}
 
           {{ with .standards }}
             {{ partial "doi/standards.html" . }}
           {{ end }}
-
+          
+          {{ with .world_map }}
+            {{ partial "doi/world_map.html" . }}
+          {{ end }}
+          
+          {{ with .visualisations }}
+            {{ partial "doi/visualisations.html" . }}
+          {{ end }}
           
         {{ end }}
 
@@ -52,47 +61,9 @@
         {{ partial "socials-side.html" . }}
       </div>
     </main>
-    <script>
-      /* for animating svg */
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          const square = entry.target.querySelector('.path.line');
-          const circles = entry.target.querySelectorAll('.path.circle');
-      
-          if (entry.isIntersecting) {
-            square.classList.add('line-animation');
-            circles.forEach(( thing) => thing.classList.add('circle-animation'));
-            return; // if we added the class, exit the function
-          }
-      
-          // We're not intersecting, so remove the class!
-          square.classList.remove('line-animation');
-          circles.forEach(( thing) => thing.classList.remove('circle-animation'));
-        });
-      });
-      
-      observer.observe(document.querySelector('.circle-line'));
     
-    
-    
-    
-      const observerlower = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          const square = entry.target.querySelector('.path.line');
-          const circles = entry.target.querySelectorAll('.path.circle');
+    {{ partial "svg-animations-js.html" . }}
       
-          if (entry.isIntersecting) {
-            square.classList.add('line-animation');
-            circles.forEach(( thing) => thing.classList.add('circle-animation'));
-            return; // if we added the class, exit the function
-          }
-      
-          // We're not intersecting, so remove the class!
-          square.classList.remove('line-animation');
-          circles.forEach(( thing) => thing.classList.remove('circle-animation'));
-        });
-      });
-      
-      observerlower.observe(document.querySelector('.circle-line-lower'));
-      </script>
+    {{ partial "numbers-graphs-js.html" . }}
+    
 {{ end }}

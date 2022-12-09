@@ -7,8 +7,18 @@
         {{ partial "home/top.html" . }}
         {{ partial "home/infos.html" . }}
         {{ partial "home/announcement.html" . }}
+
+        {{ with .Site.Data.doi.statistics }}
+          {{ partial "home/how_many_home.html" . }}
+        {{ end }}
+
         {{ partial "home/resolve.html" . }}
         {{ partial "socials-side.html" . }}
+
+        
       </div>
     </main>
+    
+    {{ partial "numbers-graphs-js.html" . }}
+    
 {{ end }}

@@ -1,3 +1,5 @@
+@import 'mixins/basics';
+
 @import "partials/variables",
         "partials/fonts",
         "partials/reset",
@@ -15,7 +17,10 @@
         "partials/who_can_apply",
         "partials/doi",
         "partials/responsive",
-        "partials/single/page";
+        "partials/single/page",
+        "partials/blocks-colored",
+        "partials/bios",
+        "partials/_how_many";
 
 body::-webkit-scrollbar:horizontal {
     display: none;
@@ -34,7 +39,7 @@ body{
             color: initial;
         }
     }
-    span {
+    span, i {
         color:$link-arrow;
         font-size:1rem;
     }
@@ -43,6 +48,7 @@ body{
 a {
     color: $link-blue;
     text-decoration:none;
+    font-family: 'futura-pt-bold';
     &:hover {
         color: $link-blue;
         text-decoration:underline;
@@ -51,11 +57,13 @@ a {
 .link-alt {    
     border:2px solid #fff;
     display:inline-block;
+    font-family: "futura-pt-bold";
+    transition: all 0.2s ease-in-out; 
+    
     a, span {
         color:#fff;
         display: inline-block;
         padding:10px;
-
     }
     a {
         
@@ -63,15 +71,46 @@ a {
         text-decoration: none;
         font-weight:bold;
         border-right:2px solid #fff;
-        padding:12px 40px 10px 40px;
+        padding:12px 40px;
         line-height: 2rem;
-    }
-    span {
-        font-size:1rem;
         
-        padding:12px 40px 10px 40px;
+        @media (max-width: $break-xsmall) {
+            padding: 12px 10px; 
+        }
+    }
+    span,i {
+        font-size:1rem;
+        padding:12px 40px;
+    
+        @media (max-width: $break-small) {
+            padding: 12px 20px; 
+        }
+        
+        @media (max-width: $break-xsmall) {
+            padding: 12px 10px; 
+        }
+    }
+    a + .hover-move-right {
+        transition: all 0.1s ease-in-out; 
+    }
+    a:hover + .hover-move-right {
+        padding-right:30px;
+        padding-left:50px;            
+        transition: all 0.2s ease-in-out; 
+    
+        @media (max-width: $break-small) {
+            padding-right:10px;
+            padding-left:30px;
+        }
+        
+        @media (max-width: $break-xsmall) {
+            padding-right:5px;
+            padding-left:15px;
+        }
+        
     }
 }
+
 
 .fa {
     display: inline-block;
@@ -80,4 +119,29 @@ a {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+
+td, th {
+    padding: 3px 8px;
+    vertical-align: top;
+}
+  
+thead tr, thead tr:hover {
+    background-color: $background-blue;
+    border: 1px solid $background-blue;
+    color: #fff;
+}
+td {
+    border: 1px solid #d8d2c4;
+}
+th {
+    border: 1px solid #d8d2c4;
+}
+tr:nth-child(2n+2) {
+    background-color: $background-grey;
+}
+  
+table.no-zebra tr:nth-child(2n+2) {
+    background-color: #fff;
 }

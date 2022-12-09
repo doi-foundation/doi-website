@@ -1,9 +1,9 @@
 section.single-two-column {
     
-    min-height:70vh;
     background-repeat:no-repeat;
     background-position-y: 57vh;
     background-size:50%;
+
     &.image-left {
         background-position-x:right;
     }
@@ -18,11 +18,24 @@ section.single-two-column {
             display:block;
             height:80%;
             margin:0 auto;
+        }       
+    }
+    
+    .col.left.image img {
+        @media (max-width: $break-large) {
+            margin-bottom: 21px;
         }
     }
+    
+    .col.right.image img {
+        @media (max-width: $break-large) {
+            margin-top: 21px;
+        }
+    }    
+    
     .title {
         color:#000;
-        font-family: 'Futura Bold';
+        font-family: 'futura-pt-bold';
         font-size:55px;
         line-height:55px;
         margin-bottom:20px;

@@ -8,24 +8,27 @@ section.communities {
         column-gap: 20px;
         row-gap: 20px;
         flex-wrap: wrap;
-        padding: 120px 0;
         .col {
-            
+            &.last-odd-filler {
+                visibility:hidden;
+                @media (max-width: $break-large) {
+                    display:none;
+                }
+            }
             @media (max-width: $break-large) {
                 width:100%;
-                margin-bottom:40px;
+                margin-bottom:$standard-padding;
             }
             flex-basis:49%;
             text-align:center;
             background-color:#fff;
             box-shadow: 0 0 6px rgba(0,0,0,0.15);
-            height:443px;
             display:flex;
             flex-direction:column;
             justify-content: center;
-            padding:40px;
+            padding: 0 $standard-padding $standard-padding $standard-padding;
             .logo {
-                flex:1;
+                height:150px;
                 align-items:center;
                 display:flex;
                 justify-content: center;
@@ -35,17 +38,17 @@ section.communities {
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position:center;
-                    
-                    
+                    @media (max-width: $break-medium) {                        
+                        width:60%;
+                        height:60%;
+                    }
                 }
             }
             .texts {
                 flex:1;
-                .title {
-                    font-family: 'Futura Bold';
-                    font-size:21px;
-                    text-transform: uppercase;
-                }
+            }
+            .linkurl{
+                text-transform: uppercase;
             }
         }
         

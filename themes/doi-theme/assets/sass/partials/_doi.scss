@@ -1,11 +1,12 @@
 .doi {
+    
     section {
     }
 
     .graphics-what {
         z-index:0;
         position:relative;
-        padding-bottom:100px;
+        padding: $standard-padding 0;
         background-color:$background-grey;
         .image {
             transition: all 0.2s;
@@ -18,26 +19,30 @@
             margin-top:20px;
             border:4px solid $background-blue;
             padding:10px 20px;
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             font-size: 18px;  
             color: $background-blue;
+            
+            @media (max-width: 800px) {
+                padding: 5px 10px;
+            }
         }
         .title {     
-            padding-top:80px;       
             font-size: 40px;            
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             text-transform: uppercase;
             text-align:center;
-            padding-bottom:40px;            
+            padding-bottom:$standard-padding;            
             position:relative;
             background-color:$background-grey;
+            margin: 0;
             color:#000;
         }
         .graphics-wrapper {
             position:relative;
             background-color:$background-grey;
             z-index:-3;
-            padding-top:40px;
+            padding-top:$standard-padding;
             .row {
                 width: $content-width;
                 margin: 0 auto;
@@ -47,6 +52,14 @@
                 div {
                     flex:0 1 30%;
                     text-align:center;
+                    
+                    @media (max-width: 800px) {
+                        flex: 0 1 100%;
+                    }
+                }
+                
+                @media (max-width: 800px) {
+                    padding-bottom: $mobile-padding;
                 }
             }
             .circle-line {
@@ -56,6 +69,10 @@
                 width:100%;
                 height:100%;
                 z-index:-2;
+                
+                @media (max-width: 800px) {
+                    width: 20%;
+                }
             }
         }
     }
@@ -63,16 +80,15 @@
     .graphics-why {
         z-index:0;
         position:relative;
-        padding-bottom:100px;
+        padding-bottom:$standard-padding;
         .title {           
-            padding-top:80px;  
             font-size: 40px;            
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             text-transform: uppercase;
             text-align:center;
-            padding-bottom:40px;            
             position:relative;
             color:#000;
+            margin-top: 0;
         }
         .image {
             
@@ -99,6 +115,14 @@
                 div {
                     flex:0 1 30%;
                     text-align:center;
+                    
+                    @media (max-width: 800px) {
+                        flex:0 1 100%;
+                    }
+                }
+                
+                @media (max-width: 800px) {
+                    padding-bottom: $mobile-padding;
                 }
             }
             .circle-line-lower {
@@ -108,6 +132,10 @@
                 width:100%;
                 height:100%;
                 z-index:-2;
+                
+                @media (max-width: 800px) {
+                    width: 20%;
+                }
             }
         }
     }
@@ -115,9 +143,14 @@
         .texts {
             .main {
                 margin-top:20px;
-                font-family: "Futura Bold";
+                font-family: "futura-pt-bold";
                 font-size: 21px;    
-                color:#000;        
+                color:#000;
+                
+                @media (max-width: 700px) {
+                    margin-top: 10px;
+                    font-size: inherit;
+                }        
             }
             .sub {
                 font-size: 18px; 
@@ -126,57 +159,24 @@
     }
 
 
-    .how-many {
-        background-color: $background-blue;
-        .title {
-            color:#fff;
-            font-size: 40px;            
-            font-family: "Futura Bold";
-            text-align:center;
-            text-transform: uppercase;
-        }
-        .row.titlerow {
-            padding-top:80px;
-            padding-bottom:0;
-        }
-        .row.numbers {
-            padding-top:20px;
-            padding-bottom:80px;
-        }
-        .row {
-            width:$content-width;
-            margin:0 auto;
-            .col {
-                text-align: center;
-                .bignumber {
-                    color: $background-orange;
-                    font-family: "Futura Bold";
-                    font-size: 40px;
-                    display:block;
-                }
-                .subtext {
-                    color:#fff;
-                }
-            }
-        }
-    }
+    // .doi .how-many has been moved to _how-many.scss since it is now shared with home
+  
+  
     .what-is {
         background-color: $background-grey;
 
         .title {
             display:block;            
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             font-size:21px;
+            margin-bottom: $standard-padding;
         }
         .what-is-logo {
-            left:-80px;
-            top:-40px;
             position:relative;
-            width:600px;
+            width:500px;
             
             @media (max-width: $break-large) {                
-                width:500px;
-                left:-64px;
+                width:80%;
             }
         }
     
@@ -185,35 +185,34 @@
         .row {
             width: $content-width;
             margin: 0 auto;
+            column-gap: 80px;
             .col {
                 align-self: center;
-                .point {                    
-                    font-family: "Futura Bold";
+                .bullet-wrapper {                    
+                    font-family: "futura-pt-bold";
                     color:#000;
                     display:flex;
                     align-items: center;
-                    margin:80px 0;
+                    margin:$standard-padding 0 0;
                     .index {
                         color:#fff;
                         width:70px;
                         height:70px;                    
                         border-radius:50%;
-                        font-family: "Futura Bold";
+                        font-family: "futura-pt-bold";
                         font-size: 40px;
                         display: inline-flex; /* or inline-flex */
                         align-items: center; 
                         justify-content: center;
-                        margin-right:40px;
+                        margin-right:$standard-padding;
                         flex-shrink:0;
                         transition: all 0.2s;
                     }
-                    &:hover {
-                        .index {
-                        }
-                    }
-                    .text {
-                        
-                    }
+                }
+            }
+            .col.right {
+                @media (max-width: $break-large) {
+                    padding-top: 0;
                 }
             }
         }
@@ -223,32 +222,45 @@
         width: $content-width;
         margin:0 auto;
         .heading {
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             font-size:21px;
         }
         .row {
+            
+            padding: $standard-padding 0 0 0;
+            
+            @media (max-width: $break-large) {
+                padding: $mobile-padding 0 0 0;
+            }
+            
+            &.benefit-wrappers {
+                padding-top: 0;
+                padding-bottom: $standard-padding;
+                
+                @media (max-width: $break-large) {
+                    padding-bottom: $mobile-padding;
+                }
+            }
+            
             .col {
                 .title {                             
-                    font-family: "Futura Bold";
+                    font-family: "futura-pt-bold";
                     font-size:21px;
                 }
                 .icon {
                     color:#000;
                     
-                    font-size: 40px;
+                    font-size: 32px;
                     display: inline-flex; /* or inline-flex */
                     align-items: center; 
                     justify-content: center;
 
-                    padding: 10px;
+                    padding: 11px 7px;
                     border-radius:50%;
                     background-color: $background-orange;
-                    .material-symbols-outlined {
-                        font-size:32px;
-                    }
-                    margin-bottom:20px;
+
                     @media (max-width: $break-large) {
-                        margin-top:40px;
+                        margin-top:$standard-padding;
                     }
 
                 }
@@ -259,28 +271,71 @@
     
 
     .growth-graph {
-        width:$content-width;
-        margin:0 auto;
+        .row {
+            width:$content-width;
+            margin:0 auto;
+        }
+        
+        .row:first-of-type {
+            padding-bottom:0;
+        }
+        .row:last-of-type {
+            padding-top:0;
+        }
+        .title {
+            text-align:center;
+        }
         .heading {
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             font-size:21px;
         }
-        .image {
+        .graph {
             text-align:center;
-            img {
-                width: 80%;
+            #doi-resolutions {
+                //min-height:50vh;
             }
         }
     }
-    .hits-graph {
+    .map-graph {
         background-color:$background-grey;
         .row {
-            
+            width:$content-width;
+            margin:0 auto;
+        }
+        .row:first-of-type {
+            padding-bottom:0;
+        }
+        .title {
+            text-align:center;
+        }
+    }
+    .hits-graph {
+        .row {
+            width:$content-width;
+            margin:0 auto;
+        }
+        .row:first-of-type {
+            padding-bottom:0;
+        }
+        .row:last-of-type {
+            padding-top:0;
+        }
+        .title {
+            text-align:center;
+        }
+        background-color:$background-grey;
+        .graph {
+            text-align:center;
+            #total-dois {
+                //min-height:50vh;
+            }
+        }
+        .row {            
             width:$content-width;
             margin:0 auto;
         }
         .heading {
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             font-size:21px;
         }
         .image {
@@ -290,26 +345,28 @@
             }
         }
     }
-    .doi-get {
+    .how-get {
         
-            
-        margin: 80px 0 0;
-        background-size: contain;
-        background-position:100% 100px;
+        background-position:bottom right;
         background-repeat:no-repeat;
+        background-position-y: 40px;
+        background-size: 500px;
         
         @media (max-width: $break-large) {
             background-size: 0;
         }
         z-index:-1;
         .title {                               
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             font-size:21px;
         }
         h2 {
-                                
-            font-family: "Futura Bold";
-            font-size:18px;
+            font-size:21px;
+        }
+        h3 {
+            font-size: 18px;
+            color: $main-font-color;
+            margin-bottom: 0;
         }
         .row {
             width:$content-width;
@@ -325,16 +382,11 @@
     }
     .standards {
         width:$content-width;
-        margin:40px auto;
+        margin:0 auto;
         .title {                               
-            font-family: "Futura Bold";
+            font-family: "futura-pt-bold";
             font-size:21px;
-            margin-bottom:40px;
-        }
-        h2 {
-                                
-            font-family: "Futura Bold";
-            font-size:18px;
+            margin-bottom:20px;
         }
         .row {
             align-items: center;
@@ -355,6 +407,9 @@
            
         }
 
+    }
+    .visualisations .row .content {
+        text-align:center;
     }
     
 }

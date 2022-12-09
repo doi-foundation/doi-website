@@ -5,17 +5,23 @@ header {
     top:0;
     left:0;
     z-index:200;
-    &:hover {
+    .navigation-container .nav:hover {
         background:white;
-        box-shadow: 0 0 6px rgba(0,0,0,0.15);
+        box-shadow: 0 10px 6px -6px rgba(0,0,0,0.15);
+
     }
-    &:hover .navigation-container {
+    .navigation-container .nav:hover {
         background:white;
         .menu-items {
             z-index:200;
         }
         nav ul.menu-items li ul.submenu {
             display:block;
+        
+            li {
+                margin-top: 1em;
+            }
+        
         }
     }
     
@@ -36,7 +42,6 @@ header {
     }
     .header-logo {
         width:250px;
-        position:absolute;
         top:0;
         left:0;
         z-index:5;
@@ -46,6 +51,10 @@ header {
         margin:0 auto;
         display:flex;
         position:relative;
+        padding: 40px 0;
+
+        @media (max-width: $break-large) {
+        }
 
         @media (max-width: $break-medium) {
             display:block;
@@ -57,11 +66,11 @@ header {
 
     .col.logo {
         flex:0 1 30%;
+        padding-left: 0;
     }
 
     .navigation-container {
-        
-        
+                
         position:relative;
         top:0;
         left:0;
@@ -73,11 +82,16 @@ header {
             position:relative;
             margin-left: auto; 
             margin-right: 0;
-            margin-top:-60px;
+            margin-top:-80px;
+            margin-bottom:40px;
             z-index:3;
+            background:#fff;
+
+
             
             .menu-items {
                 justify-content: flex-end;
+                margin-bottom:0;
             }
             a {
                 color: $main-font-color;
@@ -93,15 +107,17 @@ header {
                 order:2;
                 display:flex;
                 margin-right:60px;
+                line-height: 1.3em;
                 li {
                     list-style:none;
                     display:inline-block;
                     margin-left:60px;
                     text-transform: uppercase;
-                    width:160px;
+                    width:180px;
                     span.nolink {
                         display:inline-block;
                         margin-bottom:10px;
+                        font-family: futura-pt-bold;
                     }
                     span.more {
                         font-size: 16px;
@@ -115,6 +131,10 @@ header {
                             display: block;
                             margin:0;
                             padding:0;
+                            
+                            a {
+                                font-family: 'futura-pt';
+                            }
                         }
                     }
                 }
@@ -138,17 +158,18 @@ header {
                     display: block;
                     height: 32px;
                     width: 30px;
-                    top:20px;
+                    top:0;
                     z-index: 501;
                     opacity: 0;
                     border:3px solid red;
+                    cursor: pointer;
                 }
                 .hamburger-lines {
                     display: block;
                     height: 23px;
                     width: 35px;
                     position: absolute;
-                    top: 17px;
+                    top: -3px;
                     z-index: 500;
                     display: flex;
                     flex-direction: column;
