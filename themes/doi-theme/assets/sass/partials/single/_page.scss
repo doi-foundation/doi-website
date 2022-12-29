@@ -20,6 +20,18 @@ body {
   ol, ul {
     padding-left: 1rem;
   }  
+  
+  dl {
+  
+    dt {
+      font-family: 'futura-pt-bold';
+      font-weight: 700;
+    }
+    
+    dd {
+      padding-left: 2em;
+    }
+  }
 
 }
 

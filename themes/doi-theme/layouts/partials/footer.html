@@ -1,3 +1,11 @@
+{{ if .Params.showdate }}
+<note aria-role="note">
+	<div class="page-content">
+		Updated {{ dateFormat "January 2, 2006" .Params.date }}
+	</div>
+</note>
+{{ end }}
+
 <footer>
 	<div class="row">
 		<div class="col">
