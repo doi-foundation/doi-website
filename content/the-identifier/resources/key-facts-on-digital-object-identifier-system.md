@@ -9,7 +9,7 @@ imagemain = "Factsheets"
 
 ## Key Facts on Digital Object Identifier System
 
-[< back to the Resources page](../)
+[< back to the Resources page](/the-identifier/resources/)
 
 ### Key concepts and abbreviations
 

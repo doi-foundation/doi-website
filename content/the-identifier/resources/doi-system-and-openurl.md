@@ -9,7 +9,7 @@ imagemain = "Factsheets"
 
 ## DOI® System and OpenURL
 
-[< back to the Resources page](../)
+[< back to the Resources page](/the-identifier/resources/)
 
 ### OpenURL: Syntax and System
 

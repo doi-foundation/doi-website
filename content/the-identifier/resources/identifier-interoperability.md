@@ -9,7 +9,7 @@ imagemain = "Factsheets"
 
 ## Identifier Interoperability
 
-[< back to the Resources page](../)
+[< back to the Resources page](/the-identifier/resources/)
 
 Resources of interest in digital networks originate from a wide variety of sources, and may carry identifiers from different established public schemes, official standards, de facto schemes, or private cataloguing numbering. A key step in facilitating preservation, re-use and exchange of information is to enable users to re-use these identifiers (and their associated data) across different applications. Such interoperability of identifiers encompasses not only technical aspects of interoperability but consideration of the purpose and community of use of the identifiers.
 

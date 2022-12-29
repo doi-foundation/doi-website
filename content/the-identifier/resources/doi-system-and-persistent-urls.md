@@ -9,7 +9,7 @@ imagemain = "Factsheets"
 
 ## DOI® System and Persistent URLs (PURLs)
 
-[< back to the Resources page](../)
+[< back to the Resources page](/the-identifier/resources/)
 
 A PURL is a Persistent Uniform Resource Locator. Functionally, a PURL is a URL. However, instead of pointing directly to the location of an Internet resource, a PURL points to an intermediate resolution service. The PURL resolution service associates the PURL with the actual URL and returns that URL to the client as a standard HTTP redirect. The OCLC PURL Service has been strongly influenced by the active participation of OCLC's Office of Research in the Internet Engineering Task Force Uniform Resource Identifier working groups. PURLs are an approach to fixing the problem of unstable URLs. The 2002 OCLC Web Survey includes measurement of percent of IP addresses identifying a Web site in Year A also identifying a Web site in Year B: almost half of web addresses registered in one year are no longer reachable after one year. As time goes on this compounds: only 13% of the web addresses registered in 1998 were still around in 2002 (19% of the sites created in 1999 survived to 2002, as did 33% of the 2000 ones and 51% of those from 2001). The folly of relying on URLs alone for persistence is dramatically brought home by this statistic.
 

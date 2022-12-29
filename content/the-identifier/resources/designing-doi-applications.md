@@ -9,7 +9,7 @@ imagemain = "Factsheets"
 
 ## Designing DOI® Applications
 
-[< back to the Resources page](../)
+[< back to the Resources page](/the-identifier/resources/)
 
 _This factsheet provides some notes and suggestions on common issues encountered in thinking about how the DOI System can be applied._
 

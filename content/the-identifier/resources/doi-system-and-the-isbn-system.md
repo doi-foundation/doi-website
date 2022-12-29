@@ -9,7 +9,7 @@ imagemain = "Factsheets"
 
 ## DOI® System and the ISBN System
 
-[< back to the Resources page](../)
+[< back to the Resources page](/the-identifier/resources/)
 
 ### ISBN and ISBN-A
 

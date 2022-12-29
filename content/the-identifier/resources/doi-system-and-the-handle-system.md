@@ -9,7 +9,7 @@ imagemain = "Factsheets"
 
 ## DOI® System and the Handle System®
 
-[< back to the Resources page](../)
+[< back to the Resources page](/the-identifier/resources/)
 
 The International DOI Foundation (IDF) is a strong supporter of the Handle System® (for information see [Handle.Net](http://www.handle.net/)®) and believes it to be the best infrastructure component available today for managing digital objects. That is why the DOI system uses the Handle System. Handles by themselves are necessary but not sufficient for the function of the DOI system, a complete framework for managing intellectual content and facilitating electronic commerce. It is sometimes asked: "If the DOI system is based on the Handle System, why not cut out the middleman and use handles alone?" The answer is simple: "DOI® names are more than handles".
 
