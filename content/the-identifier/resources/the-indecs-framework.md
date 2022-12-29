@@ -9,6 +9,8 @@ imagemain = "Factsheets"
 
 ## The indecs Framework
 
+[< back to the Resources page](../)
+
 The DOI® System uses work based on the indecs Framework as the basis for its semantic interoperability model. This factsheet is provided as background information on indecs.
 
 ### indecs project

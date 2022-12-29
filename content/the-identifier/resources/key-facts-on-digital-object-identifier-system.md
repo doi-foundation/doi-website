@@ -9,6 +9,8 @@ imagemain = "Factsheets"
 
 ## Key Facts on Digital Object Identifier System
 
+[< back to the Resources page](../)
+
 ### Key concepts and abbreviations
 
 *   DOI = Digital Object Identifier

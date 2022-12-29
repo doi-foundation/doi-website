@@ -9,6 +9,8 @@ imagemain = "Factsheets"
 
 ## DOI® System and Standard Identifier Schemes
 
+[< back to the Resources page](../)
+
 This factsheet discusses the relationship between the DOI System and other standard identifier schemes (also known as registries of identifiers).
 
 ### Identifier Registries

@@ -10,6 +10,8 @@ imagemain = "Factsheets"
 
 ### DOI Foundation and Topics
 
+[< back to the Resources page](../)
+
 The DOI Foundation is actively opting out of the cohort calculations which enable Google-designed technologies known as Topics, formerly known as Federated Learning of Cohorts (FLoC). These technologies aim to allow the effective targeting of online advertising by grouping users into large "cohorts" based on common browsing activity.
 
 The use of the DOI web proxy and other doi.org domains are excluded from this calculation because The DOI Foundation ensures that responses are tagged so that they are ignored by these cohort calculations - even if the client browser implements it.

@@ -18,13 +18,13 @@ imagemain = "Resources"
 
 Over the years we’ve developed fact sheets to support:
 
-- [Key Facts on Digital Object Identifier System    ****](key-facts-on-digital-object-identifier-system)
+- [Key Facts on Digital Object Identifier System](key-facts-on-digital-object-identifier-system)
 - [Designing DOI Applications](designing-doi-applications)
 - [DOI® System and Internet Identifier Specifications](doi-system-and-internet-identifier-specifications)
 - [Identifier Interoperability](identifier-interoperability)
 - [The indecs Framework](the-indecs-framework)
 - [DOI System and Standard Identifier Schemes](doi-system-and-standard-identifier-schemes)
-- [DOI System and the Handle System  *****](doi-system-and-the-handle-system)
+- [DOI System and the Handle System](doi-system-and-the-handle-system)
 - [DOI Resolution Documentation](doi-resolution-documentation)
 - [DOI System and the ISBN System](doi-system-and-the-isbn-system)
 - [DOI System and Persistent URLs (PURLs)](doi-system-and-persistent-urls)

@@ -9,6 +9,8 @@ imagemain = "Factsheets"
 
 ## Designing DOI® Applications
 
+[< back to the Resources page](../)
+
 _This factsheet provides some notes and suggestions on common issues encountered in thinking about how the DOI System can be applied._
 
 The DOI System has the flexibility to meet identification and resolution requirements of any application domain. However, these don't come "in a box": someone needs to build the specific social and technical structures to support the particular requirements of a community, and provide applications which offer value to that community. In designing a DOI System application several questions need to be considered.

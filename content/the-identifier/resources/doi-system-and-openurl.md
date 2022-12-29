@@ -9,6 +9,8 @@ imagemain = "Factsheets"
 
 ## DOI® System and OpenURL
 
+[< back to the Resources page](../)
+
 ### OpenURL: Syntax and System
 
 OpenURL is a NISO standard syntax for transporting information (metadata and identifiers) about one or multiple referents within URLs. OpenURL provides a syntax for encoding metadata (but not a source of it), restricted to the world of URLs (unlike the DOI system's wider application). This interface can be used to tie together otherwise disparate services such as centralized resolution systems and local knowledge of available referents.

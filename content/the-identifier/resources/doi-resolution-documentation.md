@@ -9,6 +9,8 @@ imagemain = "Factsheets"
 
 ## DOI® Resolution Documentation
 
+[< back to the Resources page](../)
+
 1\. [Resolving DOIs Using the Proxy Server System](#1-resolving-dois-using-the-proxy-server-system)  
 2\. [Encoding DOIs for Use in URIs](#2-encoding-dois-for-use-in-uris)  
 3\. [Proxy Server Query Parameters](#3-proxy-server-query-parameters)  

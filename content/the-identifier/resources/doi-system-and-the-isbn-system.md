@@ -9,6 +9,8 @@ imagemain = "Factsheets"
 
 ## DOI® System and the ISBN System
 
+[< back to the Resources page](../)
+
 ### ISBN and ISBN-A
 
 The ISBN (International Standard Book Number) is a 13-digit identification number and system, widely used in the international book trade for over 35 years and assigned through a network of international ISBN Registration Agencies. ISBNs are used to identify each unique publication whether in the form of a physical book or related materials such as eBooks, software, mixed media etc.
