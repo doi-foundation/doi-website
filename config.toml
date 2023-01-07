@@ -140,7 +140,7 @@ gzip = true
   parent = 'identifier'
 [[menu.main]]
   name = 'DOI Handbook'
-  url = '/the-identifier/doi-handbook/'
+  url = '/the-identifier/resources/handbook/'
   weight = 4
   identifier = 'doi-handbook'
   parent = 'identifier'

@@ -5,13 +5,14 @@
 		{{ with .Params }}
 			{{ partial "single/top.html" . }}
 		{{ end }}
-		<div class="page-content single">
+		<div class="page-content handbook list">
 			<article>
 				<div>
 					{{ .Content }}
 				</div>
 				
 			</article>
+		{{ partial "handbook/subnav.html" . }}
 		</div>
         {{ partial "socials-side.html" . }}
 	</main>
