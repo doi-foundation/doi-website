@@ -4,9 +4,8 @@ date = "2017-03-21"
 showdate = true
 draft = false
 # the following section is for the header
-maintext = "Numbering"
-imagetop = "The Identifier"
-imagemain = "DOI Handbook"
+imagetop = "DOI Handbook"
+imagemain = "Numbering"
 type = "handbook"
 +++
 
