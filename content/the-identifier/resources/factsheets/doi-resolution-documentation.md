@@ -89,29 +89,35 @@ Note also that web browser treatment of "/./" and "/../" can be inconsistent. It
 
 ### 3\. Proxy Server query parameters
 
-<dl>
-	<dt>noredirect</dt>
-	<dd>Do not redirect using URL or 10320/loc values; display handle values instead.</dd>
-	<dt>ignore_aliases</dt>
-	<dd>Ordinarily the proxy will take a handle value of type HS\_ALIAS to be a handle that should be resolved instead of the input handle; with this parameter values of type HS\_ALIAS are ignored.</dd>
-	<dt>auth</dt>
-	<dd>Authoritative query. The proxy will bypass its cache and resolve the handle at an authoritative server.</dd>
-	<dt>cert</dt>
-	<dd>Certified query. The proxy will require an authenticated response from the handle server. Not generally needed by end users.</dd>
-	<dt>index</dt>
-	<dd>Only resolve the handle value at the specified index. May be repeated to resolve multiple indices.</dd>
-	<dt>type</dt>
-	<dd>Only resolve handle values of the specified type. May be repeated to resolve multiple types.</dd>
-	<dt>urlappend</dt>
-	<dd>The value of this parameter is appended to the end of the URL used for redirection.</dd>
-	<dt>locatt=key:value</dt>
-	<dd>For multiple redirection; specifies a key:value pair to determine the choice of redirection from 10320/loc values.</dd>
-	<dt>action=showurls</dt>
-	<dd>For multiple redirection; returns an XML representation of the possible redirect locations.</dd>
-	<dt>nols=y</dt>
-	<dd>Some libraries and other institutions use a special cookie to cause the DOI system Proxy Server to redirect users to an "appropriate copy" using a local service. For example users may be redirected to the full text of a journal article already purchased by the library, instead of a landing page indicating a fee. Users can add the "nols=y" query parameter to prevent the local service redirect.</dd>
-</dl>
+noredirect
+: Do not redirect using URL or 10320/loc values; display handle values instead.
 
+ignore\_aliases
+: Ordinarily the proxy will take a handle value of type HS\\\_ALIAS to be a handle that should be resolved instead of the input handle; with this parameter values of type HS\\\_ALIAS are ignored.
+
+auth
+: Authoritative query. The proxy will bypass its cache and resolve the handle at an authoritative server.
+
+cert
+: Certified query. The proxy will require an authenticated response from the handle server. Not generally needed by end users.
+
+index
+: Only resolve the handle value at the specified index. May be repeated to resolve multiple indices.
+
+type
+: Only resolve handle values of the specified type. May be repeated to resolve multiple types.
+
+urlappend
+: The value of this parameter is appended to the end of the URL used for redirection.
+
+locatt=key:value
+: For multiple redirection; specifies a key:value pair to determine the choice of redirection from 10320/loc values.
+
+action=showurls
+: For multiple redirection; returns an XML representation of the possible redirect locations.
+
+nols=y
+: Some libraries and other institutions use a special cookie to cause the DOI system Proxy Server to redirect users to an "appropriate copy" using a local service. For example users may be redirected to the full text of a journal article already purchased by the library, instead of a landing page indicating a fee. Users can add the "nols=y" query parameter to prevent the local service redirect.
 ### 4\. Which RA?
 
 Which RA? is a simple service that has been built to examine the type/value pairs returned from handle resolution and provide specific information that is available from the doi.org Proxy System. This service returns the name of the DOI Registration Agency (RA) responsible for a specific DOI, or group of DOIs. When a DOI name is appended to the string "https://doi.org/doiRA/", a resolution (HTTP GET) of that URL will return a bit of JSON specifying the name of the RA. Resolving [https://doi.org/doiRA/10.5240/B1FA-0EEC-C316-3316-3A73-L](https://doi.org/doiRA/10.5240/B1FA-0EEC-C316-3316-3A73-L) will return:

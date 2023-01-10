@@ -19,39 +19,38 @@ Compliance with this and subsequent versions of the DOI Handbook will ensure com
 
 ### Translations
 
-The DOI Handbook has been translated into [Chinese](doi_handbook/translations/chinese/hb.html), [Korean](doi_handbook/translations/korean/hb.html), and [Japanese](doi_handbook/translations/japanese/hb.html). Contact Guo Xiaofeng of ISTIC at doi\_om@istic.ac.cn for assistance with the Chinese version, Mr. Jinseop Shin at js.shin@kisti.re.kr for assistance with the Korean version, or support@japanlinkcenter.org for assistance with the Japanese version. Note that the English version may include changes not reflected in the translations and it takes precedence over all translated versions.
+The DOI Handbook has been translated into [Chinese](translations/chinese/hb), [Korean](translations/korean/hb), and [Japanese](translations/japanese/hb). Contact Guo Xiaofeng of ISTIC at doi\_om@istic.ac.cn for assistance with the Chinese version, Mr. Jinseop Shin at js.shin@kisti.re.kr for assistance with the Korean version, or support@japanlinkcenter.org for assistance with the Japanese version. Note that the English version may include changes not reflected in the translations and it takes precedence over all translated versions.
 
-[Table of Contents](doi_handbook/TOC.html)  
-Complete list of chapters and subchapters.
+## Table of Contents
 
-Chapter 1 [Introduction](doi_handbook/1_Introduction.html)  
+Chapter 1 [Introduction](1_introduction)  
 History, standards, trademarks, system overview.
 
-Chapter 2 [Numbering](doi_handbook/2_Numbering.html)  
+Chapter 2 [Numbering](2_numbering)  
 Syntax, assignment of DOI names, character sets, other identifier schemes.
 
-Chapter 3 [Resolution](doi_handbook/3_Resolution.html)  
+Chapter 3 [Resolution](3_resolution)  
 Simple and multiple resolution, Handle System, DOI System Proxy Server.
 
-Chapter 4 [Data Model](doi_handbook/4_Data_Model.html)  
+Chapter 4 [Data Model](4_data_model)  
 Policy, interoperability, DOI metadata & metadata requirements, ISO 26324.
 
-Chapter 5 [Applications](doi_handbook/5_Applications.html)  
+Chapter 5 [Applications](5_applications)  
 Type/Value pairs, DOI resolution, application profiles, digital object registry technology.
 
-Chapter 6 [Policies](doi_handbook/6_Policies.html)  
+Chapter 6 [Policies](6_policies)  
 Summary of key policies, and description of policy formulation, including agreements.
 
-Chapter 7 [International DOI Foundation](doi_handbook/7_IDF.html)  
+Chapter 7 [International DOI Foundation](7_idf)  
 Role, responsibilities and membership information for the organization that governs the DOI system.
 
-Chapter 8 [Registration Agencies](doi_handbook/8_Registration_Agencies.html)  
+Chapter 8 [Registration Agencies](8_registration_agencies)  
 Operational and technical requirements of Registration Agencies, including their role in managing DOI names for users.
 
-Chapter 9 [Operating Procedures](doi_handbook/9_OperatingProcedures.html)  
+Chapter 9 [Operating Procedures](9_operating_procedures)  
 Rules and procedures for registering and maintaining DOI names and their associated metadata.
 
-[Glossary of Terms](doi_handbook/Glossary.html)
+[Glossary of Terms](glossary)
 
-[Bibliography](doi_handbook/Bibliography.html)
+[Bibliography](bibliography)
 

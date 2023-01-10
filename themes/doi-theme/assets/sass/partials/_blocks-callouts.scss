@@ -56,7 +56,8 @@ section.block-blue {
 
 }
 
-section.block-grey {
+section.block-grey,
+section.block-example {
     background-color: $background-grey;
 }
 
@@ -71,4 +72,11 @@ section.block-blue {
     a {
         color: $background-orange;
     }
+}
+
+section.block-example {
+    margin: 0 2em;
+    border: 1px solid #ccc;
+    padding: 1em; 
+    margin-bottom: $standard-padding;
 }

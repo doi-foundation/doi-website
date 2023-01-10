@@ -18,7 +18,7 @@
         "partials/doi",
         "partials/responsive",
         "partials/single/page",
-        "partials/blocks-colored",
+        "partials/blocks-callouts",
         "partials/bios",
         "partials/_how_many";
 
@@ -126,7 +126,11 @@ td, th {
     padding: 3px 8px;
     vertical-align: top;
 }
-  
+
+dd {
+    padding-bottom: 30px;
+}
+
 thead tr, thead tr:hover {
     background-color: $background-blue;
     border: 1px solid $background-blue;
