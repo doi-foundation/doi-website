@@ -103,6 +103,6 @@ imagemain = "Factsheets"
 *   IDF owns DOI®, a registered trademark for the system
 *   IDF does not have any patents (or patent applications) on DOI System
 *   IDF collectively licences appropriate technology from suppliers on behalf of members
-*   [Patent Policy](../doi_handbook/pub_agreements/130718Trademark_Policy.pdf) in place
+*   [Patent Policy](/resources/130718Trademark_Policy.pdf) in place
 *   All RAs must sign RA agreement re use of IDF System
 *   IDF is a participant in related projects
