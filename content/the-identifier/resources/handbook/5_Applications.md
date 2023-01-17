@@ -29,7 +29,7 @@ _This chapter discusses some of the ways in which multiple resolution can be har
       **[5.7.2](#5.7.2)** DO Architecture  
 **[5.8](#5.8)** Using DOI names to identify fragments
 
-### 5.1 Introduction {5.1}
+### 5.1 Introduction {#5.1}
 
 In order to maintain a persistent identifier, an active management service in collaboration with registrants is required; to justify that management service, a DOI application normally provides more value than simply registering a DOI — typically a Registration Agency offers an added value service (see Chapter 8, [Registration Agencies](/the-identifier/resources/handbook/8_registration_agencies)), such as citation linking or metadata management.
 
@@ -37,7 +37,7 @@ DOI names can identify many types of content, and may link to more than just a p
 
 This chapter covers the fundamentals of DOI applications, discusses design elements for developers to consider when creating new services that can take advantage of the system's features, and describes several example services offered by Registration Agencies based on DOI name resolution. Further, this chapter describes approaches to grouping services via Application Profiles, how DOI name resolution and interoperable semantics can be combined using the Vocabulary Mapping Framework, and how the DOI system works with digital object registry technologies. 
 
-### 5.2 Designing Applications {5.2}
+### 5.2 Designing Applications {#5.2}
 
 #### 5.2.1 Basic Functionality {#5.2.1}
 
@@ -70,7 +70,7 @@ Creating services that take advantage of DOI structured data to create consisten
 
 A sampling of DOI application services based on multiple resolution and content negotiation are described below. New services may be created at any time. Questions can be sent to [contact@doi.org](mailto:contact@doi.org).
 
-### 5.3 Multiple Resolution Applications
+### 5.3 Multiple Resolution Applications {#5.3}
 
 The most basic DOI application is resolution of a DOI to a "URL" type, a simple, single point resolution. The proxy resolves the DOI name, sees the URL type and knows that the associated value can be returned to the end user client, likely a web browser, as an HTTP redirect. The service succeeds because 1) the client software (the proxy server _(https://doi.org_ (preferred) and the earlier _http://dx.doi.org_) was programmed to look for the URL type, extract the value, embed it in an HTTP redirect, and send it back to the end user client, and 2) the administrator of the specific DOI name understood the URL type and added the appropriate type/value pair.
 
@@ -134,7 +134,7 @@ Note that even if this approach were to be applied to millions of an RA's existi
 
 It is also interesting to note that [Schema.org](http://Schema.org/) provides technical documentation on the ways in which the major search engines will recognize structured data in web pages, by getting rich snippets of content and data from a site directly into search engine results pages. Schema.org eschews RDFa in favour of simpler HTML5 markup. The concept is that "rich snippets" will allow search engines to read meaningful semantics into content on the web. Such "rich snippets" are exactly what is done with 10320/loc and the 'chooseby' approach. If schema.org defines interesting snippets, if they become important enough they could be easily recorded as values and/or generated out of the proxy. 
 
-### 5.4 Linked Data
+### 5.4 Linked Data {#5.4}
 
 A prominent use of the 'choose-by' mechanism described above is redirection to Linked Data services. Linked data is the general term for a set of best practices for exposing data in machine-readable form using the content-negotiation feature of the standard HTTP web protocol. These best practices support the development of tools to link and make use of data from multiple web sources without the need to deal with many different proprietary and incompatible application programming interfaces (APIs), and use of HTTP to request data in structured form meant for machines instead of human-readable displays. In the early days of the web, human beings were following most URLs, and it made sense that the DOI web proxy only resolved DOI names to human-readable web pages, but this is no longer the case.
 
@@ -194,11 +194,11 @@ The proxy will return the "Vary: Accept" HTTP header whenever a DOI is resolved 
 
 The goals of Linked Data — content negotiation using HTTP URIs in order for both people and user agents to make use of information about an object in standard formats such as RDF and XML, and acquire links to other related URIs that improve discovery — are being met using the DOI system's persistent, high quality data. The number of Linked Data applications will continue to grow. Please contact [contact@doi.org](mailto:contact@doi.org) for additional information if you have a requirement or an idea for a new service.
 
-### 5.5 Application Profiles
+### 5.5 Application Profiles {#5.5}
 
 DOI names can be grouped into Application Profiles (APs), which define the services, including metadata services, which are available for that set of DOI names. Each DOI name can be a member of one or more APs. By default, for example, every DOI name is a member of an Application Profile which resolves the DOI name to some network location that contains at least the minimal kernel metadata for that DOI name. Application Profiles can be useful as a conceptual grouping, but may also be technically expressed in the DOI data model as part of the resolution mechanism. Mechanisms for formally registering APs and including them as part of the structured data returned with each DOI resolution, e.g., as a label, will depend on application requirements; potential users should consult with IDF.
 
-### 5.6 Expressing Relationships Between DOI Names
+### 5.6 Expressing Relationships Between DOI Names {#5.6}
 
 The DOI system can provide further support in the development of Linked Data or other mechanisms for relating entities identified with DOI names, by offering the resolution capability combined with simple, useful and interoperable semantics using the [Vocabulary Mapping Framework](../VMF/index.html) (VMF) to define (or map from existing schemes) specific relationships. Potential users of this facility are strongly encouraged to discuss this with the IDF community.
 
@@ -310,7 +310,7 @@ Each of the key Relators has any number of specialized children (which may be ad
         HasIllustrator  
         etc
 
-### 5.7 Using the DOI System with Digital Object technologies
+### 5.7 Using the DOI System with Digital Object technologies {#5.7}
 
 An optional path which has been followed by some DOI implementations is to use the DOI System with the CNRI [Cordra](http://cordra.org) software which provides complementary functionality. Both the Handle System and Cordra are part of the wider [Digital Object Architecture](http://hdl.handle.net/4263537/5041). Some customization of the basic technologies may be required: this could be done by CNRI or others (note that this registry technology is not part of the DOI System and not managed by the IDF, but is endorsed for use with DOI).
 
@@ -332,6 +332,6 @@ Objects defined in the DOI system are of any form: a DOI name can be assigned to
 
 We deal with such overlays all the time at many levels: e.g. a spreadsheet is an overlay on top of a matrix of data cells; which in turn is an overlay on top of underlying machine code; a financial system is an overlay on top of spreadsheets; an abstract work is an overlay on top of individual expressions of the work; etc. "self-explaining" indicates that the digital object contains, either directly as part of its content or indirectly as a link to some metadata, sufficient information for the object to be used unambiguously in an application. The self-explaining object is able to access lower levels in the information overlays to retrieve appropriate information.
 
-### 5.8 Using DOI names to identify fragments
+### 5.8 Using DOI names to identify fragments {#5.8}
 
 In some cases, applications may require the identification of fragments of an entity, rather than the full entity. Each such fragment may be assigned a separate DOI name if it is practical and useful to do so (for example, if a specific table within a book is likely to be re-used many times). However, this may not always be possible: there are also cases where one wishes to identify in principle "any fragment of this entity" as it becomes needed "on the fly". For such cases, use may be made of "[Template handles](http://www.handle.net/tech_manual/HN_Tech_Manual_8.pdf)": a single template DOI handle can be included in the form of a base formula that allows any number of extensions to that base to be resolved as full DOI handles, according to a pattern, without each such handle being individually registered. This would allow, for example, the use of DOI names to reference an unlimited number of ranges within a video without each potential range having to be registered with a separate handle. If the pattern needs to be changed, e.g., the video moves or a different kind of server is used to deliver the video clips, only the single base DOI name (handle) needs to be changed to allow an unlimited number of previously constructed extensions to continue to resolve properly.
