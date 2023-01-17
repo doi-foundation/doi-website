@@ -109,3 +109,27 @@ section.single-top {
         
     }
 }
+
+section.single-top-light {
+width: $content-width;
+margin: ($standard-padding * 1) auto 0;
+
+    .row {
+        align-items: stretch;
+        height: 100%;
+        padding: ($standard-padding * 2) 0 0  0;
+        
+        @media (max-width: $break-medium) {
+            padding: $mobile-padding ($standard-padding * 1) 0 0 0;
+        }
+    }
+    
+    .left {
+        min-height: 240px;
+        
+        @media (max-width: $break-large) {
+            min-height: 120px;
+        }
+    }
+    
+}

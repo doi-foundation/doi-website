@@ -1,0 +1,19 @@
+.handbook-subnav {
+
+	margin-top: 30px;
+	
+	li a {
+		font-family: 'futura-pt';
+	}
+
+	@media (min-width: 992px) {
+		border-left: 1px solid #efefef;
+		padding: 1em 0 1em 1em;
+		margin: 1em 0 1em 1em;
+	}	
+
+}
+
+.handbook article {
+  flex: 1;
+}

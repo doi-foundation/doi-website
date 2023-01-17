@@ -1,0 +1,29 @@
+<section class="single-top single-top-light">
+    <div class="row">
+        <div class="col left">
+            <div class="circle-wrapper">
+                <div class="texts">
+                    <h1>{{ .imagetop }}</h1>
+                    <h2>{{ .imagemain | markdownify}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col right">
+            
+            <div>
+            
+                <div class="maintext">{{ .maintext | markdownify }}</div>
+                <div class="subtext">{{ .subtext  | markdownify  }}</div>
+                {{ if .linkurl }}
+                <div class='link'>
+                    <a href="{{ .linkurl }}">{{ .linktext }}</a>
+                    <i class="fa-solid fa-fw fa-arrow-right-long"></i>           
+                </div>
+                {{ end }}
+            
+            </div>
+            
+        </div>        
+
+    </div>
+</section>

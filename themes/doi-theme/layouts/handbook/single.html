@@ -3,9 +3,9 @@
 		<header class="single-header">
 		</header>
 		{{ with .Params }}
-			{{ partial "single/top.html" . }}
+			{{ partial "single/top-light.html" . }}
 		{{ end }}
-		<div class="page-content handbook single">
+		<div class="page-content handbook single d-lg-flex align-items-start">
 			<article>
 				<div>
 					{{ .Content }}
