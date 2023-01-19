@@ -109,8 +109,8 @@ Figure 2 shows the same DOI name with data of type 10320/loc that includes geogr
 			<td>1000</td>
 			<td>10320/LOC</td>
 			<td>Mon Jul 27 2009 13:18:25 EDT</td>
-			<td><pre>&lt;locations chooseby="locatt,country,weighted"&gt;<br>&lt;location id="1" cr_type="MR-LIST" href="http://mr.crossref.org/iPage?doi=10.1525%2Fbio.2009.59.5.9" weight="1" /&gt;<br>
-				&lt;location id="2" cr_src="unca" label="SECONDARY_BIOONE" cr_type="MR-LIST" href="http://www.bioone.org/doi/full/10.1525/bio.2009.59.5.9" country="uk" weight="0" /&gt;<br>&lt;/locations&gt;</pre></td>
+			<td><code>&lt;locations chooseby="locatt,country,weighted"&gt;<br>&lt;location id="1" cr_type="MR-LIST" href="http://mr.crossref.org/iPage?doi=10.1525%2Fbio.2009.59.5.9" weight="1" /&gt;<br>
+				&lt;location id="2" cr_src="unca" label="SECONDARY_BIOONE" cr_type="MR-LIST" href="http://www.bioone.org/doi/full/10.1525/bio.2009.59.5.9" country="uk" weight="0" /&gt;<br>&lt;/locations&gt;</code></td>
 		</tr>
 	</tbody>
 </table>
