@@ -1667,6 +1667,19 @@ section.block-example {
   flex: 1;
 }
 
+.generic-page .home-link {
+  text-align: right;
+}
+.generic-page .link-alt {
+  border: 2px solid #000;
+}
+.generic-page .link-alt a {
+  color: #000;
+  border-right: 2px solid #000;
+}
+.generic-page .link-alt i {
+  color: #FAB70C;
+}
 .generic-page strong {
   font-weight: bold;
 }
@@ -1676,6 +1689,34 @@ section.block-example {
 .generic-page .row .more-info-heading {
   padding-top: 0;
   padding-bottom: 0;
+}
+.generic-page .row .col.form label {
+  font-weight: bold;
+}
+.generic-page .row .col.form .submit {
+  text-transform: uppercase;
+  font-family: "futura-pt-bold";
+  color: #000;
+  background-color: #FAB70C;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: 0;
+}
+.generic-page .row .col.form .row {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 5px;
+  justify-content: center;
+  column-gap: 0;
+}
+.generic-page .row .col.form .row .col {
+  text-align: left;
+}
+.generic-page .row .col.form .row .col:first-of-type {
+  text-align: right;
+}
+.generic-page .row .col.form textarea {
+  width: 100%;
 }
 .generic-page section.home-infos h2.title {
   font-size: 2rem;

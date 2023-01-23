@@ -43,84 +43,14 @@
 		<div class="col logo">			
 			<a href="http://doifoundation-wsl.com"><img class="header-logo" src="/images/logos/header_logo_cropped.svg" /></a>			
 		</div>
-	</div>
-	
-	<div class="navigation-container">
-		<div class="nav">
-			<nav>
-				<input type="checkbox" name="" id="">
-				<div class="hamburger-lines">
-					<span class="line line1"></span>
-					<span class="line line2"></span>
-					<span class="line line3"></span>
-				</div>
-				<ul class="menu-items">
-					
-										
-
-							<li>
-								
-								<span class='nolink'>The Foundation</span>
-								<i class="fa-solid fa-fw fa-angle-down"></i>
-								
-    							
-									<ul class="submenu">
-										
-											<li><a href="/the-foundation/about-us/">About Us</a>
-										
-											<li><a href="/the-foundation/board-and-governance/">Board &amp; Governance</a>
-										
-											<li><a href="/the-foundation/sustainability/">Sustainability</a>
-										
-									</ul>
-								
-							</li>
-										
-
-							<li>
-								
-								<span class='nolink'>The Community</span>
-								<i class="fa-solid fa-fw fa-angle-down"></i>
-								
-    							
-									<ul class="submenu">
-										
-											<li><a href="/the-community/what-are-registration-agencies/">What are Registration Agencies?</a>
-										
-											<li><a href="/the-community/existing-registration-agencies/">Existing Registration Agencies</a>
-										
-											<li><a href="/the-community/who-are-the-members/">Who Are The Members?</a>
-										
-									</ul>
-								
-							</li>
-										
-
-							<li>
-								
-								<span class='nolink'>The Identifier</span>
-								<i class="fa-solid fa-fw fa-angle-down"></i>
-								
-    							
-									<ul class="submenu">
-										
-											<li><a href="/the-identifier/what-is-a-doi/">What is a DOI?</a>
-										
-											<li><a href="/the-identifier/doi-handbook/">DOI Handbook</a>
-										
-											<li><a href="/the-identifier/resources/">Resources</a>
-										
-									</ul>
-								
-							</li>
-						
-					
-				</ul>
-
-				
-			</nav>
+		<div class="col home-link">
+			<div class="link-alt">
+				<a href="#">VISIT DOI.ORG</a>
+				<i class="fa-solid fa-arrow-right-long hover-move-right"></i>
+			</div>
 		</div>
 	</div>
+	
 </header>
 
 	
@@ -161,10 +91,29 @@
 						</ul>
 					</div>
 					
-					<div class="col ">
+					<div class="col form">
 						<h2 class="title">REPORT AN ERROR</h2>
 						<form>
-
+							<div class="row">
+								<div class="col"><label for="missingHandle">DOI:</label></div>
+								<div class="col"><input id="missingHandle" name="missingHandle" type='text' readonly="readonly"></div>
+							</div>
+							<div class="row">
+								<div class="col"><label for="referringPage">URL of Web Page Listing the DOI:</label></div>
+								<div class="col"><input id="referringPage" name="referringPage" type='text' ></div>
+							</div>
+							<div class="row">
+								<div class="col"><label for="userEmailAddress">Your Email Address:</label></div>
+								<div class="col"><input id="userEmailAddress" name="userEmailAddress" type='text' /></div>
+							</div>
+							<div class="row">
+								<div class="col"><label for="comments">Additional Information About the Error:</label></div>
+								<div class="col"><textarea id="comments" name="comments"></textarea></div>
+							</div>
+							<div class="row">								
+								<div class="col"></div>
+								<div class="col"><input class="submit" type="submit" value="Submit Error Report"></div>
+							</div>
 						</form>
 					</div>
 				
