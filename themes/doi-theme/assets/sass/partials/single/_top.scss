@@ -10,6 +10,9 @@ section.single-top {
         @media (max-width: $break-medium) {
             padding: $mobile-padding 0;
         }
+        &.short {            
+            padding: ($standard-padding) 0 $standard-padding  0;
+        }
     }
     .col {
     }

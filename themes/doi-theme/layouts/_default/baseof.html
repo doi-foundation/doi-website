@@ -28,9 +28,11 @@
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/731b8140c4.js" crossorigin="anonymous"></script>
-	{{ $sass := resources.Get "sass/main.scss" }}
-	{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+	
+	{{ $options := (dict "targetPath" "css/style.css") }}
+	{{ $style_plain := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+	{{ $fp := $style_plain | resources.Fingerprint "sha512" }}
+	<link rel="stylesheet" href='{{ $style_plain.Permalink }}?v={{ $fp.Data.Integrity}}' >
 
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}

@@ -20,8 +20,9 @@
         "partials/single/page",
         "partials/blocks-callouts",
         "partials/bios",
-        "partials/_how_many",
-        "partials/_handbook";
+        "partials/how_many",
+        "partials/handbook",
+        "partials/generic_page";
 
 body::-webkit-scrollbar:horizontal {
     display: none;
@@ -165,4 +166,5 @@ table {
             background-color: #fff;
         }
     }
-}
+}
+

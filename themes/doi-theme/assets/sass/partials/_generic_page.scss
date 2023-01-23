@@ -1,0 +1,38 @@
+.generic-page {
+    strong {
+        font-weight:bold;
+    }
+    .page-content ul {
+        padding-left: 2rem;
+    }
+    .row {
+        .more-info-heading {
+            padding-top:0;
+            padding-bottom:0;
+        }
+    }
+    section.home-infos h2.title {
+        font-size:2rem;
+    }
+    footer {
+        h2 {
+            color:#fff;
+            text-transform: none;
+        }
+        .footer-left {
+            flex:33%;
+        }
+        .footer-right {
+            flex:66%;
+        }
+        ul {
+            padding-left:0;
+            li a {
+                text-transform:none;
+                font-size:2rem;
+                font-family: "futura-pt";
+            }
+        }
+    }
+    
+}
