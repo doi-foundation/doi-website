@@ -1667,6 +1667,10 @@ section.block-example {
   flex: 1;
 }
 
+.generic-page span.doi-not-found {
+  color: #fa03d1;
+  font-family: "Roboto Mono", monospace;
+}
 .generic-page .home-link {
   text-align: right;
 }
