@@ -1730,10 +1730,10 @@ section.block-example {
   text-transform: none;
 }
 .generic-page footer .footer-left {
-  flex: 33%;
+  flex: 40%;
 }
 .generic-page footer .footer-right {
-  flex: 66%;
+  flex: 60%;
 }
 .generic-page footer ul {
   padding-left: 0;
