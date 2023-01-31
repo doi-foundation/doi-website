@@ -1667,9 +1667,12 @@ section.block-example {
   flex: 1;
 }
 
-.generic-page span.doi-not-found {
-  color: #fa03d1;
-  font-family: "Roboto Mono", monospace;
+.generic-page {
+  overflow-x: auto;
+}
+.generic-page code.doi-not-found {
+  background-color: transparent;
+  border: 0;
 }
 .generic-page .home-link {
   text-align: right;
@@ -1678,11 +1681,19 @@ section.block-example {
   border: 2px solid #000;
 }
 .generic-page .link-alt a {
-  color: #000;
-  border-right: 2px solid #000;
+  padding: 0;
 }
-.generic-page .link-alt i {
+.generic-page .link-alt a span {
+  border-right: 2px solid #000;
+  color: #000;
+}
+.generic-page .link-alt a i {
   color: #FAB70C;
+}
+.generic-page .link-alt a:hover > .hover-move-right {
+  padding-right: 30px;
+  padding-left: 50px;
+  transition: all 0.2s ease-in-out;
 }
 .generic-page strong {
   font-weight: bold;
@@ -1712,15 +1723,28 @@ section.block-example {
   padding-bottom: 5px;
   justify-content: center;
   column-gap: 0;
+  display: block;
 }
 .generic-page .row .col.form .row .col {
   text-align: left;
 }
 .generic-page .row .col.form .row .col:first-of-type {
-  text-align: right;
+  text-align: left;
+  flex: 0.8;
 }
-.generic-page .row .col.form textarea {
-  width: 100%;
+@media (max-width: 1260px) {
+  .generic-page .row .col.form .row .col:first-of-type {
+    text-align: left;
+  }
+}
+.generic-page .row .col.form input, .generic-page .row .col.form textarea {
+  width: 75%;
+  border: 1px solid #f4f4f4;
+}
+@media (max-width: 960px) {
+  .generic-page .row .col.form input, .generic-page .row .col.form textarea {
+    width: 100%;
+  }
 }
 .generic-page section.home-infos h2.title {
   font-size: 2rem;
@@ -1734,6 +1758,12 @@ section.block-example {
 }
 .generic-page footer .footer-right {
   flex: 60%;
+}
+@media (max-width: 1260px) {
+  .generic-page footer .footer-right .row {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .generic-page footer ul {
   padding-left: 0;
