@@ -27,7 +27,7 @@ The DOI system uses the Handle System® to manage digital objects (see the DOI F
 
 The DOI system Proxy Server is basically a web server that knows how to talk to the Handle System, and at this writing, most DOI® names found on the web are embedded in URLs that use the proxy server for DOI name resolution. For any HTTP request that combines the proxy's domain name with a DOI name, for example
 
-https://doi.org/10.1000/demo\_DOI
+[https://doi.org/10.1000/demo_DOI](https://doi.org/10.1000/demo_DOI)
 
 the proxy will query the Handle System for the DOI name, take the URL in the handle record (or if there are multiple URLs in the handle record it will select one, and that selection is in no particular order) and send an HTTP redirect to that URL to the user's web browser.
 
