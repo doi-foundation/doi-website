@@ -83,12 +83,12 @@ imagemain = "Factsheets"
 ### Standardization
 
 *   ISO 26324, Information and Documentation — Digital Object Identifier System (2012)
-*   Mechanism for, and emphasis on, enabling re-use of other existing identifier schemes, e.g., ISBN; see "[DOI System and Standard Identifier Schemes](../doi-system-and-standard-identifier-schemes)".
+*   Mechanism for, and emphasis on, enabling re-use of other existing identifier schemes, e.g., ISBN; see "[DOI System and Standard Identifier Schemes](/the-identifier/resources/factsheets/doi-system-and-standard-identifier-schemes)".
 
 ### Documentation
 
 *   Website: [https://www.doi.org/](https://www.doi.org/)
-*   [DOI® Handbook](../hb.html) – main source of definitive information
+*   [DOI® Handbook](/the-identifier/resources/handbook/) – main source of definitive information
 *   [Factsheets](/the-identifier/resources/) – coverage of selected topics in detail
 
 ### Origin
