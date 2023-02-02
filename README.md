@@ -10,7 +10,7 @@ CNRI is the sysadmin and Cazinc is the webadmin. Roles refined as:
 - Hosting - endpoints - www.doi.org + staging.doi.org
 - APIs such as stats (no. DOIs, no. resolutions)
 - Certificate 
-## Webadmin - responsible if the website is reachable but scrambled or broken
+### Webadmin - responsible if the website is reachable but scrambled or broken
 - Programming 
 - CSS
 - Editorial support
