@@ -152,7 +152,7 @@ The current annual fees are:
 
 *   Charter Members: $US 70,000, reduced to $40,000 if the Charter Member is also a founding lender to the foundation.
 *   General Members: $US 35,000. The fee for General Members may be reduced at the sole discretion of the Board, subject to a minimum fee of $US 11,500 per annum.
-*   Registration Agency Members: Fees are included as part of operational fees, allocated annually on a cost-sharing model. See Chapter 8, Registration Agencies, [Section 8.6](/the-identifier/resources/handbook/8_Registration_Agencies#8.6).
+*   Registration Agency Members: Fees are included as part of operational fees, allocated annually on a cost-sharing model. See Chapter 8, Registration Agencies, [Section 8.6](/the-identifier/resources/handbook/8_registration_agencies#8.6).
 *   Affiliate Members: $2,000.
 
 There are no differences in member rights and benefits between Charter and General, nor for those for which a reduced fee is payable. Criteria which will be considered in applications for such reduction include, in particular, any of the following:
