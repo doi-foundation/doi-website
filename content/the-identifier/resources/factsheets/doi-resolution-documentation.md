@@ -17,7 +17,7 @@ imagemain = "Factsheets"
 4\. [Which RA?](#4-which-ra)  
 5\. [Proxy Server REST API](#5-proxy-server-rest-api)
 
-_Note that this information, and additional information about the DOI Proxy Server System, Resolution and Numbering, can be found in the [DOI Handbook](../hb.html)._
+_Note that this information, and additional information about the DOI Proxy Server System, Resolution and Numbering, can be found in the [DOI Handbook](/the-identifier/resources/handbook/)._
 
 Users may resolve DOI names that are structured to use the DOI system Proxy Server (https://doi.org (preferred)). The resolution of the DOI name in this case depends on the use of URL syntax: the example DOI name doi:10.10.123/456 would be resolved from the address: "https://doi.org/10.123/456". Any standard browser encountering a DOI name in this form will be able to resolve it. The proxy service (both doi.org and the earlier but no longer preferred dx.doi.org) is accessible over IPv6, and supports DNSSEC. The proxy servers respond to HTTPS (preferred) as well as HTTP requests.
 

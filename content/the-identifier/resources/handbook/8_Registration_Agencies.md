@@ -12,7 +12,7 @@ type = "handbook"
 8 Registration Agencies
 -----------------------
 
-_This chapter explains the role and function of Registration Agencies in the DOI® System, including operational and technical requirements and policies. A list of current Registration Agencies and their areas of coverage is available [here](../registration_agencies.html)._
+_This chapter explains the role and function of Registration Agencies in the DOI® System, including operational and technical requirements and policies. A list of current Registration Agencies and their areas of coverage is available [here](/the-community/existing-registration-agencies/)._
 
 **[8.1](#8.1)** Roles  
 **[8.2](#8.2)** Business model for Registration Agencies  

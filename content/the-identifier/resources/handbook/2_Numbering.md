@@ -197,7 +197,7 @@ When thinking about prefixes, suffixes and character sets, it is important to di
 
 Except for the specific requirements imposed by this standard (such as use of Unicode and reserved characters), no restrictions are imposed or assumptions made about the characters used in DOIs. This section discusses some encoding issues that arise when using DOIs in specific application contexts like URLs and with the HTTP protocol. Other application contexts in which DOIs are used may have similar types of requirements or restrictions. However, such requirements for encoding or restrictions on the use of particular characters only apply when DOIs are used within those particular application contexts. They are not part of the DOI syntax itself as defined by this document.
 
-For directions on presenting DOI names in other forms, including URI and URN, see the Section [2.6](#2.6) and see also the factsheet [DOI® System and Internet Identifier Specifications](/the-identifier/resources/factsheets/doi-system-and-internet-identifier-specifications)."
+For directions on presenting DOI names in other forms, including URI and URN, see the Section [2.6](#2.6) and see also the factsheet [DOI® System and Internet Identifier Specifications](/the-identifier/resources/factsheets/doi-system-and-standard-identifier-schemes/)."
 
 ##### 2.5.2.1 UTF-8 Encoding {#2.5.2.1}
 
@@ -325,7 +325,7 @@ Specific DOI system implementations and Registration Agencies may make additiona
 An aim of the DOI system is to allow existing numbering systems to be retained, if desired, and the functionality of DOI names added to them easily. See the following factsheets for additional information:
 
 *   [DOI System and Internet Identifier Specifications](/the-identifier/resources/factsheets/doi-system-and-internet-identifier-specifications)
-*   [DOI System and the ISBN System](../factsheets/ISBN-A.html)
+*   [DOI System and the ISBN System](/the-identifier/resources/factsheets/doi-system-and-the-isbn-system/)
 *   [Identifier Interoperability](/the-identifier/resources/factsheets/identifier-interoperability)
 
 #### 2.7.1 A brief outline {#2.7.1}

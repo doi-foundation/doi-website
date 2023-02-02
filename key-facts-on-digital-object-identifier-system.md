@@ -21,7 +21,7 @@ imagemain = "Factsheets"
 *   Approximately 275 million DOI names assigned to date
 *   Over 155,000 DOI name prefixes within the DOI System
 *   Approximately 1 billion DOI resolutions per month
-*   DOI names are assigned by [multiple RAs](../registration_agencies.html) worldwide
+*   DOI names are assigned by [multiple RAs](/the-community/existing-registration-agencies/) worldwide
 *   Over 30 million [shortDOI](http://www.shortdoi.org) links to DOI names are in use
 *   Initial applications are simple redirection — a persistent identifier
 *   More sophisticated functionality available, e.g., multiple resolution, data typing
@@ -85,7 +85,7 @@ imagemain = "Factsheets"
 ### Documentation
 
 *   Website: [https://www.doi.org/](https://www.doi.org/)
-*   [DOI® Handbook](../hb.html) – main source of definitive information
+*   [DOI® Handbook](/the-identifier/resources/handbook/) – main source of definitive information
 *   [Factsheets](https://www.doi.org/factsheets.html) – coverage of selected topics in detail
 
 ### Origin
