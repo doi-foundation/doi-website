@@ -20,7 +20,7 @@ The allowed value sets (AVS) are in a separate namespace, at [http://doi.org/10.
 
 The allowed value sets were updated 14 July 2020 with recent changes to ISO 3166 country codes such as the renaming of North Macedonia. The Data Dictionary will be updated to reflect this shortly.
 
-See also [Policy Notes on Deprecated Structure and Values](/the-identifier/resources/handbook/doi_cchema_policy_notes/).
+See also [Policy Notes on Deprecated Structure and Values](/the-identifier/resources/handbook/doi_kernel_xml_schema_policy_notes/).
 
 Release Notes, version 2.2
 --------------------------
