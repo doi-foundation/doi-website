@@ -104,7 +104,7 @@ The "DOI Kernel" is a minimum metadata set with two aims: **recognition** and **
 
 The assignment of a DOI name requires that the registrant provide metadata describing the object to which the DOI name is being assigned. At minimum, this metadata shall consist of a DOI Kernel Metadata Declaration (also known as the DOI Kernel). A specification of data elements (with sub-elements, cardinality, etc.), current allowed values and XML expression is maintained by the IDF (the ISO 26324 Registration Authority).
 
-The elements of the DOI Kernel are described in Tables 4.1 and 4.2, which are based on tables B.1 and B.2 of ISO 26324. Note: the tables below may contain additional terms beyond those stated in ISO 26324, but only for terms which are open lists for which new items may be registered; the tables below are therefore fully compatible with ISO 26324. An XSD (XML schema) for the DOI Kernel is maintained by the IDF. (See the [DOI Kernel XML Schema](DOI_Schema_Release_Notes.html) page for the current version's Release Notes and link to the schema, and also [DOI Kernel XML Schema Policy Notes](DOI_Schema_Policy_Notes.html).) This schema contains some additional sub-elements for the elements.
+The elements of the DOI Kernel are described in Tables 4.1 and 4.2, which are based on tables B.1 and B.2 of ISO 26324. Note: the tables below may contain additional terms beyond those stated in ISO 26324, but only for terms which are open lists for which new items may be registered; the tables below are therefore fully compatible with ISO 26324. An XSD (XML schema) for the DOI Kernel is maintained by the IDF. (See the [DOI Kernel XML Schema](/the-identifier/resources/handbook/doi_kernel_xml_schema/) page for the current version's Release Notes and link to the schema, and also [DOI Kernel XML Schema Policy Notes](/the-identifier/resources/handbook/doi_kernel_xml_schema_policy_notes/).) This schema contains some additional sub-elements for the elements.
 
 Table 4.2 shows the basic administrative elements in a DOI Kernel Metadata Declaration. These elements relate to the issuance of the DOI name and to the registration record itself.
 
@@ -274,7 +274,7 @@ The minimum set of metadata a registrant should be concerned with is the minimum
 
 #### 4.3.3 Procedure for management of DOI metadata schemas {#4.3.3}
 
-A "schema" includes any item of software or documented set of metadata elements designed for a specific purpose to support the use of DOIs. Typically this may be an XML schema, and RDF schema or a set of defined vocabulary terms for use in some process. There is increasing consideration among RAs of the benefits of implementing some common machine-readable DOI metadata schemas, especially as "Linked Data". There are currently two DOI metadata schemas: The DOI Data Dictionary, including Allowed Value Sets for use in messages; and The Metadata Kernel. The [Data Dictionary](https://www.doi.org/doi_handbook/schemas/dd/intro.html) is published in full in the Member Section of the IDF web site. The Kernel is published as an [XML schema](https://www.doi.org/doi_handbook/DOI_Schema_Release_Notes.html) on the IDF web site.
+A "schema" includes any item of software or documented set of metadata elements designed for a specific purpose to support the use of DOIs. Typically this may be an XML schema, and RDF schema or a set of defined vocabulary terms for use in some process. There is increasing consideration among RAs of the benefits of implementing some common machine-readable DOI metadata schemas, especially as "Linked Data". There are currently two DOI metadata schemas: The DOI Data Dictionary, including Allowed Value Sets for use in messages; and The Metadata Kernel. The [Data Dictionary](/the-identifier/resources/handbook/doi_data_dictionary/) is published in full in the Member Section of the IDF web site. The Kernel is published as an [XML schema](/the-identifier/resources/handbook/doi_kernel_xml_schema/) on the IDF web site.
 
 ##### 4.3.3.1 Adding values to the Kernel controlled vocabularies {#4.3.3.1}
 
@@ -319,7 +319,7 @@ Authority to make changes in the existing DOI schemas lies with the DOI-RATech g
 
 #### 4.3.4 DOI Data Dictionary {#4.3.4}
 
-All elements and allowed values used in the Kernel are included in the [DOI Data Dictionary](schemas/dd/intro.html), a hierarchical ontology created to support the orderly development of DOI metadata. The introduction to the Dictionary contains further information on its scope, structure and maintenance.
+All elements and allowed values used in the Kernel are included in the [DOI Data Dictionary](/the-identifier/resources/handbook/doi_data_dictionary/), a hierarchical ontology created to support the orderly development of DOI metadata. The introduction to the Dictionary contains further information on its scope, structure and maintenance.
 
 Terms will be added to the dictionary at the request of any Registration Agency by the modification of the Metadata Kernel and/or its Allowed Values, or the publication of other DOI message schemas in addition to the Metadata Kernel. Any Registration Agency may add new values to the open Allowed Value Sets by [registering them with the IDF](/the-identifier/resources/handbook/9_operating_procedures#9.3).
 
