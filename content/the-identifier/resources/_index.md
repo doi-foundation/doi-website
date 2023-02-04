@@ -20,7 +20,7 @@ Over the years we’ve developed fact sheets to support:
 
 - [Key Facts on Digital Object Identifier System](factsheets/key-facts-on-digital-object-identifier-system)
 - [Designing DOI Applications](factsheets/designing-doi-applications)
-- [DOI® System and <test> Internet Identifier Specifications](factsheets/doi-system-and-internet-identifier-specifications)
+- Test text [DOI® System and Internet Identifier Specifications](factsheets/doi-system-and-internet-identifier-specifications)
 - [Identifier Interoperability](factsheets/identifier-interoperability)
 - [The indecs Framework](factsheets/the-indecs-framework)
 - [DOI System and Standard Identifier Schemes](factsheets/doi-system-and-standard-identifier-schemes)
