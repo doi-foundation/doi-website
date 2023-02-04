@@ -2,8 +2,8 @@
 title = "Who are the Members & Users?"
 draft = false
 # the following section is for the header
-maintext = "There are four types of members: General, Registration Agency, Charter, and Affiliate. You do not have to be a member of the DOI Foundation in order to assign DOI names but you do need to be affiliated with a Registration Agency in some way. Users can be any person or their machine that wants to resolve a DOI name. Users do not have to be members and may use the DOI Foundation proxy as often as they like.
-DOIs are, and will always be, free to resolve."
+maintext = "There are four types of members: General, Registration Agency, Charter, and Affiliate. You do not have to be a member of the DOI Foundation in order to assign DOI names but you do need to be affiliated with a [Registration Agency](/the-community/existing-registration-agencies/) in some way. Users can be any person or their machine that wants to resolve a DOI name. Users do not have to be members and may use the DOI Foundation proxy as often as they like. DOIs are, and will always be, free to resolve."
+subtext = "Scroll down for more details on our members and users."
 imagetop = "The Community"
 imagemain = "Who are the members & users?"
 +++
