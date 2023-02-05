@@ -33,19 +33,19 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Guo Xiaofeng, China DOI](#China)
 - [Rachel Kessler, Clarivate](#Clarivate)
-- Ke Chun-Xiao, CNKI
-- Ed Pentz, Crossref *(Treasurer)*
-- Matt Buys, DataCite
+- [Ke Chun-Xiao, CNKI](#CNKI)
+- [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
+- [Matt Buys, DataCite](#DataCite)
 {{% /column %}}
 
 {{% column %}}
-- Dimitris Koureas, DiSSCo
-- Raymond Drewry, EIDR *(Vice-Chair)*
-- Will Kreth, HAND
-- Ritsuko Nakajima, JaLC
+- [Dimitris Koureas, DiSSCo](#DiSSCo)
+- [Raymond Drewry, EIDR *(Vice-Chair)*](#EIDR)
+- [Will Kreth, HAND](#HAND)
+- [Ritsuko Nakajima, JaLC](#JaLC)
 - [Jinseop Shin, KISTI](#KISTI)
-- Paola Mazzucchi, mEDRA *(Chair)*
-- Carol Riccalton, Publications Office of the European Union
+- [Paola Mazzucchi, mEDRA *(Chair)*](#mEDRA)
+- [Carol Riccalton, Publications Office of the European Union](#OP)
 {{% /column %}}
 
 {{% /row %}}
@@ -74,28 +74,28 @@ Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-### CNKI
+### CNKI {#CNKI}
 
 Ke Chun-Xiao
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-### DataCite
+### DataCite {#DataCite}
 
 Matt Buys
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-### EIDR
+### EIDR {#EIDR}
 
 Raymond Drewry
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-### JaLC
+### JaLC {#JaLC}
 
 Ritsuko Nakajima
 Bio TK
@@ -103,7 +103,7 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 
-### mEDRA
+### mEDRA {mEDRA}
 
 Paola Mazzucchi
 
@@ -131,7 +131,7 @@ Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-### Crossref
+### Crossref {#Crossref}
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}}
 
 Ed Pentz became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
@@ -141,7 +141,7 @@ Ed Pentz became Crossref's first Executive Director when the organization was fo
 
 
 
-### DiSSCo
+### DiSSCo {#DiSSCo}
 
 Dimitris Koureas
 Bio TK
@@ -164,7 +164,7 @@ Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
-### Publications Office of the European Union (OP)
+### Publications Office of the European Union {#OP}
 
 Carol Riccalton
 Bio TK
