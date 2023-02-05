@@ -25,5 +25,5 @@ As a not-for-profit, we are tax-exempt. To maintain that status, we undergo a fi
 Below are our recent Form 990s
 
 - [2021 Form 990 (PDF)](/resources/US990-Filing-Copy-DOI-2021.pdf)
-- [2020 Form 990 (PDF)](/resources/US-990-Filing-Copy-DOI-2020.pdf)
-- [2019 Form 990 (PDF)](/resources/US-990- Filing-Copy-DOI-2020.pdf)
+- [2020 Form 990 (PDF)](/resources/US-990- Filing-Copy-DOI-2020.pdf)
+- [2019 Form 990 (PDF)](/resources/US-990-Filing-Copy-DOI-2019.pdf)
