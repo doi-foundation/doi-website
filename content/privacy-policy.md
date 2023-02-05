@@ -25,7 +25,7 @@ We may use other or different cookies in the future and if so we will notify thi
 
 ### 2)  Newsletter subscription
 
-You can subscribe to one of our mailing lists. The DOI Foundation sponsors both public and private web-based mailing lists, both for discussion and to distribute news and important information to interested parties. Subscribers may join and leave the subscriber lists using an automated mail list program or by sending a request to [contact@doi.org](mailto:contact@doi.org). The mailing lists are used for no other purpose than to disseminate news and encourage the exchange of ideas.
+You can subscribe to one of our mailing lists. The DOI Foundation sponsors both public and private web-based mailing lists, both for discussion and to distribute news and important information to interested parties. Subscribers may join and leave the subscriber lists using an automated mail list program or by sending a request to [info@doi.org](mailto:info@doi.org). The mailing lists are used for no other purpose than to disseminate news and encourage the exchange of ideas.
 
 ### 3)  Statuspage Update subscription
 
@@ -33,9 +33,9 @@ If you subscribe to Updates by clicking on the link on the Statuspage Site, you 
 
 ### 4)  Feedback e-mails
 
-You can send comments about the site or requests for information to [contact@doi.org](mailto:contact@doi.org). Personal data contained in such communications is used only to enable the DOI Foundation's staff to respond.
+You can send comments about the site or requests for information to [info@doi.org](mailto:info@doi.org). Personal data contained in such communications is used only to enable the DOI Foundation's staff to respond.
 
-The DOI Foundation keeps a log of information requests. If you wish to be removed from the log or from a mailing list you can send a request to [contact@doi.org](mailto:contact@doi.org).
+The DOI Foundation keeps a log of information requests. If you wish to be removed from the log or from a mailing list you can send a request to [information@doi.org](mailto:info@doi.org).
 
 ### 5)  DOI name lookup
 
@@ -67,7 +67,7 @@ The DOI Foundation also does not control the privacy policies of any other sites
 
 ## Accessing, Correcting and Removing Your Information
 
-Subject to applicable law, you may have the right to ask us to delete and stop using personal data or information about you. You may also have a right to request copies of your personal data in our possession and request that we correct any information that is inaccurate or out of date, or to ask that it be erased where it is no longer necessary for us to have the data. To exercise any of these rights or otherwise communicate with us about the use of your data, you may contact us at: [contact@doi.org](mailto:contact@doi.org).
+Subject to applicable law, you may have the right to ask us to delete and stop using personal data or information about you. You may also have a right to request copies of your personal data in our possession and request that we correct any information that is inaccurate or out of date, or to ask that it be erased where it is no longer necessary for us to have the data. To exercise any of these rights or otherwise communicate with us about the use of your data, you may contact us at: [info@doi.org](mailto:info@doi.org).
 
 ## Changes to the policy
 
