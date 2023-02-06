@@ -22,7 +22,7 @@ imagemain = "Who are the members & users?"
 {{% column %}}
 
 - Charter Membership was initially established for the founding organizations to support the development of the DOI through loans. There are currently no Charter Members and all loans have been repaid.
-- Affiliate Membership is open to any organization interested in the DOI system. The annual fee is $US 2000. Affiliate members are not eligible for Board membership and cannot vote.
+- Affiliate Membership is open to any organization interested in the DOI system. The annual fee is $US 2,000. Affiliate members are not eligible for Board membership and cannot vote.
 
 {{% /column %}}
 
@@ -43,6 +43,6 @@ imagemain = "Who are the members & users?"
 ## Who are the users of DOI?
 There are two kinds of users of DOI. There are those that wish to uniquely identify something using the DOI system. We call these “registrants”, and there are those that want to resolve a DOI.   
 
-The registrant can be any individual or organization. They register DOI names with a [Registration Agency](/the-community/existing-registration-agencies/). If a registrant has multiple types of content or application requirements, they may choose to use several RAs to provide services. Registrants make sure their content is accessible (e.g. by keeping the URLs up to date). Registrants do not have to be members of the DOI Foundation, they are customers or clients of a Registration Agency. They may or may not pay for their services depending on the business model of the RA
+The registrant can be any individual or organization. They register DOI names with a [Registration Agency](/the-community/existing-registration-agencies/). If a registrant has multiple types of content or application requirements, they may choose to use several RAs to provide services. Registrants are responsible for content management of their own material (maintenance of URLs and data), either directly or by contract (e.g. with RA). Registrants do not have to be members of the DOI Foundation, they are customers or clients of a Registration Agency. They may or may not pay for their services depending on the business model of the RA.
 
 Users can be any person or machine that wants to resolve a DOI. They do not have to be members and may use the DOI Foundation proxy as often as they like. DOIs are, and will always be, free to resolve.
