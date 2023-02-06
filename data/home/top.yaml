@@ -1,3 +1,5 @@
 maintext: "The DOI Foundation is a not-for-profit organization. We govern the Digital Object Identifier (DOI) system on behalf of the agencies who manage DOI registries and provide services to their respective communities. We are the registration authority for the ISO standard (ISO 26324) for the DOI system and we are governed by our Registration Agencies. "
-subtext: "Read more about our operations and our community of communities from construction to entertainment to scholarly research."
+subtext: "Read more about us, our operations and our community of communities from construction to entertainment to scholarly research."
+linktext: "learn more"
+linkurl: "/the-foundation/about-us/"
 image: "/images/binary-eye@2x.png"
