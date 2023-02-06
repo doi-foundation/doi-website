@@ -119,8 +119,8 @@ gzip = true
   identifier = 'existing'
   parent = 'community'
 [[menu.main]]
-  name = 'Who Are The Members?'
-  url = '/the-community/who-are-the-members/'
+  name = 'Who Are The Members and Users?'
+  url = '/the-community/who-are-the-members-and-users/'
   weight = 5
   identifier = 'whoare'
   parent = 'community'
