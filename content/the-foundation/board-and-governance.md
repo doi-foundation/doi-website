@@ -16,7 +16,7 @@ The Board appoints a Managing Agent to manage the day-to-day operations and is r
 {{< figure src="/images/board/jclark.jpg" title="Jonathan Clark" height="100px" >}}
 Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jonathan also works as an independent advisor on strategy and innovation. He is a Guest Lecturer and External Examiner for the Masters in Imagineering and the Strategic Events Management programmes at the Breda University of Applied Sciences. Prior to this he worked at Elsevier for 20 years in various positions in publishing, marketing and technology. He holds a BSc and PhD in Chemical Engineering from the University of Newcastle-upon-Tyne. Jonathan was Chair and Director of the DOI Foundation from 2005-2010. He lives mostly in Croatia.
 
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="orcid" %}}
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="orcid" %}}   
 {{% social-link title="LinkedIn" url="http://www.linkedin.com/in/jonathanmtclark" icon="linkedin" %}}
 
 {{% /bios %}}
@@ -82,11 +82,12 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 ### DataCite {#DataCite}
+{{< figure src="/images/board/matt.jpg" title="Matt Buys" height="100px" >}}
 
-Matt Buys
-Bio TK
+Matt leads the team at DataCite who provide the means to create, find, cite, connect, and use research globally. DataCite is a global community that share a common interest: to ensure that research outputs and resources are openly available and connected so that their reuse can advance knowledge across and between disciplines, now and in the future. Prior to joining DataCite, Matt was the Director of Engagement at ORCID where he played an important role in growing the community into an international-scale research effort.
 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-7234-3684" icon="orcid" %}}   
+{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/matthew-buys/" icon="linkedin" %}}
 
 ### EIDR {#EIDR}
 
