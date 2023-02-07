@@ -125,11 +125,14 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 ### Clarivate {#Clarivate}
+{{< figure src="/images/board/rachael.jpeg" title="Rachel Kessler" height="100px" >}} 
 
-Rachel Kessler
-Bio TK
+Rachel Kessler is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
+Jerusalem.
 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-9721-5707" icon="orcid" %}}
+{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/rachel-kessler-8bb46875/" icon="linkedin" %}}
+
 
 ### Crossref {#Crossref}
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}}
@@ -142,17 +145,14 @@ Ed Pentz became Crossref's first Executive Director when the organization was fo
 
 
 ### DiSSCo {#DiSSCo}
+{{< figure src="/images/board/dimitris.png" title="Dimitris Koureas" height="100px" >}} 
 
-Dimitris Koureas
-Bio TK
-
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Dimitris is Chief Information Officer and Sector Director for Digital at Naturalis Biodiversity Center (NL) Since 2018 he also serves as the executive director of the Distributed System of Scientific Collections (DiSSCo) European Research Infrastructure. Dimitris focuses on the digital transformation of research institutions and building organisational digital capacity in the field of natural sciences. He coordinates several European multi-partner multi-million projects linked to research infrastructures and biodiversity information management. He serves as a board member in several international organisations for biodiversity digital infrastructures and since 2020 he is co-chairing the FAIR Digital Objects Forum.
 
 
 ### KISTI {#KISTI}
 
 Jinseop Shin
-Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
