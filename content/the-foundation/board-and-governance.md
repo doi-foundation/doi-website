@@ -119,10 +119,12 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 ### BSI Identify {#BSI}
 
-Will Johnson-Marshall
-Bio TK
+{{< figure src="/images/board/willjm.jpg" title="Will Johnson-Marshall" height="100px" >}}
 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Will is the Head of Operational Delivery for BSI Identify. Will and his team have the substantial mission to create and then establish BSI Identify as the trusted persistent registry for construction products, supporting the industry with digital traceability. He is responsible for all operational aspects including the technical design of the service and supporting customers to create a positive onboarding and ongoing experience. Will has worked for BSI for twenty years gaining substantial commercial experience within technical publishing and in delivering public interest and innovation programmes. Based in London, UK, Will holds a BEng in Chemical Engineering from the University of Birmingham. 
+
+{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/will-johnson-marshall-6a3b562" icon="linkedin" %}}
+
 
 ### Clarivate {#Clarivate}
 {{< figure src="/images/board/rachel.jpeg" title="Rachel Kessler" height="100px" >}} 
