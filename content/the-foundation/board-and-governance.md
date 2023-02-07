@@ -130,7 +130,7 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 Rachel Kessler is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
 Jerusalem.
 
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-9721-5707" icon="orcid" %}}
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-9721-5707" icon="orcid" %}}   
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/rachel-kessler-8bb46875/" icon="linkedin" %}}
 
 
@@ -139,7 +139,7 @@ Jerusalem.
 
 Ed Pentz became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
 
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-5993-8592" icon="orcid" %}}
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-5993-8592" icon="orcid" %}}   
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/ed-pentz-3816223" icon="linkedin" %}}
 
 
