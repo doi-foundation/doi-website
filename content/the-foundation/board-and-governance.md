@@ -95,11 +95,9 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 ### JaLC {#JaLC}
+{{< figure src="/images/board/ritsuko.jpeg" title="Ritsuko Nakajima" height="100px" >}}
 
-Ritsuko Nakajima
-Bio TK
-
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Ritsuko is Director of the Department for Information Infrastructure at Japan Science and Technology Agency(JST), where she is responsible for information services, including the Japanese journal aggregator "J-STAGE," the DOI registration agency "Japan Link Center." the Japanese researcher directory "researchmap" etc. Ritsuko is also taking care of promoting open access for articles/data as research output derived from research projects funded by JST.
 
 
 ### mEDRA {#mEDRA}
