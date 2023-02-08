@@ -126,7 +126,7 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 
 
 ### Clarivate {#Clarivate}
-{{< figure src="/images/board/rachel.jpeg" title="Rachel Kessler" height="100px" >}} 
+{{< figure src="/images/board/rachel.jpg" title="Rachel Kessler" height="100px" >}} 
 
 Rachel Kessler is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
 Jerusalem.
