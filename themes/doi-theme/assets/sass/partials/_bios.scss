@@ -1,7 +1,14 @@
 .bios {
     
-    figure img {
-        border-radius: 50%;
+    figure { 
+        
+        float: left;
+        padding-right: 1em;
+        
+        img {
+            // border-radius: 50%;
+            height: 200px;
+        }
     }
     
     >[class~='row']:first-of-type {
