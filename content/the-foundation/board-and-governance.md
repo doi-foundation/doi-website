@@ -31,7 +31,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 {{% column %}}
 - [David Lai, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
-- [Guo Xiaofeng, China DOI](#China)
+- [Qiao Xiaodong, China DOI](#China)
 - [Rachel Kessler, Clarivate](#Clarivate)
 - [Ke Chun-Xiao, CNKI](#CNKI)
 - [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
@@ -68,11 +68,9 @@ Bio TK
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
 ### China DOI {#China}
+{{< figure src="/images/board/qiao.jpg" title="Qiao Xiaodong" height="100px" >}}
 
-Guo Xiaofeng
-Bio TK
-
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Having been working for ISTIC for over 30 years, Qiao is in charge of the daily operation of WanfangData Co. Ltd., which is invested by ISTIC and one of most important on-line academic information providers in China. Before that, Qiao was the Chief Engineer of ISTIC, responsible for design, development, operation and popularization of the digital library platforms of both National S&T Library (NSTL) and ISTIC. He has been working with International Committee of S&T Information for about 10 years and is the vice chairman of it now.
 
 ### CNKI {#CNKI}
 
