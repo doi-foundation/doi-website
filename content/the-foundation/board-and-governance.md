@@ -100,7 +100,7 @@ Ritsuko is Director of the Department for Information Infrastructure at Japan Sc
 
 
 ### mEDRA {#mEDRA}
-{{< figure src="/images/board/paola.jpeg" title="Paola Mazzucchi" height="100px" >}}
+{{< figure src="/images/board/paola.jpg" title="Paola Mazzucchi" height="100px" >}}
 
 Paola has been working in the publishing and content industry since 2000 with a particular focus on the role played by technology and innovation in the digital value chain, building bridges between the pure content-centered approach and the technology centered approach. Since 2005, Paola oversees the daily operations of mEDRA DOI RA and leads the IT team behind the DOI RA infrastructure, the Italian ISBN Agency, the LIA service for the creation of accessible content for visually impaired readers. Paola loves metadata, identifiers and standards and happily engages with standard settings organizations such as EDItEUR, ISO, W3C and the DOI Foundation that she is Chairing since 2015.
 
