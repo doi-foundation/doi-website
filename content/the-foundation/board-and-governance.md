@@ -12,7 +12,6 @@ The Board appoints a Managing Agent to manage the day-to-day operations and is r
 
 {{% bios %}}
 
-## Managing Agent
 {{< figure src="/images/board/jclark.jpg" title="Jonathan Clark" height="100px" >}}
 Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jonathan also works as an independent advisor on strategy and innovation. He is a Guest Lecturer and External Examiner for the Masters in Imagineering and the Strategic Events Management programmes at the Breda University of Applied Sciences. Prior to this he worked at Elsevier for 20 years in various positions in publishing, marketing and technology. He holds a BSc and PhD in Chemical Engineering from the University of Newcastle-upon-Tyne. Jonathan was Chair and Director of the DOI Foundation from 2005-2010. He lives mostly in Croatia.
 
@@ -101,14 +100,11 @@ Ritsuko is Director of the Department for Information Infrastructure at Japan Sc
 
 
 ### mEDRA {#mEDRA}
+{{< figure src="/images/board/paola.jpeg" title="Paola Mazzucchi" height="100px" >}}
 
-Paola Mazzucchi
+Paola has been working in the publishing and content industry since 2000 with a particular focus on the role played by technology and innovation in the digital value chain, building bridges between the pure content-centered approach and the technology centered approach. Since 2005, Paola oversees the daily operations of mEDRA DOI RA and leads the IT team behind the DOI RA infrastructure, the Italian ISBN Agency, the LIA service for the creation of accessible content for visually impaired readers. Paola loves metadata, identifiers and standards and happily engages with standard settings organizations such as EDItEUR, ISO, W3C and the DOI Foundation that she is Chairing since 2015.
 
-*Chair*
-
-Bio TK
-
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Her true-real life passions, however, are her two sons, hiking, good food and heavy metal music, not always in this exact order, though. Paola lives in Milan, Italy.
 
 {{% /column %}}
 
@@ -126,7 +122,7 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 ### Clarivate {#Clarivate}
 {{< figure src="/images/board/rachel.jpg" title="Rachel Kessler" height="100px" >}} 
 
-Rachel Kessler is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
+Rachel is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
 Jerusalem.
 
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-9721-5707" icon="orcid" %}}
@@ -136,7 +132,7 @@ Jerusalem.
 ### Crossref {#Crossref}
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}}
 
-Ed Pentz became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
+Ed became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
 
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-5993-8592" icon="orcid" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/ed-pentz-3816223" icon="linkedin" %}}
