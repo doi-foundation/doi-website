@@ -140,7 +140,7 @@ Ed became Crossref's first Executive Director when the organization was founded 
 
 
 ### DiSSCo {#DiSSCo}
-{{< figure src="/images/board/dimitris.png" title="Dimitris Koureas" height="100px" >}} 
+{{< figure src="/images/board/dimitris.jpg" title="Dimitris Koureas" height="100px" >}} 
 
 Dimitris is Chief Information Officer and Sector Director for Digital at Naturalis Biodiversity Center (NL) Since 2018 he also serves as the executive director of the Distributed System of Scientific Collections (DiSSCo) European Research Infrastructure. Dimitris focuses on the digital transformation of research institutions and building organisational digital capacity in the field of natural sciences. He coordinates several European multi-partner multi-million projects linked to research infrastructures and biodiversity information management. He serves as a board member in several international organisations for biodiversity digital infrastructures and since 2020 he is co-chairing the FAIR Digital Objects Forum.
 
