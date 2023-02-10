@@ -106,7 +106,7 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 ### JaLC {#JaLC}
 
-{{< figure src="/images/board/hideaki.jpeg" title="Hideaki Takeda" height="100px" >}}
+{{< figure src="/images/board/hideaki.jpg" title="Hideaki Takeda" height="100px" >}}
 
 Hideaki Takeda is a professor at National Institute of Informatics (NII) Japan, and a professor at the Graduate University for Advanced Studies (Sokendai). He received Dr. Eng. degrees from the University of Tokyo, Japan in 1991. His major research topic is Artificial Intelligence, in particular, Semantic Web. His interest also includes Scholarly Communication. He is currently the chair of Japan Link Center, a Board Member of CLOCKSS and a member of Membership Advisory Board of arXiv.
 
