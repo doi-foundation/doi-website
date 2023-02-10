@@ -28,7 +28,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 {{% row %}}
 
 {{% column %}}
-- [David Lai, Airiti](#Airiti)
+- [Jieh Hsiang, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Qiao Xiaodong, China DOI](#China)
 - [Rachel Kessler, Clarivate](#Clarivate)
@@ -41,7 +41,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Dimitris Koureas, DiSSCo](#DiSSCo)
 - [Raymond Drewry, EIDR *(Vice-Chair)*](#EIDR)
 - [Will Kreth, HAND](#HAND)
-- [Ritsuko Nakajima, JaLC](#JaLC)
+- [Hideaki Takeda, JaLC](#JaLC)
 - [Jinseop Shin, KISTI](#KISTI)
 - [Paola Mazzucchi, mEDRA *(Chair)*](#mEDRA)
 - [Carol Riccalton, Publications Office of the European Union](#OP)
@@ -61,15 +61,19 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 
 ### Airiti {#Airiti}
 
-David Lai
-Bio TK
+{{< figure src="/images/board/jieh.jpg" title="Jieh Hsiang" height="100px" >}}
 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Jieh is a Distinguished Professor of Computer Science at the National Taiwan University. He is also the director of the NTU Research Center for Digital Humanities, the first such center in the Sinophone world. He has received a PhD in computer science from the University of Illinois at Urbana Champaign, and had served 6 years as the University Librarian of NTU and 8 years as the Director of NTU Press. Before returning to Taiwan, he was a full professor in Computer Science at Stony Brook University. Dr. Jieh Hsiang has been on the advisory board of several national and international institutions and agencies. He was the first President of the Taiwanese Association of Digital Humanities, as well as a past President of the Taiwanese Association of Artificial Intelligence.
+
+<br>
 
 ### China DOI {#China}
+
 {{< figure src="/images/board/qiao.jpg" title="Qiao Xiaodong" height="100px" >}}
 
 Having been working for ISTIC for over 30 years, Qiao is in charge of the daily operation of WanfangData Co. Ltd., which is invested by ISTIC and one of most important on-line academic information providers in China. Before that, Qiao was the Chief Engineer of ISTIC, responsible for design, development, operation and popularization of the digital library platforms of both National S&T Library (NSTL) and ISTIC. He has been working with International Committee of S&T Information for about 10 years and is the vice chairman of it now.
+
+<br>
 
 ### CNKI {#CNKI}
 
@@ -78,13 +82,18 @@ Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
+<br>
+
 ### DataCite {#DataCite}
+
 {{< figure src="/images/board/matt.jpg" title="Matt Buys" height="100px" >}}
 
 Matt leads the team at DataCite who provide the means to create, find, cite, connect, and use research globally. DataCite is a global community that share a common interest: to ensure that research outputs and resources are openly available and connected so that their reuse can advance knowledge across and between disciplines, now and in the future. Prior to joining DataCite, Matt was the Director of Engagement at ORCID where he played an important role in growing the community into an international-scale research effort.
 
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-7234-3684" icon="orcid" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/matthew-buys/" icon="linkedin" %}}
+
+<br>
 
 ### EIDR {#EIDR}
 
@@ -93,11 +102,16 @@ Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
+<br>
+
 ### JaLC {#JaLC}
-{{< figure src="/images/board/ritsuko.jpeg" title="Ritsuko Nakajima" height="100px" >}}
 
-Ritsuko is Director of the Department for Information Infrastructure at Japan Science and Technology Agency(JST), where she is responsible for information services, including the Japanese journal aggregator "J-STAGE," the DOI registration agency "Japan Link Center." the Japanese researcher directory "researchmap" etc. Ritsuko is also taking care of promoting open access for articles/data as research output derived from research projects funded by JST.
+{{< figure src="/images/board/hideaki.jpeg" title="Hideaki Takeda" height="100px" >}}
+Bio TK
 
+Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+
+<br>
 
 ### mEDRA {#mEDRA}
 {{< figure src="/images/board/paola.jpg" title="Paola Mazzucchi" height="100px" >}}
@@ -110,6 +124,8 @@ Her true-real life passions, however, are her two sons, hiking, good food and he
 
 {{% column %}}
 
+<br>
+
 ### BSI Identify {#BSI}
 
 {{< figure src="/images/board/willjm.jpg" title="Will Johnson-Marshall" height="100px" >}}
@@ -118,6 +134,7 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/will-johnson-marshall-6a3b562" icon="linkedin" %}}
 
+<br>
 
 ### Clarivate {#Clarivate}
 {{< figure src="/images/board/rachel.jpg" title="Rachel Kessler" height="100px" >}} 
@@ -128,6 +145,7 @@ Jerusalem.
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-9721-5707" icon="orcid" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/rachel-kessler-8bb46875/" icon="linkedin" %}}
 
+<br>
 
 ### Crossref {#Crossref}
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}}
@@ -137,13 +155,14 @@ Ed became Crossref's first Executive Director when the organization was founded 
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-5993-8592" icon="orcid" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/ed-pentz-3816223" icon="linkedin" %}}
 
-
+<br>
 
 ### DiSSCo {#DiSSCo}
 {{< figure src="/images/board/dimitris.jpg" title="Dimitris Koureas" height="100px" >}} 
 
 Dimitris is Chief Information Officer and Sector Director for Digital at Naturalis Biodiversity Center (NL) Since 2018 he also serves as the executive director of the Distributed System of Scientific Collections (DiSSCo) European Research Infrastructure. Dimitris focuses on the digital transformation of research institutions and building organisational digital capacity in the field of natural sciences. He coordinates several European multi-partner multi-million projects linked to research infrastructures and biodiversity information management. He serves as a board member in several international organisations for biodiversity digital infrastructures and since 2020 he is co-chairing the FAIR Digital Objects Forum.
 
+<br>
 
 ### KISTI {#KISTI}
 
@@ -151,6 +170,7 @@ Jinseop Shin
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
 
+<br>
 
 ### HAND {#HAND}
 
@@ -158,6 +178,8 @@ Will Kreth
 Bio TK
 
 Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+
+<br>
 
 ### Publications Office of the European Union {#OP}
 
