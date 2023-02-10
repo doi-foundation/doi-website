@@ -158,6 +158,7 @@ Ed became Crossref's first Executive Director when the organization was founded 
 <br>
 
 ### DiSSCo {#DiSSCo}
+
 {{< figure src="/images/board/dimitris.jpg" title="Dimitris Koureas" height="100px" >}} 
 
 Dimitris is Chief Information Officer and Sector Director for Digital at Naturalis Biodiversity Center (NL) Since 2018 he also serves as the executive director of the Distributed System of Scientific Collections (DiSSCo) European Research Infrastructure. Dimitris focuses on the digital transformation of research institutions and building organisational digital capacity in the field of natural sciences. He coordinates several European multi-partner multi-million projects linked to research infrastructures and biodiversity information management. He serves as a board member in several international organisations for biodiversity digital infrastructures and since 2020 he is co-chairing the FAIR Digital Objects Forum.
@@ -183,10 +184,9 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 ### Publications Office of the European Union {#OP}
 
-Carol Riccalton
-Bio TK
+{{< figure src="/images/board/carol.jpeg" title="Carol Riccalton" height="100px" >}} 
 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Carol is Head Of Unit for the group responsible for a suite of library and preservation services, including the European Commission (EC) Library, management of identifiers (ISBN, ISSN, DOI), metadata, digitisation and preservation (digital and physical) of EU publications.
 
 {{% /column %}}
 
