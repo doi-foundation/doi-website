@@ -3,6 +3,9 @@ title = "FAQs"
 date = "2023-02-12"
 showdate = true
 draft = false
+# the following section is for the header
+maintext = "These "Frequently Asked Questions" about the DOI System and DOI® names are not meant to take the place of the more detailed information available in the DOI Handbook. "
+subtext = "If you have a question that you think should be added to this list, or is not satisfactorily answered, please feel free to contact us at [info@doi.org](mailto://info@doi.org)"
 imagetop = "Resources"
 imagemain = "Frequently Asked Questions"
 +++
