@@ -181,12 +181,12 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 ### Charter
 
-The DOI Foundation is a non-stock membership corporation organized and existing under and by virtue of the General Corporation Law of the State of Delaware, USA, registered on 10 October 1997. The Charter is [here (PDF)](/resources/DOIF-Charter-signed.pdf).
+The DOI Foundation is a non-stock membership corporation organized and existing under and by virtue of the General Corporation Law of the State of Delaware, USA, registered on 10 October 1997. The DOI Foundation has been granted 501(c)6 tax exempt status by the US Internal Revenue Service. [The DOI Foundation Charter (PDF)] (/resources/DOIF-Charter-signed.pdf).
 
 ### By-Laws
 
-The Foundation is controlled by a Board elected by the members of the Foundation. The By-Laws are [here (PDF)](/resources/DOIF-Bylaws-11-21-14.pdf)
+The Foundation is controlled by a Board elected by the members of the Foundation. [The By-Laws (PDF)] (/resources/DOIF-Bylaws-11-21-14.pdf)
 
 ### Registration Authority Agreement
 
-The DOI Foundation is the ISO 26324 Registration Authority, governed by an agreement between ISO and the Foundation [here (PDF)](/resources/DOIF-RAA-ISO-26324.pdf)
+The DOI Foundation is the ISO 26324 Registration Authority, governed by an [Agreement (PDF)](/resources/DOIF-RAA-ISO-26324.pdf) between ISO and the Foundation 
