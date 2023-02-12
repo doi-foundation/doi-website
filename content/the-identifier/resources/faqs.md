@@ -10,9 +10,9 @@ imagemain = "Frequently Asked Questions"
 
 +++
 
-# 1. How do I get a Digital Object Identifier (DOI)?
+## 1. How do I get a Digital Object Identifier (DOI)?
 You must use a service offered by a DOI Registration Agency (RA). RAs collect metadata, assign DOI names, and offer other services such as reference linking or metadata lookup. See the [list of RAs](/the-community/existing-registration-agencies/) and contact the ones whose services best meet your needs. If you do not see an appropriate RA listed, consider developing a community to build the service you require (see the DOI Handbook for more information). You do not need to be a member of The DOI Foundation in order to work with an RA.  
-# 2. How much does it cost to get a DOI and use the DOI system?
+### 2. How much does it cost to get a DOI and use the DOI system?
 The cost of registering new DOI names depends on the services you purchase. Contact a DOI Registration Agency to discuss your options. Each RA is different, and each is free to offer its own business model. For an example of the costs of a DOI service, see the [DataCite](https://datacite.org/feemodel.html) fee model. Existing DOI names are, and will always be, free to resolve. 
 # 3. How do I become a member of the International DOI Foundation? 
 [Members[(/the-community/who-are-the-members-and-users/) of the DOI Foundation are organizations (not usually individuals). Membership is open to any organization supporting the development of the DOI system that wishes to join our community of communities. If you are interested then please [contact us](mailto://info@doi.org)
