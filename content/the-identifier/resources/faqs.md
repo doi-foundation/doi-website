@@ -13,10 +13,8 @@ imagemain = "Frequently Asked Questions"
 
 [< back to the Resources page](/the-identifier/resources/)
 
-_These "Frequently Asked Questions" about the DOI System and DOI® names are not meant to take the place of the more detailed information available in the DOI Handbook. If you have a question that you think should be added to this list, or is not satisfactorily answered, please feel free to contact us at info@doi.org.
 
 See also the DOI Handbook, Glossary of Terms, for definitions of related terms, and the Handle System® FAQs to learn about the underlying handle resolution technology.
-_
 
 ### Key concepts and abbreviations
 
