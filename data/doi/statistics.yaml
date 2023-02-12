@@ -3,7 +3,7 @@ toplefttext: Average resolution rate over last 24 hours
 toprighttext: Total DOI resolutions to date (all time)
 # these next two are slightly cleverer in that they need
 # a place holder for the month so we arbitrarily use **MONTH**
-bottomlefttext: of the resolutions performed in **MONTH** were from bots
+bottomlefttext: of the resolutions performed in **MONTH** were from bots (it’s not always possible to reliably identify bots)
 bottomrighttext: of the resolutions performed in **MONTH** used content negotiation
 # footnote is only used on homepage
 footnote: "The total DOI resolutions to date is calculated using actual number of DOI resolutions recorded up until yesterday and the average resolution rate recorded over the past 24 hours (currently this is "
