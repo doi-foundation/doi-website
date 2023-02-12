@@ -22,7 +22,7 @@ Over the years we’ve developed fact sheets to support:
 - [Designing DOI Applications](factsheets/designing-doi-applications)
 - [Identifier Interoperability](factsheets/identifier-interoperability)
 - [The indecs Framework](factsheets/the-indecs-framework)
-- [DOI System and Cloudflare](factsheets/doi-system-and-cloudflare)
+- [DOI System and Cloudflare](/content/the-identifier/resources/factsheets/doi-system-and-cloudflare)
 - [DOI System and Standard Identifier Schemes](factsheets/doi-system-and-standard-identifier-schemes)
 - [DOI System and the Handle System](factsheets/doi-system-and-the-handle-system)
 - [DOI Resolution Documentation](factsheets/doi-resolution-documentation)
