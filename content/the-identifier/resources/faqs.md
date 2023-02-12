@@ -1,28 +1,11 @@
 +++
-title = "FAQs"
-date = "2023-02-12"
-showdate = true
+title = "faqs"
+date = "2023-2-12"
 draft = false
 # the following section is for the header
-maintext = "These "Frequently Asked Questions" about the DOI System and DOI® names are not meant to take the place of the more detailed information available in the DOI Handbook. "
-subtext = "If you have a question that you think should be added to this list, or is not satisfactorily answered, please feel free to contact us at [info@doi.org](mailto://info@doi.org)"
+maintext = "This is where you will find shareable resources regarding the foundation, the community, and the identifier. Please download, use, and share these items, they include factsheets about technical specifications, an archive of policies and statements, and quick overviews to introduce the DOI Foundation in your commuities and work. Everything on this site is shareable under a CC-4.0 attribution license."
+subtext = "Let us know what other resources you'd like to see here."
 imagetop = "Resources"
 imagemain = "Frequently Asked Questions"
 
 +++
-
-[< back to the Resources page](/the-identifier/resources/)
-
-
-See also the DOI Handbook, Glossary of Terms, for definitions of related terms, and the Handle System® FAQs to learn about the underlying handle resolution technology.
-
-### Key concepts and abbreviations
-
-*   DOI = Digital Object Identifier
-*   IDF = International DOI Foundation (operating and governing organisation): [https://www.doi.org/](https://www.doi.org/)
-*   RAs = DOI Registration Agencies (= members of IDF offering the system to customers who wish to assign DOI names)
-
-### Status: operational system
-
-*   Foundation launched to develop system in 1998. First applications launched 2000
-*   Currently used by well over 5,000 assigners, e.g., publishers, science data centres, movie studios, etc.
