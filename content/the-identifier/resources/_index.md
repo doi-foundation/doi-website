@@ -41,7 +41,8 @@ Over the years we’ve developed fact sheets to support:
 ## News archive
 Coming soon!
 
-## [DOI in the news](/the-identifier/resources/doi-in-the-news)
+## DOI in the news 
+[Archive of publically available material related to the DOI and Persistent Identifiers (PIDs)](/the-identifier/resources/doi-in-the-news)
 
 {{% /column %}}
 

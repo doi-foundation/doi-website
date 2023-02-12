@@ -1,6 +1,7 @@
 +++
 title = "Faqs"
 date = "2023-02-12"
+showdate = true
 draft = false
 # the following section is for the header
 maintext = "These Frequently Asked Questions about the DOI System and DOI® names are not meant to take the place of the more detailed information available in the [DOI Handbook](handbook/). See also the [Glossary of Terms](handbook/glossary), for definitions of related terms"
