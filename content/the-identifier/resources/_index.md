@@ -35,7 +35,7 @@ Over the years we’ve developed fact sheets to support:
 {{% column %}}
 
 ## FAQs
-[Frequently Asked Questions about the DOI® System](resources/faqs)
+[Frequently Asked Questions about the DOI® System](/the-identifier/resources/faqs)
 
 ## News archive
 Coming soon!
