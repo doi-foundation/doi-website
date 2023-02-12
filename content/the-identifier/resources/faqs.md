@@ -8,6 +8,7 @@ maintext = "These "Frequently Asked Questions" about the DOI System and DOI® na
 subtext = "If you have a question that you think should be added to this list, or is not satisfactorily answered, please feel free to contact us at [info@doi.org](mailto://info@doi.org)"
 imagetop = "Resources"
 imagemain = "Frequently Asked Questions"
+
 +++
 
 [< back to the Resources page](/the-identifier/resources/)
