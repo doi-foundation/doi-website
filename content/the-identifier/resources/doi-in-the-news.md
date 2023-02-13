@@ -4,7 +4,7 @@ date = "2023-02-13"
 showdate = true
 draft = false
 # the following section is for the header
-maintext = "This is an archive of publically available material related to the DOI and Persistent Identifiers (PIDs). Documents may contain links that are no longer active. "
+maintext = "This is an archive of publically available material related to the DOI and Persistent Identifiers (PIDs). Documents may contain links that are no longer active."
 subtext = "[Let us know](mailto://info@doi.org) if there are links and document that you'd like to see here."
 imagetop = "Resources"
 imagemain = "DOI in the news"
@@ -14,3 +14,5 @@ imagemain = "DOI in the news"
 ### [Why PID Strategies Are Having A Moment — And Why You Should Care](https://scholarlykitchen.sspnet.org/2023/01/25/why-pid-strategies-are-having-a-moment-and-why-you-should-care/)
 Blogpost by Alice Meadows in The Scholarly Kitchen, January 25th, 2023 
 
+### [Choice of persistent identifier schemes for the Distributed System of Scientific Collections (DiSSCo)](https://doi.org/10.3897/rio.7.e67379) 
+Hardisty AR, Addink W, Glöckler F, Güntsch A, Islam S, Weiland C (2021), Research Ideas and Outcomes 7: e67379. https://doi.org/10.3897/rio.7.e67379
