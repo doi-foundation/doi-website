@@ -11,6 +11,9 @@ imagemain = "Frequently Asked Questions"
 
 +++
 
+[< back to the Resources page](/the-identifier/resources/)
+
+
 ### 1. How do I get a Digital Object Identifier (DOI)?
 You must use a service offered by a DOI Registration Agency (RA). RAs collect metadata, assign DOI names, and offer other services such as reference linking or metadata lookup. See the [list of RAs](/the-community/existing-registration-agencies/) and contact the ones whose services best meet your needs. If you do not see an appropriate RA listed, consider developing a community to build the service you require (see the DOI Handbook for more information). You do not need to be a member of The DOI Foundation in order to work with an RA.  
 ### 2. How much does it cost to get a DOI and use the DOI system?
