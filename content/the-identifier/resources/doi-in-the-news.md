@@ -10,3 +10,6 @@ imagetop = "Resources"
 imagemain = "DOI in the news"
 
 +++
+### [Why PID Strategies Are Having A Moment — And Why You Should Care](https://scholarlykitchen.sspnet.org/2023/01/25/why-pid-strategies-are-having-a-moment-and-why-you-should-care/)
+Blogpost by Alice Meadows in The Scholarly Kitchen, January 25th, 2023 
+
