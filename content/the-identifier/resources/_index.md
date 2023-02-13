@@ -39,7 +39,7 @@ Over the years we’ve developed fact sheets to support:
 [Frequently Asked Questions about the DOI® System](/the-identifier/resources/faqs)
 
 ## News archive
-Archive of past announcements and news](/the-identifier/resources/news)
+[Archive of past announcements and news](/the-identifier/resources/news)
 
 ## DOI in the news 
 [Archive of publically available material related to the DOI and Persistent Identifiers (PIDs)](/the-identifier/resources/doi-in-the-news)
