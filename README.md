@@ -20,7 +20,7 @@ CNRI is the sysadmin and Cazinc is the webadmin. Roles refined as:
 ## Deployment
 Deployment will be managed by a github action - depending on the branch pushed it will be to either of the S3 bucket endpoints that represent the staging and 'new-live' websites.
 
-There is a line in the github actions that will need edited for when we are ready to build to the live URL.
+There is a line in the github actions build file [build.yml](https://github.com/doi-foundation/doi-website/blob/main/.github/workflows/build.yml) that will need edited for when we are ready to build to the live URL.
 When running hugo you can supply the URL that the site is being build for and this will be utilized in various internal links on the site. At the moment this is set to https://www-new.doi.org - it should be changed to whatever the live URL is expected to be so any future pushes to the main branch are directed to the correct url
 
 ```run: hugo -v --baseURL "https://www-new.doi.org/"```
