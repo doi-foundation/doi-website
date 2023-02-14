@@ -26,10 +26,6 @@ enableRobotsTXT = true
       typographer = true
       linkify = false
 
-[blackfriday]
-  extensionsmask = ["autolink"]
-
-
 [deployment]
 # By default, files are uploaded in an arbitrary order.
 # Files that match the regular expressions in the "Order" list
