@@ -23,7 +23,11 @@ enableRobotsTXT = true
     unsafe = true
     
     [markup.goldmark.extensions]
-    typographer = true
+      typographer = true
+      linkify = false
+
+[blackfriday]
+  extensionsmask = ["autolink"]
 
 
 [deployment]
