@@ -42,7 +42,7 @@ jobs:
           hugo-version: '0.101.0'
           extended: true
       - name: Hugo Build
-        run: hugo -v --baseURL "https://www-new.doi.org/"
+        run: hugo -v --baseURL "https://www.doi.org/"
       - name: Deploy to S3
         if: github.ref_name == 'main'
         run: hugo  -v deploy --target=s3_live --maxDeletes -1 
