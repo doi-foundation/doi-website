@@ -86,7 +86,7 @@ imagemain = "Factsheets"
 
 *   Website: [https://www.doi.org/](https://www.doi.org/)
 *   [DOI® Handbook](/the-identifier/resources/handbook/) – main source of definitive information
-*   [Factsheets](https://www.doi.org/factsheets.html) – coverage of selected topics in detail
+*   [Factsheets](/the-identifier/resources/) – coverage of selected topics in detail
 
 ### Origin
 

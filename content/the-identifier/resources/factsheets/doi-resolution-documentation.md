@@ -33,7 +33,7 @@ the proxy will query the Handle System for the DOI name, take the URL in the han
 
 Increasing numbers of DOI names include data in addition to the single default URL. This is sometimes referenced as multiple resolution. These added values are intended for use by more advanced applications which have the ability to take advantage of multiple pieces of data, e.g., the location of enhanced metadata or related documents.
 
-In addition to handle values of type URL, the proxy server understands values of handle value type 10320/loc. These values contain XML describing multiple redirection endpoints for the DOI name and conditions under which the proxy should use them. For further documentation see _DOI Handbook_ Section 3.8.4.3, [Resolution of Multiple URLs using the 10320/loc Handle Type](http://www.doi.org/doi_handbook/3_Resolution.html#3.8.4.3).
+In addition to handle values of type URL, the proxy server understands values of handle value type 10320/loc. These values contain XML describing multiple redirection endpoints for the DOI name and conditions under which the proxy should use them. For further documentation see _DOI Handbook_ Section 3.8.4.3, [Resolution of Multiple URLs using the 10320/loc Handle Type](/the-identifier/resources/handbook/3_resolution/#3.8.4.3).
 
 The proxy server is configured to display a "DOI Name Not Found" error page when queried for a DOI name that it cannot find.
 
@@ -131,7 +131,7 @@ Which RA? is a simple service that has been built to examine the type/value pair
 ]
 ```
 
-A full list of RA names and abbreviations can be found [here](http://www.doi.org/registration_agencies.html). Using commas in the URL string to delineate multiple DOIs will return multiple results in one request. Possible error states include "Invalid DOI", "DOI does not exist" and "Unknown".
+A full list of RA names and abbreviations can be found [here](/the-community/existing-registration-agencies/). Using commas in the URL string to delineate multiple DOIs will return multiple results in one request. Possible error states include "Invalid DOI", "DOI does not exist" and "Unknown".
 
 ### 5\. Proxy Server REST API
 
@@ -235,4 +235,4 @@ processResponse({
 });
 ```
 
-Note: The DOI system uses the Handle System and so DOIs are also resolvable using Handle clients instead of the doi.org HTTP service. See [https://www.doi.org/factsheets/DOIHandle.html](https://www.doi.org/factsheets/DOIHandle.html) and [https://www.handle.net](https://www.handle.net) for more information.
+Note: The DOI system uses the Handle System and so DOIs are also resolvable using Handle clients instead of the doi.org HTTP service. See [https://www.doi.org/the-identifier/resources/factsheets/doi-system-and-the-handle-system](/the-identifier/resources/factsheets/doi-system-and-the-handle-system) and [https://www.handle.net](https://www.handle.net) for more information.

@@ -56,7 +56,7 @@ Which RA? is a simple service that has been built to examine the type/value pair
 ]
 ```
 
-A full list of RA names and abbreviations can be found [here](http://www.doi.org/registration_agencies.html). Using commas in the URL string to delineate multiple DOIs will return multiple results in one request. Possible error states include "Invalid DOI", "DOI does not exist" and "Unknown".
+A full list of RA names and abbreviations can be found [here](/the-community/existing-registration-agencies/). Using commas in the URL string to delineate multiple DOIs will return multiple results in one request. Possible error states include "Invalid DOI", "DOI does not exist" and "Unknown".
 
 #### 5.2.2 Design Considerations {#5.2.2}
 

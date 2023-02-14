@@ -15,7 +15,7 @@ The DOI® System uses work based on the indecs Framework as the basis for its se
 
 ### indecs project
 
-[indecs](http://cordis.europa.eu/econtent/mmrcs/indecs.htm) (an acronym of "interoperability of data in e-commerce systems"; written in lower case) was a project part funded by the European Community _Info 2000_ initiative and by several organisations representing the music, rights, text publishing, authors, library and other sectors in 1998-2000, which has since been used in a number of metadata activities. A final report and related documents were published; the document "[Principles, model and data dictionary](http://www.doi.org/topics/indecs/indecs_framework_2000.pdf)" is a concise summary.
+[indecs](http://cordis.europa.eu/econtent/mmrcs/indecs.htm) (an acronym of "interoperability of data in e-commerce systems"; written in lower case) was a project part funded by the European Community _Info 2000_ initiative and by several organisations representing the music, rights, text publishing, authors, library and other sectors in 1998-2000, which has since been used in a number of metadata activities. A final report and related documents were published; the document "[Principles, model and data dictionary](/resources/indecs_framework_2000.pdf)" is a concise summary.
 
 indecs provided an analysis of the requirements for metadata for e-commerce of "content" (intellectual property) in the network environment, focussing on semantic interoperability. Semantic interoperability deals with the question of how one computer system knows what the terms from another computer system mean (e.g. if A says "owner" and B says "owner", are they referring to the same thing? If A says "released" and B says "disseminated", do they mean different things?).
 
@@ -52,7 +52,7 @@ The framework has been developed further as a generic ontology-based approach de
 
 *   [Linked Content Coalition](http://www.linkedcontentcoalition.org/)
 *   [RDA/ONIX Framework for Resource Categorization](http://dx.doi.org/10.1045/january2007-dunsire)
-*   [Vocabulary Mapping Framework](http://www.doi.org/VMF/index.html)
+*   [Vocabulary Mapping Framework](/VMF/index.html)
 *   [DDEX (Digital Data Exchange)](http://www.ddex.net) Music industry messaging and data dictionary applications
 *   ONIX (Online Information Exchange) standards for the use of publishers in distributing digital metadata about their products (See also [EDItEUR: ONIX for Books](http://www.editeur.org/onix.html))
 *   [Digital Object Identifier System](http://www.doi.org/) metadata schemes
