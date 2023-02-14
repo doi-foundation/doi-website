@@ -18,7 +18,7 @@ _This selected bibliography lists sources of additional information on related t
 
 * Handle System®: [Documentation](http://www.handle.net/documentation.html).
 * The Vocabulary Mapping Framework (VMF): [An Introduction](https://www.doi.org/VMF/documents/VocabularyMappingFrameworkIntroductionV1.0(091212).pdf).
-* Indecs™ framework: "[The <indecs> Metadata Framework: Principles, model and data dictionary](https://www.doi.org/topics/indecs/indecs_framework_2000.pdf)", Godfrey Rust and Mark Bide (2000).
+* Indecs™ framework: "[The <indecs> Metadata Framework: Principles, model and data dictionary](/resources/indecs_framework_2000.pdf)", Godfrey Rust and Mark Bide (2000).
 
 ### References cited in ISO 26324, DOI System
 

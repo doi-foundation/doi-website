@@ -78,7 +78,7 @@ A mechanism which is specifically designed to support interoperability has been 
 
 ### Resources
 
-<in_d_ecs> project (Interoperability of data in e-commerce systems). Metadata Framework: Principles, model and data dictionary. \[ [https://www.doi.org/topics/indecs/indecs\_framework\_2000.pdf](https://www.doi.org/topics/indecs/indecs_framework_2000.pdf) \]
+<in_d_ecs> project (Interoperability of data in e-commerce systems). Metadata Framework: Principles, model and data dictionary. \[ [https://www.doi.org/resources/indecs_framework_2000.pdf](/resources/indecs_framework_2000.pdf) \]
 
 Identifier Interoperability: A Report on Two Recent ISO Activities. _D-Lib Magazine_, April 2006. \[ [https://doi.org/10.1045/april2006-paskin](https://doi.org/10.1045/april2006-paskin) \]
 
