@@ -17,7 +17,7 @@ We maintain a reserve fund to support long-term sustainability. This is managed 
 
 Each year we strive to generate a small net operating income and have been able to do so nearly every year. Below is an overview of how this has changed over time.
 
-{{< figure src="/images/Historic-Financials.png" title="" height="400px" >}}
+{{< figure src="/images/Historic-Financials.png" title="" height="500px" >}}
 
 The DOI Foundation is a not-for-profit organization and is therefore prohibited from activities not permitted to be carried on by a corporation exempt from US federal income tax under Section 501(c)(6) of the Internal Revenue Code of 1986 et seq.
 
