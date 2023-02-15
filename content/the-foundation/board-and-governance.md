@@ -101,6 +101,7 @@ Raymond Drewry
 Raymond has been in the industry for 25 years primarily as a technologist. He has designed and implemented systems that range from the first fully interactive digital cable network in Europe, through the first-ever networked digital video system for journalists at an international sporting event, to real-time robotics systems for special effects and mechanical-industrial performance pieces. He also was a prime contributor to early versions of the X11 window system and Microsoft Windows 1.0.
 Before joining MovieLabs, Raymond was CTO at Aggregator TV, a UK-based IPTV content company, and before that CTO and VP of engineering at Liberate Technologies. He has also been Director of Technology for New Media at Sybase; Principal Engineer and Architect for graphics systems at Digital Equipment Corporation, working in both research and product groups; and an engineering manager at Microsoft. As a consultant he has worked on large-scale networked multimedia systems, US and EU patents, interactivity for mobile devices, and commercial applications of novel mathematics. His patents, publications, and contributions to technical standards cover distributed multimedia systems and graphics hardware and software. Raymond has a BA in Classics (Latin) and Computer Science from Yale University.
 
+{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/raymond-drewry-70539/" icon="linkedin" %}}
 
 <br>
 
@@ -178,7 +179,7 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 {{< figure src="/images/board/willk.jpg" title="Will Kreth" height="100px" >}}
 
-Will is the CEO and founder of HAND (Human & Digital). Formerly: executive director of EIDR, director of metadata at Showtime Networks, and director of video product management at Charter/Time Warner (participated in CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the standards register WG of the Metaverse Standards Forum. Additionally, Will was a co-founder of Wired magazine, and worked with educational software developers at the Apple Multimedia Lab. 
+Will is the CEO and founder of HAND (Human & Digital). Formerly: executive director of EIDR, director of metadata at Showtime Networks, and director of video product management at Charter/Time Warner (participated in CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the Standards Register WG of the Metaverse Standards Forum. Additionally, Will was a co-founder of Wired magazine, and worked with educational software developers at the Apple Multimedia Lab. 
 
 {{% social-link title="LinkedIn" url="http://www.linkedin.com/in/willkreth" icon="linkedin" %}}
 <br>
