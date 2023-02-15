@@ -77,10 +77,9 @@ Having been working for ISTIC for over 30 years, Qiao is in charge of the daily 
 
 ### CNKI {#CNKI}
 
-Ke Chun-Xiao
-Bio TK
+{{< figure src="/images/board/steven.jpg" title="Ke Chun-Xiao" height="100px" >}}
 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Ke Chunxiao (Steven) is the Senior Editor at CNKI for DOI services. He has been engaged in the research and management of Digital Publishing, Knowledge Service and International Communication for a long time. He previously worked as a Vice President of CNKI engaged in the construction of World Knowledge Big Data. Prior to that he was in charge of the research work of Beijing International Science and Technology Cooperation Base of Digital Publishing Technology. Steven holds a doctorate from the school of Journalism and Communication at Qinghua University and a masters in information science from the Graduate University of Chinese Academy of Sciences.
 
 <br>
 
