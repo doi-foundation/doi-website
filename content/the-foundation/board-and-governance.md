@@ -97,9 +97,10 @@ Matt leads the team at DataCite who provide the means to create, find, cite, con
 ### EIDR {#EIDR}
 
 Raymond Drewry
-Bio TK
 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed. Vegan same freegan, aute +1 humblebrag dolore poutine glossier. Fam street art cillum cupidatat aliqua YOLO.
+Raymond has been in the industry for 25 years primarily as a technologist. He has designed and implemented systems that range from the first fully interactive digital cable network in Europe, through the first-ever networked digital video system for journalists at an international sporting event, to real-time robotics systems for special effects and mechanical-industrial performance pieces. He also was a prime contributor to early versions of the X11 window system and Microsoft Windows 1.0.
+Before joining MovieLabs, Raymond was CTO at Aggregator TV, a UK-based IPTV content company, and before that CTO and VP of engineering at Liberate Technologies. He has also been Director of Technology for New Media at Sybase; Principal Engineer and Architect for graphics systems at Digital Equipment Corporation, working in both research and product groups; and an engineering manager at Microsoft. As a consultant he has worked on large-scale networked multimedia systems, US and EU patents, interactivity for mobile devices, and commercial applications of novel mathematics. His patents, publications, and contributions to technical standards cover distributed multimedia systems and graphics hardware and software. Raymond has a BA in Classics (Latin) and Computer Science from Yale University.
+
 
 <br>
 
