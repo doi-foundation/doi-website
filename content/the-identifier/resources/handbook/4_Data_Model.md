@@ -325,7 +325,7 @@ Terms will be added to the dictionary at the request of any Registration Agency 
 
 ISO 26324 states that the data dictionary used as the repository for all data elements and allowed values (the items which may be used as values of each element) used in DOI metadata specifications shall enable the definition within an ontology of all metadata elements to be available to all registration agencies, and provide the mappings to support metadata integration and transformations required for data interchange. If desired, metadata may be consolidated for a specific service; in this case, the data dictionary shall provide the data mappings such that the consolidated metadata be presented as if from a single set. All allowed values used by a registrant in Kernel Metadata shall be registered in the data dictionary.
 
-The DOI Data Dictionary is implemented and maintained as a managed namespace within the [Vocabulary Mapping Framework](../VMF/index.html) (VMF).
+The DOI Data Dictionary is implemented and maintained as a managed namespace within the Vocabulary Mapping Framework (VMF).
 
 Users need not understand the underlying concepts and construction of the Data Dictionary in order to make use of it. Key features of the dictionary are:
 
@@ -343,7 +343,7 @@ A fundamental role of the IDF is to provide assurance to users that the work has
 
 #### 4.3.5 Vocabulary Mapping Framework {#4.3.5}
 
-The IDF supports and recommends the [Vocabulary Mapping Framework](../VMF/index.html) (VMF) to promote interoperability between Registration Agency schemas, and other schemas and ontologies from outside the DOI domain such as ONIX or DDEX message standards. The IDF hosts the VMF web site and is also part of the governance structure of VMF. VMF is a downloadable tool that provides support for semantic interoperability across communities by providing extensive and authoritative mapping of vocabularies from major content metadata standards, to support interoperability across communities.
+The IDF supports and recommends the Vocabulary Mapping Framework (VMF) to promote interoperability between Registration Agency schemas, and other schemas and ontologies from outside the DOI domain such as ONIX or DDEX message standards. The IDF hosts the VMF web site and is also part of the governance structure of VMF. VMF is a downloadable tool that provides support for semantic interoperability across communities by providing extensive and authoritative mapping of vocabularies from major content metadata standards, to support interoperability across communities.
 
 The VMF is an expansion of the existing RDA/ONIX Framework into a comprehensive vocabulary of resource relators and categories, a superset of those used in major standards from the publisher/producer, education and bibliographic/heritage communities (CIDOC CRM; DCMI; DDEX; DOI; FRBR; MARC21; LOM; ONIX; RDA).
 

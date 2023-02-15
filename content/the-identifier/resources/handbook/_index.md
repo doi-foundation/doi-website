@@ -19,7 +19,7 @@ Compliance with this and subsequent versions of the DOI Handbook will ensure com
 
 ### Translations
 
-The DOI Handbook has been translated into [Chinese](translations/chinese/hb), [Korean](translations/korean/hb), and [Japanese](translations/japanese/hb). Contact Guo Xiaofeng of ISTIC at doi\_om@istic.ac.cn for assistance with the Chinese version, Mr. Jinseop Shin at js.shin@kisti.re.kr for assistance with the Korean version, or support@japanlinkcenter.org for assistance with the Japanese version. Note that the English version may include changes not reflected in the translations and it takes precedence over all translated versions.
+The DOI Handbook has been translated into Chinese, Korean, and Japanese. Contact [Guo Xiaofeng](mailto://guowindy8@gmail.com) of ISTIC for assistance with the Chinese version, [Jinseop Shin](mailto://js.shin@kisti.re.kr) at KISTI for assistance with the Korean version, or [JaLC](mailto://info@japanlinkcenter.org) for assistance with the Japanese version. Note that the English version may include changes not reflected in the translations and it takes precedence over all translated versions.
 
 ## Table of Contents
 
