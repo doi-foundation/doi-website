@@ -174,7 +174,7 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 <br>
 
-### HAND {#HAND}
+### HAND (Human & Digital) {#HAND}
 
 {{< figure src="/images/board/willk.jpg" title="Will Kreth" height="100px" >}}
 
