@@ -178,8 +178,7 @@ Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single
 
 {{< figure src="/images/board/willk.jpg" title="Will Kreth" height="100px" >}}
 
-Bio TK 
-Pug coloring book portland tofu subway tile woke laboris meh 8-bit tempor single-origin coffee next level. Lomo tousled ramps dreamcatcher. Anim pop-up commodo, iceland ut glossier twee tattooed slow-carb etsy fixie chambray kombucha incididunt sint. Banh mi viral lo-fi, occaecat wolf vinyl cupidatat consectetur church-key green juice actually succulents flannel humblebrag. Ullamco gochujang keffiyeh unicorn. Lorem tumblr marfa vinyl, DIY viral air plant banjo sartorial qui. Glossier salvia sed, selvage bruh tote bag bitters dolor crucifix iceland shaman offal tattooed.
+Will Kreth is the CEO and founder of HAND (Human & Digital). Former executive director of EIDR, director of metadata at Showtime Networks, director of video product management Charter/Time Warner (part of CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the standards register WG of the Metaverse Standards Forum. Additionally, was a co-founder of Wired Magazine, and assisted educational software developers at the Apple Multimedia Lab. 
 
 <br>
 
