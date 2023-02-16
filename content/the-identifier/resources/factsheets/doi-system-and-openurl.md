@@ -33,7 +33,7 @@ The comparison of OpenURL enabled systems with the DOI system is straightforward
 
 ### Technical Specification - OpenURL Format
 
-The OpenURL Framework was developed and approved as [NISO standard](http://www.niso.org/kst/reports/standards/) _ANS/NISO Z39.88 The OpenURL Framework for Context-Sensitive Services_. Additional information and KEV Implementation Guidelines are available from [NISO Committee AX](http://library.caltech.edu/openurl/default.htm).
+The OpenURL Framework was developed and approved as [NISO standard](https://www.niso.org/publications/z3988-2004-r2010) _ANSI/NISO Z39.88 The OpenURL Framework for Context-Sensitive Services_. Additional information and KEV Implementation Guidelines are available from [NISO](https://www.niso.org/niso-io/2011/01/openurl-maintenance-agency).
 
 The OpenURL Framework includes DOI names as one of its registered _Namespaces_ and DOI names are widely used in OpenURL implementations. This documentation references only part of the OpenURL Framework Registry.
 
