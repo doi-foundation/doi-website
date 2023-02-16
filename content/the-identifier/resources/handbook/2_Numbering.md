@@ -217,9 +217,9 @@ There is a freely available "resolver plug in" for Firefox that can be downloade
 
 Alternatively, without the need to extend the Web browsers' capability, DOIs may be structured to use the default public DOI proxy server https://doi.org (note that https is preferred over http, and that dx.doi.org, an earlier syntax, will remain fully supported but is no longer preferred). The resolution of the DOI in this case depends on the use of URL syntax. For example, "doi:10.123/456" would be written as https://doi.org/10.123/456.
 
-DOIs are also primarily used in HTML pages. The DOI 10.1006/rwei.1999".0001 as a link in an HTML page would be:
+DOIs are also primarily used in HTML pages. The DOI 10.1109/5.771073 as a link in an HTML page would be:
 
-<a href="https://doi.org/10.1006/rwei.1999%22.0001">10.1006/rwei.1999%22.0001</a>
+<a href="https://doi.org/10.1109/5.771073">10.1109/5.771073</a>
 
 Note that " has been encoded (see next section) to distinguish the DOI in the URL from the surrounding text. The DOI is displayed in its encoded form since users may type the DOI directly into their browsers.
 
@@ -294,7 +294,7 @@ NOTE: Certain client or server software might be able to process DOIs using nati
 
 NOTE: The DOI system is as independent as possible from specific technology implementations. For web applications, the DOI name may be expressed as a #### HTTP URI. The method for doing so is simply to prepend the DOI with https://doi.org/ and (where necessary) use the hexadecimal (%) encoding required for URLs or URNs, as explained in Section 2.5.2.4 above.
 
-For further information on the use of this web resolution of DOI names, see Chapter 3, [Resolution](/the-identifier/resources/handbook/3_resolution). For information on tools to facilitate this, see [DOI Tools](../tools.html). For information on DOI in relation to Internet identifier specifications, see the DOI system Factsheet [DOI System and Internet Identifier Specifications](/the-identifier/resources/factsheets/doi-system-and-internet-identifier-specifications).
+For further information on the use of this web resolution of DOI names, see Chapter 3, [Resolution](/the-identifier/resources/handbook/3_resolution). For information on DOI in relation to Internet identifier specifications, see the DOI system Factsheet [DOI System and Internet Identifier Specifications](/the-identifier/resources/factsheets/doi-system-and-internet-identifier-specifications).
 
 #### 2.6.3 URN presentation {#2.6.3}
 
@@ -308,7 +308,7 @@ Characters which cannot be handled directly in a specific network or reference c
 
 DOI names may also be presented via the shortDOI service ([shortDOI.org](http://shortdoi.org), see [2.10](#2.10) below) where human readability or minimising the length of the identifier string are important considerations.
 
-Specific representations may be agreed to meet special technical requirements. For example, the ANSI standard "[Digital Program Insertion Cueing Message for Cable](https://www.scte.org/documents/pdf/Standards/Top%20Ten/ANSI_SCTE%2035%202013.pdf)" (SCTE 35:2013) defines (among other things) the standard method for cable TV systems to include EIDR DOI names in-band with the programs being broadcast. It uses a compact lossless EIDR representation rather than the full ASCII DOI string (Table 8-7). This also makes use of the resolvability of DOI names, suggesting that IDs so carried can be resolved via an out-of-band mechanism to collect more data.
+Specific representations may be agreed to meet special technical requirements. For example, the ANSI standard "[Digital Program Insertion Cueing Message for Cable](https://webstore.ansi.org/preview-pages/SCTE/preview_SCTE+35+2013a.pdf)" (SCTE 35:2013) defines (among other things) the standard method for cable TV systems to include EIDR DOI names in-band with the programs being broadcast. It uses a compact lossless EIDR representation rather than the full ASCII DOI string (Table 8-7). This also makes use of the resolvability of DOI names, suggesting that IDs so carried can be resolved via an out-of-band mechanism to collect more data.
 
 #### 2.6.5 Principles {#2.6.5}
 
@@ -352,7 +352,7 @@ a. The other existing identifier(s) is indicated in the DOI metadata field "refe
 
 b. An existing identifier can be incorporated as an explicit part of the DOI name for the referent.
 
-Examples 1 and 2 show the incorporation of an ISBN and an ISSN into a DOI name. Other agreed syntaxes for integration are also possible. The International DOI Foundation maintains information on current agreed schemes (found in the factsheet [DOI System® and Standard Identifier Schemes](/the-identifier/resources/factsheets/doi-system-and-internet-identifier-schemes). Example 3 shows that the DOI name is not a replacement for the other identifier scheme.
+Examples 1 and 2 show the incorporation of an ISBN and an ISSN into a DOI name. Other agreed syntaxes for integration are also possible. The International DOI Foundation maintains information on current agreed schemes (found in the factsheet [DOI System® and Standard Identifier Schemes](/the-identifier/resources/factsheets/doi-system-and-standard-identifier-schemes). Example 3 shows that the DOI name is not a replacement for the other identifier scheme.
 
 {{% example %}}
 **EXAMPLE 1**
