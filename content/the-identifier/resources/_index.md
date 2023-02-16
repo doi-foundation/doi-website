@@ -22,6 +22,7 @@ Over the years we’ve developed fact sheets to support:
 - [Designing DOI Applications](factsheets/designing-doi-applications)
 - [Identifier Interoperability](factsheets/identifier-interoperability)
 - [The indecs Framework](factsheets/the-indecs-framework)
+- [DOI System and Cloudflare](factsheets/doi-system-and-cloudflare)
 - [DOI System and Standard Identifier Schemes](factsheets/doi-system-and-standard-identifier-schemes)
 - [DOI System and the Handle System](factsheets/doi-system-and-the-handle-system)
 - [DOI Resolution Documentation](factsheets/doi-resolution-documentation)
@@ -35,13 +36,13 @@ Over the years we’ve developed fact sheets to support:
 {{% column %}}
 
 ## FAQs
-Coming soon!
+[Frequently Asked Questions about the DOI® System](/the-identifier/resources/faqs)
 
 ## News archive
-Coming soon!
+[Archive of past announcements and news](/the-identifier/resources/news)
 
-## DOI Foundation in the news
-Coming soon!
+## DOI in the news 
+[Archive of publically available material related to the DOI and Persistent Identifiers (PIDs)](/the-identifier/resources/doi-in-the-news)
 
 {{% /column %}}
 

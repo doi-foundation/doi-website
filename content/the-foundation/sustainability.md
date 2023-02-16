@@ -15,7 +15,9 @@ About 70% of our expenses are used for the running and maintenance of the DOI Sy
 
 We maintain a reserve fund to support long-term sustainability. This is managed by the Executive Committee and overseen by the Audit Committee
 
-[Add Historic numbers as image / graph] TK
+Each year we strive to generate a small net operating income and have been able to do so nearly every year. Below is an overview of how this has changed over time.
+
+{{< figure src="/images/Historic-Financials.png" title="" width="100%">}}
 
 The DOI Foundation is a not-for-profit organization and is therefore prohibited from activities not permitted to be carried on by a corporation exempt from US federal income tax under Section 501(c)(6) of the Internal Revenue Code of 1986 et seq.
 
