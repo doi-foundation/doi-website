@@ -169,7 +169,7 @@ Dimitris is Chief Information Officer and Sector Director for Digital at Natural
 
 {{< figure src="/images/board/board.png" title="Jin-seop Shin" height="100px" >}}
 
-Bio to come. Placeholder text: Jinseop is at KISTI and he has been a board member of the DOI Foundation for many years, also serving on its Executive Committee. Jinseop is at KISTI and he has been a board member of the DOI Foundation for many years, also serving on its Executive Committee.Jinseop is at KISTI and he has been a board member of the DOI Foundation for many years, also serving on its Executive Committee.Jinseop is at KISTI and he has been a board member of the DOI Foundation for many years, also serving on its Executive Committee.
+Jinseop is Director of Korea DOI center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come.
 
 <br>
 
