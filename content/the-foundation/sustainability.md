@@ -9,7 +9,7 @@ imagemain = "Sustainability"
 +++
 
 
-The DOI Foundation operates on an annual budget of around $1 million USD. All revenues come from annual fees paid by the [Registration Agencies](/the-community/existing-registration-agencies/) and our [Members](/content/the-community/who-are-the-members-and-users/). These fees are set and reviewed annually by the Board.
+The DOI Foundation operates on an annual budget of around $1 million USD. All revenues come from annual fees paid by the [Registration Agencies](/the-community/existing-registration-agencies/) and our [Memberss](/content/the-community/who-are-the-members-and-users/). These fees are set and reviewed annually by the Board.
 
 About 70% of our expenses are used for the running and maintenance of the DOI System infrastructure.
 
