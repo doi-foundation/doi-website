@@ -1,4 +1,9 @@
-# Welcome to the DOI Foundation's website repository ![githubworkflow]
+# Welcome to the DOI Foundation's website repository
+[![build status](https://github.com/doi-foundation/doi-website/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/doi-foundation/doi-website/actions/workflows/build.yml)
+[![open issues](https://img.shields.io/github/issues-raw/doi-foundation/doi-website)](https://github.com/doi-foundation/doi-website/issues)
+[![issues closed](https://img.shields.io/github/issues-closed-raw/doi-foundation/doi-website)](https://github.com/doi-foundation/doi-website/issues?q=is%3Aissue+is%3Aclosed)
+
+![githubworkflow]
 
 This is where the DOI community manages the organization's main website. 
 CNRI is the sysadmin and Cazinc is the webadmin. Roles refined as:
