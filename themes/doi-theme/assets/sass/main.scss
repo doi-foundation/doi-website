@@ -18,9 +18,11 @@
         "partials/doi",
         "partials/responsive",
         "partials/single/page",
-        "partials/blocks-colored",
+        "partials/blocks-callouts",
         "partials/bios",
-        "partials/_how_many";
+        "partials/how_many",
+        "partials/handbook",
+        "partials/generic_page";
 
 body::-webkit-scrollbar:horizontal {
     display: none;
@@ -121,27 +123,48 @@ a {
     -moz-osx-font-smoothing: grayscale;
 }
 
+dd {
+    padding-bottom: 30px;
+}
 
-td, th {
-    padding: 3px 8px;
-    vertical-align: top;
-}
+table {
+    
+    margin-left: 30px;
+    margin-bottom: 30px;    
+    
+    td, th {
+        padding: 3px 8px;
+        vertical-align: top;
+    }
+
+
+    thead tr, thead tr:hover {
+        background-color: $background-blue;
+        border: 1px solid $background-blue;
+        color: #fff;
+    }
+
+    td {
+        border: 1px solid #d8d2c4;
+    }
+
+    th {
+        border: 1px solid #d8d2c4;
+    }
+
+    tr:nth-child(2n+2) {
+        background-color: $background-grey;
+    }
   
-thead tr, thead tr:hover {
-    background-color: $background-blue;
-    border: 1px solid $background-blue;
-    color: #fff;
+    &.no-zebra {
+    
+        tr, td {
+            border: 0;
+        }
+    
+        tr:nth-child(2n+2) {
+            background-color: #fff;
+        }
+    }
 }
-td {
-    border: 1px solid #d8d2c4;
-}
-th {
-    border: 1px solid #d8d2c4;
-}
-tr:nth-child(2n+2) {
-    background-color: $background-grey;
-}
-  
-table.no-zebra tr:nth-child(2n+2) {
-    background-color: #fff;
-}
+

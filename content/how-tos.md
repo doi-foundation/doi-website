@@ -11,6 +11,12 @@ maintext = "This page provides general help on adding and styling content."
 
 ## Key concepts
 
+### Frontmatter
+"Frontmatter" is the metadata contained at the top of content pages like this one, within the `+++` ... `+++` blocks. It is used to specify certain information about the page like its title or if it is in draft mode (hidden), and in some cases to enable or disable certain options like setting the page to `noindex` (hidden just from search engines). Here is more detailed information on some of the frontmatter:
+
+* `noindex = true` will hide the page from search engines
+* `showdate = true` will show the last edited date (as set in the `date` frontmatter) at the bottom of the page
+
 ### Data versus pages
 The "content" of this site is split between *data* and *pages*. Any content that is highly-formatted on the frontend is usually classed as **data**, for example the [list of existing registration agencies](http://localhost:1313/the-community/existing-registration-agencies/) or the [What is a DOI?](/the-identifier/what-is-a-doi/) page. This is because by classing this content as data we can more easily apply complex formatting without requiring editors to work with styling code. It also reduces the chances of editors breaking things 🙂. 
 
@@ -72,7 +78,7 @@ Tables are styled automatically so you can use standard Markdown to add them to 
 Shortcodes provide a simple way for editors to apply more advanced formatting and layouts to content. For example, on the [Sampler page](/sampler#two-column-layout) you can see that its possible to create a two-column layout, or wrap a block of text with a grey or blue box. Shortcodes are custom to this site, though they may work similarly to other Hugo-based sites you've worked with. 
 
 #### 2 column layout
-Sometimes its helpful to arrange content into two side-by-side columns, for example if its a long list of short items (like the people that comprise [the Board](/the-foundation/our-board)).
+Sometimes its helpful to arrange content into two side-by-side columns, for example if its a long list of short items (like the people that comprise [the Board](/the-foundation/board-and-governance)).
 
 To do this requires a combination of two shortcodes: `row` and `column`. Every set of 2 columns **must** be wrapped in a row. In addition, shortcodes must be opened and closed. For example:
 

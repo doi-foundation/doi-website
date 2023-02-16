@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>DOI Proxy Implementation Policy</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<link href="../style/new-style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<div style="background:#fcb426">
+<img src="../img/banner-413.gif" alt="Logo" width="620" height="137" border="0" />
+</div>
+
+<div style="height:1px;background:#000000"></div>
+<div style="height:1px;background:#54524f"></div>
+<div style="height:1px;background:#f6911e"></div>
+
+
+<!-- TABLE FOR NAVIGATION BAR -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" id="navtable" align="center">
+  <tr>    
+    <td width="34" height="26" bgcolor="#231f20"><img src="../img/transparent.gif" alt="" width="1" height="1" /></td>
+    
+    <td height="26" bgcolor="#231f20" class="navtext">
+     <a href="../index.html">HOME</a> &nbsp;|&nbsp;<a href="/the-identifier/resources/handbook/">HANDBOOK</a> &nbsp;|&nbsp;<a href="../factsheets.html">FACTSHEETS</a> &nbsp;|&nbsp;<a href="../faq.html">FAQs</a> &nbsp;|&nbsp; <a href="../resources.html">RESOURCES</a> &nbsp;|&nbsp;<a href="../users.html">REGISTRATION AGENCIES</a> &nbsp;|&nbsp;<a href="../announce.html">NEWS</a> &nbsp;|&nbsp;<a href="../idf-members/index.html">MEMBERS AREA</a>
+    </td>    
+  </tr>
+</table>
+<!-- END TABLE FOR NAVIGATION BAR -->
+
+<div style="height:1px;background:#e3a44d"></div>
+<div style="height:3px;background:#4d4942"></div>
+
+
+<!-- TABLE FOR CONTENT -->      
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td colspan="5">
+<img src="../img/transparent.gif" alt="" width="100" height="20" border="0" />
+</td>
+</tr>
+
+<tr>
+<td valign="middle">
+
+<h2>DOI Proxy Implementation Policy</h2>
+
+<div class="divider-full">&nbsp;</div>
+
+<p>This policy addresses RA implementation of the common proxy server doi.org, and the implementation of proxy-like services that perform URL resolution via HTTP under a domain name that is not doi.org.</p>
+
+<div class="divider-full">&nbsp;</div>
+
+<p>1. Every RA is welcome to use the doi.org set of web-to-handle proxy servers run by the IDF to express their DOIs in URL form or as part of any other service they provide to their customers. </p>
+
+<p>2. Every RA is welcome to contribute to the set of doi.org proxy servers by running one or more instances of the common proxy server implementation. Each RA that chooses to do so must agree to run the current version of the software and cooperate in the statistics gathering process which counts the total number of DOI resolutions through the proxy servers on a monthly basis. The IDF reserves the right to limit the total number of doi.org proxy instances should that number grow beyond what is useful and become too cumbersome to manage.</p>
+ 
+<p>3. RAs may choose instead to run a proxy-like service in which DOIs are embedded in URLs for resolution via HTTP under a domain name that is not doi.org, e.g., doi.RA-name.org. RAs choose to do this for a variety of reasons, including that although the service is basically a handle client, the domain name associated with the proxy becomes the visible, public location for DOI name resolution. An RA may also want to provide specific services for a particular community where it wouldn't be appropriate to have the services be part of the common proxy; however, RAs should give consideration to having any appropriate functionality in their service replicated in the common proxy (a process enabling this to happen will need to be established).</p>
+
+<p>4. RAs that runs their own proxy-like service agree to also support the common proxy server functionality, and agree to perform a default resolution for all DOI names from any IDF RA (e.g. http://dx.medra.org/10.1000/186 or http://doi.org/10.1000/186 will at least resolve a DOI name to the default URL).  The DOI system is global and distributed.  Avoiding fragmentation of services, wherein DOI name resolution happens in drastically different ways via different proxies, is essential. Quality of service problems with any RA run proxy service will reflect on the DOI system as a whole. Going forward, the IDF will need to further define core functionality for all proxies in the future.</p>
+
+<p>5. RAs who runs a proxy-like service must agree to alias that domain name to doi.org if and when their uniquely named service is no longer maintained. This will enable persistent DOI references to continue to resolve.  An RA may choose to move back to using the common proxy and not run its own; however, succession back to the common proxy would need to be carefully managed. Regardless of the number of proxies run by RAs, the IDF will run additional instances of the common proxy, and distribute the load across them.</p>
+
+<p>6. Every RA that runs a proxy-like service agrees to inform the IDF about that service such that the IDF can maintain a list of valid DOI proxy servers.</p>
+
+<div class="divider-full">&nbsp;</div>
+
+<!-- TABLE FOR FOOTER -->
+
+<table  border="0" cellpadding="0" cellspacing="0" align="center">
+
+<tr>
+<td colspan="2">
+<p class="footer">Policies as of July 2013. Page updated March 26, 2015</p>
+
+
+</td>
+</tr>
+
+<tr>
+<td align="left" height="40">
+<img src="../img/Logo_TM.png" alt="DOI_disc_logo" width="24" height="24" />
+</td>
+
+<td align="left">
+<span style="padding-left: 0px; font-size: 11px;"><span style="vertical-align: super;">&reg;</span>, DOI<span style="vertical-align: super;">&reg;</span>, DOI.ORG<span style="vertical-align: super;">&reg;</span>, and shortDOI<span style="vertical-align: super;">&reg;</span> are trademarks of the International DOI Foundation.</span>
+</td>       
+</tr>
+</table>
+
+
+</body>
+</html>

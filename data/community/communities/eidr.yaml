@@ -1,3 +1,5 @@
 weight: 70
-maintext: "Entertainment Identifier Registry (EIDR) is a registry of movies, television shows, and other commercial audio/video assets."
+maintext: "The [Entertainment Identifier Registry (EIDR)](https://www.eidr.org) is a registry of movies, television shows, and other commercial audio/video assets."
 logo: "/images/communities/LogoEIDR_4-390@2x.png"
+linkurl: "https://www.eidr.org"
+linktext: "EIDR Website"

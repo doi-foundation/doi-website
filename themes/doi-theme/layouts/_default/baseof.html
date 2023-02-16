@@ -7,6 +7,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="ahrefs-site-verification" content="a4d19d13d080685e48094a2591188be35d7b5db05918a5eb84828500a14f3c5e">
+	
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
@@ -28,9 +31,11 @@
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/731b8140c4.js" crossorigin="anonymous"></script>
-	{{ $sass := resources.Get "sass/main.scss" }}
-	{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+	
+	{{ $options := (dict "targetPath" "css/style.css") }}
+	{{ $style_plain := resources.Get "sass/main.scss" | resources.ToCSS $options }}
+	{{ $fp := $style_plain | resources.Fingerprint "sha512" }}
+	<link rel="stylesheet" href='{{ $style_plain.Permalink }}?v={{ $fp.Data.Integrity}}' >
 
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}

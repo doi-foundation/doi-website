@@ -1,3 +1,5 @@
 weight: 40
-maintext: "China National Knowledge Infrastructure (CNKI) manages China-based information resources, including Chinese politics, economics, humanities, social science, science, and technology. CNKI publishes databases containing e-journals, newspapers, dissertations, proceedings, yearbooks, references works, and more."
+maintext: "[China National Knowledge Infrastructure (CNKI)](https://oversea.cnki.net/index/) manages China-based information resources, including Chinese politics, economics, humanities, social science, science, and technology. CNKI publishes databases containing e-journals, newspapers, dissertations, proceedings, yearbooks, references works, and more."
 logo: "/images/communities/CNKI@2x.png"
+linkurl: "https://oversea.cnki.net/index/"
+linktext: "CNKI Website"

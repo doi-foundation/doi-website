@@ -18,8 +18,20 @@ body {
 
 
   ol, ul {
-    padding-left: 1rem;
+    padding-left: 2rem;
   }  
+  
+  dl {
+  
+    dt {
+      font-family: 'futura-pt-bold';
+      font-weight: 700;
+    }
+    
+    dd {
+      padding-left: 2em;
+    }
+  }
 
 }
 
@@ -104,5 +116,20 @@ pre {
     background-color: none;
     border: 0;   
   }
+  
+}
+
+figure {
+  text-align: center;
+  
+  figcaption h4 {
+    font-size: 1em;
+    font-style: italic;
+    font-family: 'futura-pt-bold'
+  }
+}
+
+blockquote {
+  margin: 0 2em 30px 3em;
   
 }

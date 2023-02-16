@@ -2,5 +2,5 @@ weight: 1
 title: "HOW CAN I RESOLVE A DOI?"
 maintext: "The DOI System will look up the unique string and redirect you or your machine to the object that it points to. This is most often a URL to a web page, but it can be a link to a database record, for instance."
 linktext: "learn more"
-linkurl: "/about"
+linkurl: "/the-foundation/about-us/"
 icon: "/images/globe.svg"

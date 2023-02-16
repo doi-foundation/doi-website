@@ -1,0 +1,120 @@
+.generic-page {
+    overflow-x:auto;
+    code.doi-not-found {
+        background-color:transparent;
+        border:0;
+    }
+    .home-link {
+        text-align:right;
+    }
+    .link-alt {
+        border: 2px solid #000;
+        
+        a {
+            padding:0;
+            span {
+                border-right: 2px solid #000;
+                color:#000;
+            }
+            i {
+                color:$link-arrow;
+            }            
+        }
+    }
+    h2.title img {
+        width:3rem;
+        padding-right:10px;
+        padding-bottom:8px;
+    }
+
+    .link-alt a:hover > .hover-move-right {
+        padding-right: 30px;
+        padding-left: 50px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    strong {
+        font-weight:bold;
+    }
+    .page-content ul {
+        padding-left: 2rem;
+    }
+    .row {
+        .more-info-heading {
+            padding-top:0;
+            padding-bottom:0;
+        }
+        .col {
+            &.form {
+                label {
+                    font-weight:bold;
+                }
+                .submit {                   
+                    text-transform: uppercase;
+                    font-family: "futura-pt-bold";
+                    color: #000;
+                    background-color: #FAB70C;
+                    padding: 12px 20px;
+                    font-weight: bold;
+                    border: 0;
+                }
+                .row {
+                    width:100%;
+                    padding:0;
+                    padding-bottom:5px;
+                    justify-content:center;
+                    column-gap:0;
+                    display:block;
+                    .col {
+                        text-align:left; 
+                        &:first-of-type {
+                            text-align:left;  
+                            flex:0.8;
+                            @media (max-width: $break-large) {
+                                text-align:left;  
+                            }                                               
+                        }
+                    }
+                }
+                input,textarea {                    
+                    width:75%;
+                    border:1px solid $background-grey;
+                    @media (max-width: $break-medium) {                            
+                        width:100%;
+                    }   
+                }
+            }
+        }
+    }
+    section.home-infos h2.title {
+        font-size:2rem;
+    }
+    footer {
+        h2 {
+            color:#fff;
+            text-transform: none;
+        }
+        .footer-left {
+            flex:40%;
+        }
+        .footer-right {
+            
+            flex:60%;
+            @media (max-width: $break-large) {
+                .row {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }     
+        }
+        ul {
+            padding-left:0;
+            li a {
+                text-transform:none;
+                font-size:2rem;
+                font-family: "futura-pt";
+            }
+        }
+    }
+    
+}

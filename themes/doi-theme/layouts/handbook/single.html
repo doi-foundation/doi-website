@@ -1,0 +1,19 @@
+{{ define "main" }}	
+	<main aria-role="main">
+		<header class="single-header">
+		</header>
+		{{ with .Params }}
+			{{ partial "single/top-light.html" . }}
+		{{ end }}
+		<div class="page-content handbook single d-lg-flex align-items-start">
+			<article>
+				<div>
+					{{ .Content }}
+				</div>
+				
+			</article>
+		{{ partial "handbook/subnav.html" . }}
+		</div>
+        {{ partial "socials-side.html" . }}
+	</main>
+{{ end }}
