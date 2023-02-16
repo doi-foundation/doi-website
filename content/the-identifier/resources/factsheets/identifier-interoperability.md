@@ -84,7 +84,7 @@ Identifier Interoperability: A Report on Two Recent ISO Activities. _D-Lib Magaz
 
 The RDA/ONIX Framework for Resource Categorization. _D-Lib Magazine_, Jan/Feb 2007. \[ [https://doi.org/10.1045/january2007-dunsire](https://doi.org/10.1045/january2007-dunsire) \]
 
-CIDOC Conceptual Reference Model. \[ [http://cidoc.ics.forth.gr/index.html](http://cidoc.ics.forth.gr/index.html) \]
+CIDOC Conceptual Reference Model. \[ [http://cidoc.ics.forth.gr/index.html](https://www.cidoc-crm.org) \]
 
 Digital Object Architecture. Kahn R.E. & Wilensky R. "A Framework for Distributed Digital Object Services". \[ [https://hdl.handle.net/4263537/5001](https://hdl.handle.net/4263537/5001) \]
 

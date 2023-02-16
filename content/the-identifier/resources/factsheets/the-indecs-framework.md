@@ -54,7 +54,7 @@ The framework has been developed further as a generic ontology-based approach de
 *   [RDA/ONIX Framework for Resource Categorization](http://dx.doi.org/10.1045/january2007-dunsire)
 *   [Vocabulary Mapping Framework](/VMF/index.html)
 *   [DDEX (Digital Data Exchange)](http://www.ddex.net) Music industry messaging and data dictionary applications
-*   ONIX (Online Information Exchange) standards for the use of publishers in distributing digital metadata about their products (See also [EDItEUR: ONIX for Books](http://www.editeur.org/onix.html))
+*   ONIX (Online Information Exchange) standards for the use of publishers in distributing digital metadata about their products (See also [EDItEUR: ONIX for Books](https://www.editeur.org/8/ONIX/))
 *   [Digital Object Identifier System](http://www.doi.org/) metadata schemes
 
 Further developments are active, both through community activities (e.g. [VMF](../VMF/index.html)) and independent tools and services (e.g. [Ontologyx](http://www.rightscom.com/)).
