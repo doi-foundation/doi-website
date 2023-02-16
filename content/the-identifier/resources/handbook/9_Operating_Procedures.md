@@ -42,7 +42,7 @@ The Directory infrastructure also includes proxy servers (all at the domain name
 
 A prefix is a unique string that makes up the first part of a DOI name and is stored as a handle in the Handle System's Global Handle Registry® (e.g., 0.NA/10.1000). Registration Agencies may receive and assign as many prefixes as they require.
 
-All DOI name prefixes begin with 10, and are assigned in sequential order; no reserved prefixes may be requested. The second part of a DOI name is called the suffix and is the local string assigned by the owner or organization acting on their behalf (e.g., 10.1000/34004JFR). The prefix and suffix are separated by a forward slash (/). See Chapter 2, [Numbering](/content/the-identifier/resources/handbook/2_Numbering.md) for suggested guidelines for suffix numbering.
+All DOI name prefixes begin with 10, and are assigned in sequential order; no reserved prefixes may be requested. The second part of a DOI name is called the suffix and is the local string assigned by the owner or organization acting on their behalf (e.g., 10.1000/34004JFR). The prefix and suffix are separated by a forward slash (/). See Chapter 2, [Numbering](2_numbering) for suggested guidelines for suffix numbering.
 
 It is recommend that prefixes are assigned at an appropriate level to deal with business requirements. Typically, a Registration Agency may issue one prefix per customer, but it might also be appropriate to issue a prefix per brand, or to some recognizable cluster of products (e.g. a publisher imprint). The choice is the RA's, but IDF and/or other RAs can discuss requirements and make recommendations.
 
