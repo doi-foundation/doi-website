@@ -175,7 +175,7 @@ Bio to come. Placeholder text: Jinseop is at KISTI and he has been a board membe
 
 ### HAND (Human & Digital) {#HAND}
 
-{{< figure src="/images/board/willk.jpg" title="Will Kreth" height="100px" >}}
+{{< figure src="/images/board/willk.png" title="Will Kreth" height="100px" >}}
 
 Will is the CEO and founder of HAND (Human & Digital). Formerly: executive director of EIDR, director of metadata at Showtime Networks, and director of video product management at Charter/Time Warner (participated in CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the standards register WG of the Metaverse Standards Forum. Additionally, Will was a co-founder of Wired magazine, and worked with educational software developers at the Apple Multimedia Lab. 
 
