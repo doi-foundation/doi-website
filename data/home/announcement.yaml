@@ -4,4 +4,6 @@ Human & Digital (HAND) was recently appointed as the 12th Registration Agency of
 "
 linktext: "Learn more"
 linkurl: "https://www.handidentity.com/"
-image: "/images/communities/Hand_Logo_Stacked.svg"
+# ideal image dimensions are 500px wide by no more than 500px high (but shorter height is OK)
+# images should ideally be square and work on a white background
+image: "/images/communities/HAND_horizontal_brand_logo.png"
