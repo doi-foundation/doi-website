@@ -23,4 +23,4 @@ Hardisty AR, Addink W, Glöckler F, Güntsch A, Islam S, Weiland C (2021), Resea
 
 ### [Digital Object Identifier (DOI®) System](/resources/DOI_article_ELIS3.pdf)
 
-Paskin, Norman, Encyclopedia of Library and Information Sciences, 3rd Edition, 1:1, pp. 1586—1592, (2010), ISBN: 978-0-8493-9712-7. (Note: This article may be used for research, teaching and private study purposes; it is reproduced on this site with permission of the publisher but may not be distributed further. [Go here for full public access to the article](https://doi.org/10.1108/09504121111102976)] https://doi.org/10.1108/09504121111102976
+Paskin, Norman, Encyclopedia of Library and Information Sciences, 3rd Edition, 1:1, pp. 1586—1592, (2010), ISBN: 978-0-8493-9712-7. (Note: This article may be used for research, teaching and private study purposes; it is reproduced on this site with permission of the publisher but may not be distributed further. [Go here for full access to the article](https://doi.org/10.1108/09504121111102976) https://doi.org/10.1108/09504121111102976
