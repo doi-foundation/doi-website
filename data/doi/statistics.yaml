@@ -6,6 +6,7 @@ toprighttext: Total DOI resolutions to date (all time)
 bottomlefttext: of the resolutions performed in **MONTH** were from bots (it’s not always possible to reliably identify them)
 bottomrighttext: of the resolutions performed in **MONTH** used content negotiation
 # footnote is only used on homepage
-footnote: "The total DOI resolutions to date is calculated using actual number of DOI resolutions recorded up until yesterday and the average resolution rate recorded over the past 24 hours (currently this is "
+resolutions_footnote: "The total DOI resolutions to date is calculated using actual number of DOI resolutions recorded up until yesterday and the average resolution rate recorded over the past 24 hours (currently this is "
+resolutions_footnote_closing: ")"
 uptimetext: Uptime over the last 90 days
 uptime_footnote: ""
