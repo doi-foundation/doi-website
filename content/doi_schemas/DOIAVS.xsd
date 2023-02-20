@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="2.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:doiavs="http://www.doi.org/2010/DOISchemaAVS"
            xmlns:iso3166a2="http://www.doi.org/2010/iso3166a2"
@@ -11,12 +11,12 @@
    <!-- Need to agree copyright statement policy for updating the following annotation -->
    
    <xs:annotation>
-      <xs:documentation>© 2015 International DOI Foundation</xs:documentation>
+      <xs:documentation>© 2022 International DOI Foundation</xs:documentation>
    </xs:annotation>
    <xs:simpleType name="agentRole">
       <xs:annotation>
          <xs:documentation>Allowed values for roles played by a party as an agent of a Creation.</xs:documentation>
-         <xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+         <xs:documentation>This is an open set. Other values may be registered with the DOI Foundation by any Registration Authority.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
          <xs:enumeration value="Actor">

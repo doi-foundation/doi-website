@@ -16,7 +16,7 @@
    <xs:annotation>
 
       <!-- added 2022 on 2022-06-11 -->
-      <xs:documentation>© 2013, 2022 International DOI Foundation</xs:documentation>
+      <xs:documentation>© 2013, 2022 The DOI Foundation</xs:documentation>
 
    </xs:annotation>
    <xs:element name="kernelMetadata" type="doi:kernelMetadata">
