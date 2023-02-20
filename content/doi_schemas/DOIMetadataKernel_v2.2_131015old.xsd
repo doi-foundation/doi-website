@@ -1,81 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:doi="http://www.doi.org/2010/DOISchema"
-   xmlns:doiavs="http://www.doi.org/2010/DOISchemaAVS"
-   xmlns:ietfbcp47="http://www.doi.org/2022/ietfbcp47"
-   targetNamespace="http://www.doi.org/2010/DOISchema" elementFormDefault="qualified"
-   attributeFormDefault="unqualified" version="2.2">
-
-   <!--xs:import namespace="http://www.doi.org/2010/DOISchemaAVS"
-              schemaLocation="http://doi.org/10.1000/282"/-->
-
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:doi="http://www.doi.org/2010/DOISchema"
+           xmlns:doiavs="http://www.doi.org/2010/DOISchemaAVS"
+           targetNamespace="http://www.doi.org/2010/DOISchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="2.2">
    <xs:import namespace="http://www.doi.org/2010/DOISchemaAVS"
-      schemaLocation="DOIAVS20220915.xsd"/>
-
-   <!-- Need to agree copyright statement policy for updating the following annotation -->
-
+              schemaLocation="http://doi.org/10.1000/282"/>
    <xs:annotation>
-
-      <!-- added 2022 on 2022-06-11 -->
-      <xs:documentation>© 2013, 2022 International DOI Foundation</xs:documentation>
-
+      <xs:documentation>© 2013 International DOI Foundation</xs:documentation>
    </xs:annotation>
-   <xs:element name="kernelMetadata" type="doi:kernelMetadata">
-      <xs:annotation>
-         <xs:documentation>The XML schema for DOI Kernel metadata.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
+	<xs:element name="kernelMetadata" type="doi:kernelMetadata">
+		<xs:annotation>
+			<xs:documentation>The XML schema for DOI Kernel metadata.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
    <xs:complexType name="kernelMetadata">
       <xs:annotation>
          <xs:documentation>A complex element containing all kernel metadata for a specific DOI name.</xs:documentation>
       </xs:annotation>
-      <xs:sequence>
-         <xs:element name="referentDoiName" type="doi:doiName">
-            <xs:annotation>
-               <xs:documentation>The specific DOI name allocated to the referent.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="primaryReferentType" type="doiavs:primaryReferentType">
-            <xs:annotation>
-               <xs:documentation>The primaryReferentType of the referent (Creation or Party).</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="registrationAgencyDoiName" type="doi:doiName">
-            <xs:annotation>
-               <xs:documentation>The DOI name of the Registration Agency responsible for issuing this Declaration.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="issueDate" type="xs:date">
-            <xs:annotation>
-               <xs:documentation>The date on which this Declaration was issued.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="issueNumber" type="xs:unsignedInt">
-            <xs:annotation>
-               <xs:documentation>The sequence number of this Declaration in the series of Kernel Metadata Declarations issued for this DOI name.</xs:documentation>
-               <xs:documentation>Original issue=1. If a Kernel Metadata Declaration for a specific DOI name is re-issued, this number should be incremented by one.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:choice>
-            <xs:element name="referentCreation" type="doi:referentCreation">
+         <xs:sequence>
+            <xs:element name="referentDoiName" type="doi:doiName">
                <xs:annotation>
-                  <xs:documentation>The creation identified by the DOI name (where the primary referentType is 'Creation').</xs:documentation>
+                  <xs:documentation>The specific DOI name allocated to the referent.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            <xs:element name="referentParty" type="doi:referentParty">
+            <xs:element name="primaryReferentType" type="doiavs:primaryReferentType">
                <xs:annotation>
-                  <xs:documentation>The party identified by the DOI name (where the primary referentType is 'Party').</xs:documentation>
+                  <xs:documentation>The primaryReferentType of the referent (Creation or Party).</xs:documentation>
                </xs:annotation>
             </xs:element>
-            
-            <!-- added 2022-09-15 -->
-            <xs:element name="referentPlace" type="doi:referentPlace">
+            <xs:element name="registrationAgencyDoiName" type="doi:doiName">
                <xs:annotation>
-                  <xs:documentation>The place identified by the DOI name (where the primary referentType is 'Place').</xs:documentation>
+                  <xs:documentation>The DOI name of the Registration Agency responsible for issuing this Declaration.</xs:documentation>
                </xs:annotation>
             </xs:element>
-            
-         </xs:choice>
-      </xs:sequence>
+            <xs:element name="issueDate" type="xs:date">
+               <xs:annotation>
+                  <xs:documentation>The date on which this Declaration was issued.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="issueNumber" type="xs:unsignedInt">
+               <xs:annotation>
+                  <xs:documentation>The sequence number of this Declaration in the series of Kernel Metadata Declarations issued for this DOI name.</xs:documentation>
+                  <xs:documentation>Original issue=1. If a Kernel Metadata Declaration for a specific DOI name is re-issued, this number should be incremented by one.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:choice>
+               <xs:element name="referentCreation" type="doi:referentCreation">
+                  <xs:annotation>
+                     <xs:documentation>The creation identified by the DOI name (where the primary referentType is 'Creation').</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="referentParty" type="doi:referentParty">
+                  <xs:annotation>
+                     <xs:documentation>The party identified by the DOI name (where the primary referentType is 'Party').</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:choice>
+         </xs:sequence>
    </xs:complexType>
    <xs:complexType name="creationIdentifier">
       <xs:annotation>
@@ -190,31 +174,31 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded"
-            type="doi:creationIdentifier">
+                     type="doi:creationIdentifier">
             <xs:annotation>
                <xs:documentation>An identifier of the linkedCreation.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="referentCreationRole" minOccurs="0"
-            type="doiavs:creationToCreationLinkRole">
+                     type="doiavs:creationToCreationLinkRole">
             <xs:annotation>
                <xs:documentation>A role played by the referentCreation in relation to the linkedCreation (for example, the referentCreation is an edition of the linkedCreation).</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="linkedCreationRole" minOccurs="0"
-            type="doiavs:creationToCreationLinkRole">
+                     type="doiavs:creationToCreationLinkRole">
             <xs:annotation>
                <xs:documentation>A role played by the linkedCreation in relation to the referentCreation (for example, the linkedCreation is an edition of the referentCreation).</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="referentCreationSequenceIdentifier" minOccurs="0" maxOccurs="unbounded"
-            type="doi:sequenceIdentifier">
+                     type="doi:sequenceIdentifier">
             <xs:annotation>
                <xs:documentation>An identifier of the referentCreation, giving the order in which it appears within a list of creations linked to the linkedCreation.</xs:documentation>
             </xs:annotation>
          </xs:element>
          <xs:element name="linkedCreationSequenceIdentifier" minOccurs="0" maxOccurs="unbounded"
-            type="doi:sequenceIdentifier">
+                     type="doi:sequenceIdentifier">
             <xs:annotation>
                <xs:documentation>An identifier of the linkedCreation, giving the order in which it appears within a list of creations linked to the referentCreation.</xs:documentation>
             </xs:annotation>
@@ -253,16 +237,10 @@
          <xs:documentation>A complex element describing an identifier used to identify a party.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <!-- Replaced value string with nonUriValue and uri (both optional) on 2022-09-28 -->
-         <xs:element name="nonUriValue" minOccurs="0" type="xs:string">
-           <xs:annotation>
-              <xs:documentation>The value of the partyIdentifier if it is not a URI.</xs:documentation>
-           </xs:annotation>
-        </xs:element>
-        <xs:element name="uri" minOccurs="0" maxOccurs="unbounded" type="doi:uri">
-           <xs:annotation>
-              <xs:documentation>The value of the partyIdentifier if it is a URI.</xs:documentation>
-           </xs:annotation>
+         <xs:element name="value" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>A text string representing the value of the partyIdentifier (for example, '987654321').</xs:documentation>
+            </xs:annotation>
          </xs:element>
          <xs:element name="type" type="doiavs:partyIdentifierType">
             <xs:annotation>
@@ -271,33 +249,6 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   
-   <!-- added 2022-09-15 -->
-   <xs:complexType name="placeName">
-      <xs:annotation>
-         <xs:documentation>A complex element describing a name by which a place is known.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="value" type="xs:string">
-            <xs:annotation>
-               <xs:documentation>A text string representing the value of the placeName (for example, 'Sydney', 'New South Wales').</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="language" type="xs:language" minOccurs="0">
-            <xs:annotation>
-               <xs:documentation>The language of the placeName.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         
-         <xs:element name="type" type="doiavs:placeNameType">
-            <xs:annotation>
-               <xs:documentation>The type of the partyName.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         
-      </xs:sequence>
-   </xs:complexType>
-   
    <xs:complexType name="partyName">
       <xs:annotation>
          <xs:documentation>A complex element describing a name by which a party is known.</xs:documentation>
@@ -308,14 +259,6 @@
                <xs:documentation>A text string representing the value of the partyName (for example, 'John Smith', 'ABC Publishing, Inc').</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-         <!-- NEW 2022-04-08: partyName – change structure to add optional language -->
-         <xs:element name="language" type="xs:language" minOccurs="0">
-            <xs:annotation>
-               <xs:documentation>The language of the partyName.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-
          <xs:element name="type" type="doiavs:partyNameType">
             <xs:annotation>
                <xs:documentation>The type of the partyName.</xs:documentation>
@@ -357,7 +300,7 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded"
-            type="doi:creationIdentifier">
+                     type="doi:creationIdentifier">
             <xs:annotation>
                <xs:documentation>An identifier of the referentCreation.</xs:documentation>
             </xs:annotation>
@@ -390,165 +333,13 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="linkedCreation" minOccurs="0" maxOccurs="unbounded"
-            type="doi:linkedCreation">
+                     type="doi:linkedCreation">
             <xs:annotation>
                <xs:documentation>Another creation with which the referentCreation is associated.</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-         <!-- NEW 2022-04-08: referentCreation - add language type -->
-         <xs:element name="language" minOccurs="0" type="xs:language">
-            <xs:annotation>
-               <xs:documentation>Language in which the DOI referentCreation record is provided.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-
-         <!-- NEW 2022-04-08: referentCreation - add complex type languageOfContent with a language and a languageOfContentType  -->
-         <!-- MODIFIED 2022-06-14 to include Referent in name -->
-         <xs:element name="languageOfReferentContent" type="doi:languageOfReferentContent"
-            minOccurs="0">
-            <xs:annotation>
-               <xs:documentation>For creations, the language of the referent expression.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-
-         <!-- NEW 2022-06-16 creationDate wrapper -->
-         <!-- NEW 2022-09-15 fixed typo creationate to creationDate in element name -->
-         <xs:element name="creationDate" type="doi:creationDate" minOccurs="0">
-            <xs:annotation>
-               <xs:documentation>For creations, the language of the referent expression.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-
-
-         <!-- NEW 2022-04-08: creation - add an optional repeatable Place complex type -->
-         <!-- NEW 2022-06-16: redefined to use Place type with additional attribute for placeType -->
-         <!-- NEW 2022-09-15: corrected typo of 'existance' to 'existence' in documentation element -->
-         <xs:element name="creationPlace" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-               <xs:documentation>Where the referentCreation came into existence.</xs:documentation>
-            </xs:annotation>
-            <xs:complexType>
-               <xs:complexContent>
-                  <xs:extension base="doi:Place">
-                     <xs:attribute name="placeType" type="doi:placeType"/>
-                  </xs:extension>
-               </xs:complexContent>
-            </xs:complexType>
-         </xs:element>
-
       </xs:sequence>
    </xs:complexType>
-
-   <!-- NEW 2022-06-16 Place type -->
-   <!-- NEW 2022-09-15 made place identifier type refer to the complex type rather than being a strng -->
-   <xs:complexType name="Place">
-      <xs:sequence>
-         <xs:element name="name" type="xs:string">
-            <xs:annotation>
-               <xs:documentation>The name of the place.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="placeIdentifier" type="doi:placeIdentifier" maxOccurs="unbounded">
-            <!-- doi:placeIdentifier -->
-            <xs:annotation>
-               <xs:documentation>An identifier of the place.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="countryCode" type="doiavs:territoryCode" minOccurs="0">
-            <xs:annotation>
-               <xs:documentation>The country code of the place.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   
-   <!-- NEW 2022-06-16: PlaceIdentifier complex type-->
-   <xs:complexType name="placeIdentifier">
-      <xs:sequence>
-         <!-- Replaced value string with nonUriValue and uri (both optional) on 2022-09-28 -->
-         <xs:element name="nonUriValue" minOccurs="0" type="xs:string">
-            <xs:annotation>
-               <xs:documentation>The value of the partyIdentifier if it is not a URI.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="uri" minOccurs="0" maxOccurs="unbounded" type="doi:uri">
-            <xs:annotation>
-               <xs:documentation>The value of the partyIdentifier if it is a URI.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <!-- TODO: Make type in the following line a placeIdentifierType and start appropriate AVS enumeration -->
-         <xs:element name="type" type="xs:string">
-            <xs:annotation>
-               <xs:documentation>The type of the place Identifier</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-
-   <xs:complexType name="creationDate">
-      <xs:sequence>
-         <!-- NEW 2022-04-08: creationDate - new element with date constraints implemented as union of date and dateTime to allow either form -->
-         <!-- NEW 2022-06-16: creation Date changed to date as the wrapping element is called creationDate -->
-         <!-- NEW 2022-09-15: corrected typo of 'existance' to 'existence' in documentation element -->
-         <xs:element name="date" type="doi:dateOrDateTime">
-            <xs:annotation>
-               <xs:documentation>When the referentCreation came into existence.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-
-         <!-- NEW 2022-06-14 creation date type added as enumeration -->
-         <xs:element name="creationDateType" minOccurs="0" type="doiavs:creationDateType">
-            <xs:annotation>
-               <xs:documentation>The type of a creation date, e.g. publication date</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-
-   <!-- NEW 2022-04-08: creationDate - new element with date constraints implemented as union of date and dateTime to allow either form -->
-   <!-- NEW 2022-06-11: added xs:gYear and xs:gYearMonth to union to support range if date expressions -->
-   <xs:simpleType name="dateOrDateTime">
-      <xs:annotation>
-         <xs:documentation>A simple element describing the date/time of an event in a variety of granular forms: yyyy, yyyy-mm, yyyy-mm-dd or yyyy-mm-ddThh:mm:ss.</xs:documentation>
-      </xs:annotation>
-      <xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
-   </xs:simpleType>
-
-   <!-- NEW 2022-04-08: referentCreation - add complex type languageOfContent with a language and a languageOfContentType -->
-   <!-- MODIFIED 2022-06-14 to include Referent in name -->
-   <xs:complexType name="languageOfReferentContent">
-      <xs:annotation>
-         <xs:documentation>A complex element describing the language in which a creation is expressed.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="language" type="xs:language"/>
-         <xs:element name="languageOfReferentContentType" minOccurs="0"
-            type="doi:languageOfReferentContentType"/>
-      </xs:sequence>
-   </xs:complexType>
-   
-   <!-- added 2022-09-15 -->
-   <xs:complexType name="referentPlace">
-      <xs:annotation>
-         <xs:documentation>A complex element describing the place identified by the doiName to which the kernelMetadata applies.</xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-         <xs:element name="name" maxOccurs="unbounded" type="doi:placeName">
-            <xs:annotation>
-               <xs:documentation>A name by which the referentParty is known.</xs:documentation>
-               <xs:documentation>For Kernel Metadata in a restricted Application Profile the string 'No information available' should be used, with a partyNameType of 'name'.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded"
-            type="doi:placeIdentifier">
-            <xs:annotation>
-               <xs:documentation>An identifier of the referentPlace.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-
    <xs:complexType name="referentParty">
       <xs:annotation>
          <xs:documentation>A complex element describing the party identified by the doiName to which the kernelMetadata applies.</xs:documentation>
@@ -561,7 +352,7 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded"
-            type="doi:partyIdentifier">
+                     type="doi:partyIdentifier">
             <xs:annotation>
                <xs:documentation>An identifier of the referentParty.</xs:documentation>
             </xs:annotation>
@@ -589,7 +380,7 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="associatedTerritory" minOccurs="0" maxOccurs="unbounded"
-            type="doiavs:territoryCode">
+                     type="doiavs:territoryCode">
             <xs:annotation>
                <xs:documentation>A territory with which the referentParty is associated (for example, a territory of birth, nationality or residence).</xs:documentation>
                <xs:documentation>As with other elements (dates and referentType) this element is included to support the disambiguation of one party with another.</xs:documentation>
@@ -667,71 +458,61 @@
       <xs:annotation>
          <xs:documentation>A DOI name issued under the authority of the International DOI Foundation.</xs:documentation>
       </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:pattern value="10\.[^\./@]+(\.[^\./@]+)*/.+"/>
-      </xs:restriction>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="10\.[^\./@]+(\.[^\./@]+)*/.+"/>
+		</xs:restriction>
    </xs:simpleType>
-   <!-- The simpleTypes below have been added for compatibility with version 2.1, so the AVS, which are now in the 'doiavs' namespace,
+<!-- The simpleTypes below have been added for compatibility with version 2.1, so the AVS, which are now in the 'doiavs' namespace,
 remain accessible in the 'doi' namespace. They will be removed in a future version of the XSD. -->
-   <xs:simpleType name="agentRole">
-      <xs:restriction base="doiavs:agentRole"/>
-   </xs:simpleType>
-   <xs:simpleType name="associatedPartyRole">
-      <xs:restriction base="doiavs:associatedPartyRole"/>
-   </xs:simpleType>
-   <xs:simpleType name="character">
-      <xs:restriction base="doiavs:character"/>
-   </xs:simpleType>
-   <xs:simpleType name="creationNameType">
-      <xs:restriction base="doiavs:creationNameType"/>
-   </xs:simpleType>
-   <xs:simpleType name="creationStructuralType">
-      <xs:restriction base="doiavs:creationStructuralType"/>
-   </xs:simpleType>
-   <xs:simpleType name="creationToCreationLinkRole">
-      <xs:restriction base="doiavs:creationToCreationLinkRole"/>
-   </xs:simpleType>
-   <xs:simpleType name="creationType">
-      <xs:restriction base="doiavs:creationType"/>
-   </xs:simpleType>
-
-   <!-- NEW 2022-04-08: referentCreation - add complex type languageOfContent with a language and a languageOfContentType -->
-   <!-- MODIFIED 2022-06-14 to include Referent in name -->
-   <xs:simpleType name="languageOfReferentContentType">
-      <xs:restriction base="doiavs:languageOfReferentContentType"/>
-   </xs:simpleType>
-
-   <xs:simpleType name="mode">
-      <xs:restriction base="doiavs:mode"/>
-   </xs:simpleType>
-   <xs:simpleType name="nonIsoTerritoryCode">
-      <xs:restriction base="doiavs:nonIsoTerritoryCode"/>
-   </xs:simpleType>
-   <xs:simpleType name="partyIdentifierType">
-      <xs:restriction base="doiavs:partyIdentifierType"/>
-   </xs:simpleType>
-   <xs:simpleType name="partyNameType">
-      <xs:restriction base="doiavs:partyNameType"/>
-   </xs:simpleType>
-   <xs:simpleType name="partyStructuralType">
-      <xs:restriction base="doiavs:partyStructuralType"/>
-   </xs:simpleType>
-   <xs:simpleType name="partyToPartyLinkRole">
-      <xs:restriction base="doiavs:partyToPartyLinkRole"/>
-   </xs:simpleType>
-   <xs:simpleType name="placeType">
-      <xs:restriction base="doiavs:placeType"/>
-   </xs:simpleType>
-   <xs:simpleType name="primaryReferentType">
-      <xs:restriction base="doiavs:primaryReferentType"/>
-   </xs:simpleType>
-   <xs:simpleType name="returnType">
-      <xs:restriction base="doiavs:returnType"/>
-   </xs:simpleType>
-   <xs:simpleType name="territoryCode">
-      <xs:restriction base="doiavs:territoryCode"/>
-   </xs:simpleType>
-   <xs:simpleType name="timeProximity">
-      <xs:restriction base="doiavs:timeProximity"/>
+	<xs:simpleType name="agentRole">
+		<xs:restriction base="doiavs:agentRole"/>
+	</xs:simpleType>
+	<xs:simpleType name="associatedPartyRole">
+		<xs:restriction base="doiavs:associatedPartyRole"/>
+	</xs:simpleType>
+	<xs:simpleType name="character">
+		<xs:restriction base="doiavs:character"/>
+	</xs:simpleType>
+	<xs:simpleType name="creationNameType">
+		<xs:restriction base="doiavs:creationNameType"/>
+	</xs:simpleType>
+	<xs:simpleType name="creationStructuralType">
+		<xs:restriction base="doiavs:creationStructuralType"/>
+	</xs:simpleType>
+	<xs:simpleType name="creationToCreationLinkRole">
+		<xs:restriction base="doiavs:creationToCreationLinkRole"/>
+	</xs:simpleType>
+	<xs:simpleType name="creationType">
+		<xs:restriction base="doiavs:creationType"/>
+	</xs:simpleType>
+	<xs:simpleType name="mode">
+		<xs:restriction base="doiavs:mode"/>
+	</xs:simpleType>
+	<xs:simpleType name="nonIsoTerritoryCode">
+		<xs:restriction base="doiavs:nonIsoTerritoryCode"/>
+	</xs:simpleType>
+	<xs:simpleType name="partyIdentifierType">
+		<xs:restriction base="doiavs:partyIdentifierType"/>
+	</xs:simpleType>
+	<xs:simpleType name="partyNameType">
+		<xs:restriction base="doiavs:partyNameType"/>
+	</xs:simpleType>
+	<xs:simpleType name="partyStructuralType">
+		<xs:restriction base="doiavs:partyStructuralType"/>
+	</xs:simpleType>
+	<xs:simpleType name="partyToPartyLinkRole">
+		<xs:restriction base="doiavs:partyToPartyLinkRole"/>
+	</xs:simpleType>
+	<xs:simpleType name="primaryReferentType">
+		<xs:restriction base="doiavs:primaryReferentType"/>
+	</xs:simpleType>
+	<xs:simpleType name="returnType">
+		<xs:restriction base="doiavs:returnType"/>
+	</xs:simpleType>
+	<xs:simpleType name="territoryCode">
+		<xs:restriction base="doiavs:territoryCode"/>
+	</xs:simpleType>
+	<xs:simpleType name="timeProximity">
+		<xs:restriction base="doiavs:timeProximity"/>
    </xs:simpleType>
 </xs:schema>

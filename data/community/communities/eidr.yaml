@@ -1,5 +1,5 @@
 weight: 70
-maintext: "The [Entertainment Identifier Registry (EIDR)](https://www.eidr.org) is a registry of movies, television shows, and other commercial audio/video assets."
+maintext: "The [Entertainment Identifier Registry (EIDR)](https://www.eidr.org) provides identification services for Content Identifers and Video Service Identifers. Content IDs are a registry of movies, television shows, radio programs, podcasts, and other audio/video assets of commercial, cultural, historic, or scientific interest. Video Service IDs are a registry of content delivery services including terrestrial broadcast channels, satellite delivery channels, cable television networks, Internet streaming services, etc. EIDR IDs are commonly used for process automation, linked data, engineering standards, academic citation, universal search, and so forth."
 logo: "/images/communities/LogoEIDR_4-390@2x.png"
 linkurl: "https://www.eidr.org"
 linktext: "EIDR Website"
