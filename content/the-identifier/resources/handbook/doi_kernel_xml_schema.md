@@ -25,7 +25,7 @@ See also [Policy Notes on Deprecated Structure and Values](/the-identifier/resou
 Release Notes
 --------------------------
 
-### Changes to DOI Kernel XML Schema, Version 2.3
+### Changes to DOI Kernel XML Schema, Version 2.3, 27 November, 2022 
 
 - Added IETF BCP 47 namespace for language codes
 - Added language as a subelement of partyName
@@ -60,13 +60,3 @@ Release Notes
 - Changed languageOfContentType to languageOfReferentContentType
 - Added PlaceOfPublication and PlaceOfCreation to placeType
 - Added placeNameType with values AbbreviatedName, FormerName, Name and PrincipalName
-
-
-
-```
-<xs:simpleType name="character">  
-<xs:restriction base="doiavs:character"/>  
-</xs:simpleType>
-```
-
-Note that these types will be removed in a future version of the XSD.
