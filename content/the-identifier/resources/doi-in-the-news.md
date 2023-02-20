@@ -11,6 +11,10 @@ imagemain = "DOI in the news"
 
 +++
 [< back to the Resources page](/the-identifier/resources/)
+
+### [Building the plane as we fly it: the promise of Persistent Identifiers](https://doi.org/10.5281/zenodo.7258286)
+de Castro, Pablo, Herb, Ulrich, Rothfritz, Laura, & Schöpfel, Joachim. (2023). Building the plane as we fly it: the promise of Persistent Identifiers. This report is the main outcome of a study commissioned by Knowledge Exchange and published on Zenodo February 1, 2023. https://doi.org/10.5281/zenodo.7258286
+
 ### [Why PID Strategies Are Having A Moment — And Why You Should Care](https://scholarlykitchen.sspnet.org/2023/01/25/why-pid-strategies-are-having-a-moment-and-why-you-should-care/)
 Blogpost by Alice Meadows in The Scholarly Kitchen, January 25th, 2023 
 
