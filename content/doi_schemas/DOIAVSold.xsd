@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited manually by Paul Jessop 2020-07-14 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:doiavs="http://www.doi.org/2010/DOISchemaAVS"
            xmlns:iso3166a2="http://www.doi.org/2010/iso3166a2"
-           xmlns:ietfbcp47="http://www.doi.org/2022/ietfbcp47"
            targetNamespace="http://www.doi.org/2010/DOISchemaAVS"
            elementFormDefault="qualified"
-           attributeFormDefault="unqualified" version="20220614">
+           attributeFormDefault="unqualified">
    <xs:import namespace="http://www.doi.org/2010/iso3166a2" schemaLocation="http://dx.doi.org/10.1000/279"/>
-   
-   <!-- Need to agree copyright statement policy for updating the following annotation -->
-   
    <xs:annotation>
       <xs:documentation>© 2015 International DOI Foundation</xs:documentation>
    </xs:annotation>
@@ -50,14 +47,6 @@
                <xs:documentation>A person responsible for the direction of Performers and other creative elements of a Creation.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-   
-         <!-- NEW 2022-04-08: agentRole AVS - add Funding Body -->
-         <xs:enumeration value="FundingBody">
-            <xs:annotation>
-               <xs:documentation>A Party responsible for the funding of a Creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         
          <xs:enumeration value="Publisher">
             <xs:annotation>
                <xs:documentation>A Party making a Creation available to the public.</xs:documentation>
@@ -301,27 +290,6 @@
          </xs:enumeration>
       </xs:restriction>
    </xs:simpleType>
-   
-   <!-- NEW 2022-06-14 -->
-   <xs:simpleType name="creationDateType">
-      <xs:annotation>
-         <xs:documentation>Allowed Values for types of creationDate.</xs:documentation>
-         <xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="PublicationDate">
-            <xs:annotation>
-               <xs:documentation>A date which is the publication date of a creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="ReleaseDate">
-            <xs:annotation>
-               <xs:documentation>A date which is the release date of a creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   
    <xs:simpleType name="creationNameType">
       <xs:annotation>
          <xs:documentation>Allowed Values for types of creationName.</xs:documentation>
@@ -348,14 +316,6 @@
                <xs:documentation>A Name of a Creation.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-
-         <!-- NEW 2022-04-08: creationNameType AVS - add PrincipalTitle -->
-         <xs:enumeration value="PrincipalTitle">
-            <xs:annotation>
-               <xs:documentation>A Principal Title of a Creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-
          <xs:enumeration value="Title">
             <xs:annotation>
                <xs:documentation>A Title of a Creation.</xs:documentation>
@@ -755,27 +715,6 @@
          </xs:enumeration>
       </xs:restriction>
    </xs:simpleType>
-   
-   <!-- MODIFIED 2022-06-14 to include Referent in name -->
-   <xs:simpleType name="languageOfReferentContentType">
-      <xs:annotation>
-         <xs:documentation>Allowed values for the langauage of content type.</xs:documentation>
-         <xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="Original">
-            <xs:annotation>
-               <xs:documentation>The original language in which content is created.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="Translation">
-            <xs:annotation>
-               <xs:documentation>A translation of a content from another form.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   
    <xs:simpleType name="mode">
       <xs:annotation>
          <xs:documentation>Allowed values for sensory modes with which a Creation is intended to be perceived.</xs:documentation>
@@ -927,14 +866,6 @@
                <xs:documentation>An International Standard Name Identifier, the ISO Standard Identifier for Parties as defined in ISO 27729.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-         
-         <!-- NEW 2022-04-08: partyIdentifierType AVS - add ORCID -->
-         <xs:enumeration value="ORCID">
-            <xs:annotation>
-               <xs:documentation>An Identifier for a Party issued by the ORCID agency.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         
          <xs:enumeration value="ProprietaryIdentifier">
             <xs:annotation>
                <xs:documentation>An Identifier from a scheme which is proprietary to a particular party.</xs:documentation>
@@ -1032,57 +963,6 @@
          </xs:enumeration>
       </xs:restriction>
    </xs:simpleType>
-   
-   <!-- NEW 2022-04-08: Place - add country as an element under place -->
-   <xs:simpleType name="placeType">
-      <xs:annotation>
-         <xs:documentation>Allowed values for the type of a place.</xs:documentation>
-         <xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority. Additions are expected very soon.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="PlaceOfPublication">
-            <xs:annotation>
-               <xs:documentation>The place where a creation is published.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="PlaceOfCreation">
-            <xs:annotation>
-               <xs:documentation>The place where a creation is made.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   
-   <!-- NEW 2022-09-15 -->
-   <xs:simpleType name="placeNameType">
-      <xs:annotation>
-         <xs:documentation>Allowed values for types of partyName.</xs:documentation>
-         <xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="AbbreviatedName">
-            <xs:annotation>
-               <xs:documentation>A shortened form of a Name (which may be an acronym, in whole or in part) by which a place is known. </xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="FormerName">
-            <xs:annotation>
-               <xs:documentation>A Name by which a place was previously known.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="Name">
-            <xs:annotation>
-               <xs:documentation>A Name by which a place is known.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <xs:enumeration value="PrincipalName">
-            <xs:annotation>
-               <xs:documentation>The Name by which a place is principally known.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-      </xs:restriction>
-   </xs:simpleType>
-   
    <xs:simpleType name="primaryReferentType">
       <xs:annotation>
          <xs:documentation>Allowed values for the primary type of a referent.</xs:documentation>
@@ -1134,20 +1014,6 @@
          <xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
-         
-         <!-- NEW 2022-04-08: sequenceIdentifierType AVS - add ChapterNumber  -->
-         <xs:enumeration value="ChapterNumber">
-            <xs:annotation>
-               <xs:documentation>A SequenceIdentifier odentifying a chapter in a containing creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <!-- NEW 2022-04-08: sequenceIdentifierType AVS - add IssueNumber -->
-         <xs:enumeration value="IssueNumber">
-            <xs:annotation>
-               <xs:documentation>A SequenceIdentifier odentifying an issue in a containing creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         
          <xs:enumeration value="PageNumber">
             <xs:annotation>
                <xs:documentation>A SequenceIdentifier identifying a page in a containing creation, e.g. in a book or in a journal, on which a contained creation, e.g. a chapter or an article, starts.</xs:documentation>
@@ -1158,20 +1024,6 @@
                <xs:documentation>An Identifier from a scheme which is proprietary to a particular party.</xs:documentation>
             </xs:annotation>
          </xs:enumeration>
-         
-         <!-- NEW 2022-04-08: sequenceIdentifierType AVS - add TrackNumber -->
-         <xs:enumeration value="TrackNumber">
-            <xs:annotation>
-               <xs:documentation>A SequenceIdentifier odentifying a track in a containing creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         <!-- NEW 2022-04-08: sequenceIdentifierType AVS - add VolumeNumber -->
-         <xs:enumeration value="VolumeNumber">
-            <xs:annotation>
-               <xs:documentation>A SequenceIdentifier odentifying a volume in a containing creation.</xs:documentation>
-            </xs:annotation>
-         </xs:enumeration>
-         
       </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="territoryCode">
