@@ -3,21 +3,10 @@
    xmlns:doiavs="http://www.doi.org/2010/DOISchemaAVS"
    xmlns:ietfbcp47="http://www.doi.org/2022/ietfbcp47"
    targetNamespace="http://www.doi.org/2010/DOISchema" elementFormDefault="qualified"
-   attributeFormDefault="unqualified" version="2.2">
-
-   <!--xs:import namespace="http://www.doi.org/2010/DOISchemaAVS"
-              schemaLocation="http://doi.org/10.1000/282"/-->
-
-   <xs:import namespace="http://www.doi.org/2010/DOISchemaAVS"
-      schemaLocation="DOIAVS20220915.xsd"/>
-
-   <!-- Need to agree copyright statement policy for updating the following annotation -->
-
+   attributeFormDefault="unqualified" version="2.3">
+   <xs:import namespace="http://www.doi.org/2010/DOISchemaAVS" schemaLocation="http://doi.org/10.1000/282"/>
    <xs:annotation>
-
-      <!-- added 2022 on 2022-06-11 -->
-      <xs:documentation>© 2013, 2022 International DOI Foundation</xs:documentation>
-
+      <xs:documentation>Copyright 2013, 2023 The DOI Foundation</xs:documentation>
    </xs:annotation>
    <xs:element name="kernelMetadata" type="doi:kernelMetadata">
       <xs:annotation>
@@ -66,14 +55,11 @@
                   <xs:documentation>The party identified by the DOI name (where the primary referentType is 'Party').</xs:documentation>
                </xs:annotation>
             </xs:element>
-            
-            <!-- added 2022-09-15 -->
             <xs:element name="referentPlace" type="doi:referentPlace">
                <xs:annotation>
                   <xs:documentation>The place identified by the DOI name (where the primary referentType is 'Place').</xs:documentation>
                </xs:annotation>
             </xs:element>
-            
          </xs:choice>
       </xs:sequence>
    </xs:complexType>
@@ -253,7 +239,6 @@
          <xs:documentation>A complex element describing an identifier used to identify a party.</xs:documentation>
       </xs:annotation>
       <xs:sequence>
-         <!-- Replaced value string with nonUriValue and uri (both optional) on 2022-09-28 -->
          <xs:element name="nonUriValue" minOccurs="0" type="xs:string">
            <xs:annotation>
               <xs:documentation>The value of the partyIdentifier if it is not a URI.</xs:documentation>
@@ -271,8 +256,6 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   
-   <!-- added 2022-09-15 -->
    <xs:complexType name="placeName">
       <xs:annotation>
          <xs:documentation>A complex element describing a name by which a place is known.</xs:documentation>
@@ -288,16 +271,13 @@
                <xs:documentation>The language of the placeName.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         
          <xs:element name="type" type="doiavs:placeNameType">
             <xs:annotation>
                <xs:documentation>The type of the partyName.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         
       </xs:sequence>
    </xs:complexType>
-   
    <xs:complexType name="partyName">
       <xs:annotation>
          <xs:documentation>A complex element describing a name by which a party is known.</xs:documentation>
@@ -308,14 +288,11 @@
                <xs:documentation>A text string representing the value of the partyName (for example, 'John Smith', 'ABC Publishing, Inc').</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-         <!-- NEW 2022-04-08: partyName – change structure to add optional language -->
          <xs:element name="language" type="xs:language" minOccurs="0">
             <xs:annotation>
                <xs:documentation>The language of the partyName.</xs:documentation>
             </xs:annotation>
          </xs:element>
-
          <xs:element name="type" type="doiavs:partyNameType">
             <xs:annotation>
                <xs:documentation>The type of the partyName.</xs:documentation>
@@ -395,35 +372,22 @@
                <xs:documentation>Another creation with which the referentCreation is associated.</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-         <!-- NEW 2022-04-08: referentCreation - add language type -->
          <xs:element name="language" minOccurs="0" type="xs:language">
             <xs:annotation>
                <xs:documentation>Language in which the DOI referentCreation record is provided.</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-         <!-- NEW 2022-04-08: referentCreation - add complex type languageOfContent with a language and a languageOfContentType  -->
-         <!-- MODIFIED 2022-06-14 to include Referent in name -->
          <xs:element name="languageOfReferentContent" type="doi:languageOfReferentContent"
             minOccurs="0">
             <xs:annotation>
                <xs:documentation>For creations, the language of the referent expression.</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-         <!-- NEW 2022-06-16 creationDate wrapper -->
-         <!-- NEW 2022-09-15 fixed typo creationate to creationDate in element name -->
          <xs:element name="creationDate" type="doi:creationDate" minOccurs="0">
             <xs:annotation>
                <xs:documentation>For creations, the language of the referent expression.</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-
-         <!-- NEW 2022-04-08: creation - add an optional repeatable Place complex type -->
-         <!-- NEW 2022-06-16: redefined to use Place type with additional attribute for placeType -->
-         <!-- NEW 2022-09-15: corrected typo of 'existance' to 'existence' in documentation element -->
          <xs:element name="creationPlace" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
                <xs:documentation>Where the referentCreation came into existence.</xs:documentation>
@@ -436,12 +400,8 @@
                </xs:complexContent>
             </xs:complexType>
          </xs:element>
-
       </xs:sequence>
    </xs:complexType>
-
-   <!-- NEW 2022-06-16 Place type -->
-   <!-- NEW 2022-09-15 made place identifier type refer to the complex type rather than being a strng -->
    <xs:complexType name="Place">
       <xs:sequence>
          <xs:element name="name" type="xs:string">
@@ -450,7 +410,6 @@
             </xs:annotation>
          </xs:element>
          <xs:element name="placeIdentifier" type="doi:placeIdentifier" maxOccurs="unbounded">
-            <!-- doi:placeIdentifier -->
             <xs:annotation>
                <xs:documentation>An identifier of the place.</xs:documentation>
             </xs:annotation>
@@ -462,11 +421,8 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-   
-   <!-- NEW 2022-06-16: PlaceIdentifier complex type-->
    <xs:complexType name="placeIdentifier">
       <xs:sequence>
-         <!-- Replaced value string with nonUriValue and uri (both optional) on 2022-09-28 -->
          <xs:element name="nonUriValue" minOccurs="0" type="xs:string">
             <xs:annotation>
                <xs:documentation>The value of the partyIdentifier if it is not a URI.</xs:documentation>
@@ -485,19 +441,13 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-
    <xs:complexType name="creationDate">
       <xs:sequence>
-         <!-- NEW 2022-04-08: creationDate - new element with date constraints implemented as union of date and dateTime to allow either form -->
-         <!-- NEW 2022-06-16: creation Date changed to date as the wrapping element is called creationDate -->
-         <!-- NEW 2022-09-15: corrected typo of 'existance' to 'existence' in documentation element -->
          <xs:element name="date" type="doi:dateOrDateTime">
             <xs:annotation>
                <xs:documentation>When the referentCreation came into existence.</xs:documentation>
             </xs:annotation>
          </xs:element>
-
-         <!-- NEW 2022-06-14 creation date type added as enumeration -->
          <xs:element name="creationDateType" minOccurs="0" type="doiavs:creationDateType">
             <xs:annotation>
                <xs:documentation>The type of a creation date, e.g. publication date</xs:documentation>
@@ -527,8 +477,6 @@
             type="doi:languageOfReferentContentType"/>
       </xs:sequence>
    </xs:complexType>
-   
-   <!-- added 2022-09-15 -->
    <xs:complexType name="referentPlace">
       <xs:annotation>
          <xs:documentation>A complex element describing the place identified by the doiName to which the kernelMetadata applies.</xs:documentation>
@@ -548,7 +496,6 @@
          </xs:element>
       </xs:sequence>
    </xs:complexType>
-
    <xs:complexType name="referentParty">
       <xs:annotation>
          <xs:documentation>A complex element describing the party identified by the doiName to which the kernelMetadata applies.</xs:documentation>
@@ -694,13 +641,9 @@ remain accessible in the 'doi' namespace. They will be removed in a future versi
    <xs:simpleType name="creationType">
       <xs:restriction base="doiavs:creationType"/>
    </xs:simpleType>
-
-   <!-- NEW 2022-04-08: referentCreation - add complex type languageOfContent with a language and a languageOfContentType -->
-   <!-- MODIFIED 2022-06-14 to include Referent in name -->
    <xs:simpleType name="languageOfReferentContentType">
       <xs:restriction base="doiavs:languageOfReferentContentType"/>
    </xs:simpleType>
-
    <xs:simpleType name="mode">
       <xs:restriction base="doiavs:mode"/>
    </xs:simpleType>
