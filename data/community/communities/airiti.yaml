@@ -1,5 +1,5 @@
 weight: 10
-maintext: "[Airiti DOI](http://www.airiti.com/en/One-Page/index.html) is a Taiwan-based registration agency operated by Airiti, which is a service provider deeply involved in the scholarly community of the Chinese-speaking area. They manage applications to Chinese and English materials, incorporating the DOI into the digital publishing process, saving time and money for their members and partners. In addition to DOI registration services, Airiti DOI also develops and provides value-added services that support academic publishing, such as DOI Resolution, DOI Data Finder (search DOI names and metadata), DOI resolution data download, and Cited by Link."
+maintext: "[Airiti DOI](http://www.airiti.com/en/page_doi.html) is a Taiwan-based registration agency operated by [Airiti](http://www.airiti.com/en/One-Page/index.html), which is a service provider deeply involved in the scholarly community of the Chinese-speaking area. They manage applications to Chinese and English materials, incorporating the DOI into the digital publishing process, saving time and money for their members and partners. In addition to DOI registration services, Airiti DOI also develops and provides value-added services that support academic publishing, such as DOI Resolution, DOI Data Finder (search DOI names and metadata), DOI resolution data download, and Cited by Link."
 logo: "/images/communities/airiti.jpg"
-linkurl: "http://www.airiti.com/"
+linkurl: "http://www.airiti.com/en/page_doi.html"
 linktext: "Airiti DOI Website"
