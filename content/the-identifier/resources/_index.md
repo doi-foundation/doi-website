@@ -46,7 +46,7 @@ Over the years we’ve developed fact sheets to support:
 
 [comment]: <> (## Brand and logos)
 
-[comment]: <> ([Please reuse but do not modify the DOI Foundation logo and icon](/the-identifier/resources/logos))
+[comment]: <> (Please reuse but do not modify the DOI Foundation logo and icon /the-identifier/resources/logos)
 
 {{% /column %}}
 
