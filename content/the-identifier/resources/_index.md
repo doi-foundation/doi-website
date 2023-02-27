@@ -45,6 +45,7 @@ Over the years we’ve developed fact sheets to support:
 [Archive of publically-available material related to the DOI and Persistent Identifiers (PIDs)](/the-identifier/resources/doi-in-the-news)
 
 [comment]: <> (## Brand and logos)
+
 [comment]: <> ([Please reuse but do not modify the DOI Foundation logo and icon](/the-identifier/resources/logos))
 
 {{% /column %}}
