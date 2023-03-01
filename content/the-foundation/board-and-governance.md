@@ -30,7 +30,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 {{% column %}}
 - [Jieh Hsiang, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
-- [Qiao Xiaodong, China DOI](#China)
+- [Qiao Xiaodong, Chinese DOI](#China)
 - [Rachel Kessler, Clarivate](#Clarivate)
 - [Ke Chun-Xiao, CNKI](#CNKI)
 - [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
@@ -67,7 +67,7 @@ Jieh is a Distinguished Professor of Computer Science at the National Taiwan Uni
 
 <br>
 
-### China DOI {#China}
+### Chinese DOI {#China}
 
 {{< figure src="/images/board/qiao.jpg" title="Qiao Xiaodong" height="100px" >}}
 
