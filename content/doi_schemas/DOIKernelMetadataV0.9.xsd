@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema targetNamespace="http://www.doi.org/2004/DOISchema"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:doi="http://www.doi.org/2004/DOISchema"
+    elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.9">
+    <xs:element name="kernelMetadata" type="doi:kernelMetadataType">
+        <xs:annotation>
+            <xs:documentation>DOI Kernel Metadata Declaration 0.9</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="kernelMetadataType">
+        <xs:sequence>
+            <xs:element name="registrationAgency" type="doi:doiType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The DOI Registration Agency responsible for issuing a Kernel
+                        Declaration.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="issueDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The Date on which the Kernel Declaration was
+                        made.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="issueNumber" type="xs:unsignedInt" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The sequence number of this Declaration in the series of
+                        Kernel Declarations for this DOI</xs:documentation>
+                    <xs:documentation>First issue=1. If a Kernel Declaration for a specific DOI name
+                        is re-issued, this number should be incremented by one.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="doi:resourcesType" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourcesType">
+        <xs:sequence>
+            <xs:element name="resource" type="doi:resource" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resource">
+        <xs:annotation>
+            <xs:documentation>DOI Kernel Resource Metadata Version 0.9</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DOI" type="doi:doiType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>A DOI name that identifies a resource.</xs:documentation>
+                    <xs:documentation>Any DOI name.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="structuralType" type="doi:structuralTypeType" minOccurs="1"
+                maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The primary structural type of a resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="modes" type="doi:modesType">
+                <xs:annotation>
+                    <xs:documentation>The principal sensory mode(s) in which a resource is intended
+                        to be perceived.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resourceTypes" type="doi:resourceTypesType">
+                <xs:annotation>
+                    <xs:documentation>The general type(s) of a resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="principalAgents" type="doi:principalAgentsType">
+                <xs:annotation>
+                    <xs:documentation>The principal agent(s) responsible for a resource, normally
+                        but not necessaily its creator(s).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resourceNames" type="doi:resourceNamesType" minOccurs="0"/>
+            <xs:element name="resourceIdentifiers" type="doi:resourceIdentifiersType" minOccurs="0"
+            />
+        </xs:sequence>
+        <xs:attribute name="version" type="xs:string" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="agentIdentifiersType">
+        <xs:sequence>
+            <xs:element name="agentIdentifier" type="doi:agentIdentifierType" minOccurs="1"
+                maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="agentIdentifierType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="doi:kernelAgentIdentifierType" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="agentType">
+        <xs:sequence>
+            <xs:element name="agentNames" type="doi:agentNamesType" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="agentIdentifiers" type="doi:agentIdentifiersType" minOccurs="0"
+                maxOccurs="1"/>
+            <xs:element name="agentRoles" type="doi:agentRolesType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>The role(s) played an agent.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="agentNamesType">
+        <xs:sequence>
+            <xs:element name="agentName" type="doi:agentNameType" minOccurs="1"
+                maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="agentNameType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="doi:kernelAgentNameType" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="agentRolesType">
+        <xs:sequence>
+            <xs:element name="agentRole" type="doi:term" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A role played by an agent.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="modesType">
+        <xs:sequence>
+            <xs:element name="mode" type="doi:mode" minOccurs="1" maxOccurs="3">
+                <xs:annotation>
+                    <xs:documentation>A principal sensory mode in which a resource is intended to be
+                        perceived.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourceTypesType">
+        <xs:sequence>
+            <xs:element name="resourceType" type="doi:term" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The general type of a resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="principalAgentsType">
+        <xs:sequence>
+            <xs:element name="principalAgent" type="doi:principalAgentType" minOccurs="1"
+                maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="principalAgentType">
+        <xs:complexContent>
+            <xs:extension base="doi:agentType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="resourceNamesType">
+        <xs:sequence>
+            <xs:element name="resourceName" type="doi:resourceNameType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A name or title by which a resource is
+                        known.</xs:documentation>
+                </xs:annotation>
+
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourceNameType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="doi:kernelResourceNameType" use="required"/>
+                <xs:attribute name="primaryLanguage" type="xs:language" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="resourceIdentifiersType">
+        <xs:sequence>
+            <xs:element name="resourceIdentifier" type="doi:resourceIdentifierType"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>An identifier other than the pimary DOI name applied to a
+                        resource.</xs:documentation>
+                </xs:annotation>
+
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourceIdentifierType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="doi:kernelResourceIdentifierType" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="doiType">
+        <xs:annotation>
+            <xs:documentation>A DOI name issued under the authority of the International DOI
+                Foundation.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="10\.[^\./@]+(\.[^\./@]+)*/.+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="term">
+        <xs:annotation>
+            <xs:documentation>A Term in the iDD ontology.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:NMTOKEN"/>
+    </xs:simpleType>
+    <xs:simpleType name="structuralTypeType">
+        <xs:annotation>
+            <xs:documentation>Structural types of a resource.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="doi:term">
+            <xs:enumeration value="Abstraction">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which exists as a concept.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Performance">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is expressed in a transient
+                        form.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Digital">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is expressed in digital
+                        form.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Physical">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is expressed in physical
+                        form</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Restricted">
+                <xs:annotation>
+                    <xs:documentation>Of a resouce which is described by a restricted DOI
+                        Application profile.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="mode">
+        <xs:annotation>
+            <xs:documentation>Modes in which a resource may be perceived.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="doi:term">
+            <xs:enumeration value="Abstract">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is not directly perceivable with any of
+                        the five human senses.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Audio">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is principally intended to be listened
+                        to.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Visual">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is principally intended to be looked
+                        at.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="AudioVisual">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is principally intended to be looked at
+                        and listened to simultaneously.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Tangible">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is principally intended to be
+                        touched.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Restricted">
+                <xs:annotation>
+                    <xs:documentation>Of a resource which is described by a restricted DOI
+                        Application Profile.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="kernelResourceNameType">
+        <xs:annotation>
+            <xs:documentation>Types (e.g. PrimaryTitle, OriginalTitle, TranslatedTitle,
+                ChapterTitle), may be registered in the iDD by any RA.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="doi:term">
+            <xs:enumeration value="Name">
+                <xs:annotation>
+                    <xs:documentation>A name of a resource.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Title">
+                <xs:annotation>
+                    <xs:documentation>A name of a created resource.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PrincipalTitle">
+                <xs:annotation>
+                    <xs:documentation>The Title by which a resource is mainly
+                        known.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="AlternativeTitle">
+                <xs:annotation>
+                    <xs:documentation>A Title other than the PrincipalTitle.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="AbbreviatedTitle">
+                <xs:annotation>
+                    <xs:documentation>A Title which is a shortened form of another
+                        Title.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Subtitle">
+                <xs:annotation>
+                    <xs:documentation>A Title which is supplementary to another
+                        Title.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="FormerTitle">
+                <xs:annotation>
+                    <xs:documentation>A Title by which a resource was once known.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="TranslatedTitle">
+                <xs:annotation>
+                    <xs:documentation>A Title which is a translation of another
+                        Title.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <!-- Updated for AV Registry -->
+            <xs:enumeration value="WorkingTitle">
+                <xs:annotation>
+                    <xs:documentation>A Title which is supplementary to another
+                        Title.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="SeriesName">
+                <xs:annotation>
+                    <xs:documentation>A Title by which a resource was once known.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="EpisodeName">
+                <xs:annotation>
+                    <xs:documentation>A Title which is a translation of another
+                        Title.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="kernelResourceIdentifierType">
+        <xs:restriction base="doi:term">
+            <xs:enumeration value="DOI">
+                <xs:annotation>
+                    <xs:documentation>A DOI name issued under the authority of the International DOI
+                        Foundation.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ISBN">
+                <xs:annotation>
+                    <xs:documentation>An International Standard Book Number, the ISO Standard
+                        Identifier for books.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ISSN">
+                <xs:annotation>
+                    <xs:documentation>An International Standard Serial Number, the ISO Standard
+                        Identifier for published Serials.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ISTC">
+                <xs:annotation>
+                    <xs:documentation>An International Standard Text Code, the ISO Standard
+                        Identifier for textual works.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PII"/>
+            <xs:enumeration value="EAN13">
+                <xs:annotation>
+                    <xs:documentation>A European Article Number.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="UPC">
+                <xs:annotation>
+                    <xs:documentation>A Universal Product Code.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="EditionNumber">
+                <xs:annotation>
+                    <xs:documentation>An identifier of a resource which denotes its
+                        version.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PartIdentifier">
+                <xs:annotation>
+                    <xs:documentation>An identifier of a resource in relation to another resource of
+                        which it is a part.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ProprietaryIdentiifier">
+                <xs:annotation>
+                    <xs:documentation>An identifier which is not in public use.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <!-- Updated for AV Registry. The list is not exhaustive -->
+            <xs:enumeration value="WarnerBros">
+                <xs:annotation>
+                    <xs:documentation>An identifier used within Warner Bros Movie
+                        Studio.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Fox">
+                <xs:annotation>
+                    <xs:documentation>An identifier used within Fox Movie Studio.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="kernelAgentNameType">
+        <xs:restriction base="doi:term">
+            <xs:enumeration value="Name">
+                <xs:annotation>
+                    <xs:documentation>A name by which an agent is known.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PrincipalName">
+                <xs:annotation>
+                    <xs:documentation>The Name by which an agent is mainly known.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="AlternativeName">
+                <xs:annotation>
+                    <xs:documentation>A Name, other than the PrincipalName, by which an agent is
+                        known.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="FormerName">
+                <xs:annotation>
+                    <xs:documentation>A Name by which an agent was once known.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="IndividualName">
+                <xs:annotation>
+                    <xs:documentation>A Name of an agent that is is a person.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="OrganizationName">
+                <xs:annotation>
+                    <xs:documentation>A Name of an agent that is an organization.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="kernelAgentIdentifierType">
+        <xs:restriction base="doi:term">
+            <xs:enumeration value="ProprietaryIdentifier">
+                <xs:annotation>
+                    <xs:documentation>An identifier of an agent issued by an organization for
+                        proprietary purposes.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CaeNumber">
+                <xs:annotation>
+                    <xs:documentation>The CISAC Composer, Author and Publisher (Compositeur, Auteur,
+                        Editeur) identifier.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <!-- Updated for AV Registry -->
+            <xs:enumeration value="DOI">
+                <xs:annotation>
+                    <xs:documentation>The agent identifier types in AV Registry are
+                        DOIs.ß</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+
