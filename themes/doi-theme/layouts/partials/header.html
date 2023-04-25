@@ -17,26 +17,24 @@
 				<ul class="menu-items">
 					{{ with .Site.Menus.main }}
 						{{ range . }}				
-
-							<li>
-								{{ if .Params.nolink }}
-								<span class='nolink'>{{ .Name }}</span>
-								<i class="fa-solid fa-fw fa-angle-down"></i>
-								{{ else }}
-								<a href="{{ .URL | relURL }}">{{ .Name }}</a>
-								{{ end }}
-    							{{ if .HasChildren }}
-									<ul class="submenu">
-										{{ range .Children }}
-											<li><a href="{{ .URL | relURL }}">{{ .Name }}</a>
-										{{ end }}
-									</ul>
-								{{ end }}
-							</li>
+						<li>
+							{{ if .Params.nolink }}
+							<span class='nolink'>{{ .Name }}</span>
+							<i class="fa-solid fa-fw fa-angle-down"></i>
+							{{ else }}
+							<a href="{{ .URL | relURL }}" class="{{ .Identifier }}">{{ .Name }}</a>
+							{{ end }}
+							{{ if .HasChildren }}
+								<ul class="submenu">
+									{{ range .Children }}
+										<li><a href="{{ .URL | relURL }}" class="{{ .Identifier }}">{{ .Name }}</a>
+									{{ end }}
+								</ul>
+							{{ end }}
+						</li>
 						{{ end }}
 					{{ end }}
 				</ul>
-
 				
 			</nav>
 		</div>
