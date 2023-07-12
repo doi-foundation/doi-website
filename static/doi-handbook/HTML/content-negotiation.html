@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>DOI Identifier / Resolution Services &gt; DOI Resolution Functions &gt; Content Negotiation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="content negotiation,resolution,resolution content negotiation" />
+   <meta name="description" content="Content negotiation refers to mechanisms defined as a part of HTTP(S) that make it possible to serve different representations of a resource at the same URL, so that the..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #48BEDC; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "content-negotiation.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading1">Content Negotiation</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?content-negotiation.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="doi-services.html">DOI Identifier / Resolution Services</a> &gt; <a href="doi-resolution-principles.html">DOI Resolution Functions</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-inside: avoid; page-break-after: avoid;"><span class="f_Heading1">Content Negotiation</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="parameter-passing-function.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="doi-resolution-principles.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="handling-of-resolution-errors.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Content negotiation refers to mechanisms defined as a part of HTTP(S) that make it possible to serve different representations of a resource at the same URL, so that the content rendering software can specify which version fits their capabilities the best. In the context of the DOI System, content negotiation allows making a request that favors content types specific to a particular Registration Agency (RA) but which will also degrade to respond with a more standard content type for other RAs. </p>
+<p class="p_Normal">A content negotiated request to a DOI resolver is much like a standard HTTP(S) request, except server-driven negotiation will take place based on the list of acceptable content types a client provides. The request is done by using an HTTPS header &quot;Accept&quot; where the GET includes several content types that are acceptable to the requesting client process (those that it knows how to parse), each content type with a specific preference level (quality factor). </p>
+<p class="p_Normal" style="page-break-after: avoid;">For example, Crossref RA uses content negotiation to redirect all requests which are not for the content type &quot;text/html&quot; to the metadata service managing the requested DOI name. To do so, the 10320/LOC element (which corresponds to the content type &quot;application/rdf+xml&quot;) is used in the DOI record to specify the redirection to the respective metadata service. If the DOI resolver does not support this content type then it will redirect to the URL defined in the URL element (content type &quot;text/html&quot;). This is illustrated in the DOI name example below. </p>
+<p class="p_PageBreak"><span class="f_PageBreak">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 3px 4px 1px 4px;"><table class="Basic" style="border:solid thin #324545; border-spacing:0;">
+<thead>
+<tr class="Basic">
+<th class="Basic" colspan="4"  style="border:none"><p class="p_Tables_Header" style="text-align: left;"><span class="f_Tables_Header">Values for: 10.1525/bio.2009.59.5.9</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="Basic">
+<td class="Basic" style="width:133px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">Index</span></p>
+</td>
+<td class="Basic" style="width:170px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">Type</span></p>
+</td>
+<td class="Basic" style="width:341px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">Timestamp</span></p>
+</td>
+<td class="Basic" style="width:567px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">Data</span></p>
+</td>
+</tr>
+<tr class="Basic">
+<td class="Basic" style="width:133px; background-color:#C0C0C0; border:none"><p class="p_Tables"><span class="f_Tables">1</span></p>
+</td>
+<td class="Basic" style="width:170px; background-color:#C0C0C0; border:none"><p class="p_Tables"><span class="f_Tables">URL</span></p>
+</td>
+<td class="Basic" style="width:341px; background-color:#C0C0C0; border:none"><p class="p_Tables"><span class="f_Tables">Fri Apr 1 2022 13:32:18 EST</span></p>
+</td>
+<td class="Basic" style="width:567px; background-color:#C0C0C0; border:none"><p class="p_Tables"><span class="f_Tables">https://www.sciencemag.org/cgi/doi/10.1126/science.169.3946.635</span></p>
+</td>
+</tr>
+<tr class="Basic">
+<td class="Basic" style="width:133px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">1000</span></p>
+</td>
+<td class="Basic" style="width:170px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">10320/LOC</span></p>
+</td>
+<td class="Basic" style="width:341px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">Mon Jun 27 2021 14:28:25 EDT</span></p>
+</td>
+<td class="Basic" style="width:567px; background-color:#DDDDDD; border:none"><p class="p_Tables"><span class="f_Tables">&lt;locations chooseby=&quot;locatt,country,weighted&quot;&gt;</span></p>
+<p class="p_Tables"><span class="f_Tables">&lt;location weight=&quot;0&quot; http_role=&quot;conneg&quot; href_template=&quot;https://data.crossref.org/10.1126/science.169.3946.635&quot; /&gt;</span></p>
+<p class="p_Tables"><span class="f_Tables">&lt;/locations&gt;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal" style="page-break-after: avoid;">Shown below is an Accept header for the content negotiated request, listing both &quot;application/citeproc+json&quot; and &quot;application/rdf+xml&quot;, and the metadata returned by the metadata service. The requesting client wishes to receive citeproc JSON if it is available, but can also handle RDF XML if citeproc JSON is unavailable. A preference level (&quot;q&quot; factor) is used in the request to specify the preferred choice. </p>
+<p class="p_FiguresInsertionPoint" style="page-break-after: avoid;"><a class="imagetogglelink" style="margin:0;width:267px;height:100px" href="doi_0021.png"><img id="TOGGLE0186A1" class="image-toggle" alt="doi_0021_zoom28" style="border:none;width:267px;height:100px" src="doi_0021_zoom28.png"/><svg class="image-toggle-magnifier" viewBox="0 0 24 24"><path d="M 9.145 18.29 c -5.042 0 -9.145 -4.102 -9.145 -9.145 s 4.103 -9.145 9.145 -9.145 s 9.145 4.103 9.145 9.145 s -4.102 9.145 -9.145 9.145 Z m 0 -15.167 c -3.321 0 -6.022 2.702 -6.022 6.022 s 2.702 6.022 6.022 6.022 s 6.023 -2.702 6.023 -6.022 s -2.702 -6.022 -6.023 -6.022 Z m 9.263 12.443 c -0.817 1.176 -1.852 2.188 -3.046 2.981 l 5.452 5.453 l 3.014 -3.013 l -5.42 -5.421 Z"></path></svg></a></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1','hm.type','picture','hm.state','0','hm.src0','doi_0021_zoom28.png','hm.src1','doi_0021.png');
+</script>
+</body>
+</html>
