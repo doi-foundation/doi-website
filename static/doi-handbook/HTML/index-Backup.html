@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+  "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>&nbsp;</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="helpman_settings.js"></script>
+<script type="text/javascript" src="helpman_navigation.js"></script>
+<script type="text/javascript" src="hmcontextids.js"></script>
+<script type="text/javascript">
+<!--
+    var defaulttopic="preface.html";
+    var query = window.location.search.substring(1).split("&")[0], hash = window.location.hash, xssTest=/^[a-z0-9$._~-]{3,}$/i, cntxRX = /contextid=\d{3,10}/, cntxMatch = cntxRX.exec(query), cntxSrc = "";
+    if (query != "") {
+      if (typeof(hmGetContextId) != "undefined") {
+        if (cntxMatch != null) {
+		  cntxSrc = hmGetContextId(cntxMatch[0]);
+        };
+        if (cntxSrc != "") {
+          defaulttopic = cntxSrc;
+        } else {
+            if (!xssTest.test(query) && !xssTest.test(hash))
+               defaulttopic = query + hash;
+        }
+      }
+    }
+document.write('<frameset rows="80,*" frameborder="1" framespacing="1">');
+document.write('<frame name="hmheader" marginwidth="0" marginheight="0" scrolling="No" noresize src="hmheaderframe.html" title="Header">');
+document.write('<frameset cols="30%,*" frameborder="1" framespacing="1">');
+if (document.getElementById) {
+  document.write('<frame name="hmnavigation" src="hmcontent.html" title="Navigation frame">'); }
+else {
+  document.write('<frame name="hmnavigation" src="hmcontent.html" title="Navigation frame">'); }
+document.write('<frame name="hmcontent" src="' + defaulttopic + '" title="Content frame">');
+document.write('</frameset>');
+document.write('</frameset>');
+//-->
+</script>
+</head>
+<noscript>
+  <frameset rows="80,*" frameborder="1" framespacing="1">
+  <frame name="hmheader" marginwidth="0" marginheight="0" scrolling="No" noresize src="hmheaderframe.html" title="Header">
+  <frameset cols="30%,*" frameborder="1" framespacing="1">
+    <frame name="hmnavigation" src="hmcontent.html" title="Navigation frame">
+    <frame name="hmcontent" src="preface.html" title="Content frame">
+    <noframes>
+      This page requires frames<br><a href="hmcontent.html">Click here to view the table of contents without frames</a>
+    </noframes>
+  </frameset>
+  </frameset>
+</noscript>
+</html>
+
