@@ -136,22 +136,7 @@ header {
                                 font-family: 'futura-pt';
                             }
                         }
-                    }                
-                & a.resolve_button {
-                    font-family: 'futura-pt-bold';
-                    color: #000;
-                    background: $background-orange;
-                    border-radius: 5px;
-                    padding: 5px 10px;
-                    
-                    &:hover {
-                        color: $background-orange;
-                        background: #000;
-                        text-decoration: none;
-                        transition: all 0.2s ease-in-out;
                     }
-                }    
-
                 }
             }
             input[type="checkbox"], .hamburger-lines {

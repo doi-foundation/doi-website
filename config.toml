@@ -151,10 +151,4 @@ gzip = true
   identifier = 'resources'
   parent = 'identifier'
 
-[[menu.main]]
-  name = 'Resolve a DOI'
-  url = '/how-to-resolve-dois'
-  # class of resolve_button gives this a button style
-  identifier = 'resolve_button'
-  weight = 5
 

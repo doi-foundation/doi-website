@@ -1,4 +1,4 @@
-{{ with .Site.Data.resolver }}
+{{ with .Site.Data.home.resolver }}
 <section class="home-resolve" style="background-image:url({{ .image }});">
     <div class="row">
         <div class="col left">
@@ -13,7 +13,7 @@
                     
                     </form>
             </div>
-            {{ if .subtext }}<div class='subtext'>{{ .subtext | markdownify }}</div>{{ end }}
+            <div class='subtext'>{{ .subtext | markdownify }}</div>
         </div>
         <div class="col right">
         </div>

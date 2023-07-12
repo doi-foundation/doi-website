@@ -1,5 +1,0 @@
-title: "How to resolve a DOI name"
-maintext: "DOIs include a prefix (prefixes always start with `10.`) and a suffix, separated by a forward slash (`/`). Prefacing the DOI with `doi.org/` will turn it into an actionable link, for example, [https://doi.org/10.47366/sabia.v5n1a3](http://doi.org/10.47366/sabia.v5n1a3). Clicking that link will 'resolve' it, i.e. redirect to the latest information about the object it identifies, even if the object changes or moves."
-subtext: "Alternatively you can use our [DOI resolver form](/how-to-resolve-dois/) and just type or paste a known DOI into that."
-
-image: "/images/dot-pattern.svg"
