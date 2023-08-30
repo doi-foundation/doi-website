@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>&nbsp;</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <style type="text/css">
+       body { background:#FFF; }
+       #idx          { margin: 0; padding: 0 }     /* div tag that wraps the keyword index */
+       #idx a        { color: #000; text-decoration: none }  /* all links in index appear as text */
+
+       #idx p             { margin: 2px }        /* keywords and secondary keywords */
+	   #idx p.hilite { background-color: #adadad; padding-left: 5px; padding-bottom: 1px;}
+	   #idx p.hilite span {color: white; font-weight: bold;}
+       #idx p.idxkeyword2 { margin-left: 20px }  /* indentation for secondary keywords */
+
+       table.idxtable { background: #F4F4F4;
+                        border: thin solid #000000;
+                        border-collapse: collapse;
+                        -moz-box-shadow: 2px 2px 2px #B0B0B0;
+                        -webkit-box-shadow: 2px 2px 2px #B0B0B0;
+                        box-shadow: 2px 2px 2px #B0B0B0;
+                        filter: progid:DXImageTransform.Microsoft.Shadow(color=B0B0B0, Direction=135, Strength=4); }
+       td.idxtable    { background: #F4F4F4 }
+
+       /* font definitions for keyword section, keywords and popup links */
+       .idxsection  { font-weight: bold; font-size: 1.5em; color: #555; text-decoration: none; margin-top: 1em; margin-bottom: 1em; }
+       .idxkeyword  { font-weight: normal; font-size: 1.1em; color: #000000; text-decoration: none; }
+       .idxkeyword2 { font-weight: normal; font-size: 1.1em; color: #000000; text-decoration: none; }
+       .idxlink     { font-weight: normal; font-size: 1.1em; color: #000000; text-decoration: none; }
+
+   </style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="helpman_settings.js"></script>  
+<script type="text/javascript">
+ $(document).ready(function(){
+ var parentScope = (parent.hmNavigationFrame);
+ if (parentScope) parent.currentNav("index");
+	$("a[target='hmcontent']").on("click",function(event){
+		$("p.hilite").removeClass("hilite");
+		$(this).parent("p").addClass("hilite");
+		if (parentScope)
+			window.parent.showNav("toggle");
+		});
+});
+</script>
+   <script type="text/javascript" src="hmcontextids.js"></script>
+</head>
+<body>
+  <!-- Place holder for the keyword index - this variable is REQUIRED! -->
+  <script type="text/javascript">
+
+  function hmInitHideLinks(cssCode) {
+  	var styleElement = document.createElement("style");
+  	styleElement.type = "text/css";
+  	if (styleElement.styleSheet) {
+    	styleElement.styleSheet.cssText = cssCode;
+  	}
+  	else {
+    	styleElement.appendChild(document.createTextNode(cssCode));
+  	}
+  	document.getElementsByTagName("head")[0].appendChild(styleElement);
+  }
+
+  hmInitHideLinks("#idx div { display: none }");
+
+  var currentdiv = null;
+  var canhidelinks = true;
+
+  function hmshowLinks(divID) {
+    var thisdiv = document.getElementById(divID);
+    canhidelinks = true;
+    hmhideLinks();
+    if (thisdiv) {
+      currentdiv = thisdiv;
+      $(currentdiv).show();
+      $(currentdiv).mouseover(hmdivMouseOver).mouseout(hmdivMouseOut);
+      $(document).mouseup(hmhideLinks);
+    }
+  }
+  function hmdivMouseOver() { canhidelinks = false; };
+  function hmdivMouseOut() { canhidelinks = true; };
+  function hmhideLinks() {
+    if (canhidelinks) {
+      if (currentdiv) {
+        $(currentdiv).hide();
+        $(currentdiv).unbind("onmouseover", "onmouseout");
+      }
+      currentdiv = null;
+      $(document).unbind("onmouseup");
+    }
+  }
+</script>
+<div id="idx" style="margin:0;padding:0;border:none">
+<a name="0" id="0"></a><p class="idxsection">- 0 -</p>
+<p class="idxkeyword"><a href="prefix-handle-example.html" target="hmcontent"><span class="idxkeyword">0.NA</span></a></p>
+<p class="idxkeyword"><a href="introduction-to-prefix-handles.html" target="hmcontent"><span class="idxkeyword">0.NA prefix</span></a></p>
+<a name="1" id="1"></a><p class="idxsection">- 1 -</p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k3')"><span class="idxkeyword">10320/LOC</span></a></p>
+<div id="k3" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="multiple-doi-resolution.html" target="hmcontent"><span class="idxlink">Multiple DOI Resolution (Multiple URLs)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="applications-of-the-10320_loc-.html" target="hmcontent"><span class="idxlink">Applications of the 10320/LOC Element</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="10320_loc-graph-example.html" target="hmcontent"><span class="idxkeyword2">example</span></a></p>
+<p class="idxkeyword2"><a href="10320_loc-at-prefix-level.html" target="hmcontent"><span class="idxkeyword2">prefix level</span></a></p>
+<p class="idxkeyword2"><a href="10320_loc-xml-attributes.html" target="hmcontent"><span class="idxkeyword2">XML attributes</span></a></p>
+<a name="A" id="A"></a><p class="idxsection">- A -</p>
+<p class="idxkeyword"><a href="doi-kernel-metadata-schema.html" target="hmcontent"><span class="idxkeyword">AVS</span></a></p>
+<a name="B" id="B"></a><p class="idxsection">- B -</p>
+<p class="idxkeyword"><a href="board-meetings.html" target="hmcontent"><span class="idxkeyword">Board meetings</span></a></p>
+<p class="idxkeyword"><a href="doi-board.html" target="hmcontent"><span class="idxkeyword">Board of Directors</span></a></p>
+<p class="idxkeyword"><a href="resolution-of-the-roten-link-i.html" target="hmcontent"><span class="idxkeyword">broken link</span></a></p>
+<a name="C" id="C"></a><p class="idxsection">- C -</p>
+<p class="idxkeyword"><a href="considerations-about-the-use-o.html" target="hmcontent"><span class="idxkeyword">check digits</span></a></p>
+<p class="idxkeyword"><a href="choose-by-mechanism.html" target="hmcontent"><span class="idxkeyword">choose-by mechanism</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k10')"><span class="idxkeyword">content negotiation</span></a></p>
+<div id="k10" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="content-negotiation.html" target="hmcontent"><span class="idxlink">Content Negotiation</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="redirection-to-linked-data-ser.html" target="hmcontent"><span class="idxlink">Redirection to Linked Data Services</span></a></td></tr></table></td></tr></table></div>
+<a name="D" id="D"></a><p class="idxsection">- D -</p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k11')"><span class="idxkeyword">data dictionary</span></a></p>
+<div id="k11" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="standard-metadata-declaration.html" target="hmcontent"><span class="idxlink">Standard Metadata Declaration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="data-dictionary.html" target="hmcontent"><span class="idxlink">Data Dictionary</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-kernel-metadata-schema.html" target="hmcontent"><span class="idxlink">DOI Kernel Schema</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="adding-terms-to-the-doi-dictio.html" target="hmcontent"><span class="idxkeyword2">adding terms</span></a></p>
+<p class="idxkeyword"><span class="idxkeyword">data model</span></p>
+<p class="idxkeyword2"><a href="data-model-extension-and-maint.html" target="hmcontent"><span class="idxkeyword2">extension</span></a></p>
+<p class="idxkeyword2"><a href="data-model-extension-and-maint.html" target="hmcontent"><span class="idxkeyword2">maintenance</span></a></p>
+<p class="idxkeyword2"><a href="metadata-policy-overview.html" target="hmcontent"><span class="idxkeyword2">policy</span></a></p>
+<p class="idxkeyword2"><a href="underlying-ontology.html" target="hmcontent"><span class="idxkeyword2">underlying ontology</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k13')"><span class="idxkeyword">DOI applications</span></a></p>
+<div id="k13" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="management-of-a-referent-with-.html" target="hmcontent"><span class="idxlink">Management of a Referent with Several Instances&nbsp;</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="dynamic-building-of-a-web-page.html" target="hmcontent"><span class="idxlink">Dynamic Building of a Web Page Enriched with Metadata</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-application-examples.html" target="hmcontent"><span class="idxlink">Application Examples of the DOI System</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="introduction-to-doi-applicatio.html" target="hmcontent"><span class="idxlink">Introduction to DOI Applications</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="choose-by-mechanism.html" target="hmcontent"><span class="idxkeyword2">choose-by mechanism</span></a></p>
+<p class="idxkeyword2"><a href="redirection-to-linked-data-ser.html" target="hmcontent"><span class="idxkeyword2">content negotiation</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k13.3')"><span class="idxkeyword2">designing</span></a></p>
+<div id="k13.3" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="checklist-for-designing-a-doi-.html" target="hmcontent"><span class="idxlink">Checklist for Designing a DOI Application</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="design-considerations.html" target="hmcontent"><span class="idxlink">Design Considerations</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="redirection-to-linked-data-ser.html" target="hmcontent"><span class="idxkeyword2">Linked data</span></a></p>
+<p class="idxkeyword"><span class="idxkeyword">DOI Data Dictionary</span></p>
+<p class="idxkeyword2"><a href="adding-terms-to-the-doi-dictio.html" target="hmcontent"><span class="idxkeyword2">adding terms</span></a></p>
+<p class="idxkeyword"><a href="doi-directory.html" target="hmcontent"><span class="idxkeyword">DOI Directory</span></a></p>
+<p class="idxkeyword"><a href="doi-directory.html" target="hmcontent"><span class="idxkeyword">DOI Directory Manager</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k17')"><span class="idxkeyword">DOI Foundation</span></a></p>
+<div id="k17" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="governance-body.html" target="hmcontent"><span class="idxlink">Governance Role of the International DOI Foundation (IDF)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-system-governance-body-doi.html" target="hmcontent"><span class="idxlink">DOI System Governance Body: the DOI Foundation</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="board-meetings.html" target="hmcontent"><span class="idxkeyword2">Board meetings</span></a></p>
+<p class="idxkeyword2"><a href="doi-board.html" target="hmcontent"><span class="idxkeyword2">Board of Directory</span></a></p>
+<p class="idxkeyword2"><a href="executive-committee.html" target="hmcontent"><span class="idxkeyword2">executive committee</span></a></p>
+<p class="idxkeyword2"><a href="doi-foundation-governance.html" target="hmcontent"><span class="idxkeyword2">governance</span></a></p>
+<p class="idxkeyword2"><a href="doi-foundation-membership.html" target="hmcontent"><span class="idxkeyword2">membership</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k17.6')"><span class="idxkeyword2">Registration Authority</span></a></p>
+<div id="k17.6" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="iso-26324.html" target="hmcontent"><span class="idxlink">ISO 26324</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="iso-26324-registration-authori.html" target="hmcontent"><span class="idxlink">ISO 26324 Registration Authority</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="representation-to-strategic-or.html" target="hmcontent"><span class="idxkeyword2">representation</span></a></p>
+<p class="idxkeyword2"><a href="overview-of-the-doi-foundation.html" target="hmcontent"><span class="idxkeyword2">roles</span></a></p>
+<p class="idxkeyword2"><a href="status-of-the-doi-foundation.html" target="hmcontent"><span class="idxkeyword2">status</span></a></p>
+<p class="idxkeyword2"><a href="member-strategy-meetings.html" target="hmcontent"><span class="idxkeyword2">strategy meetings</span></a></p>
+<p class="idxkeyword"><a href="introduction-to-the-doi(r)-nam.html" target="hmcontent"><span class="idxkeyword">DOI handle record</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k19')"><span class="idxkeyword">DOI Kernel</span></a></p>
+<div id="k19" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="standard-metadata-declaration.html" target="hmcontent"><span class="idxlink">Standard Metadata Declaration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="metadata-kernel-schema.html" target="hmcontent"><span class="idxlink">DOI Kernel Metadata</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-kernel-elements.html" target="hmcontent"><span class="idxlink">DOI Kernel Elements</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k20')"><span class="idxkeyword">DOI Kernel Schema</span></a></p>
+<div id="k20" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="adding-terms-to-the-doi-dictio.html" target="hmcontent"><span class="idxlink">Adding Terms to the DOI Kernel Schema</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-kernel-metadata-schema.html" target="hmcontent"><span class="idxlink">DOI Kernel Schema</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k21')"><span class="idxkeyword">DOI Kernel XML Schema</span></a></p>
+<div id="k21" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="standard-metadata-declaration.html" target="hmcontent"><span class="idxlink">Standard Metadata Declaration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="metadata-standard.html" target="hmcontent"><span class="idxlink">Policy on DOI Metadata Declaration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="administration-quality-standar.html" target="hmcontent"><span class="idxlink">Policy on DOI Name Administration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="data-dictionary.html" target="hmcontent"><span class="idxlink">Data Dictionary</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-kernel-metadata-schema.html" target="hmcontent"><span class="idxlink">DOI Kernel Schema</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="introduction-to-the-doi-metada.html" target="hmcontent"><span class="idxkeyword">DOI metadata</span></a></p>
+<p class="idxkeyword2"><a href="specification-of-another-ident.html" target="hmcontent"><span class="idxkeyword2">identifier</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k22.2')"><span class="idxkeyword2">schemas</span></a></p>
+<div id="k22.2" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="basic-information-contained-in.html" target="hmcontent"><span class="idxlink">Basic Information Contained in the DOI Kernel</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="metadata-exchange-schemas.html" target="hmcontent"><span class="idxlink">Additional Metadata</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="managing-doi-metadata-schemas.html" target="hmcontent"><span class="idxlink">Managing DOI Metadata Schemas</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="introduction-to-the-doi(r)-nam.html" target="hmcontent"><span class="idxkeyword">DOI name</span></a></p>
+<p class="idxkeyword2"><a href="administration-quality-standar.html" target="hmcontent"><span class="idxkeyword2">administration</span></a></p>
+<p class="idxkeyword2"><a href="collaboration-with-another-reg.html" target="hmcontent"><span class="idxkeyword2">another registry</span></a></p>
+<p class="idxkeyword2"><a href="doi-name-assignment.html" target="hmcontent"><span class="idxkeyword2">assignment principles</span></a></p>
+<p class="idxkeyword2"><a href="case-insensitivity.html" target="hmcontent"><span class="idxkeyword2">case insensitivity</span></a></p>
+<p class="idxkeyword2"><a href="considerations-about-the-use-o.html" target="hmcontent"><span class="idxkeyword2">check digits</span></a></p>
+<p class="idxkeyword2"><a href="defining-a-doi-name-scheme.html" target="hmcontent"><span class="idxkeyword2">defining scheme</span></a></p>
+<p class="idxkeyword2"><a href="encoding-rules-for-urls.html" target="hmcontent"><span class="idxkeyword2">encoding</span></a></p>
+<p class="idxkeyword2"><a href="introduction-to-the-doi(r)-nam.html" target="hmcontent"><span class="idxkeyword2">handle record</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k23.9')"><span class="idxkeyword2">not found</span></a></p>
+<div id="k23.9" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="handling-of-resolution-errors.html" target="hmcontent"><span class="idxlink">Handling of Resolution Errors in the DOI System</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="configuring-the-resolution-err.html" target="hmcontent"><span class="idxlink">Configuring the Resolution Error Message Handling</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k23.10')"><span class="idxkeyword2">other identifier</span></a></p>
+<div id="k23.10" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="incorporation-of-an-existing-i.html" target="hmcontent"><span class="idxlink">Incorporation of an Existing Identifier into a DOI Name</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="various-topics.html" target="hmcontent"><span class="idxlink">Integrating Another Identifier Scheme</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="constraints-on-doi-name-syntax.html" target="hmcontent"><span class="idxkeyword2">percent-encoding</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k23.12')"><span class="idxkeyword2">persistence</span></a></p>
+<div id="k23.12" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="introduction-to-the-doi(r)-nam.html" target="hmcontent"><span class="idxlink">DOI Name: Unique and Persistent Identifier</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="resolution-of-the-roten-link-i.html" target="hmcontent"><span class="idxlink">Solution to the Broken Link (Persistence)</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="defining-a-suffix-naming-polic.html" target="hmcontent"><span class="idxkeyword2">policies</span></a></p>
+<p class="idxkeyword2"><a href="prefix.html" target="hmcontent"><span class="idxkeyword2">prefix</span></a></p>
+<p class="idxkeyword2"><a href="presentation-formats-of-a-doi-.html" target="hmcontent"><span class="idxkeyword2">presentation formats</span></a></p>
+<p class="idxkeyword2"><a href="which-ra_-service.html" target="hmcontent"><span class="idxkeyword2">responsible RA</span></a></p>
+<p class="idxkeyword2"><a href="management-of-a-referent-with-.html" target="hmcontent"><span class="idxkeyword2">several URLs</span></a></p>
+<p class="idxkeyword2"><a href="additional-services-included-i.html" target="hmcontent"><span class="idxkeyword2">short name</span></a></p>
+<p class="idxkeyword2"><a href="suffix.html" target="hmcontent"><span class="idxkeyword2">suffix</span></a></p>
+<p class="idxkeyword2"><a href="character-sets-and-encoding.html" target="hmcontent"><span class="idxkeyword2">supported characters</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k23.21')"><span class="idxkeyword2">syntax</span></a></p>
+<div id="k23.21" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-name-syntax2.html" target="hmcontent"><span class="idxlink">DOI Name Syntax</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-name-syntax3.html" target="hmcontent"><span class="idxlink">Syntax of the DOI Name</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="general-characteristics-of-the.html" target="hmcontent"><span class="idxlink">General Characteristics of the DOI Syntax</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="constraints-on-doi-name-syntax.html" target="hmcontent"><span class="idxlink">Constraints on DOI Name Syntax in Specific Contexts</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="doi-name-syntax2.html" target="hmcontent"><span class="idxkeyword">DOI namespace</span></a></p>
+<p class="idxkeyword2"><a href="doi-namespace-allocation-approach.html" target="hmcontent"><span class="idxkeyword2">allocation</span></a></p>
+<p class="idxkeyword"><a href="prefix.html" target="hmcontent"><span class="idxkeyword">DOI prefix</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k26')"><span class="idxkeyword">DOI Proxy</span></a></p>
+<div id="k26" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="direct-redirection-to-web-resource.html" target="hmcontent"><span class="idxlink">Direct Redirection to a Web Resource with the DOI Proxy</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-proxy.html" target="hmcontent"><span class="idxlink">DOI Proxy</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="doi-proxy-query-parameters.html" target="hmcontent"><span class="idxkeyword2">command parameters</span></a></p>
+<p class="idxkeyword2"><a href="doi-proxy-query-parameters.html" target="hmcontent"><span class="idxkeyword2">query command</span></a></p>
+<p class="idxkeyword"><a href="handle-record.html" target="hmcontent"><span class="idxkeyword">DOI record</span></a></p>
+<p class="idxkeyword"><a href="doi-representative-of-a-member.html" target="hmcontent"><span class="idxkeyword">DOI representative</span></a></p>
+<p class="idxkeyword"><a href="doi-resolvers.html" target="hmcontent"><span class="idxkeyword">DOI resolver</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k29.1')"><span class="idxkeyword2">custom</span></a></p>
+<div id="k29.1" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="custom-doi-resolvers.html" target="hmcontent"><span class="idxlink">Custom DOI Resolvers</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="selecting-a-doi-resolver.html" target="hmcontent"><span class="idxlink">Developing a DOI Resolver</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="selecting-a-doi-resolver.html" target="hmcontent"><span class="idxkeyword2">developing</span></a></p>
+<p class="idxkeyword"><a href="doi-rest-api.html" target="hmcontent"><span class="idxkeyword">DOI REST API</span></a></p>
+<p class="idxkeyword2"><a href="rest-api-request-format.html" target="hmcontent"><span class="idxkeyword2">request format</span></a></p>
+<p class="idxkeyword2"><a href="rest-api-response-format.html" target="hmcontent"><span class="idxkeyword2">response format</span></a></p>
+<p class="idxkeyword"><a href="suffix.html" target="hmcontent"><span class="idxkeyword">DOI suffix</span></a></p>
+<p class="idxkeyword"><span class="idxkeyword">DOI System</span></p>
+<p class="idxkeyword2"><a href="doi-application-examples.html" target="hmcontent"><span class="idxkeyword2">application examples</span></a></p>
+<p class="idxkeyword2"><a href="introduction-to-doi-applicatio.html" target="hmcontent"><span class="idxkeyword2">applications</span></a></p>
+<p class="idxkeyword2"><a href="basic-principle-integration-of.html" target="hmcontent"><span class="idxkeyword2">basic principle</span></a></p>
+<p class="idxkeyword2"><a href="features-of-the-doi-system.html" target="hmcontent"><span class="idxkeyword2">benefits</span></a></p>
+<p class="idxkeyword2"><a href="doi-data-model.html" target="hmcontent"><span class="idxkeyword2">data model</span></a></p>
+<p class="idxkeyword2"><a href="service-extensibility.html" target="hmcontent"><span class="idxkeyword2">extensibility</span></a></p>
+<p class="idxkeyword2"><a href="business-and-organisational-mo.html" target="hmcontent"><span class="idxkeyword2">governance</span></a></p>
+<p class="idxkeyword2"><a href="introduction-to-the-doi-system.html" target="hmcontent"><span class="idxkeyword2">history</span></a></p>
+<p class="idxkeyword2"><a href="interoperability.html" target="hmcontent"><span class="idxkeyword2">interoperability</span></a></p>
+<p class="idxkeyword2"><a href="lhs-used-to-manage-doi-names.html" target="hmcontent"><span class="idxkeyword2">LHS</span></a></p>
+<p class="idxkeyword2"><a href="doi-data-model.html" target="hmcontent"><span class="idxkeyword2">metadata</span></a></p>
+<p class="idxkeyword2"><a href="doi-compatibility-with-other-i.html" target="hmcontent"><span class="idxkeyword2">other identifier systems</span></a></p>
+<p class="idxkeyword2"><a href="doi-system-policies.html" target="hmcontent"><span class="idxkeyword2">policies</span></a></p>
+<p class="idxkeyword2"><a href="doi-proxy.html" target="hmcontent"><span class="idxkeyword2">Proxy Server</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k32.15')"><span class="idxkeyword2">resolution service</span></a></p>
+<div id="k32.15" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="single-doi-resolution.html" target="hmcontent"><span class="idxlink">Single DOI Resolution (Single URL)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="multiple-doi-resolution.html" target="hmcontent"><span class="idxlink">Multiple DOI Resolution (Multiple URLs)</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="doi-resolution-services-.html" target="hmcontent"><span class="idxkeyword2">resolution services</span></a></p>
+<p class="idxkeyword2"><a href="doi-standardization.html" target="hmcontent"><span class="idxkeyword2">standardization</span></a></p>
+<p class="idxkeyword2"><a href="value-added-services.html" target="hmcontent"><span class="idxkeyword2">value-added services</span></a></p>
+<p class="idxkeyword"><a href="doi-proxy.html" target="hmcontent"><span class="idxkeyword">DOI System Proxy Server</span></a></p>
+<p class="idxkeyword"><a href="handle-tools.html" target="hmcontent"><span class="idxkeyword">DOI tools</span></a></p>
+<a name="E" id="E"></a><p class="idxsection">- E -</p>
+<p class="idxkeyword"><a href="handle-record.html" target="hmcontent"><span class="idxkeyword">elements</span></a></p>
+<p class="idxkeyword"><span class="idxkeyword">encoding</span></p>
+<p class="idxkeyword2"><a href="encoding-rules-for-urls.html" target="hmcontent"><span class="idxkeyword2">hex</span></a></p>
+<p class="idxkeyword2"><a href="encoding-of-non-ascii-characte.html" target="hmcontent"><span class="idxkeyword2">non-ASCII characters</span></a></p>
+<p class="idxkeyword2"><a href="encoding-of-non-ascii-characte.html" target="hmcontent"><span class="idxkeyword2">UTF-8</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k37')"><span class="idxkeyword">error messages</span></a></p>
+<div id="k37" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="handling-of-resolution-errors.html" target="hmcontent"><span class="idxlink">Handling of Resolution Errors in the DOI System</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="configuring-the-resolution-err.html" target="hmcontent"><span class="idxlink">Configuring the Resolution Error Message Handling</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="executive-committee.html" target="hmcontent"><span class="idxkeyword">executive committee</span></a></p>
+<a name="F" id="F"></a><p class="idxsection">- F -</p>
+<p class="idxkeyword"><a href="membership-fees.html" target="hmcontent"><span class="idxkeyword">fees</span></a></p>
+<a name="G" id="G"></a><p class="idxsection">- G -</p>
+<p class="idxkeyword"><a href="global-handle-registry-(ghr)2.html" target="hmcontent"><span class="idxkeyword">GHR</span></a></p>
+<p class="idxkeyword"><a href="global-handle-registry-(ghr)2.html" target="hmcontent"><span class="idxkeyword">Global Handle Registry</span></a></p>
+<a name="H" id="H"></a><p class="idxsection">- H -</p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k42')"><span class="idxkeyword">handle record</span></a></p>
+<div id="k42" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="introduction-to-the-doi(r)-nam.html" target="hmcontent"><span class="idxlink">DOI Name: Unique and Persistent Identifier</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="handle-record.html" target="hmcontent"><span class="idxlink">Introduction to the Handle Record</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k43')"><span class="idxkeyword">Handle System</span></a></p>
+<div id="k43" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="basic-principle-integration-of.html" target="hmcontent"><span class="idxlink">Basic Principle: Integration of Identifier Resolution and Semantics</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="identifier_resolution-system-hs.html" target="hmcontent"><span class="idxlink">Identifier / Resolution System with the Handle System</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="id-resolution-system-based-on-handle-system.html" target="hmcontent"><span class="idxlink">Identifier / Resolution Services Based on the Handle System</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="developing-handle-system-clien.html" target="hmcontent"><span class="idxkeyword2">client software</span></a></p>
+<p class="idxkeyword2"><a href="global-handle-registry-(ghr)2.html" target="hmcontent"><span class="idxkeyword2">GHR</span></a></p>
+<p class="idxkeyword2"><a href="dynamic-idenification-of-the-f.html" target="hmcontent"><span class="idxkeyword2">handle templates</span></a></p>
+<p class="idxkeyword2"><a href="local-handle-service-(lhs).html" target="hmcontent"><span class="idxkeyword2">LHS</span></a></p>
+<p class="idxkeyword2"><a href="security-features-of-the-doi-s.html" target="hmcontent"><span class="idxkeyword2">security</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k43.6')"><span class="idxkeyword2">services</span></a></p>
+<div id="k43.6" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="global-handle-registry-(ghr)2.html" target="hmcontent"><span class="idxlink">Global Handle Registry (GHR)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="local-handle-service-(lhs).html" target="hmcontent"><span class="idxlink">Local Handle Service (LHS)</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="information-traceability.html" target="hmcontent"><span class="idxkeyword2">traceability</span></a></p>
+<p class="idxkeyword"><a href="dynamic-idenification-of-the-f.html" target="hmcontent"><span class="idxkeyword">handle templates</span></a></p>
+<p class="idxkeyword"><a href="handle-tools.html" target="hmcontent"><span class="idxkeyword">handle tools</span></a></p>
+<p class="idxkeyword"><a href="encoding-rules-for-urls.html" target="hmcontent"><span class="idxkeyword">hex-encoding</span></a></p>
+<p class="idxkeyword"><a href="prefix-handle-example.html" target="hmcontent"><span class="idxkeyword">HS_ADMIN</span></a></p>
+<p class="idxkeyword"><a href="10320_loc-at-prefix-level.html" target="hmcontent"><span class="idxkeyword">HS_NAMESPACE</span></a></p>
+<p class="idxkeyword"><a href="prefix-handle-example.html" target="hmcontent"><span class="idxkeyword">HS_SERV</span></a></p>
+<p class="idxkeyword"><a href="prefix-handle-example.html" target="hmcontent"><span class="idxkeyword">HS_SIGNATURE</span></a></p>
+<p class="idxkeyword"><a href="prefix-handle-example.html" target="hmcontent"><span class="idxkeyword">HS_VLIST</span></a></p>
+<a name="I" id="I"></a><p class="idxsection">- I -</p>
+<p class="idxkeyword"><a href="introduction-to-the-doi(r)-nam.html" target="hmcontent"><span class="idxkeyword">identifier</span></a></p>
+<p class="idxkeyword2"><a href="interoperability.html" target="hmcontent"><span class="idxkeyword2">interoperability</span></a></p>
+<p class="idxkeyword2"><a href="doi-compatibility-with-other-i.html" target="hmcontent"><span class="idxkeyword2">other identifier systems</span></a></p>
+<p class="idxkeyword"><a href="handle-resolution-prefix-in-ghr.html" target="hmcontent"><span class="idxkeyword">identifier resolution</span></a></p>
+<p class="idxkeyword"><a href="conformance-with-other-standar.html" target="hmcontent"><span class="idxkeyword">IETF</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k55')"><span class="idxkeyword">INDECS framework</span></a></p>
+<div id="k55" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="basic-principle-integration-of.html" target="hmcontent"><span class="idxlink">Basic Principle: Integration of Identifier Resolution and Semantics</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="metadata-model-principles.html" target="hmcontent"><span class="idxlink">Principles of the INDECS Model</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="handle-record.html" target="hmcontent"><span class="idxkeyword">index</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k57')"><span class="idxkeyword">interoperability</span></a></p>
+<div id="k57" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="standard-metadata-declaration.html" target="hmcontent"><span class="idxlink">Standard Metadata Declaration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="interoperability.html" target="hmcontent"><span class="idxlink">Identifier Interoperability through a Powerful Metadata Model</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="metadata-interoperability.html" target="hmcontent"><span class="idxlink">Metadata Interoperability</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="iso-26324.html" target="hmcontent"><span class="idxkeyword">ISO 26324</span></a></p>
+<p class="idxkeyword2"><a href="metadata-requirements.html" target="hmcontent"><span class="idxkeyword2">metadata</span></a></p>
+<p class="idxkeyword2"><a href="iso-26324-registration-authori.html" target="hmcontent"><span class="idxkeyword2">Registration Authority</span></a></p>
+<p class="idxkeyword2"><a href="iso-26234-functional-requireme.html" target="hmcontent"><span class="idxkeyword2">resolution</span></a></p>
+<a name="K" id="K"></a><p class="idxsection">- K -</p>
+<p class="idxkeyword"><a href="standard-metadata-declaration.html" target="hmcontent"><span class="idxkeyword">Kernel</span></a></p>
+<p class="idxkeyword"><a href="metadata-kernel-schema.html" target="hmcontent"><span class="idxkeyword">Kernel Metadata</span></a></p>
+<a name="L" id="L"></a><p class="idxsection">- L -</p>
+<p class="idxkeyword"><a href="local-handle-service-(lhs).html" target="hmcontent"><span class="idxkeyword">LHS</span></a></p>
+<p class="idxkeyword2"><a href="lhs-used-to-manage-doi-names.html" target="hmcontent"><span class="idxkeyword2">in DOI System</span></a></p>
+<p class="idxkeyword"><a href="redirection-to-linked-data-ser.html" target="hmcontent"><span class="idxkeyword">Linked data</span></a></p>
+<p class="idxkeyword"><a href="local-handle-service-(lhs).html" target="hmcontent"><span class="idxkeyword">Local Handle Service</span></a></p>
+<p class="idxkeyword2"><a href="lhs-used-to-manage-doi-names.html" target="hmcontent"><span class="idxkeyword2">in DOI System</span></a></p>
+<a name="M" id="M"></a><p class="idxsection">- M -</p>
+<p class="idxkeyword"><a href="managing-agent.html" target="hmcontent"><span class="idxkeyword">managing agent</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k65')"><span class="idxkeyword">meetings</span></a></p>
+<div id="k65" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="member-strategy-meetings.html" target="hmcontent"><span class="idxlink">Member Strategy Meetings</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="board-meetings.html" target="hmcontent"><span class="idxlink">Board Meetings</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k66')"><span class="idxkeyword">metadata</span></a></p>
+<div id="k66" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="standard-metadata-declaration.html" target="hmcontent"><span class="idxlink">Standard Metadata Declaration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="dynamic-building-of-a-web-page.html" target="hmcontent"><span class="idxlink">Dynamic Building of a Web Page Enriched with Metadata</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="introduction-to-the-doi-metada.html" target="hmcontent"><span class="idxlink">Introduction to DOI Metadata</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="automated-integration-of-metad.html" target="hmcontent"><span class="idxkeyword2">automated integration</span></a></p>
+<p class="idxkeyword2"><a href="metadata-interoperability.html" target="hmcontent"><span class="idxkeyword2">interoperability</span></a></p>
+<p class="idxkeyword2"><a href="metadata-kernel-schema.html" target="hmcontent"><span class="idxkeyword2">Kernel</span></a></p>
+<p class="idxkeyword2"><a href="metadata-standard.html" target="hmcontent"><span class="idxkeyword2">policies</span></a></p>
+<p class="idxkeyword2"><a href="underlying-ontology.html" target="hmcontent"><span class="idxkeyword2">underlying ontology</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k67')"><span class="idxkeyword">multiple resolution</span></a></p>
+<div id="k67" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="multiple-doi-resolution.html" target="hmcontent"><span class="idxlink">Multiple DOI Resolution (Multiple URLs)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="automated-selection-of-an-url-.html" target="hmcontent"><span class="idxlink">Automated Selection of an URL According to Various Criteria</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="10320_loc-attribute.html" target="hmcontent"><span class="idxlink">10320/LOC Element</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k68')"><span class="idxkeyword">multiple URLs</span></a></p>
+<div id="k68" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="multiple-doi-resolution.html" target="hmcontent"><span class="idxlink">Multiple DOI Resolution (Multiple URLs)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="automated-selection-of-an-url-.html" target="hmcontent"><span class="idxlink">Automated Selection of an URL According to Various Criteria</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="10320_loc-attribute.html" target="hmcontent"><span class="idxlink">10320/LOC Element</span></a></td></tr></table></td></tr></table></div>
+<a name="O" id="O"></a><p class="idxsection">- O -</p>
+<p class="idxkeyword"><a href="handle-resolution-prefix-in-ghr.html" target="hmcontent"><span class="idxkeyword">one-delimiter prefix</span></a></p>
+<p class="idxkeyword"><a href="underlying-ontology.html" target="hmcontent"><span class="idxkeyword">ontology</span></a></p>
+<p class="idxkeyword"><a href="parameter-passing-function.html" target="hmcontent"><span class="idxkeyword">OpenURL</span></a></p>
+<p class="idxkeyword"><a href="integration-of-other-identifie.html" target="hmcontent"><span class="idxkeyword">other identifier schemes</span></a></p>
+<a name="P" id="P"></a><p class="idxsection">- P -</p>
+<p class="idxkeyword"><a href="parameter-passing-function.html" target="hmcontent"><span class="idxkeyword">parameter passing</span></a></p>
+<p class="idxkeyword"><a href="doi-system-policies.html" target="hmcontent"><span class="idxkeyword">policies</span></a></p>
+<p class="idxkeyword2"><a href="defining-a-metadata-maintenanc.html" target="hmcontent"><span class="idxkeyword2">data maintenance</span></a></p>
+<p class="idxkeyword2"><a href="metadata-policy-overview.html" target="hmcontent"><span class="idxkeyword2">data model</span></a></p>
+<p class="idxkeyword2"><a href="defining-a-suffix-naming-polic.html" target="hmcontent"><span class="idxkeyword2">DOI name</span></a></p>
+<p class="idxkeyword2"><a href="administration-quality-standar.html" target="hmcontent"><span class="idxkeyword2">DOI name administration</span></a></p>
+<p class="idxkeyword2"><a href="policy-formulation-process.html" target="hmcontent"><span class="idxkeyword2">formulation process</span></a></p>
+<p class="idxkeyword2"><a href="list-of-doi-policies.html" target="hmcontent"><span class="idxkeyword2">list</span></a></p>
+<p class="idxkeyword2"><a href="metadata-standard.html" target="hmcontent"><span class="idxkeyword2">metadata declaration</span></a></p>
+<p class="idxkeyword2"><a href="defining-a-prefix-naming-polic.html" target="hmcontent"><span class="idxkeyword2">prefix allocation</span></a></p>
+<p class="idxkeyword"><a href="ra-and-registrant-policy-guide.html" target="hmcontent"><span class="idxkeyword">Policy Officer</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k76')"><span class="idxkeyword">prefix</span></a></p>
+<div id="k76" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-name-syntax2.html" target="hmcontent"><span class="idxlink">DOI Name Syntax</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-namespace-allocation-approach.html" target="hmcontent"><span class="idxlink">DOI Namespace Allocation Approach</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="prefix.html" target="hmcontent"><span class="idxlink">DOI Prefix</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="introduction-to-prefix-handles.html" target="hmcontent"><span class="idxkeyword2">0.NA</span></a></p>
+<p class="idxkeyword2"><a href="defining-a-prefix-naming-polic.html" target="hmcontent"><span class="idxkeyword2">allocation policy</span></a></p>
+<p class="idxkeyword2"><a href="handle-resolution-prefix-in-ghr.html" target="hmcontent"><span class="idxkeyword2">one-delimiter prefix</span></a></p>
+<p class="idxkeyword2"><a href="trial-prefix.html" target="hmcontent"><span class="idxkeyword2">trial prefix</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k77')"><span class="idxkeyword">prefix handle</span></a></p>
+<div id="k77" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="introduction-to-prefix-handles.html" target="hmcontent"><span class="idxlink">Introduction to Prefix Handles (0.NA Prefix)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="prefix-handle-example.html" target="hmcontent"><span class="idxlink">Prefix Handle Example</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="doi-proxy.html" target="hmcontent"><span class="idxkeyword">Proxy Server</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k79')"><span class="idxkeyword">Proxy Server REST API</span></a></p>
+<div id="k79" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-rest-api.html" target="hmcontent"><span class="idxlink">DOI REST API</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-proxy-rest-api.html" target="hmcontent"><span class="idxlink">DOI REST API Request and Response Formats</span></a></td></tr></table></td></tr></table></div>
+<a name="Q" id="Q"></a><p class="idxsection">- Q -</p>
+<p class="idxkeyword"><a href="dynamic-building-of-a-web-page.html" target="hmcontent"><span class="idxkeyword">QR code</span></a></p>
+<a name="R" id="R"></a><p class="idxsection">- R -</p>
+<p class="idxkeyword"><a href="ra-agreement.html" target="hmcontent"><span class="idxkeyword">RA Agreement</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k82')"><span class="idxkeyword">redirection graph</span></a></p>
+<div id="k82" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="multiple-doi-resolution.html" target="hmcontent"><span class="idxlink">Multiple DOI Resolution (Multiple URLs)</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="applications-of-the-10320_loc-.html" target="hmcontent"><span class="idxlink">Applications of the 10320/LOC Element</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="10320_loc-attribute.html" target="hmcontent"><span class="idxlink">10320/LOC Element</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="basic-principle-integration-of.html" target="hmcontent"><span class="idxkeyword">referent</span></a></p>
+<p class="idxkeyword"><a href="metadata-exchange-schemas.html" target="hmcontent"><span class="idxkeyword">Referent Metadata Declaration</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k85')"><span class="idxkeyword">registrant</span></a></p>
+<div id="k85" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="standard-metadata-declaration.html" target="hmcontent"><span class="idxlink">Standard Metadata Declaration</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="federation-of-registration-age.html" target="hmcontent"><span class="idxlink">Federation of Registration Agencies (RA)</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k85.1')"><span class="idxkeyword2">policies</span></a></p>
+<div id="k85.1" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="defining-a-metadata-maintenanc.html" target="hmcontent"><span class="idxlink">Defining a Data Maintenance Policy</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="defining-a-suffix-naming-polic.html" target="hmcontent"><span class="idxlink">Defining a DOI Name Registration Policy</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="roles-of-a-registrant.html" target="hmcontent"><span class="idxkeyword2">roles and duties</span></a></p>
+<p class="idxkeyword"><a href="federation-of-registration-age.html" target="hmcontent"><span class="idxkeyword">Registration Agency</span></a></p>
+<p class="idxkeyword2"><a href="ra-agreement.html" target="hmcontent"><span class="idxkeyword2">Agreement</span></a></p>
+<p class="idxkeyword2"><a href="business-model-for-registratio.html" target="hmcontent"><span class="idxkeyword2">business model</span></a></p>
+<p class="idxkeyword2"><a href="doi-representative-of-a-member.html" target="hmcontent"><span class="idxkeyword2">DOI representative</span></a></p>
+<p class="idxkeyword2"><a href="fee-structure-for-registration.html" target="hmcontent"><span class="idxkeyword2">fees</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k86.5')"><span class="idxkeyword2">policies</span></a></p>
+<div id="k86.5" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="defining-a-prefix-naming-polic.html" target="hmcontent"><span class="idxlink">Defining a Prefix Allocation Policy</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="defining-a-metadata-maintenanc.html" target="hmcontent"><span class="idxlink">Defining a Data Maintenance Policy</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="defining-a-suffix-naming-polic.html" target="hmcontent"><span class="idxlink">Defining a DOI Name Registration Policy</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="becoming-an-ra.html" target="hmcontent"><span class="idxkeyword2">process of becoming</span></a></p>
+<p class="idxkeyword2"><a href="roles-of-a-registration-agency.html" target="hmcontent"><span class="idxkeyword2">roles</span></a></p>
+<p class="idxkeyword2"><a href="service-non-exculsivity-and-co.html" target="hmcontent"><span class="idxkeyword2">service non-exclusivity</span></a></p>
+<p class="idxkeyword2"><a href="which-ra_-service.html" target="hmcontent"><span class="idxkeyword2">Which RA?</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k87')"><span class="idxkeyword">Registration Authority</span></a></p>
+<div id="k87" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="iso-26324.html" target="hmcontent"><span class="idxlink">ISO 26324</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="iso-26324-registration-authori.html" target="hmcontent"><span class="idxlink">ISO 26324 Registration Authority</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><span class="idxkeyword">resolution</span></p>
+<p class="idxkeyword2"><a href="content-negotiation.html" target="hmcontent"><span class="idxkeyword2">content negotiation</span></a></p>
+<p class="idxkeyword2"><a href="direct-redirection-to-web-resource.html" target="hmcontent"><span class="idxkeyword2">direct redirection</span></a></p>
+<p class="idxkeyword2"><a href="javascript:void(0)" onclick="return hmshowLinks('k88.3')"><span class="idxkeyword2">error messages</span></a></p>
+<div id="k88.3" style="position:relative;margin:0 0 0 40px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="handling-of-resolution-errors.html" target="hmcontent"><span class="idxlink">Handling of Resolution Errors in the DOI System</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="configuring-the-resolution-err.html" target="hmcontent"><span class="idxlink">Configuring the Resolution Error Message Handling</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword2"><a href="multiple-doi-resolution.html" target="hmcontent"><span class="idxkeyword2">multiple URLs</span></a></p>
+<p class="idxkeyword2"><a href="parameter-passing-function.html" target="hmcontent"><span class="idxkeyword2">parameter passing</span></a></p>
+<p class="idxkeyword2"><a href="dynamic-building-of-a-web-page.html" target="hmcontent"><span class="idxkeyword2">redirection to metadata service</span></a></p>
+<p class="idxkeyword2"><a href="shortdoi.html" target="hmcontent"><span class="idxkeyword2">shortDOI</span></a></p>
+<p class="idxkeyword2"><a href="single-doi-resolution.html" target="hmcontent"><span class="idxkeyword2">single URL</span></a></p>
+<p class="idxkeyword"><a href="doi-proxy-rest-api.html" target="hmcontent"><span class="idxkeyword">REST API</span></a></p>
+<p class="idxkeyword"><a href="metadata-exchange-schemas.html" target="hmcontent"><span class="idxkeyword">RMD</span></a></p>
+<a name="S" id="S"></a><p class="idxsection">- S -</p>
+<p class="idxkeyword"><a href="service-non-exculsivity-and-co.html" target="hmcontent"><span class="idxkeyword">service non-exclusivity</span></a></p>
+<p class="idxkeyword"><a href="handle-tools.html" target="hmcontent"><span class="idxkeyword">servlets</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k93')"><span class="idxkeyword">shortDOI</span></a></p>
+<div id="k93" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="additional-services-included-i.html" target="hmcontent"><span class="idxlink">Additional Resolution Services Included in the DOI System</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="shortdoi.html" target="hmcontent"><span class="idxlink">ShortDOI Service</span></a></td></tr></table></td></tr></table></div>
+<p class="idxkeyword"><a href="single-doi-resolution.html" target="hmcontent"><span class="idxkeyword">single resolution</span></a></p>
+<p class="idxkeyword"><a href="single-doi-resolution.html" target="hmcontent"><span class="idxkeyword">single URL</span></a></p>
+<p class="idxkeyword"><a href="doi-standardization.html" target="hmcontent"><span class="idxkeyword">standards</span></a></p>
+<p class="idxkeyword"><a href="member-strategy-meetings.html" target="hmcontent"><span class="idxkeyword">strategy meetings</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k98')"><span class="idxkeyword">suffix</span></a></p>
+<div id="k98" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="doi-name-syntax2.html" target="hmcontent"><span class="idxlink">DOI Name Syntax</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="suffix.html" target="hmcontent"><span class="idxlink">DOI Suffix</span></a></td></tr></table></td></tr></table></div>
+<a name="T" id="T"></a><p class="idxsection">- T -</p>
+<p class="idxkeyword"><a href="handle-tools.html" target="hmcontent"><span class="idxkeyword">tools</span></a></p>
+<p class="idxkeyword"><a href="trial-prefix.html" target="hmcontent"><span class="idxkeyword">trial prefix</span></a></p>
+<p class="idxkeyword"><a href="javascript:void(0)" onclick="return hmshowLinks('k101')"><span class="idxkeyword">troubleshooting</span></a></p>
+<div id="k101" style="position:relative;margin:0 0 0 20px;top:-3px">
+<table class="idxtable" style="padding:4px"><tr><td class="idxtable"><table style="border:none;padding:0"><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="handling-of-resolution-errors.html" target="hmcontent"><span class="idxlink">Handling of Resolution Errors in the DOI System</span></a></td></tr><tr style="vertical-align:baseline"><td><img src="ciconidx.gif" style="border:none" alt="Icon"></td><td><a href="configuring-the-resolution-err.html" target="hmcontent"><span class="idxlink">Configuring the Resolution Error Message Handling</span></a></td></tr></table></td></tr></table></div>
+<a name="U" id="U"></a><p class="idxsection">- U -</p>
+<p class="idxkeyword"><a href="parameter-passing-function.html" target="hmcontent"><span class="idxkeyword">urlappend</span></a></p>
+<a name="W" id="W"></a><p class="idxsection">- W -</p>
+<p class="idxkeyword"><a href="conformance-with-other-standar.html" target="hmcontent"><span class="idxkeyword">W3C</span></a></p>
+<p class="idxkeyword"><a href="which-ra_-service.html" target="hmcontent"><span class="idxkeyword">Which RA?</span></a></p>
+</div>
+
+</body>
+</html>

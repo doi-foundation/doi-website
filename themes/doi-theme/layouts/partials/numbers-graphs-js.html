@@ -271,7 +271,7 @@
       ]
       let d = new Date(monthYear);
       let year = d.getFullYear();
-      let monthName = months[d.getMonth()];
+      let monthName = months[d.getUTCMonth()];
       return monthName + " " + year;
     }
 

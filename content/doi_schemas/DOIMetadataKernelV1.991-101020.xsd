@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 (http://www.altova.com) by Godfrey Rust (private) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:doi="http://www.doi.org/2010/DOISchema" xmlns:iso3166a2="http://www.doi.org/2010/iso3166a2" targetNamespace="http://www.doi.org/2010/DOISchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.0">
+	<xs:import namespace="http://www.doi.org/2010/iso3166a2" schemaLocation="http://dx.doi.org/10.1000/279"/>
+	<xs:element name="kernelMetadata" type="doi:kernelMetadata">
+		<xs:annotation>
+			<xs:documentation>DOI Kernel Metadata Declaration version 2.0</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="kernelMetadata">
+		<xs:sequence>
+			<xs:element name="referentDoiName" type="doi:doiName">
+				<xs:annotation>
+					<xs:documentation>The specific DOI name allocated to the referent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="primaryReferentType" type="doi:primaryReferentType">
+				<xs:annotation>
+					<xs:documentation>The primaryReferentType of the referent (Creation or Party).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="registrationAgencyDoiName" type="doi:doiName">
+				<xs:annotation>
+					<xs:documentation>The DOI name of the Registration Agency responsible for issuing this Declaration.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="issueDate" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The date on which this Declaration was issued.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="issueNumber" type="xs:unsignedInt">
+				<xs:annotation>
+					<xs:documentation>The sequence number of this Declaration in the series of Kernel Metadata Declarations issued for this DOI name.</xs:documentation>
+					<xs:documentation>Original issue=1. If a Kernel Metadata Declaration for a specific DOI name is re-issued, this number should be incremented by one.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="referentCreation" type="doi:referentCreation">
+					<xs:annotation>
+						<xs:documentation>The creation identified by the DOI name (where the primary referentType is "Creation").</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="referentParty" type="doi:referentParty">
+					<xs:annotation>
+						<xs:documentation>The party identified by the DOI name (where the primary referentType is "Party").</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="referentCreation">
+		<xs:annotation>
+			<xs:documentation>Details of the DOI name and the creation which it identifies.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="doi:creationName" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A name or title by which the referentCreation is known. </xs:documentation>
+					<xs:documentation>For Kernel Metadata in a restricted Application Profile the string "No information available" should be used, with a creationNameType of "name".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="doi:creationIdentifier" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>An identifier of the referentCreation.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="structuralType" type="doi:creationStructuralType">
+				<xs:annotation>
+					<xs:documentation>The primary structuralType of a referentCreation.</xs:documentation>
+					<xs:documentation>For creations there are four mutually exclusive structuralTypes (physical, digital, performance and abstraction) that allow classification according to overall form. Where structuralTypes may be contained within one another, the referent’s structuralType is defined by the overall form. For example a CD (physical) may contain files (digital) which contain recordings of performances of songs (abstractions), and elements of content can be further classified if necessary under referentType.  </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mode" type="doi:mode" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A principal sensory mode in which a referentCreation is intended to be perceived (audio, visual, tangible, olfactory, tasteable, none).  </xs:documentation>
+					<xs:documentation>Mode identifies only the principal intended modes of perception: most physical creations are perceivable with all five senses, but some of these perceptions may be trivial. For example, a printed book may be touched or smelled, but these are normally supplementary or incidental to the visual mode for its intended function as a content carrier. For a Braille book, however, touch would be a principal mode. One creation may be perceived in several modes (audio and visual being much the most common combination).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="character" type="doi:character" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A fundamental form of communication (language, music, image, other) in which the content of a referentCreation is expressed. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type" type="doi:creationType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A class of creation to which the referentCreation belongs.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="principalAgent" type="doi:principalAgent" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A party (either an individual or an organization) principally responsible for the creation or publication of the referentCreation.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="linkedCreation" type="doi:linkedCreation" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Another creation with which the referentCreation is associated.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="creationName">
+		<xs:annotation>
+			<xs:documentation>A name or title by which a creation is known.</xs:documentation>
+			<xs:documentation>The distinction between "name" and "title" is a matter of convention: published creations such as books, serials, CDs, DVDs or broadcast programmes normally have "titles", but other creations such as websites or datasets more commonly have "names". There is no functional difference. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="value" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The text string representing the value of the creationName.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="subnameValue" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A text string representing a subname or subtitle which accompanies the creationName. </xs:documentation>
+					<xs:documentation>This is not an alternative name for the creation which may be used independently, but a name or subtitle which supports the main creationName. For example, the book titled "Knowledge Representation" by John F. Sowa has the subtitle "Logical, Philosophical and Computational Foundations". </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type" type="doi:creationNameType">
+				<xs:annotation>
+					<xs:documentation>The type of the creationName.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="primaryLanguage" type="xs:language" use="optional">
+			<xs:annotation>
+				<xs:documentation>The primary language in which the creationName is expressed.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="creationIdentifier">
+		<xs:annotation>
+			<xs:documentation>An identifier used to identify a referent. An identifier is a type of name of which each instance is unique of its type: for example , the ISBN "9780946014491" belongs to only one book.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="value" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The value of the Identifier.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type" type="doi:creationIdentifierType">
+				<xs:annotation>
+					<xs:documentation>The type of the Identifier.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="principalAgent">
+		<xs:annotation>
+			<xs:documentation>A party principally responsible for the creation or publication of a referent.  Either a "partyName" or a "partyIdentifier" element must be present.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="doi:partyName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A name by which the principalAgent is known.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="doi:partyIdentifier" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>An identifier of the principalAgent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="role" type="doi:agentRole" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A role played by the principalAgent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="linkedCreation">
+		<xs:annotation>
+			<xs:documentation>Another creation with which the referentCreation is associated. At least one of the elements "creationName" or "creationIdentifier" must be present (the latter being preferably a doiName), and at least one of the elements "referentCreationRole" or "linkedCreationRole".</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="doi:creationName" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A name or title by which the linkedCreation is known. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="doi:creationIdentifier" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>An identifier of the linkedCreation.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="referentCreationRole" type="doi:creationToCreationLinkRole" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A role played by the referentCreation in relation to the linkedCreation (for example, the referentCreation is an edition of the linkedCreation).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="linkedCreationRole" type="doi:creationToCreationLinkRole" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A role played by the linkedCreation in relation to the referentCreation (for example, the linkedCreation is an edition of the referentCreation).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="referentParty">
+		<xs:annotation>
+			<xs:documentation>Details of the DOI name and the party which it identifies.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="doi:partyName" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A name or title by which the referentParty is known. </xs:documentation>
+					<xs:documentation>For Kernel Metadata in a restricted Application Profile the string "No information available" should be used, with a partyNameType of "name".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="doi:partyIdentifier" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>An identifier of the referentParty.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="structuralType" type="doi:partyStructuralType">
+				<xs:annotation>
+					<xs:documentation>The primary structuralType of the referentParty. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="associatedRole" type="doi:associatedPartyRole" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>For parties, the referentType represents a role with which the party is commonly associated, not necessarily a permanent type.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateOfBirthOrFormation" type="doi:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The date of birth (for an individual or animal) or formation (for an organization) of the referentParty.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateOfDeathOrDissolution" type="doi:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>The date of death (for an individual or animal) or dissolution (for an organization) of the referentParty.</xs:documentation>
+					<xs:documentation>If an organization was dissolved or reformed on one or more occasion, this date should represent the latest date of dissolution, if any. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="associatedTerritory" type="iso3166a2:TerritoryCode" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A territory with which the referentParty is associated (for example, a territory of birth, nationality or residence).</xs:documentation>
+					<xs:documentation>As with other elements (dates and referentType) this element is included to support the disambiguation of one party with another.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="linkedParty" type="doi:linkedParty" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Another party to whom the referentParty is linked, with identification of link role (eg member, department, corporate subsiduary, child, sibling). </xs:documentation>
+					<xs:documentation>This element is included in Kernel Metadata as it may be critical for the identification of an organization which exists only as part of another organization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partyName">
+		<xs:annotation>
+			<xs:documentation>A name by which a party is known.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="value" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A text string representing the value of the partyName (for example, "John Smith", "ABC Publishing, Inc").</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type" type="doi:partyNameType">
+				<xs:annotation>
+					<xs:documentation>The type of the partyName.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="partyIdentifier">
+		<xs:annotation>
+			<xs:documentation>An identifier used to identify a party.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="value" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A text string representing the value of the partyIdentifier (for example, "987654321").</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type" type="doi:partyIdentifierType">
+				<xs:annotation>
+					<xs:documentation>The type of the partyIdentifier.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="date">
+		<xs:annotation>
+			<xs:documentation>A date.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="value" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>The value of the date (for example, "1967").</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="proximity" type="doi:timeProximity" use="optional">
+			<xs:annotation>
+				<xs:documentation>The proximity of the declared date to the actual date (for example, "circa", "not before"). A null value indicates that the date is accurate.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="linkedParty">
+		<xs:annotation>
+			<xs:documentation>Another party with which the referentParty is associated. At least one of the elements "partyName" or "partyIdentifier" must be present, and at least one of the elements "referentPartyRole" or "linkedPartyRole".</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="name" type="doi:partyName" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A name by which the linkedParty is known.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="doi:partyIdentifier" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>An identifier of the linkedParty.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="referentPartyRole" type="doi:partyToPartyLinkRole" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A role played by the referentParty in relation to the linkedParty (for example, the referentParty is a corporateSubsidiary of the linkedParty).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="linkedPartyRole" type="doi:partyToPartyLinkRole" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>A role played by the linkedParty in relation to the referentParty (for example, the linkedParty is a corporateSubsidiary of the referentParty).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="agentRole">
+		<xs:annotation>
+			<xs:documentation>Allowed values for roles played by a party as an agent of a creation.</xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Creator">
+				<xs:annotation>
+					<xs:documentation>A creator of a creation.</xs:documentation>
+					<xs:documentation>This is a generic value which may be used when a more appropriate specific role (such as author or composer) is not available.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Author">
+				<xs:annotation>
+					<xs:documentation>A creator of a lexical work (words).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Composer">
+				<xs:annotation>
+					<xs:documentation>A creator of a musical work.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CorporateCreator">
+				<xs:annotation>
+					<xs:documentation>An organization credited as a creator of a creation .</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Publisher">
+				<xs:annotation>
+					<xs:documentation>A party making a creation available to the public.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="associatedPartyRole">
+		<xs:annotation>
+			<xs:documentation>Allowed values for a role associated with a party. </xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Creator">
+				<xs:annotation>
+					<xs:documentation>A party known as a creator of creations. This is a generic value which may be used when a more appropriate specific role (such as author or composer) is not available.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Author">
+				<xs:annotation>
+					<xs:documentation>A party known as a creator of lexical works (words).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Composer">
+				<xs:annotation>
+					<xs:documentation>A party known as a creator of musical works.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CorporateCreator">
+				<xs:annotation>
+					<xs:documentation>An organization known for being credited as a creator of creations.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BookPublisher">
+				<xs:annotation>
+					<xs:documentation>A party known for publishing books.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JournalPublisher">
+				<xs:annotation>
+					<xs:documentation>A party known for publishing journals.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="character">
+		<xs:annotation>
+			<xs:documentation>Allowed values for the types of character in which the content of a referentCreation may be expressed.</xs:documentation>
+			<xs:documentation>The values in this element are drawn from the RDA/ONIX Framework for Resource Categorization.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Music">
+				<xs:annotation>
+					<xs:documentation>Content expressed in musical notes.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Language">
+				<xs:annotation>
+					<xs:documentation>Content expressed in human or machine-readable language.</xs:documentation>
+					<xs:documentation>Content expressed in human or machine-readable language. semantically, as in algebra or computer code).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Image">
+				<xs:annotation>
+					<xs:documentation>Content expressed in line, shape, mass and/or other visually-realized forms.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Other">
+				<xs:annotation>
+					<xs:documentation>Content expressed in a form other than language, music, or image.</xs:documentation>
+					<xs:documentation>“Other" includes other forms of communicating phenomena, qualities, etc., perceived directly through the human senses (for example, natural or machine-generated sounds, aromas, textures as well as those that cannot be perceived directly through the human senses (for example, electromagnetic waves).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Restricted">
+				<xs:annotation>
+					<xs:documentation>A creation identified within a restricted DOI Application Profile for which kernel metadata values are not generally available.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="creationIdentifierType">
+		<xs:annotation>
+			<xs:documentation>Allowed values for types of creationIdentifier. </xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="DOI">
+				<xs:annotation>
+					<xs:documentation>A DOI name issued under the authority of the International DOI Foundation.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISBN13">
+				<xs:annotation>
+					<xs:documentation>An International Standard Book Number, the ISO Standard Identifier for books, in its 13-digit form.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISBN10">
+				<xs:annotation>
+					<xs:documentation>An International Standard Book Number, the ISO Standard Identifier for books, in its 10-digit form.</xs:documentation>
+					<xs:documentation>The isbn10 is now deprecated but is included in this schema for legacy purposes. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISSN">
+				<xs:annotation>
+					<xs:documentation>An International Standard Serial Number, the ISO Standard Identifier for published Serials.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ISTC">
+				<xs:annotation>
+					<xs:documentation>An International Standard Text Code, the ISO Standard Identifier for textual works.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PII">
+				<xs:annotation>
+					<xs:documentation>A Publisher Item Identifier, a proprietary Identifier used commonly for journal articles.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EAN13">
+				<xs:annotation>
+					<xs:documentation>A European Article Number.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UPC">
+				<xs:annotation>
+					<xs:documentation>A Universal Product Code.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EditionNumber">
+				<xs:annotation>
+					<xs:documentation>An identifier of a creation which denotes its edition.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ProprietaryIdentifier">
+				<xs:annotation>
+					<xs:documentation>An Identifier from a scheme which is proprietary to a particular party.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="creationNameType">
+		<xs:annotation>
+			<xs:documentation>Allowed Values for types of creationName.</xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Name">
+				<xs:annotation>
+					<xs:documentation>A name of a creation.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Title">
+				<xs:annotation>
+					<xs:documentation>A title of a creation.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DistinctiveTitle">
+				<xs:annotation>
+					<xs:documentation>The title by which a creation is normally known.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AbbreviatedTitle">
+				<xs:annotation>
+					<xs:documentation>A title which is a shortened form of another title.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FormerTitle">
+				<xs:annotation>
+					<xs:documentation>A title by which a creation was once known.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TranslatedTitle">
+				<xs:annotation>
+					<xs:documentation>A title which is a translation of another title.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="creationStructuralType">
+		<xs:annotation>
+			<xs:documentation>Allowed values for a structuralType of a creation.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Abstraction">
+				<xs:annotation>
+					<xs:documentation>A creation which exists as a concept and is recognised only through one more more physical, digital or spatio-temporal manifestations. </xs:documentation>
+					<xs:documentation>An abstraction (sometimes known as a "work" or "abstract work") represents the content of a creation, regardless of the carrier or media in which it is expressed. For example, the play "Hamlet" is an abstraction which has been expressed in many performances, printed books, films, broadcasts and more recently in digital media. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Performance">
+				<xs:annotation>
+					<xs:documentation>A creation which is expressed in a transient form.</xs:documentation>
+					<xs:documentation>A performance describes a "spatio-temporal" creation, such as a speech, a play or the playing of a piece of music. It may be recorded for reproduction, but the creation itself is only perceivable in transient form. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Digital">
+				<xs:annotation>
+					<xs:documentation>A creation which is expressed in digital form.</xs:documentation>
+					<xs:documentation>A digital creation is entirely made of digital bits and so may be perceived only through a computer or other intermediary device. For example, an audio CD is not itself a digital creation but a physical one, but it contains several digital creations (the individual tracks).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Physical">
+				<xs:annotation>
+					<xs:documentation>A creation which is expressed in physical form.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Restricted">
+				<xs:annotation>
+					<xs:documentation>A creation identified within a restricted DOI Application Profile for which kernel metadata values are not generally available.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="creationToCreationLinkRole">
+		<xs:annotation>
+			<xs:documentation>Allowed values for roles played by a party as an agent of a creation.</xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Part">
+				<xs:annotation>
+					<xs:documentation>A part of a creation.</xs:documentation>
+					<xs:documentation>This is a generic value which may be used when a more appropriate specific part role (such as chapter) is not available.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Chapter">
+				<xs:annotation>
+					<xs:documentation>A formal subdivision of a lexical work.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Edition">
+				<xs:annotation>
+					<xs:documentation>An edition of a creation (which may or may not replace a previous edition).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Version">
+				<xs:annotation>
+					<xs:documentation>A revised version which updates and therefore replaces the previous version of the creation.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Translation">
+				<xs:annotation>
+					<xs:documentation>A creation whose words are expressed in a different language from its source.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="creationType">
+		<xs:annotation>
+			<xs:documentation>Allowed Values for types of creation.</xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Book">
+				<xs:annotation>
+					<xs:documentation>A non serial creation, capable of being expressed in printed form with multiple bound pages and covers, published with a distinct title and not as part of another publication unless it is set of similar resources. A DOI applied at this level may refer to a Book which appears in physical, digital and audio forms.. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PrintedBook">
+				<xs:annotation>
+					<xs:documentation>A book published in printed form.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ebook">
+				<xs:annotation>
+					<xs:documentation>A book published in downloadable digital form.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Serial">
+				<xs:annotation>
+					<xs:documentation>A creation whose parts are published sequentially in time.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Periodical">
+				<xs:annotation>
+					<xs:documentation>A serial whose issues normally are published at regular intervals.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Journal">
+				<xs:annotation>
+					<xs:documentation>A periodical principally consisting of articles contributed by expert authors, with a specific theme, subject area and target audience, normally of a scholarly, scientific and/or technical nature.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ConferenceProceedings">
+				<xs:annotation>
+					<xs:documentation>A publication consisting of contributions presented at a conference.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Thesis">
+				<xs:annotation>
+					<xs:documentation>A lexical creation written for the attainment of a degree or award from an academic institution.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Standard">
+				<xs:annotation>
+					<xs:documentation>A formal standard adopted by ISO or another recognized standards body.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Report">
+				<xs:annotation>
+					<xs:documentation>A lexical creation containing statements about event(s) or state(s) in the past or present. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MedicalCaseReport">
+				<xs:annotation>
+					<xs:documentation>A report on a medical case.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Dataset">
+				<xs:annotation>
+					<xs:documentation>A set of numeric and related data (typically associated with scientific research).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CrystalStructure">
+				<xs:annotation>
+					<xs:documentation>A dataset describing the structure of a crystal.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Blog">
+				<xs:annotation>
+					<xs:documentation>A blog (weblog) on a website.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MovingImage">
+				<xs:annotation>
+					<xs:documentation>A moving image.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="StillImage">
+				<xs:annotation>
+					<xs:documentation>A still image.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LearningObject">
+				<xs:annotation>
+					<xs:documentation>A resource for use in teaching and learning.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Website">
+				<xs:annotation>
+					<xs:documentation>A website.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Series">
+				<xs:annotation>
+					<xs:documentation>A set of related creations published sequentially with some common name.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BookSeries">
+				<xs:annotation>
+					<xs:documentation>A series of books.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="reportSeries">
+				<xs:annotation>
+					<xs:documentation>A series of reports.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ConferenceProceedingsSeries">
+				<xs:annotation>
+					<xs:documentation>A series of conferenceProceedings.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="StandardSeries">
+				<xs:annotation>
+					<xs:documentation>A series of standards.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CoursePack">
+				<xs:annotation>
+					<xs:documentation>A collection of journal articles, book chapters and/or other components making up reading materials for an academic course.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="EncyclopaediaEntry">
+				<xs:annotation>
+					<xs:documentation>An entry in an encyclopaedia.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DictionaryEntry">
+				<xs:annotation>
+					<xs:documentation>An entry in a dictionary.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Chapter">
+				<xs:annotation>
+					<xs:documentation>A formal subdivision of a lexical work. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BookChapter">
+				<xs:annotation>
+					<xs:documentation>A chapter of a book.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ReportChapter">
+				<xs:annotation>
+					<xs:documentation>A chapter of a report.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Article">
+				<xs:annotation>
+					<xs:documentation>A non-fictional text in prose form (typically between a few paragraphs and a few pages in length) included with others in a publication to provide information and/or opinion.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ClinicalTrialProtocol">
+				<xs:annotation>
+					<xs:documentation>A chronological report on a series of events which is a part of a clinical trial.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="BlogEntry">
+				<xs:annotation>
+					<xs:documentation>An entry in a blog (weblog).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SerialIssue">
+				<xs:annotation>
+					<xs:documentation>A collection of articles published together in one or more fixations representing a single issue of a serial. Typically a serial issue will be identified with a specific date of publication.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JournalIssue">
+				<xs:annotation>
+					<xs:documentation>A collection of articles published together in one or more fixations representing a single issue of a journal. Typically a journal issue will be identified with a specific date of publication.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JournalVolume">
+				<xs:annotation>
+					<xs:documentation>A numbered set of journal issues, normally representing the issues published in a specific period such as a calendar year.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="JournalArticle">
+				<xs:annotation>
+					<xs:documentation>An article in a journal.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Figure">
+				<xs:annotation>
+					<xs:documentation>An image, table or other graphical feature which is an integral part of a lexical work.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Restricted">
+				<xs:annotation>
+					<xs:documentation>A creation identified within a restricted DOI Application Profile for which kernel metadata values are not generally available.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="doiName">
+		<xs:annotation>
+			<xs:documentation>A DOI name issued under the authority of the International DOI Foundation.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="10\.[^\./@]+(\.[^\./@]+)*/.+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="mode">
+		<xs:annotation>
+			<xs:documentation>Allowed values for sensory modes with which a creation is intended to be perceived.</xs:documentation>
+			<xs:documentation>If the creation is an abstraction, this value may be used to refer to the mode in which manifestations of the abstraction can be expressed. For example, a musical work is abstraction that may be expressed in a performance (audio), in notational form (visual) or in braille notation (tangible).</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Audio">
+				<xs:annotation>
+					<xs:documentation>Of a creation which is intended to be listened to.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Visual">
+				<xs:annotation>
+					<xs:documentation>Of a creation which is intended to be looked at.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Olfactory">
+				<xs:annotation>
+					<xs:documentation>Of a creation which is intended to be smelled.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Tasteable">
+				<xs:annotation>
+					<xs:documentation>Of a creation which is intended to be tasted.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Tangible">
+				<xs:annotation>
+					<xs:documentation>Of a creation which is intended to be touched.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Restricted">
+				<xs:annotation>
+					<xs:documentation>A creation identified within a restricted DOI Application Profile for which kernel metadata values are not generally available.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="partyIdentifierType">
+		<xs:annotation>
+			<xs:documentation>Allowed values for types of partyIdentifier.</xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="ProprietaryIdentifier">
+				<xs:annotation>
+					<xs:documentation>An Identifier from a scheme which is proprietary to a particular party.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IPNumber">
+				<xs:annotation>
+					<xs:documentation>The CISAC IP (Interested Party) Number.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DOI">
+				<xs:annotation>
+					<xs:documentation>A DOI.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="partyNameType">
+		<xs:annotation>
+			<xs:documentation>Allowed values for types of partyName.</xs:documentation>
+			<xs:documentation>This is an open set. Other values may be registered with the IDF by any Registration Authority.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="PrincipalName">
+				<xs:annotation>
+					<xs:documentation>The name by which a party is principally known.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Name">
+				<xs:annotation>
+					<xs:documentation>A name by which a party is known.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FormerName">
+				<xs:annotation>
+					<xs:documentation>A name by which a party was previously known.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="partyStructuralType">
+		<xs:annotation>
+			<xs:documentation>Allowed values for the primary type of a referent.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Individual">
+				<xs:annotation>
+					<xs:documentation>An individual human being, real or imaginary, or an imaginary party attributed with characteristics of a human being (for example, Homer Simpson, Mickey Mouse). </xs:documentation>
+					<xs:documentation>Individuals may be real, legendary or imaginary, and do not need to be biologically unique. Personas adopted for artistic or other purposes may be referenced with DOIs as unique individuals. For example, the authors "Ellis Peters" "John Redfern" "Jolyon Carr" and "Peter Benedict" may be identified as a unique parties distinct from the person "Edith Pargeter", for whom they are all pen-name pseudonyms. "Mickey Mouse" may be identified as an individual for the purpose of unique identification as a performer in a creation, or "Borat" or "Hamlet" for the identification of a character depicted in a fictional work. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Organization">
+				<xs:annotation>
+					<xs:documentation>A party which is either a legal person such as a corporation or legal partnership (but not a human being); or a group of individuals, or a grouip of organizations. </xs:documentation>
+					<xs:documentation>Organizations include all groupings of two or more parties, as well as legally defined, non-human parties. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Animal">
+				<xs:annotation>
+					<xs:documentation>A non-human animal.</xs:documentation>
+					<xs:documentation>Animals may require identification for many reasons: for example, as performers ("Lassie").</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="partyToPartyLinkRole">
+		<xs:annotation>
+			<xs:documentation>Allowed values for a role which one party plays in a link to another party. Where roles have complementary pairs (for example, parent-child or member-memberOrganization) only one of these is included in this list, and this role should be associated in the linkedParty element with the appropriate party.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="CorporateSubsidiary">
+				<xs:annotation>
+					<xs:documentation>An organization which is a subsidiary of another organization.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DivisionOrDepartment">
+				<xs:annotation>
+					<xs:documentation>An organization which is a division or department of another organization.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Member">
+				<xs:annotation>
+					<xs:documentation>A party which is a member of an organization.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MarriagePartner">
+				<xs:annotation>
+					<xs:documentation>An individual who is married to another individual.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Sibling">
+				<xs:annotation>
+					<xs:documentation>An individual who is a brother or sister of another individual.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Parent">
+				<xs:annotation>
+					<xs:documentation>An individual who is the parent of another individual.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="primaryReferentType">
+		<xs:annotation>
+			<xs:documentation>Allowed values for the primary type of a referent.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Creation">
+				<xs:annotation>
+					<xs:documentation>A resource made, directly or indirectly, by one or more human beings.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Party">
+				<xs:annotation>
+					<xs:documentation>An individual person, animal or organization capable of acting, or being perceived to act, as an agent. </xs:documentation>
+					<xs:documentation>Parties may be real, legendary or imaginary, and do not need to be biologically unique. Personas adopted for artistic or other purposes may be referenced with DOIs as unique individuals. For example, the authors "Ellis Peters" "John Redfern" "Jolyon Carr" and "Peter Benedict" may be identified as a unique parties distinct from the person "Edith Pargeter", for whom they are all pen-name pseudonyms. "Mickey Mouse" may be identified as an individual for the purpose of unique identification as a performer in a creation, or "Borat" or "Hamlet" for the identification of a character depicted in a fictional work. </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="term">
+		<xs:annotation>
+			<xs:documentation>A term in the IDF Data Dictionary.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:NMTOKEN"/>
+	</xs:simpleType>
+	<xs:simpleType name="timeProximity">
+		<xs:annotation>
+			<xs:documentation>Allowed values for he proximity of a declared time to the actual time referenced. A null value indicates that the date is accurate.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="doi:term">
+			<xs:enumeration value="Circa">
+				<xs:annotation>
+					<xs:documentation>A time which is approximately accurate.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Before">
+				<xs:annotation>
+					<xs:documentation>A time which is before the time stated.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="After">
+				<xs:annotation>
+					<xs:documentation>A time which is after the time stated.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NotBefore">
+				<xs:annotation>
+					<xs:documentation>A time which is the same as or after the time stated.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NotAfter">
+				<xs:annotation>
+					<xs:documentation>A time which is the same as or before the time stated.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

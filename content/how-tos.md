@@ -35,10 +35,8 @@ The **announcement** block on the [homepage](/) is a multi-purpose area where re
 ### Adding or updating a board member
 [Board members](/the-foundation/our-board) are classed as **pages** content rather than data, so they are edited directly in `/content/the-foundation/our-board.md`. Simply update text as you would on any other page. For headshot images be sure to use the `figure` shortcode, which will among other things ensure they appear as roundels. 
 
-
 ### Adding or updating a Registration Agency
 The list agencies on the [Existing Registration Agencies](/the-community/existing-registration-agencies) can be added to or updated by first going to the `/data/community/communities` folder. You'll see that each agency exists as a separate `.yaml` file. You can edit individual files in teh same way you can update the homepage announcement (see above). If you wish to add an agency, it's easiest to duplicate one of the existing `.yaml` files first, and then edit the content within. Note that you can control where an agency appears in the list using the `list` field (agencies are listed by weight, 0 being first).
-
 
 ## How to add a page
 It's easy to add a second level page, but note that it is *not* possible to add a top level page (at the same level as The Foundation, The Community, etc.) without the assistance of a developer. The site does not support third level pages. 
@@ -114,5 +112,13 @@ Links to the social networking presence (or any website) for any team member can
 the default icon is a <i class="fa fa-link"></i> but you can optionally specify any icon from the [FontAwesome free library](https://fontawesome.com/search?o=r&m=free) like so: 
 
 <pre>
-&#123;&#123;%social-link <strong>icon="linkedin"</strong> title="LinkedIn" url="http://www.linkedin.com/in/jonathanmtclark"%&#125;&#125;  
+&#123;&#123;% social-link <strong>icon="linkedin"</strong> title="LinkedIn" url="http://www.linkedin.com/in/jonathanmtclark" %&#125;&#125;  
+</pre>
+#### Citations
+Citations, which for the purposes of this How To covers a DOI URL that might appear at the end of a link to an external document for example, can be styled slightly differently from a normal link using the `citation` shortcode. URLs, such as DOI URLs, enclosed within the shortcode will be prefaced with "DOI:" and the entire link enclosed in brackets. Also, the link will not be bold as other links in the site. Here's an example:
+
+<pre>
+&#123;&#123;% citation url="https://doi.org/10.1108/09504121111102976" %&#125;&#125;  
 </pre>
+
+will produce {{% citation url="https://doi.org/10.1108/09504121111102976" %}}.

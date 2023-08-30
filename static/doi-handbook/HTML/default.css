@@ -1,0 +1,586 @@
+/* Text Styles */
+hr { color: #000000 }
+body, table, tr, th /* Normal */
+{
+ font-size: 15px;
+ font-family: Calibri,Vectora,'Droid Sans','Open Sans',Frutiger,sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 11px;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_Courier10pt /* Courier 10pt */
+{
+ font-size: 13px;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Courrier9pt /* Courrier 9pt */
+{
+ font-size: 12px;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Cover_Contact_Info /* Cover_Contact_Info */
+{
+ font-size: 11px;
+ color: #1caecd;
+}
+span.f_Cover_DocType /* Cover_DocType */
+{
+ font-size: 24px;
+ color: #324545;
+ text-transform: uppercase;
+}
+span.f_Cover_Product /* Cover_Product */
+{
+ font-size: 32px;
+ color: #1caecd;
+ text-transform: uppercase;
+}
+span.f_CriticalTitle /* CriticalTitle */
+{
+ font-weight: bold;
+ color: #e33611;
+ letter-spacing: -1px;
+ text-transform: uppercase;
+}
+span.f_FiguresCaption /* FiguresCaption */
+{
+}
+span.f_FiguresInsertionPoint /* FiguresInsertionPoint */
+{
+}
+span.f_FiguresNumber /* FiguresNumber */
+{
+ font-weight: bold;
+ color: #ffc000;
+}
+span.f_Footer /* Footer */
+{
+ font-size: 11px;
+}
+span.f_GlossaryContext /* GlossaryContext */
+{
+ font-size: 11px;
+ font-style: italic;
+}
+span.f_GlossaryDefinition /* GlossaryDefinition */
+{
+}
+span.f_GlossaryLetter /* GlossaryLetter */
+{
+ font-size: 16px;
+ font-weight: bold;
+ color: #ffc000;
+ text-transform: uppercase;
+}
+span.f_GlossaryTerm /* GlossaryTerm */
+{
+ font-weight: bold;
+}
+span.f_GreyNote /* GreyNote */
+{
+}
+span.f_Header /* Header */
+{
+ font-size: 9px;
+ text-transform: uppercase;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 19px;
+ color: #ffffff;
+ text-transform: uppercase;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 16px;
+ color: #324545;
+ text-transform: uppercase;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 16px;
+ color: #324545;
+ text-transform: uppercase;
+}
+span.f_Heading4 /* Heading4 */
+{
+ font-size: 16px;
+ color: #324545;
+ text-transform: uppercase;
+}
+span.f_ImageCaption /* Image Caption */
+{
+}
+span.f_InsertTableLine /* InsertTableLine */
+{
+ font-size: 12px;
+}
+span.f_InThisChapter /* InThisChapter */
+{
+ font-weight: bold;
+ color: #2e388d;
+ text-transform: uppercase;
+}
+span.f_Links /* Links */
+{
+}
+span.f_Lists /* Lists */
+{
+}
+span.f_ListsBody /* ListsBody */
+{
+}
+span.f_ListsLevel2 /* ListsLevel2 */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_NotesTitle /* NotesTitle */
+{
+ font-weight: bold;
+ color: #2e388d;
+ letter-spacing: -1px;
+ text-transform: uppercase;
+}
+span.f_Page_Number /* Page_Number */
+{
+ font-size: 16px;
+ font-weight: bold;
+}
+span.f_PageBreak /* PageBreak */
+{
+ font-size: 1px;
+ color: #ffffff;
+}
+span.f_RelatedDocuments /* RelatedDocuments */
+{
+ font-style: italic;
+}
+span.f_SpaceBeforeLinks /* SpaceBeforeLinks */
+{
+ font-weight: bold;
+ color: #2e388d;
+ text-transform: uppercase;
+}
+span.f_SubTitle /* SubTitle */
+{
+ font-size: 16px;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+span.f_SubTitleDropDown /* SubTitleDropDown */
+{
+ font-size: 16px;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+span.f_Tables /* Tables */
+{
+ font-size: 12px;
+}
+span.f_Tables_Header /* Tables_Header */
+{
+ font-size: 12px;
+ font-weight: bold;
+}
+span.f_Tables_Note /* Tables_Note */
+{
+ font-size: 12px;
+ color: #324545;
+}
+span.f_TablesCaption /* TablesCaption */
+{
+}
+span.f_Templates /* Templates */
+{
+ font-size: 24px;
+}
+span.f_ThinLine /* ThinLine */
+{
+ font-size: 1px;
+}
+span.f_WarningTitle /* WarningTitle */
+{
+ font-weight: bold;
+ color: #ea700d;
+ letter-spacing: -1px;
+ text-transform: uppercase;
+}
+/* Paragraph styles */
+p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
+{
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 3px 4px 1px 4px;
+}
+.p_CodeExample /* Code Example */
+{
+ font-size: 11px;
+ line-height: 1.0;
+ white-space: nowrap;
+ page-break-inside: avoid;
+ margin: 0 0 0 4px;
+}
+.p_Comment /* Comment */
+{
+ font-size: 15px;
+}
+.p_Courier10pt /* Courier 10pt */
+{
+ font-size: 13px;
+ page-break-inside: avoid;
+ margin: 0 0 0 4px;
+}
+.p_Courrier9pt /* Courrier 9pt */
+{
+ font-size: 12px;
+ page-break-inside: avoid;
+ margin: 0 0 0 4px;
+}
+.p_Cover_Contact_Info /* Cover_Contact_Info */
+{
+ font-size: 11px;
+ margin: 1px 0 1px 0;
+}
+.p_Cover_DocType /* Cover_DocType */
+{
+ font-size: 24px;
+ text-align: right;
+ margin: 0 0 0 0;
+}
+.p_Cover_Product /* Cover_Product */
+{
+ font-size: 32px;
+ text-align: right;
+ margin: 0 0 48px 0;
+}
+.p_CriticalTitle /* CriticalTitle */
+{
+ font-size: 15px;
+}
+.p_FiguresCaption /* FiguresCaption */
+{
+ font-size: 15px;
+ margin: 0 4px 7px 4px;
+}
+.p_FiguresInsertionPoint /* FiguresInsertionPoint */
+{
+ font-size: 15px;
+ page-break-after: avoid;
+ margin: 10px 4px 0 4px;
+}
+.p_FiguresNumber /* FiguresNumber */
+{
+ font-size: 15px;
+ margin: 0 4px 7px 4px;
+}
+.p_GlossaryContext /* GlossaryContext */
+{
+ font-size: 11px;
+ page-break-after: avoid;
+ margin: 0 4px 1px 4px;
+}
+.p_GlossaryDefinition /* GlossaryDefinition */
+{
+ font-size: 15px;
+ margin: 0 4px 1px 4px;
+}
+.p_GlossaryLetter /* GlossaryLetter */
+{
+ font-size: 16px;
+ page-break-after: avoid;
+ margin: 19px 4px 0 4px;
+}
+.p_GlossaryTerm /* GlossaryTerm */
+{
+ font-size: 15px;
+ page-break-after: avoid;
+ margin: 10px 4px 1px 4px;
+}
+.p_GreyNote /* GreyNote */
+{
+ font-size: 15px;
+ border-color: #afc6c5;
+ border-style: solid;
+ border-width: thin;
+ background: #afc6c5;
+ padding: 2px 2px 2px 2px;
+ margin: 1px 2px 0 2px;
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0 0 0 0;
+ margin: 10px 4px 17px 4px;
+}
+.p_Heading2 /* Heading2 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 2px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0 0 0 0;
+ margin: 10px 4px 17px 4px;
+}
+.p_Heading3 /* Heading3 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 2px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0 0 0 0;
+ margin: 10px 4px 17px 4px;
+}
+.p_Heading4 /* Heading4 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 2px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ padding: 0 0 0 0;
+ margin: 10px 4px 17px 4px;
+}
+.p_ImageCaption /* Image Caption */
+{
+ font-size: 15px;
+ margin: 12px 4px 5px 4px;
+}
+.p_InsertTableLine /* InsertTableLine */
+{
+ font-size: 12px;
+ margin: 3px 4px 3px 4px;
+}
+.p_InThisChapter /* InThisChapter */
+{
+ font-size: 15px;
+ margin: 12px 4px 3px 0;
+}
+.p_Links /* Links */
+{
+ font-size: 15px;
+ margin: 1px 4px 1px 4px;
+}
+.p_Lists /* Lists */
+{
+ font-size: 15px;
+ margin: 3px 4px 3px 4px;
+}
+.p_ListsBody /* ListsBody */
+{
+ font-size: 15px;
+ margin: 2px 4px 3px 19px;
+}
+.p_ListsLevel2 /* ListsLevel2 */
+{
+ font-size: 15px;
+ margin: 1px 4px 1px 14px;
+}
+.p_Notes /* Notes */
+{
+ font-size: 15px;
+}
+.p_NotesTitle /* NotesTitle */
+{
+ font-size: 15px;
+}
+.p_PageBreak /* PageBreak */
+{
+ font-size: 1px;
+}
+.p_RelatedDocuments /* RelatedDocuments */
+{
+ font-size: 15px;
+}
+.p_SpaceBeforeLinks /* SpaceBeforeLinks */
+{
+ font-size: 15px;
+ margin: 12px 4px 3px 0;
+}
+.p_SubTitle /* SubTitle */
+{
+ font-size: 16px;
+ page-break-after: avoid;
+ margin: 12px 4px 4px 0;
+}
+.p_SubTitleDropDown /* SubTitleDropDown */
+{
+ font-size: 16px;
+ page-break-after: avoid;
+ margin: 13px 4px 4px 4px;
+}
+.p_Tables /* Tables */
+{
+ font-size: 12px;
+ margin: 0 4px 0 4px;
+}
+.p_Tables_Header /* Tables_Header */
+{
+ font-size: 12px;
+ text-align: center;
+ margin: 0 4px 0 4px;
+}
+.p_Tables_Note /* Tables_Note */
+{
+ font-size: 12px;
+ margin: 0 4px 0 4px;
+}
+.p_TablesCaption /* TablesCaption */
+{
+ font-size: 15px;
+ page-break-after: avoid;
+ margin: 7px 4px 3px 0;
+}
+.p_ThinLine /* ThinLine */
+{
+ font-size: 1px;
+ margin: 0 4px 0 4px;
+}
+.p_WarningTitle /* WarningTitle */
+{
+ font-size: 15px;
+}
+/* Table styles */
+table.Basic {
+ width: 100%;
+ border: solid 2px #324545;
+ border-spacing: 0;
+ border-collapse: collapse;
+}
+table.Basic tr.Basic {
+ text-align: left;
+}
+table.Basic th.Basic, table.Basic td.Basic {
+ vertical-align: top;
+ padding: 1px;
+ border: solid thin #324545;
+}
+table.Basic th.Basic {
+ background-color:#d4eaf3;
+}
+table.HTMLTopicLinks {
+ width: 100%;
+ background-color: #D4EAF3;
+ border: none;
+ border-spacing: 0;
+}
+table.HTMLTopicLinks tr.HTMLTopicLinks {
+ text-align: left;
+}
+table.HTMLTopicLinks th.HTMLTopicLinks, table.HTMLTopicLinks td.HTMLTopicLinks {
+ vertical-align: top;
+ padding: 4px;
+ border: none;
+}
+div.hmrotate90  { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+div.hmrotate270 { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+a.imagetogglelink {
+  position: relative;
+  display: inline-block;
+}
+svg.image-toggle-magnifier { /* Magnifier icon for image toggles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40pt;
+  height: 40pt;
+  max-width: 80%;
+  max-height: 80%;
+  fill: #FFFFFF;
+  stroke: #808080;
+  stroke-width: 0.5pt;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+img.image-toggle:hover + svg.image-toggle-magnifier, svg.image-toggle-magnifier:hover {
+  opacity: 1;
+}
+
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border:1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+}
+/* CSS for responsive image maps */
+
+.hmImageMap a.hmHotspotRect { display:block; position:absolute; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1)  }
+.hmImageMap a.hmHotspotEllipse { display:block; position:absolute; border-radius:50%; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1) }
+.hmImageMap:hover a.hmHotspotRect {opacity:0.3; filter:alpha(opacity=30); }
+.hmImageMap:hover a.hmHotspotEllipse { opacity:0.3; filter:alpha(opacity=30); }
+a.hmHotspotRect:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
+a.hmHotspotEllipse:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
