@@ -203,11 +203,11 @@ Carol is Head Of Unit for the group responsible for a suite of library and prese
 
 The current members of the Executive Committee are:
 {{% column %}}
-- **Paola Mazzucchi, mEDRA *(Chair)* **
-- ** Matt Buys, DataCite *(Vice-Chair)* **
-- ** Ed Pentz, Crossref (Treasurer) **
-- ** Raymond Drewry, EIDR **
-- ** Ann Li, Airiti **
+- **Paola Mazzucchi, mEDRA *(Chair)***
+- **Matt Buys, DataCite *(Vice-Chair)***
+- **Ed Pentz, Crossref *(Treasurer)***
+- **Raymond Drewry, EIDR**
+- **Ann Li, Airiti**
 {{% /column %}}
 
 ## Governing Documents
