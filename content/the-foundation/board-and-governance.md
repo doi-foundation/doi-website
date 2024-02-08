@@ -34,12 +34,12 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Rachel Kessler, Clarivate](#Clarivate)
 - [Ke Chun-Xiao, CNKI](#CNKI)
 - [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
-- [Matt Buys, DataCite](#DataCite)
+- [Matt Buys, DataCite Change *(Vice-Chair)*](#DataCite)
 {{% /column %}}
 
 {{% column %}}
 - [Dimitris Koureas, DiSSCo](#DiSSCo)
-- [Raymond Drewry, EIDR *(Vice-Chair)*](#EIDR)
+- [Raymond Drewry, EIDR](#EIDR)
 - [Will Kreth, HAND](#HAND)
 - [Hideaki Takeda, JaLC](#JaLC)
 - [Jinseop Shin, KISTI](#KISTI)
@@ -130,14 +130,14 @@ Her true-real life passions, however, are her two sons, hiking, good food and he
 
 {{< figure src="/images/board/willjm.jpg" title="Will Johnson-Marshall" height="100px" >}}
 
-Will is the Head of Operational Delivery for BSI Identify. Will and his team have the substantial mission to create and then establish BSI Identify as the trusted persistent registry for construction products, supporting the industry with digital traceability. He is responsible for all operational aspects including the technical design of the service and supporting customers to create a positive onboarding and ongoing experience. Will has worked for BSI for twenty years gaining substantial commercial experience within technical publishing and in delivering public interest and innovation programmes. Based in London, UK, Will holds a BEng in Chemical Engineering from the University of Birmingham. 
+Will is the Head of Operational Delivery for BSI Identify. Will and his team have the substantial mission to create and then establish BSI Identify as the trusted persistent registry for construction products, supporting the industry with digital traceability. He is responsible for all operational aspects including the technical design of the service and supporting customers to create a positive onboarding and ongoing experience. Will has worked for BSI for twenty years gaining substantial commercial experience within technical publishing and in delivering public interest and innovation programmes. Based in London, UK, Will holds a BEng in Chemical Engineering from the University of Birmingham.
 
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/will-johnson-marshall-6a3b562" icon="linkedin" %}}
 
 <br>
 
 ### Clarivate {#Clarivate}
-{{< figure src="/images/board/rachel.jpg" title="Rachel Kessler" height="100px" >}} 
+{{< figure src="/images/board/rachel.jpg" title="Rachel Kessler" height="100px" >}}
 
 Rachel is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
 Jerusalem.
@@ -159,7 +159,7 @@ Ed became Crossref's first Executive Director when the organization was founded 
 
 ### DiSSCo {#DiSSCo}
 
-{{< figure src="/images/board/dimitris.jpg" title="Dimitris Koureas" height="100px" >}} 
+{{< figure src="/images/board/dimitris.jpg" title="Dimitris Koureas" height="100px" >}}
 
 Dimitris is Chief Information Officer and Sector Director for Digital at Naturalis Biodiversity Center (NL) Since 2018 he also serves as the executive director of the Distributed System of Scientific Collections (DiSSCo) European Research Infrastructure. Dimitris focuses on the digital transformation of research institutions and building organisational digital capacity in the field of natural sciences. He coordinates several European multi-partner multi-million projects linked to research infrastructures and biodiversity information management. He serves as a board member in several international organisations for biodiversity digital infrastructures and since 2020 he is co-chairing the FAIR Digital Objects Forum.
 
@@ -169,7 +169,7 @@ Dimitris is Chief Information Officer and Sector Director for Digital at Natural
 
 {{< figure src="/images/board/jinseop.png" title="Jin-seop Shin" height="100px" >}}
 
-Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Placeholder: 
+Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Placeholder:
 Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Jinseop is Director of Korea DOI center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come.
 
 Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come.
@@ -182,14 +182,14 @@ Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation 
 
 {{< figure src="/images/board/willk.png" title="Will Kreth" height="100px" >}}
 
-Will is the CEO and founder of HAND (Human & Digital). Formerly: executive director of EIDR, director of metadata at Showtime Networks, and director of video product management at Charter/Time Warner (participated in CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the standards register WG of the Metaverse Standards Forum. Additionally, Will was a co-founder of Wired magazine, and worked with educational software developers at the Apple Multimedia Lab. 
+Will is the CEO and founder of HAND (Human & Digital). Formerly: executive director of EIDR, director of metadata at Showtime Networks, and director of video product management at Charter/Time Warner (participated in CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the standards register WG of the Metaverse Standards Forum. Additionally, Will was a co-founder of Wired magazine, and worked with educational software developers at the Apple Multimedia Lab.
 
 {{% social-link title="LinkedIn" url="http://www.linkedin.com/in/willkreth" icon="linkedin" %}}
 <br>
 
 ### Publications Office of the European Union {#OP}
 
-{{< figure src="/images/board/carol.jpeg" title="Carol Riccalton" height="100px" >}} 
+{{< figure src="/images/board/carol.jpeg" title="Carol Riccalton" height="100px" >}}
 
 Carol is Head Of Unit for the group responsible for a suite of library and preservation services, including the European Commission (EC) Library, management of identifiers (ISBN, ISSN, DOI), metadata, digitisation and preservation (digital and physical) of EU publications.
 
@@ -211,4 +211,4 @@ The Foundation is controlled by a Board elected by the members of the Foundation
 
 ### Registration Authority Agreement
 
-The DOI Foundation is the ISO 26324 Registration Authority, governed by an [Agreement (PDF)](/resources/DOIF-RAA-ISO-26324.pdf) between ISO and the Foundation 
+The DOI Foundation is the ISO 26324 Registration Authority, governed by an [Agreement (PDF)](/resources/DOIF-RAA-ISO-26324.pdf) between ISO and the Foundation
