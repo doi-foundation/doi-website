@@ -34,7 +34,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Rachel Kessler, Clarivate](#Clarivate)
 - [Ke Chun-Xiao, CNKI](#CNKI)
 - [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
-- [Matt Buys, DataCite Change *(Vice-Chair)*](#DataCite)
+- [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
 {{% /column %}}
 
 {{% column %}}
