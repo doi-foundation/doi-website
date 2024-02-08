@@ -2,8 +2,8 @@
 title = "Board & Governance"
 draft = false
 # the following section is for the header
-maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent. The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
-subtext = "Scroll down to view current board directors and see our founding and governing documents such as charter and by-laws."
+maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent. The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, Vice-Chair and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
+subtext = "Scroll down to view current board directors, the Executive Committee and to see our founding and governing documents such as charter and by-laws."
 imagetop = "The Foundation"
 imagemain = "Board & Governance"
 +++
@@ -198,6 +198,17 @@ Carol is Head Of Unit for the group responsible for a suite of library and prese
 {{% /row %}}
 
 {{% /bios %}}
+
+## Executive Committee
+The current members of the Executive Committee are:
+{{% column %}}
+- **Paola Mazzucchi, mEDRA *(Chair)***
+- **Matt Buys, DataCite *(Vice-Chair)***
+- **Ed Pentz, Crossref *(Treasurer)***
+- **Raymond Drewry, EIDR**
+- **Ann Li, Airiti**
+{{% /column %}}
+
 
 ## Governing Documents
 
