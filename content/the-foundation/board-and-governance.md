@@ -200,7 +200,6 @@ Carol is Head Of Unit for the group responsible for a suite of library and prese
 {{% /bios %}}
 
 ## Executive Committee
-
 The current members of the Executive Committee are:
 {{% column %}}
 - **Paola Mazzucchi, mEDRA *(Chair)***
@@ -209,6 +208,7 @@ The current members of the Executive Committee are:
 - **Raymond Drewry, EIDR**
 - **Ann Li, Airiti**
 {{% /column %}}
+
 
 ## Governing Documents
 
