@@ -7,7 +7,7 @@
         {{ .text | markdownify }}
 
         {{ if .linktext }}
-            <a href="{{ .linkurl }}">{{ .linktext }}</a> <i class="fa-solid fa-arrow-right-long hover-move-right"></i>
+            <a href="{{ .linkurl }}">{{ .linktext | markdownify }}</a> <i class="fa-solid fa-arrow-right-long hover-move-right"></i>
         {{ end }}
     </p>
 </section>
