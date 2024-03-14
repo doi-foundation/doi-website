@@ -1,0 +1,6 @@
+# text should be kept short - remember this should ideally display on one line at the top of the homepage
+# set enabled to false to hide the banner
+enabled: true
+text: "<strong>WARNING:</strong> Fake DOI schemes"
+linktext: "Learn more"
+linkurl: "/more-info"

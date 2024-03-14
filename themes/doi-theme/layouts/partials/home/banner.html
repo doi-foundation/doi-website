@@ -1,0 +1,17 @@
+{{ with .Site.Data.home.banner }}
+
+{{ if .enabled }}
+
+<section class="home-banner col text-center">
+    <p>
+        {{ .text | markdownify }}
+
+        {{ if .linktext }}
+            <a href="{{ .linkurl }}">{{ .linktext }}</a> <i class="fa-solid fa-arrow-right-long hover-move-right"></i>
+        {{ end }}
+    </p>
+</section>
+
+{{ end }}
+
+{{ end }}
