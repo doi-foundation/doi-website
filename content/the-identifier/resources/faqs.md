@@ -31,7 +31,7 @@ Yes. See the [DOI Handbook](/the-identifier/resources/handbook/2_numbering) for 
 ### 8. What can a DOI name be assigned to?
 It can be any entity — physical, digital or abstract — that you wish to identify, primarily for sharing with an interested user community or managing as intellectual property. DOIs are designed to be used by humans and their machines. The DOI is used in construction, entertainment and in scholarly research. 
 ### 9. If I have assigned a DOI name and I make a change to my material, should I assign a new DOI?
-The DOI Foundation does not have any rules on this. Individual RAs adopt appropriate rules for their community and application. As a general rule, if the change is substantial and/or it is necessary to identify both the original and the changed material, then it is wide to assign a new DOI name
+The DOI Foundation does not have any rules on this. Individual RAs adopt appropriate rules for their community and application. As a general rule, if the change is substantial and/or it is necessary to identify both the original and the changed material, then it is wise to assign a new DOI name
 ### 10. Is the DOI system a standard?
 Yes. The DOI system was created by The DOI Foundation and was adopted as International Standard ISO 26324 in 2012. The Foundation is the ISO 26324 Registration Authority. Compliance with the DOI Handbook ensures compliance with the ISO 26324 standard. The [standard was updated in 2022](https://www.iso.org/standard/81599.html).
 ### 11. What is a shortDOI?
