@@ -66,7 +66,7 @@ Note:
 
 ### Examples of applications
 
-*   IISBN-A resolving to a managed web page service providing descriptive detail about the book e.g. publisher, title, author, subject and product description, cover image, cataloguing data. Publishers could further customize their pages with hyperlinks they control.
+*   ISBN-A resolving to a managed web page service providing descriptive detail about the book e.g. publisher, title, author, subject and product description, cover image, cataloguing data. Publishers could further customize their pages with hyperlinks they control.
 *   ISBN-A associated by the publisher with an ad hoc set of relevant information and services (dynamically modifiable by the publisher at any time) to be displayed to the final user whenever a title assigned with an ISBN-A is cited and referenced over the Internet. Using DOI multiple resolution features, the ISBN may be turned into a one-click gateway to enhance the "book experience", e.g.
 	*   to convey in a single access point reading samples, press releases, interviews, reviews;
 	*   to provide direct purchase from selected on line retailers;
