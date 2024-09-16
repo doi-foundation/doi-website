@@ -32,7 +32,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Qiao Xiaodong, Chinese DOI](#China)
 - [Rachel Kessler, Clarivate](#Clarivate)
-- [Ke Chun-Xiao, CNKI](#CNKI)
+- [Hong Xiao, CNKI](#CNKI)
 - [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
 - [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
 {{% /column %}}
