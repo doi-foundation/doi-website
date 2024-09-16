@@ -1,9 +1,9 @@
-title: "ANNOUNCING OUR NEWEST REGISTRATION AGENCY"
+title: "Welcoming RAiD as General Member of the DOI Foundation"
 maintext: "
-Human & Digital (HAND) was recently appointed as the 12th Registration Agency of the DOI Foundation, assigning DOI names to legal entity humans, licensed virtual humans, and fictional characters involved in the performing arts and sports. The talent industry is becoming more connected, complex, and digitized. Managing this complexity in a programmatic way is only possible with verifiable, persistent identity of talent, both human and digital. And this is exactly what HAND provides.
+The Research Activity Identifier (RAiD) has joined the DOI Foundation as a General Member. RAiD is a persistent identifier and global registry dedicated to research projects. It is governed by ISO standard 23527:2022 with the Australian Research Data Commons (ARDC) as the Registration Authority and lead developer of the system. RAiD provides a system to store, update, share, and link project information across the research community. ARDC and DataCite have partnered to deliver RAiD services. RAiD is being integrated with European Open Science Cloud infrastructure via the FAIRCORE4EOSC program. 
 "
 linktext: "Learn more"
-linkurl: "https://www.handidentity.com/"
+linkurl: "https://raid.org/"
 # ideal image dimensions are 500px wide by no more than 500px high (but shorter height is OK)
 # images should ideally be square and work on a white background
-image: "/images/communities/HAND.svg"
+image: "/images/communities/RAID+Logo.png"
