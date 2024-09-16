@@ -77,9 +77,9 @@ Having been working for ISTIC for over 30 years, Qiao is in charge of the daily 
 
 ### CNKI {#CNKI}
 
-{{< figure src="/images/board/steven.jpg" title="Ke Chun-Xiao" height="100px" >}}
+{{< figure src="/images/board/hong.png" title="Hong Xiao" height="100px" >}}
 
-Ke Chunxiao (Steven) is the Senior Editor at CNKI for DOI services. He has been engaged in the research and management of Digital Publishing, Knowledge Service and International Communication for a long time. He previously worked as a Vice President of CNKI, engaged in the construction of World Knowledge Big Data. Prior to that he was in charge of the research work of Beijing International Science and Technology Cooperation Base of Digital Publishing Technology. Steven holds a doctorate from the school of Journalism and Communication at Qinghua University and a masters in information science from the Graduate University of Chinese Academy of Sciences.
+Hong Xiao now serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. XIAO Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
 
 <br>
 
