@@ -14,7 +14,11 @@ There are unauthorized entities that mimic the DOI® logo and system and purpor
 
 Fake DOI schemes that we are currently aware of are:
 
-{images to be added}
+www.doi-ojs.org 
+www.doie.org 
+www.doiref.org
+doi.one 
+journalofgeocentriccosmology.org 
 
 
-We would encourage you to please report any suspicious use of DOI / Digital Object Identifier to us at (mailto:info@doi.org)
+We would encourage you to please report any suspicious use of DOI / Digital Object Identifier to us [at](mailto:info@doi.org)
