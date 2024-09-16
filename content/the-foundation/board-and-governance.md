@@ -31,7 +31,6 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Jieh Hsiang, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Qiao Xiaodong, Chinese DOI](#China)
-- [Rachel Kessler, Clarivate](#Clarivate)
 - [Hong Xiao, CNKI](#CNKI)
 - [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
 - [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
@@ -133,17 +132,6 @@ Her true-real life passions, however, are her two sons, hiking, good food and he
 Will is the Head of Operational Delivery for BSI Identify. Will and his team have the substantial mission to create and then establish BSI Identify as the trusted persistent registry for construction products, supporting the industry with digital traceability. He is responsible for all operational aspects including the technical design of the service and supporting customers to create a positive onboarding and ongoing experience. Will has worked for BSI for twenty years gaining substantial commercial experience within technical publishing and in delivering public interest and innovation programmes. Based in London, UK, Will holds a BEng in Chemical Engineering from the University of Birmingham.
 
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/will-johnson-marshall-6a3b562" icon="linkedin" %}}
-
-<br>
-
-### Clarivate {#Clarivate}
-{{< figure src="/images/board/rachel.jpg" title="Rachel Kessler" height="100px" >}}
-
-Rachel is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
-Jerusalem.
-
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-9721-5707" icon="orcid" %}}
-{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/rachel-kessler-8bb46875/" icon="linkedin" %}}
 
 <br>
 
