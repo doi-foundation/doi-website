@@ -44,7 +44,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Hideaki Takeda, JaLC](#JaLC)
 - [Jinseop Shin, KISTI](#KISTI)
 - [Paola Mazzucchi, mEDRA *(Chair)*](#mEDRA)
-- [Carol Riccalton, Publications Office of the European Union](#OP)
+- [Roberto Pappalardo, Publications Office of the European Union](#OP)
 {{% /column %}}
 
 {{% /row %}}
@@ -189,9 +189,11 @@ Will is the CEO and founder of HAND (Human & Digital). Formerly: executive direc
 
 ### Publications Office of the European Union {#OP}
 
-{{< figure src="/images/board/carol.jpeg" title="Carol Riccalton" height="100px" >}}
+{{< figure src="/images/board/roberto.png" title="Roberto Pappalardo" height="100px" >}}
 
-Carol is Head Of Unit for the group responsible for a suite of library and preservation services, including the European Commission (EC) Library, management of identifiers (ISBN, ISSN, DOI), metadata, digitisation and preservation (digital and physical) of EU publications.
+Roberto has been working for EU institutions for more than 30 years. Currently, he is Head of unit “Data Operations and Enrichment Services”, ensuring the appropriate quality of metadata for EU publications so that they are findable by their intended audience and can provide a sound basis for AI-based solutions. Roberto supervises the team in charge of keeping the DOI Registration Agency operational.
+
+{{% social-link title="LinkedIn" url="http://www.linkedin.com/in/roberto-pappalardo-84ab2827" icon="linkedin" %}}
 
 {{% /column %}}
 
