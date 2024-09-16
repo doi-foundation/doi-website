@@ -31,7 +31,6 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Jieh Hsiang, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Qiao Xiaodong, Chinese DOI](#China)
-- [Rachel Kessler, Clarivate](#Clarivate)
 - [Hong Xiao, CNKI](#CNKI)
 - [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
 - [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
@@ -44,7 +43,7 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Hideaki Takeda, JaLC](#JaLC)
 - [Jinseop Shin, KISTI](#KISTI)
 - [Paola Mazzucchi, mEDRA *(Chair)*](#mEDRA)
-- [Carol Riccalton, Publications Office of the European Union](#OP)
+- [Roberto Pappalardo, Publications Office of the European Union](#OP)
 {{% /column %}}
 
 {{% /row %}}
@@ -136,17 +135,6 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 
 <br>
 
-### Clarivate {#Clarivate}
-{{< figure src="/images/board/rachel.jpg" title="Rachel Kessler" height="100px" >}}
-
-Rachel is a Senior Product Manager in the Academia & Government division of Clarivate, where she is responsible for the strategic direction of ProQuest’s Social Science Aggregation portfolio. Prior to being employed by ProQuest and then Clarivate, she worked for Ex Libris on their discovery services and link resolvers. She co-chairs the [NISO Open Discovery Initiative](https://www.niso.org/standards-committees/odi) and serves as a Review Editor for the journal [Learned Publishing](https://onlinelibrary.wiley.com/journal/17414857). She holds a BA in Economics from Columbia University and an MBA from the Hebrew University in
-Jerusalem.
-
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-9721-5707" icon="orcid" %}}
-{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/rachel-kessler-8bb46875/" icon="linkedin" %}}
-
-<br>
-
 ### Crossref {#Crossref}
 {{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}}
 
@@ -189,9 +177,11 @@ Will is the CEO and founder of HAND (Human & Digital). Formerly: executive direc
 
 ### Publications Office of the European Union {#OP}
 
-{{< figure src="/images/board/carol.jpeg" title="Carol Riccalton" height="100px" >}}
+{{< figure src="/images/board/roberto.png" title="Roberto Pappalardo" height="100px" >}}
 
-Carol is Head Of Unit for the group responsible for a suite of library and preservation services, including the European Commission (EC) Library, management of identifiers (ISBN, ISSN, DOI), metadata, digitisation and preservation (digital and physical) of EU publications.
+Roberto has been working for EU institutions for more than 30 years. Currently, he is Head of unit “Data Operations and Enrichment Services”, ensuring the appropriate quality of metadata for EU publications so that they are findable by their intended audience and can provide a sound basis for AI-based solutions. Roberto supervises the team in charge of keeping the DOI Registration Agency operational.
+
+{{% social-link title="LinkedIn" url="http://www.linkedin.com/in/roberto-pappalardo-84ab2827" icon="linkedin" %}}
 
 {{% /column %}}
 
