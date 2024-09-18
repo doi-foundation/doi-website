@@ -44,6 +44,9 @@ Over the years we’ve developed fact sheets to support:
 ## DOI in the news 
 [Archive of publically-available material related to the DOI and Persistent Identifiers (PIDs)](/the-identifier/resources/doi-in-the-news)
 
+## DOI URI Scheme 
+[This specification is offered for public review until October 17, 2024. Please direct your feedback t[info@doi.org](mailto:info@doi.org), including [DOI URI Scheme] in the subject line](/the-identifier/resources/DOI_URI_Scheme_CS1)
+
 [comment]: <> (## Brand and logos)
 
 [comment]: <> (Please reuse but do not modify the DOI Foundation logo and icon /the-identifier/resources/logos)
