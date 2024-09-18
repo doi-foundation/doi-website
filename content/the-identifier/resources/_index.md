@@ -45,7 +45,7 @@ Over the years we’ve developed fact sheets to support:
 [Archive of publically-available material related to the DOI and Persistent Identifiers (PIDs)](/the-identifier/resources/doi-in-the-news)
 
 ## DOI URI Scheme 
-This [specification](https://doi.org/10.1000/292) is offered for public review until October 17, 2024. Please direct your feedback to [info@doi.org](mailto:info@doi.org), including [DOI URI Scheme] in the subject line.
+This [candidate specification](https://doi.org/10.1000/292) is offered for public review until October 17, 2024. Please direct your feedback to [info@doi.org](mailto:info@doi.org), including [DOI URI Scheme] in the subject line.
 
 [comment]: <> (## Brand and logos)
 
