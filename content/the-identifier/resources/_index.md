@@ -45,7 +45,7 @@ Over the years we’ve developed fact sheets to support:
 [Archive of publically-available material related to the DOI and Persistent Identifiers (PIDs)](/the-identifier/resources/doi-in-the-news)
 
 ## DOI URI Scheme 
-This [document](https://doi.org/10.1000/292)specifies the "doi" URI scheme. It has been prepared and published by the DOI Foundation and was subject to consensus review by DOI Foundation members, including its Registration Agencies. 
+This [document](https://doi.org/10.1000/292) specifies the "doi" URI scheme. It has been prepared and published by the DOI Foundation and was subject to consensus review by DOI Foundation members, including its Registration Agencies. 
 
 [comment]: <> (## Brand and logos)
 
