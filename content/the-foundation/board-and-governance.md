@@ -170,7 +170,7 @@ Will is the CEO and founder of HAND (Human & Digital). Formerly: executive direc
 
 ### Publications Office of the European Union {#OP}
 
-{{< figure src="/images/board/roberto.png" title="Roberto Pappalardo" height="100px" >}}
+{{< figure src="/images/board/jan.jpg" title="Roberto Pappalardo" height="100px" >}}
 
 Roberto has been working for EU institutions for more than 30 years. Currently, he is Head of unit “Data Operations and Enrichment Services”, ensuring the appropriate quality of metadata for EU publications so that they are findable by their intended audience and can provide a sound basis for AI-based solutions. Roberto supervises the team in charge of keeping the DOI Registration Agency operational.
 
