@@ -137,9 +137,9 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 ### Crossref {#Crossref}
 {{< figure src="/images/board/ginny.jpg" title="Ginny Hendricks" height="100px" >}}
 
-Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications, and helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. She became Crossref's representative on the DOI Foundation board in February 2025, succeeding Ed Pentz who served on the board for 25 years. Prior to joining Crossref, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis tools. She co-founded Metadata 20/20, Scholarly Social, ROR, and the Upstream blog for open science, and she serves on the boards or advisory groups of several open infrastructure initiatives, while contributing to the POSI Principles for open scholarly infrastructure.
+Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications, and helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. She became Crossref's representative on the DOI Foundation board in February 2025, succeeding Ed Pentz who served on the board for 25 years. Prior to joining Crossref, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis tools. 
 
-{{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="bluesky" %}}
+{{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="fa-bluesky" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/hendricks/" icon="linkedin" %}}
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-0353-2702" icon="orcid" %}}
 
