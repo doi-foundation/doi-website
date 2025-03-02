@@ -137,7 +137,7 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 ### Crossref {#Crossref}
 {{< figure src="/images/board/ginny.jpg" title="Ginny Hendricks" height="100px" >}}
 
-Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications, and helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. She became Crossref's representative on the DOI Foundation board in February 2025, succeeding Ed Pentz who served on the board for 25 years. Prior to joining Crossref, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis tools. 
+Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications, and helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and became Crossref's representative on the DOI Foundation board in 2025.
 
 {{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="square-bluesky" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/hendricks/" icon="linkedin" %}}
