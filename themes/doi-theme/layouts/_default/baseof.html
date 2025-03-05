@@ -30,7 +30,11 @@
 	google.charts.load('current', { 'packages': ['corechart','line','table', 'geochart'] });    
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/731b8140c4.js" crossorigin="anonymous"></script>
+	<!--<script src="https://kit.fontawesome.com/731b8140c4.js" crossorigin="anonymous"></script>-->
+	<!-- fontawesome now locally hosted -->
+	<link rel="stylesheet" href="/css/fontawesome-free-6.5.1/css/fontawesome.min.css">
+	<link rel="stylesheet" href="/css/fontawesome-free-6.5.1/css/solid.min.css">
+	<link rel="stylesheet" href="/css/fontawesome-free-6.5.1/css/brands.min.css">
 	
 	{{ $options := (dict "targetPath" "css/style.css") }}
 	{{ $style_plain := resources.Get "sass/main.scss" | resources.ToCSS $options }}

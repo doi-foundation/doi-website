@@ -32,8 +32,8 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Qiao Xiaodong, Chinese DOI](#China)
 - [Hong Xiao, CNKI](#CNKI)
-- [Ed Pentz, Crossref *(Treasurer)*](#Crossref)
-- [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
+- [Ginny Hendricks, Crossref](#Crossref)
+- [Matt Buys, DataCite *(Vice-Chair and Interim Treasurer)*](#DataCite)
 {{% /column %}}
 
 {{% column %}}
@@ -135,12 +135,13 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 <br>
 
 ### Crossref {#Crossref}
-{{< figure src="/images/board/epentz.png" title="Ed Pentz" height="100px" >}}
+{{< figure src="/images/board/ginny.jpg" title="Ginny Hendricks" height="100px" >}}
 
-Ed became Crossref's first Executive Director when the organization was founded in 2000 and manages all aspects of the organization to ensure that it fulfills its mission to make research outputs easy to find, cite, link and assess. Ed was Chair of the ORCID board of directors from 2014-2017 and is current Treasurer of the DOI Foundation. Prior to joining Crossref, Ed held electronic publishing, editorial and sales positions at Harcourt Brace in the US and UK and managed the launch of Academic Press’s first online journal, the Journal of Molecular Biology, in 1995. Ed has a degree in English Literature from Princeton University and lives in Oxford, England. Read Ed's thinking about scholarly infrastructure on his [blog](https://www.crossref.org/authors/ed-pentz/).
+Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications, and helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and became Crossref's representative on the DOI Foundation board in 2025.
 
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-5993-8592" icon="orcid" %}}
-{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/ed-pentz-3816223" icon="linkedin" %}}
+{{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="square-bluesky" %}}
+{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/hendricks/" icon="linkedin" %}}
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-0353-2702" icon="orcid" %}}
 
 <br>
 
@@ -184,10 +185,10 @@ Jan has been working for EU institutions (Eurostat and Publications Office) sinc
 The current members of the Executive Committee are:
 {{% column %}}
 - **Paola Mazzucchi, mEDRA *(Chair)***
-- **Matt Buys, DataCite *(Vice-Chair)***
-- **Ed Pentz, Crossref *(Treasurer)***
+- **Matt Buys, DataCite *(Vice-Chair, Interim Treasurer)***
 - **Raymond Drewry, EIDR**
 - **Ann Li, Airiti**
+- **Ginny Hendricks, Crossref**
 {{% /column %}}
 
 
