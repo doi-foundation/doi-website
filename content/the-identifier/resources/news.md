@@ -13,6 +13,11 @@ imagemain = "News Archive"
 
 [< back to the Resources page](/the-identifier/resources/)
 
+### Welcoming RAiD as General Member (September 2023)
+The Research Activity Identifier (RAiD) has joined the DOI Foundation as a General Member. RAiD is a persistent identifier and global registry dedicated to research projects. It is governed by ISO standard 23527:2022 with the Australian Research Data Commons (ARDC) as the Registration Authority and lead developer of the system. RAiD provides a system to store, update, share, and link project information across the research community. ARDC and DataCite have partnered to deliver RAiD services. RAiD is being integrated with European Open Science Cloud infrastructure via the FAIRCORE4EOSC program.  
+
+[Learn More](https://raid.org/)
+
 ### HAND join as General Member (July 2022)
 Human & Digital (HAND) joined the DOI Foundation as a General Member with the intention of becoming a Registration Agency. HAND is planning to assigning DOI names to legal entity humans, licensed virtual humans, and fictional characters involved in the performing arts and sports. The talent industry is becoming more connected, complex, and digitized. Managing this complexity in a programmatic way is only possible with verifiable, persistent identity of talent, both human and digital. 
 
