@@ -18,6 +18,8 @@ Fake DOI schemes that we are currently aware of are:
 {{< figure src="/images/More-info/doie_logo.png" title="www.doie.org" height="100px" >}} <br>    
 {{< figure src="/images/More-info/doiref.png" title="www.doiref.org" height="100x" >}} <br>
 {{< figure src="/images/More-info/doione.png" title="doi.one" height="100px" >}} <br>
+{{< figure src="/images/More-info/aifdoilogo.png" title="aif-doi.org" height="100px" >}} <br>
+{{< figure src="/images/More-info/logodoids.png" title="www.doi-ds.org" height="100px" >}} <br>
 <p style="text-align:center;">journalofgeocentriccosmology.org</p> <br>
 
 
