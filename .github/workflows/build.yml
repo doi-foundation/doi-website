@@ -18,7 +18,7 @@ jobs:
           hugo-version: '0.145.0'
           extended: true
       - name: Hugo Build
-        run: hugo -v --baseURL "https://staging.doi.org/"
+        run: hugo --baseURL "https://staging.doi.org/"
       - name: Deploy to S3
         if: github.ref_name == 'staging'
         run: hugo deploy --target=s3_staging --maxDeletes -1 --force
