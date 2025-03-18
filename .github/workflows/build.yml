@@ -15,10 +15,10 @@ jobs:
       - name: Hugo Setup
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.101.0'
+          hugo-version: '0.136.0'
           extended: true
       - name: Hugo Build
-        run: hugo -v --baseURL "https://staging.doi.org/"
+        run: hugo --baseURL "https://staging.doi.org/"
       - name: Deploy to S3
         if: github.ref_name == 'staging'
         run: hugo deploy --target=s3_staging --maxDeletes -1 --force
@@ -39,13 +39,13 @@ jobs:
       - name: Hugo Setup
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.101.0'
+          hugo-version: '0.136.0'
           extended: true
       - name: Hugo Build
-        run: hugo -v --baseURL "https://www.doi.org/"
+        run: hugo --baseURL "https://www.doi.org/"
       - name: Deploy to S3
         if: github.ref_name == 'main'
-        run: hugo  -v deploy --target=s3_live --maxDeletes -1 
+        run: hugo deploy --target=s3_live --maxDeletes -1 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
