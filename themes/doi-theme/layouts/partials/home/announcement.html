@@ -2,8 +2,8 @@
 <section class='home-announcement'>
     <div class="row">
         <div class="col left">
-            <div class="wrapper">
-                <img src="{{ .image }}" width="250" />
+            <div class="wrapper{{ if .imagestyle }} {{ .imagestyle }}{{ else }} norm{{ end }}">
+                <img src="{{ .image }}" />
             </div>
         </div>
         <div class="col right">
