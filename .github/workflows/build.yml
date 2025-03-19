@@ -13,10 +13,12 @@ jobs:
         with:
           submodules: recursive
       - name: Hugo Setup
-        uses: peaceiris/actions-hugo@v2
+        #uses: peaceiris/actions-hugo@v2
+        uses: deining/actions-hugo@v3.1.0-0
         with:
           hugo-version: '0.137.0'
           extended: true
+          withdeploy: true
       - name: Hugo Build
         run: hugo --baseURL "https://staging.doi.org/"
       - name: Deploy to S3
