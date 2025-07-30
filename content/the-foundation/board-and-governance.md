@@ -32,8 +32,8 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Qiao Xiaodong, Chinese DOI](#China)
 - [Hong Xiao, CNKI](#CNKI)
-- [Ginny Hendricks, Crossref](#Crossref)
-- [Matt Buys, DataCite *(Vice-Chair and Interim Treasurer)*](#DataCite)
+- [Ginny Hendricks, Crossref *(Treasurer)*](#Crossref)
+- [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
 {{% /column %}}
 
 {{% column %}}
@@ -137,7 +137,7 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 ### Crossref {#Crossref}
 {{< figure src="/images/board/ginny.jpg" title="Ginny Hendricks" height="100px" >}}
 
-Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications, and helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and became Crossref's representative on the DOI Foundation board in 2025.
+Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications. She helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and became Crossref's representative on the DOI Foundation board in 2025, also serving as its Treasurer.
 
 {{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="square-bluesky" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/hendricks/" icon="linkedin" %}}
@@ -185,10 +185,10 @@ Jan has been working for EU institutions (Eurostat and Publications Office) sinc
 The current members of the Executive Committee are:
 {{% column %}}
 - **Paola Mazzucchi, mEDRA *(Chair)***
-- **Matt Buys, DataCite *(Vice-Chair, Interim Treasurer)***
+- **Ginny Hendricks, Crossref *(Treasurer)***
+- **Matt Buys, DataCite *(Vice-Chair)***
 - **Raymond Drewry, EIDR**
 - **Ann Li, Airiti**
-- **Ginny Hendricks, Crossref**
 {{% /column %}}
 
 
