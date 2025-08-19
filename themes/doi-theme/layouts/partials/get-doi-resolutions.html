@@ -1,0 +1,38 @@
+{{ $url := "https://doi.org/api/handles/10.1000/1000?type=DOI_RESOLUTIONS&auth" }}
+{{ $data := dict }}
+{{ $values := dict }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else with .Value }}
+    {{ $data = . | transform.Unmarshal }}
+    {{ $values = ((index $data.values 0).data.value)| transform.Unmarshal }}  
+
+    <script type="text/javascript">
+        let globalDoiResolutionsFromBuild = {{ $values | jsonify }};
+    </script>
+   
+  {{ else }}
+    {{ errorf "Unable to get remote resource %q" $url }}
+  {{ end }}
+{{ end }}
+
+
+{{ $url := "https://doi.org/api/handles/10.1000/1000?type=DOI_COUNTS&auth" }}
+{{ $data := dict }}
+{{ $values := dict }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else with .Value }}
+    {{ $data = . | transform.Unmarshal }}
+    {{ $values = ((index $data.values 0).data.value)| transform.Unmarshal }}  
+
+    <script type="text/javascript">
+        let globalDoiCountsFromBuild = {{ $values | jsonify }};
+    </script>
+   
+  {{ else }}
+    {{ errorf "Unable to get remote resource %q" $url }}
+  {{ end }}
+{{ end }}

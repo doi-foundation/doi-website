@@ -4,6 +4,7 @@
     </div>
     <div class="row numbers">
         <div class="col">
+            {{ partial  "get-doi-resolutions" }}
             <span id='resolutions_clock_count' class='bignumber'></span>
             <span class='subtext'>{{ .toprighttext }}</span>          
             <p class='footnote'>{{ .resolutions_footnote }}<span id='resolutions_clock_rate' class='smallnumber'></span>{{ .resolutions_footnote_closing }}</p>

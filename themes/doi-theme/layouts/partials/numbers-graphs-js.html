@@ -23,14 +23,16 @@
     }
 
     async function fetchStats() {
-        doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');
-        counts = await getDoiValueAsJson('10.1000/1000', 'DOI_COUNTS');
+        //doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');
+        //counts = await getDoiValueAsJson('10.1000/1000', 'DOI_COUNTS');
+        doiResolutions = JSON.parse(globalDoiResolutionsFromBuild);
+        counts = JSON.parse(globalDoiCountsFromBuild);
         console.log("Stats loaded");
         renderResults(doiResolutions,counts);
         setTimeout(fetchStats, STATS_REFRESH_INTERVAL);
     }
     fetchStats();
-
+  
     function renderResults(doiResolutions,counts) {
         renderResolutionsClock(doiResolutions);
         
@@ -41,11 +43,11 @@
         google.charts.load('current', { 'packages': ['corechart','line','table','geochart'] });
 
         try{
-          google.charts.setOnLoadCallback(renderResolutionsChart(doiResolutions)); 
-          google.charts.setOnLoadCallback(renderTotalHandlesChart(counts)); 
-          google.charts.setOnLoadCallback(renderResolutionsMap(doiResolutions)); 
+          google.charts.setOnLoadCallback(function() {renderResolutionsChart(doiResolutions)}); 
+          google.charts.setOnLoadCallback(function() {renderTotalHandlesChart(counts)}); 
+          google.charts.setOnLoadCallback(function() {renderResolutionsMap(doiResolutions)}); 
         } catch(err) {
-          //console.log(err);
+          console.log(err);
         }
     }
 
