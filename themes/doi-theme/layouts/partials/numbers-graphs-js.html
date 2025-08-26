@@ -18,15 +18,20 @@
         let handleValue = handleRecord.values[0];
         let valueJson = handleValue.data.value;
         let result = JSON.parse(valueJson);
-        console.log("Fetching stats");
+        console.log("Fetching stats for " + type);
         return result;
     }
 
     async function fetchStats() {
-        //doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');
-        //counts = await getDoiValueAsJson('10.1000/1000', 'DOI_COUNTS');
-        doiResolutions = JSON.parse(globalDoiResolutionsFromBuild);
-        counts = JSON.parse(globalDoiCountsFromBuild);
+        doiResolutions = await getDoiValueAsJson('10.1000/1000', 'DOI_RESOLUTIONS');    
+        // only load counts on 'what is a doi' page with the following element    
+        if (document.getElementById('doi-resolutions')) {
+          counts = await getDoiValueAsJson('10.1000/1000', 'DOI_COUNTS');
+        } else {
+          counts = null;
+        }
+        //doiResolutions = JSON.parse(globalDoiResolutionsFromBuild);
+        //counts = JSON.parse(globalDoiCountsFromBuild);
         console.log("Stats loaded");
         renderResults(doiResolutions,counts);
         setTimeout(fetchStats, STATS_REFRESH_INTERVAL);
@@ -34,20 +39,24 @@
     fetchStats();
   
     function renderResults(doiResolutions,counts) {
-        renderResolutionsClock(doiResolutions);
-        
-        renderResolutionsBotPercent(doiResolutions);
-        renderResolutionsConnegPercent(doiResolutions);
+        renderResolutionsClock(doiResolutions);        
         renderResolutionsUptime(doiResolutions);
 
-        google.charts.load('current', { 'packages': ['corechart','line','table','geochart'] });
+        // again - just render the charts etc on the "what is a doi page"
+        if (document.getElementById('doi-resolutions')) {
+          
+          renderResolutionsBotPercent(doiResolutions);
+          renderResolutionsConnegPercent(doiResolutions);
 
-        try{
-          google.charts.setOnLoadCallback(function() {renderResolutionsChart(doiResolutions)}); 
-          google.charts.setOnLoadCallback(function() {renderTotalHandlesChart(counts)}); 
-          google.charts.setOnLoadCallback(function() {renderResolutionsMap(doiResolutions)}); 
-        } catch(err) {
-          console.log(err);
+          google.charts.load('current', { 'packages': ['corechart','line','table','geochart'] });
+
+          try{
+            google.charts.setOnLoadCallback(function() {renderResolutionsChart(doiResolutions)}); 
+            google.charts.setOnLoadCallback(function() {renderTotalHandlesChart(counts)}); 
+            google.charts.setOnLoadCallback(function() {renderResolutionsMap(doiResolutions)}); 
+          } catch(err) {
+            console.log(err);
+          }
         }
     }
 
@@ -199,7 +208,7 @@
         }
         //console.log(both);
         // Define the chart to be drawn.
-        console.log("drawing google chart");
+        // console.log("drawing google chart");
           
         // Set chart options
         var options = {
