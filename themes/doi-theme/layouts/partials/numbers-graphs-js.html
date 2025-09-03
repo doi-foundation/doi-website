@@ -200,8 +200,7 @@
             
             //console.log('adding row');
             datestring = key + "-01";
-            var dateobj = new Date(datestring);
-            //console.log("datestring= " , datestring);
+            var dateobj = getLastDayOfMonth(datestring);
             data.addRow([dateobj, monthlyResolutions[key].resolutions ]);
                       
           }
@@ -243,6 +242,12 @@
         chart.draw(data, options);
 
         return;
+    }
+
+    function getLastDayOfMonth(monthString) {
+        const [year, month] = monthString.split('-').map(Number);
+        const lastDay = new Date(year, month, 0);
+        return lastDay;
     }
 
     function renderResolutionsBotPercent(doiResolutions) {
