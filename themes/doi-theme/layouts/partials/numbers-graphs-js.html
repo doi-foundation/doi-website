@@ -166,7 +166,7 @@
     }
     function convertTotalDoisDataForGoogleCharts(monthlyCounts) {
         let result = [];
-        let columns = ["Date", "Total DOIs"];
+        let columns = [{ label: "Date", type: "date" }, { label: "Total DOIs", type: "number" }];
         result.push(columns);
         for (let month in monthlyCounts) {
             let value = monthlyCounts[month].doiCount;
