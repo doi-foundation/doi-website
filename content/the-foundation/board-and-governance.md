@@ -75,7 +75,7 @@ Having been working for ISTIC for over 30 years, Qiao is in charge of the daily 
 
 ### CNKI {#CNKI}
 
-{{< figure src="/images/board/hong.png" title="Hong Xiao" height="100px" >}}
+{{< figure src="/images/board/hong.jpg" title="Hong Xiao" height="100px" >}}
 
 Hong Xiao now serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. XIAO Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
 
@@ -149,7 +149,7 @@ Ginny Hendricks is Chief Program Officer at Crossref where she has built a commu
 
 ### KISTI {#KISTI}
 
-{{< figure src="/images/board/jinseop.png" title="Jin-seop Shin" height="100px" >}}
+{{< figure src="/images/board/jinseop.jpg" title="Jin-seop Shin" height="100px" >}}
 
 Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Placeholder:
 Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Jinseop is Director of Korea DOI center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come.
@@ -162,7 +162,7 @@ Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation 
 
 ### HAND {#HAND}
 
-{{< figure src="/images/board/willk.png" title="Will Kreth" height="100px" >}}
+{{< figure src="/images/board/willk.jpg" title="Will Kreth" height="100px" >}}
 
 Will is the CEO and founder of HAND. Formerly: executive director of EIDR, director of metadata at Showtime Networks, and director of video product management at Charter/Time Warner (participated in CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the standards register WG of the Metaverse Standards Forum. Additionally, Will was a co-founder of Wired magazine, and worked with educational software developers at the Apple Multimedia Lab.
 
