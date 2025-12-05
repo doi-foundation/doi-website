@@ -1,0 +1,69 @@
+{{ define "main" }}	
+	<main aria-role="main">
+		<header class="single-header">
+		</header>
+		{{ with .Params }}
+			{{ partial "single/top.html" . }}
+		{{ end }}
+		<div class="page-content single">
+			<article>
+				<div>
+					{{ .Content }}
+				</div>
+                <div class="tab-container">
+                    {{ $data := dict }}
+                    {{ $path := "data/handbook/DOIHandbook.xml" }}
+                    {{ with resources.Get $path }}
+                        {{ with . | transform.Unmarshal }}
+                            {{ $data = . }}
+                        {{ end }}
+                    {{ else }}
+                        {{ errorf "Unable to get global resource %q" $path }}
+                    {{ end }}
+
+                    {{ with $data.body.section }}
+                        <div class='tabs-nav col'>
+                            <nav>
+                            {{ range $index, $contents := . }}
+                                <a>{{ $contents.title }}</a> 
+                            {{ end }}
+                            </nav>
+                        </div>
+                    {{ end }}
+
+                    
+                    {{ with $data.body.section }}
+                        <div class="tabs tabs-content col">
+
+                            
+                            {{ range $index, $contents := . }}
+                            <div class="content">
+                                <h3>{{ $contents.title }}</h3>
+                                
+                                {{ with $contents.section }}
+                                    IN THIS CHAPTER
+                                    {{ range $index, $contents := . }}
+                                        <li>{{ $contents.title }}</li>
+                                    {{ end }}
+
+                                {{ end }}
+
+                                <br />
+                                STILL TO BE PARSED TO HTML
+                                {{ with $contents.p }}                             
+                                    <p>{{ $contents }}</p>                                    
+                                {{ end }}
+
+                                
+
+                            </div>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                </div>
+				
+			</article>
+		</div>
+        {{ partial "socials-side.html" . }}
+	</main>
+{{ end }}
