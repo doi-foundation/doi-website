@@ -9,6 +9,12 @@
 			<article>
 				<div>
 					{{ .Content }}
+
+                    
+                <p id="someElement"></p>
+                <p id="anotherElement"></p>
+                
+                    
 				</div>
                 <div class="tab-container">
                     {{ $data := dict }}
@@ -38,20 +44,10 @@
                             
                             {{ range $index, $contents := . }}
                             <div class="content">
-                                <h3>{{ $contents.title }}</h3>
-                                
-                                {{ with $contents.section }}
-                                    IN THIS CHAPTER
-                                    {{ range $index, $contents := . }}
-                                        <li>{{ $contents.title }}</li>
-                                    {{ end }}
-
-                                {{ end }}
 
                                 <br />
-                                STILL TO BE PARSED TO HTML
-                                {{ with $contents.p }}                             
-                                    <p>{{ $contents }}</p>                                    
+                                {{ with $contents }}    
+                                    {{ partial "tools/xml_to_html.html" . }}                                   
                                 {{ end }}
 
                                 

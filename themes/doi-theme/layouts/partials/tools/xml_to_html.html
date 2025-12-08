@@ -1,0 +1,41 @@
+<pre>{{ debug.Dump . }}</pre>
+
+
+<h3>{{ .title }}</h3>
+<h4>{{ .subtitle }}</h4>
+<p>{{ .p }}</p>
+
+
+{{ with .section }}
+    IN THIS CHAPTER
+    {{ range $index, $contents := . }}
+        <li>{{ $contents.title }}</li>
+    {{ end }}
+
+{{ end }}
+
+{{ range $index, $contents := . }}
+
+    {{ printf "%T" $contents }}
+    <pre>{{ debug.Dump $contents }}</pre>
+
+    {{ if eq (printf "%T" $contents) "[]interface {}" }}
+        ITS AN interface
+        {{ range $index, $contents := $contents }}
+            <h3>sub</h3>    
+            
+            {{ printf "%T" $contents }}
+            {{ if eq (printf "%T" $contents) "[]interface {}" }}
+                ITS AN interface
+                {{ range $index, $contents := $contents }}
+                    <h3>subsub</h3>  
+                    {{ printf "%T" $contents }}
+                {{ end }}
+            {{ end }}
+
+            <pre>{{ debug.Dump $contents }}</pre>
+        {{ end }}
+        
+    {{ end }}
+
+{{ end }}

@@ -74,6 +74,42 @@ $(function() {
 });
 
 (function($) {
+
+  
+    if (!('XSLTProcessor' in window)) {
+    console.log('XSLTProcessor does not appear to be available in this browser. Please try another.');
+    return;
+    }else{
+    console.log('XSLTProcessor available.');
+    }
+
+    
+    const xsltProcessor = new XSLTProcessor();
+    //XSLT file
+    $.ajax({
+      type: "GET",
+      url: "/data/handbook-html.xslt",
+      dataType: "xml",
+      success: function (xsl) {
+        xsltProcessor.importStylesheet(xsl);
+      }
+    });
+
+    //XML file
+    $.ajax({
+      type: "GET",
+      url: "/data/DOIHandbook.xml",
+      dataType: "xml",
+      success: function (xml) {
+        const fragment = xsltProcessor.transformToFragment(xml, document);
+        $("#someElement").append(fragment);
+      }
+    });
+    
+    // Append "XML Title" to #anotherElement
+    $( "#anotherElement" ).append("TESTING" );
+
+
   $('nav a').on('click', function() {
     $('.triangle-container').remove();
       show_content($(this).index());
