@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+  xmlns:tbx="urn:iso:std:iso:30042:ed-1"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
   
   <!-- Output HTML5 -->
   <xsl:output method="html" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -214,6 +215,24 @@
     </a>
     <xsl:text>&#xA0;</xsl:text>
   </xsl:template>
+  
+  <xsl:template match="tbx:termEntry">
+    <p class="p_GlossaryTerm" style="page-break-after: avoid;">
+      <span class="f_GlossaryTerm">
+        <xsl:value-of select="tbx:langSet/tbx:term"/>
+      </span>
+    </p>
+    <p class="p_GlossaryDefinition">
+      <span class="f_GlossaryDefinition">
+        <xsl:value-of select="tbx:langSet/tbx:definition"/>
+      </span>
+    </p>
+  </xsl:template>
+  
+  <xsl:template match="tbx:langSet | tbx:term | tbx:definition"/>
+  
+  
+
   
   
   <!-- Text nodes: output as-is (with normalization) -->

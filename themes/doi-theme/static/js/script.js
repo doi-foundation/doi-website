@@ -105,11 +105,11 @@ $(function() {
         $("#handbook-holder").append(fragment);
 
         $('.tabs .content.visible').removeClass('visible');
-        $('.tabs .content:nth-of-type(' + (0 + 1) + ')').addClass('visible');
+        $('.tabs .content:nth-of-type(1)').addClass('visible');
 
         // Set the tab to selected
-        $('nav a.selected').removeClass('selected');
-        $('nav a:nth-of-type(' + (0 + 1) + ')').addClass('selected');
+        $('.tabs-nav nav a.selected').removeClass('selected');
+        $('.tabs-nav nav:nth-of-type(1) a').addClass('selected');
 
 
       }
@@ -126,7 +126,7 @@ $(function() {
 
       // Set the tab to selected
       $('.tabs-nav nav a.selected').removeClass('selected');
-      $('.tabs-nav nav a:nth-of-type(' + (tab_index + 1) + ')').addClass('selected');
+      $('.tabs-nav nav:nth-of-type(' + (tab_index + 1) + ') a').addClass('selected');
   });
   
   

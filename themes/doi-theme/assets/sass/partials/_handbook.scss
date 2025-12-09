@@ -25,17 +25,31 @@
   width: 100%;
   display: flex;
   align-items: stretch;
+  height:1000px;
   .col {
     display: flex;
     flex-direction: column;
     justify-content: top;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
   }
   .col:nth-of-type(1) {
     flex: 1 0 0%;
+    overflow:scroll;
   }
   .col:nth-of-type(2) {
     width:300px;
     flex: 3 0 0%;
+    overflow:scroll;
   }
 
   nav {
