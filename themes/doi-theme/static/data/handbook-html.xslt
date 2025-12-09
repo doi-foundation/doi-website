@@ -36,7 +36,6 @@
       </xsl:for-each>
     </div>
     
-    
     <div class="tabs tabs-content col">
       <!-- Apply templates to children of document element -->
       <xsl:apply-templates select="*"/>
@@ -76,10 +75,12 @@
   
   <!-- section: use <section> and render a heading if it has a title child -->
   <xsl:template match="section">
-    
     <div class="content">
+      
+           
+
       <xsl:if test="@*">
-        <div class="attributes">
+        <div class="attributes" style='display:none;'>
           <xsl:text>Attributes: </xsl:text>
           <xsl:call-template name="attributes-as-string">
             <xsl:with-param name="node" select="."/>
@@ -87,7 +88,7 @@
         </div>
       </xsl:if>
       
-      <xsl:choose>
+      <xsl:choose>         
         <xsl:when test="title">
           <h2><xsl:value-of select="normalize-space(title)"/></h2>
           <xsl:apply-templates select="node()[not(self::title)]"/>
@@ -99,6 +100,20 @@
     </div>
   </xsl:template>
   
+  <!-- section: use <section> and render a heading if it has a title child -->
+  <xsl:template match="section/section">
+    <xsl:if test="count(ancestor::section)=1">
+        <details name='chapters'>
+          <xsl:attribute name="internal-destination">
+            <xsl:value-of select="@id"/>
+          </xsl:attribute>
+          <summary>
+            <xsl:value-of select="title"/>
+          </summary>
+          <xsl:apply-templates select="node()"/>
+        </details>
+    </xsl:if> 
+  </xsl:template>
   
   
   <!-- paragraph variants -->
