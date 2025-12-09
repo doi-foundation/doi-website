@@ -43,12 +43,7 @@
      
   </xsl:template>
   
-  <xsl:template match="front">
-    
-  </xsl:template>
-  
-  
-    
+  <xsl:template match="front" />
   
   <!-- title element: render as an H1 (first occurence) or H2 otherwise -->
   <xsl:template match="title">
@@ -146,7 +141,7 @@
   <!-- simple table rendering -->
   <xsl:template match="table">
     <table>
-      <xsl:apply-templates select="thead | tr | row"/>
+      <xsl:apply-templates select="thead | tbody | tr | row"/>
     </table>
   </xsl:template>
   
@@ -155,7 +150,14 @@
       <xsl:apply-templates select="tr|row"/>
     </thead>
   </xsl:template>
-  
+
+  <xsl:template match="tbody">
+    <tbody>
+      <xsl:apply-templates select="tr|row"/>
+    </tbody>
+  </xsl:template>
+  <xsl:template match="table-wrap/label" />
+  <xsl:template match="table-wrap/caption" />
   <xsl:template match="tr | row">
     <tr>
       <xsl:for-each select="th | header | td | cell">
@@ -172,6 +174,23 @@
   </xsl:template>
   
   <!-- image element -->
+  <xsl:template match="fig">
+    <div>
+        <img>
+    <xsl:attribute name="src">
+      <xsl:value-of select="graphic/@xlink:href"/>
+    </xsl:attribute>
+    <xsl:attribute name="alt-text">
+      <xsl:value-of select="caption/title"/>
+    </xsl:attribute>
+      </img>
+    </div>
+    <xsl:value-of select="label"/>
+    <xsl:text> </xsl:text>
+    <xsl:value-of select="caption/title"/>
+        
+  </xsl:template>
+
   <xsl:template match="image | img">
     <xsl:variable name="src">
       <xsl:choose>
@@ -230,6 +249,8 @@
     </a>
     <xsl:text>&#xA0;</xsl:text>
   </xsl:template>
+  
+  
   
   <xsl:template match="tbx:termEntry">
     <p class="p_GlossaryTerm" style="page-break-after: avoid;">

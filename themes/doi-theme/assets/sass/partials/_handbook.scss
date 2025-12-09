@@ -31,6 +31,13 @@
     flex-direction: column;
     justify-content: top;
 
+    
+    
+  }
+  .col:nth-of-type(1) {
+    flex: 1 0 0%;
+    overflow:scroll;
+    
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar {
       display: none;
@@ -40,11 +47,6 @@
     
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    
-  }
-  .col:nth-of-type(1) {
-    flex: 1 0 0%;
-    overflow:scroll;
   }
   .col:nth-of-type(2) {
     width:300px;
@@ -92,5 +94,25 @@
   .tabs > .content p { padding-bottom: 2px;}
 
   .tabs > .content p:last-of-type { padding-bottom: 0px; }
+}
+
+.tabs-content {
+  details {
+    interpolate-size: allow-keywords;
+
+  
+    &::details-content {
+      transition:
+        block-size 0.5s,
+        content-visibility 0.5s allow-discrete;
+      overflow: hidden;
+      block-size: 0;     /* Or also:  height:0; */
+    }
+    
+    &[open]::details-content {
+      block-size: auto;  /* Or also:  height:auto; */
+      padding-bottom:20px;
+    }
+  }
 }
 
