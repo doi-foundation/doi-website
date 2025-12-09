@@ -62,27 +62,8 @@
     background: #5c7292 ;
     color: #fff;
   }
-  /* tabs triangle */
-  .triangle-container {
-      position: absolute !important;
-      z-index: 10;
-      top: 0;
-      left: 99.6%;
-      width: 30px !important;
-      background: transparent !important;
-      height: 100%;
-  }
 
-  .triangle-container img {
-      position: absolute;
-      height: 100%;
-      left: 0;
-      width: 30px;
-  }
-
-
-
-  .tabs .content {
+  .tabs > .content {
     padding: 20px 20px 20px 60px;
     position: relative;
     color: #6C5D5D;
@@ -90,12 +71,12 @@
     display: none;
   }
 
-  .tabs .content.visible {
+  .tabs > .content.visible {
     display: block;
   }
 
-  .tabs .content p { padding-bottom: 2px;}
+  .tabs > .content p { padding-bottom: 2px;}
 
-  .tabs .content p:last-of-type { padding-bottom: 0px; }
+  .tabs > .content p:last-of-type { padding-bottom: 0px; }
 }
 

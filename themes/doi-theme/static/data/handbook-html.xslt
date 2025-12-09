@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
   
   <!-- Output HTML5 -->
   <xsl:output method="html" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -16,14 +17,38 @@
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
-  
+      
   <!-- Root: create HTML skeleton -->
-  <xsl:template match="/">
-   
-        <!-- Apply templates to children of document element -->
-        <xsl:apply-templates select="*"/>
+  <xsl:template match="/standard">
+    
+    <!-- bookmarks -->
+    <div class='tabs-nav col'>
+      <xsl:for-each select="body/section">
+        <nav>
+          <xsl:attribute name="internal-destination">
+            <xsl:value-of select="@id"/>
+          </xsl:attribute>
+          <a>
+            <xsl:value-of select="title"/>
+          </a>
+        </nav>
+      </xsl:for-each>
+    </div>
+    
+    
+    <div class="tabs tabs-content col">
+      <!-- Apply templates to children of document element -->
+      <xsl:apply-templates select="*"/>
+    </div>
      
   </xsl:template>
+  
+  <xsl:template match="front">
+    
+  </xsl:template>
+  
+  
+    
   
   <!-- title element: render as an H1 (first occurence) or H2 otherwise -->
   <xsl:template match="title">
@@ -36,10 +61,22 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+  <!-- title element: render as an H1 (first occurence) or H2 otherwise -->
+  <xsl:template match="subtitle">
+    <xsl:choose>
+      <xsl:when test="not(preceding::subtitle)">
+        <h3><xsl:value-of select="normalize-space(.)"/></h3>
+      </xsl:when>
+      <xsl:otherwise>
+        <h4><xsl:value-of select="normalize-space(.)"/></h4>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
   
   <!-- section: use <section> and render a heading if it has a title child -->
   <xsl:template match="section">
-    <section>
+    
+    <div class="content">
       <xsl:if test="@*">
         <div class="attributes">
           <xsl:text>Attributes: </xsl:text>
@@ -58,8 +95,10 @@
           <xsl:apply-templates select="node()"/>
         </xsl:otherwise>
       </xsl:choose>
-    </section>
+    </div>
   </xsl:template>
+  
+  
   
   <!-- paragraph variants -->
   <xsl:template match="para | p">
@@ -73,18 +112,18 @@
     <xsl:choose>
       <xsl:when test="@type = 'ordered' or @ordered = 'true'">
         <ol>
-          <xsl:apply-templates select="item"/>
+          <xsl:apply-templates select="list-item"/>
         </ol>
       </xsl:when>
       <xsl:otherwise>
         <ul>
-          <xsl:apply-templates select="item"/>
+          <xsl:apply-templates select="list-item"/>
         </ul>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
   
-  <xsl:template match="item">
+  <xsl:template match="list-item">
     <li><xsl:apply-templates/></li>
   </xsl:template>
   
@@ -140,8 +179,11 @@
     </xsl:if>
   </xsl:template>
   
+  
+  
+  
   <!-- Fallback for any element: show element name and render children -->
-  <xsl:template match="xx">
+  <xsl:template match="xxxx">
     <section>
       <div class="elem-name">
         <xsl:value-of select="name()"/>
@@ -161,6 +203,18 @@
       </xsl:choose>
     </section>
   </xsl:template>
+  
+  <xsl:template match="ext-link">
+    <xsl:text>&#xA0;</xsl:text>
+    <a>
+      <xsl:attribute name="href">
+        <xsl:value-of select="@xlink:href"/>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
+    <xsl:text>&#xA0;</xsl:text>
+  </xsl:template>
+  
   
   <!-- Text nodes: output as-is (with normalization) -->
   <xsl:template match="text()">

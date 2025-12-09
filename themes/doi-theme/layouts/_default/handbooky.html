@@ -10,54 +10,9 @@
 				<div>
 					{{ .Content }}
 
-                    
-                <p id="someElement"></p>
-                <p id="anotherElement"></p>
-                
+                    <div id='handbook-holder' class="tab-container"></div>
                     
 				</div>
-                <div class="tab-container">
-                    {{ $data := dict }}
-                    {{ $path := "data/handbook/DOIHandbook.xml" }}
-                    {{ with resources.Get $path }}
-                        {{ with . | transform.Unmarshal }}
-                            {{ $data = . }}
-                        {{ end }}
-                    {{ else }}
-                        {{ errorf "Unable to get global resource %q" $path }}
-                    {{ end }}
-
-                    {{ with $data.body.section }}
-                        <div class='tabs-nav col'>
-                            <nav>
-                            {{ range $index, $contents := . }}
-                                <a>{{ $contents.title }}</a> 
-                            {{ end }}
-                            </nav>
-                        </div>
-                    {{ end }}
-
-                    
-                    {{ with $data.body.section }}
-                        <div class="tabs tabs-content col">
-
-                            
-                            {{ range $index, $contents := . }}
-                            <div class="content">
-
-                                <br />
-                                {{ with $contents }}    
-                                    {{ partial "tools/xml_to_html.html" . }}                                   
-                                {{ end }}
-
-                                
-
-                            </div>
-                            {{ end }}
-                        </div>
-                    {{ end }}
-                </div>
-				
 			</article>
 		</div>
         {{ partial "socials-side.html" . }}

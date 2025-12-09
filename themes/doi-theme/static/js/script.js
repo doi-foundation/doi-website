@@ -102,32 +102,34 @@ $(function() {
       dataType: "xml",
       success: function (xml) {
         const fragment = xsltProcessor.transformToFragment(xml, document);
-        $("#someElement").append(fragment);
+        $("#handbook-holder").append(fragment);
+
+        $('.tabs .content.visible').removeClass('visible');
+        $('.tabs .content:nth-of-type(' + (0 + 1) + ')').addClass('visible');
+
+        // Set the tab to selected
+        $('nav a.selected').removeClass('selected');
+        $('nav a:nth-of-type(' + (0 + 1) + ')').addClass('selected');
+
+
       }
     });
     
-    // Append "XML Title" to #anotherElement
-    $( "#anotherElement" ).append("TESTING" );
 
 
-  $('nav a').on('click', function() {
-    $('.triangle-container').remove();
-      show_content($(this).index());
+  $('#handbook-holder').on('click', '.tabs-nav nav a',function(e) {
+      const nav_elements = $('.tabs-nav nav a');
+      tab_index = nav_elements.index(this);
+      console.log(tab_index);
+      $('.tabs > .content.visible').removeClass('visible');
+      $('.tabs > .content:nth-of-type(' + (tab_index + 1) + ')').addClass('visible');
+
+      // Set the tab to selected
+      $('.tabs-nav nav a.selected').removeClass('selected');
+      $('.tabs-nav nav a:nth-of-type(' + (tab_index + 1) + ')').addClass('selected');
   });
   
-  show_content(0);
-
-  function show_content(index) {
-    // Make the content visible
-    $('.tabs .content.visible').removeClass('visible');
-    $('.tabs .content:nth-of-type(' + (index + 1) + ')').addClass('visible');
-
-    // Set the tab to selected
-    $('nav a.selected').removeClass('selected');
-    $('nav a:nth-of-type(' + (index + 1) + ')').addClass('selected');
-    
-    // How to remove the arrow and only show it on the selected tab?
-  }
+  
 })( jQuery ); 
 
 
