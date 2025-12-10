@@ -1,6 +1,6 @@
 +++
 title = "DOI® Handbook"
-date = "2023-07-12"
+date = "2025-12-10"
 showdate = true
 draft = false
 # the following section is for the header
@@ -21,5 +21,8 @@ Please [contact us](mailto:info@doi.org) if you have any questions or comments o
 
 Note that the DOI Handbook is currently under active review and will be updated to reflect the revised ISO 26324:2022 Standard which is under development (ISO/DIS 26324) and expected to replace 26324:2022 within the coming months. 
 
-[Visit the new DOI Handbook (April 2023)](/doi-handbook/HTML/index.html) | [Download the DOI Handbook as a PDF (1.6MB)](/doi-handbook/DOI_Handbook_Final_2023.pdf)| [Download the 2025 DOI Handbook as a PDF (2.0MB)](/doi-handbook/DOIHandbook_2025.pdf)
+[Visit the new DOI Handbook (April 2023)](/doi-handbook/HTML/index.html) | [Download the DOI Handbook as a PDF (1.6MB)](/doi-handbook/DOI_Handbook_Final_2023.pdf)
+
+## 2025
+[Visit the new DOI Handbook (December 2025)](/doi-handbook/2025/index.html)| [Download the 2025 DOI Handbook as a PDF (2.0MB)](/doi-handbook/DOIHandbook_2025.pdf)
 
