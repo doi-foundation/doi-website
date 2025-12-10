@@ -189,19 +189,22 @@
   
   <!-- image element -->
   <xsl:template match="fig">
-    <div>
+    <figure>
         <img>
-    <xsl:attribute name="src">
-      <xsl:value-of select="graphic/@xlink:href"/>
-    </xsl:attribute>
-    <xsl:attribute name="alt-text">
-      <xsl:value-of select="caption/title"/>
-    </xsl:attribute>
+          <xsl:attribute name="src">
+            <xsl:text>/</xsl:text>
+            <xsl:value-of select="graphic/@xlink:href"/>
+          </xsl:attribute>
+          <xsl:attribute name="alt-text">
+            <xsl:value-of select="caption/title"/>
+          </xsl:attribute>
       </img>
-    </div>
-    <xsl:value-of select="label"/>
-    <xsl:text> </xsl:text>
-    <xsl:value-of select="caption/title"/>
+      <figcaption>
+        <xsl:value-of select="label"/>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="caption/title"/>
+      </figcaption>
+    </figure>
         
   </xsl:template>
 

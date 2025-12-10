@@ -77,10 +77,10 @@ $(function() {
 
   
     if (!('XSLTProcessor' in window)) {
-    console.log('XSLTProcessor does not appear to be available in this browser. Please try another.');
-    return;
+      console.log('XSLTProcessor does not appear to be available in this browser. Please try another.');
+      return;
     }else{
-    console.log('XSLTProcessor available.');
+      console.log('XSLTProcessor available.');
     }
 
     
@@ -102,7 +102,7 @@ $(function() {
       dataType: "xml",
       success: function (xml) {
         const fragment = xsltProcessor.transformToFragment(xml, document);
-        $("#handbook-holder").append(fragment);
+        $("#handbook-holder").html(fragment);
 
         $('.tabs .content.visible').removeClass('visible');
         $('.tabs .content:nth-of-type(1)').addClass('visible');
