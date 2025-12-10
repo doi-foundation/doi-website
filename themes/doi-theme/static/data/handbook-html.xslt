@@ -29,7 +29,7 @@
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
           </xsl:attribute>
-          <a>
+          <a class='handbook-nav'>
             <xsl:value-of select="title"/>
           </a>
         </nav>
@@ -49,10 +49,10 @@
   <xsl:template match="title">
     <xsl:choose>
       <xsl:when test="not(preceding::title)">
-        <h1><xsl:value-of select="normalize-space(.)"/></h1>
+        <h2><xsl:value-of select="normalize-space(.)"/></h2>
       </xsl:when>
       <xsl:otherwise>
-        <h2><xsl:value-of select="normalize-space(.)"/></h2>
+        <h3><xsl:value-of select="normalize-space(.)"/></h3>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -85,7 +85,7 @@
       
       <xsl:choose>         
         <xsl:when test="title">
-          <h2><xsl:value-of select="normalize-space(title)"/></h2>
+          <div class='section-title'><h2><xsl:value-of select="normalize-space(title)"/></h2></div>
           <xsl:apply-templates select="node()[not(self::title)]"/>
         </xsl:when>
         <xsl:otherwise>
@@ -98,7 +98,7 @@
   <!-- section: use <section> and render a heading if it has a title child -->
   <xsl:template match="section/section">
     <xsl:if test="count(ancestor::section)=1">
-        <details name='chapters'>
+        <details name='chapters' class='chapters'>
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
           </xsl:attribute>
@@ -107,6 +107,20 @@
           </summary>
           <xsl:apply-templates select="node()"/>
         </details>
+    </xsl:if> 
+  </xsl:template>
+  <!-- section: use <section> and render a heading if it has a title child -->
+  <xsl:template match="section/section/section">
+    <xsl:if test="count(ancestor::section)=2">
+      <details name='chapter-chapters' class='chapter-chapters'>
+        <xsl:attribute name="internal-destination">
+          <xsl:value-of select="@id"/>
+        </xsl:attribute>
+        <summary>
+          <xsl:value-of select="title"/>
+        </summary>
+        <xsl:apply-templates select="node()"/>
+      </details>
     </xsl:if> 
   </xsl:template>
   
