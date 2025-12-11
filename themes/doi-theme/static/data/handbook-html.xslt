@@ -296,9 +296,7 @@
   
   <xsl:template match="tbx:langSet | tbx:term | tbx:definition"/>
   
-  
-
-  
+  <xsl:template match="fn" />
   
   <!-- Text nodes: output as-is (with normalization) -->
   <xsl:template match="text()">
