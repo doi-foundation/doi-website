@@ -73,11 +73,22 @@
     font-family: futura-pt;
     /*white-space: nowrap;*/
   }
+  nav.sub-nav {
+    margin-left:20px;
+    width:100%;
+  }
 
   nav a:hover,
   nav a.selected {
     background: #5c7292 ;
     color: #fff;
+  }
+
+  .top-nav .sub-nav {
+    display:none;
+  }
+  .top-nav.selected .sub-nav {
+    display:flex;
   }
 
   .tabs > .content {
@@ -107,6 +118,12 @@
     margin-right: -20px;
     h2 {
       color: #fff;
+    }
+  }
+  .chapters {
+    display:none;
+    &.visible {
+      display:block;
     }
   }
   details {

@@ -25,13 +25,23 @@
     <!-- bookmarks -->
     <div class='tabs-nav col'>
       <xsl:for-each select="body/section">
-        <nav>
+        <nav class='top-nav'>
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
           </xsl:attribute>
           <a class='handbook-nav'>
-            <xsl:value-of select="title"/>
+           <xsl:value-of select="title"/>
           </a>
+          <xsl:for-each select="section">
+            <nav class='sub-nav'>
+              <xsl:attribute name="internal-destination">
+                <xsl:value-of select="@id"/>
+              </xsl:attribute>
+              <a>
+                <xsl:value-of select="title"/>
+              </a>  
+            </nav>  
+          </xsl:for-each>
         </nav>
       </xsl:for-each>
     </div>
@@ -71,6 +81,9 @@
   <!-- section: use <section> and render a heading if it has a title child -->
   <xsl:template match="section">
     <div class="content">
+      <xsl:attribute name="internal-destination">
+        <xsl:value-of select="@id"/>
+      </xsl:attribute>
       
            
 
@@ -86,7 +99,9 @@
       <xsl:choose>         
         <xsl:when test="title">
           <div class='section-title'><h2><xsl:value-of select="normalize-space(title)"/></h2></div>
-          <xsl:apply-templates select="node()[not(self::title)]"/>
+          <div class='section-main'>
+            <xsl:apply-templates select="node()[not(self::title)]"/>
+          </div>
         </xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates select="node()"/>
@@ -98,15 +113,12 @@
   <!-- section: use <section> and render a heading if it has a title child -->
   <xsl:template match="section/section">
     <xsl:if test="count(ancestor::section)=1">
-        <details name='chapters' class='chapters'>
+        <div name='chapters' class='chapters'>
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
           </xsl:attribute>
-          <summary>
-            <xsl:value-of select="title"/>
-          </summary>
           <xsl:apply-templates select="node()"/>
-        </details>
+        </div>
     </xsl:if> 
   </xsl:template>
   <!-- section: use <section> and render a heading if it has a title child -->

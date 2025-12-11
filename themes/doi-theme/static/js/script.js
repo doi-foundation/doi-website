@@ -108,8 +108,8 @@ $(function() {
         $('.tabs .content:nth-of-type(1)').addClass('visible');
 
         // Set the tab to selected
-        $('.tabs-nav nav a.selected').removeClass('selected');
-        $('.tabs-nav nav:nth-of-type(1) a').addClass('selected');
+        $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
+        $('.tabs-nav nav.top-nav:nth-of-type(1) a').addClass('selected');
 
 
       }
@@ -117,16 +117,51 @@ $(function() {
     
 
 
-  $('#handbook-holder').on('click', '.tabs-nav nav a',function(e) {
-      const nav_elements = $('.tabs-nav nav a');
-      tab_index = nav_elements.index(this);
-      console.log(tab_index);
+  $('#handbook-holder').on('click', '.tabs-nav nav.top-nav > a',function(e) {
+      const nav_elements = $('.tabs-nav nav.top-nav > a');
+      var id=$(this).closest('nav').attr('internal-destination');
+      console.log("ID = " + id);
+
+      
+      $('.tabs-content .content.visible div.section-main > *:not(.chapters)').show();
+
       $('.tabs > .content.visible').removeClass('visible');
-      $('.tabs > .content:nth-of-type(' + (tab_index + 1) + ')').addClass('visible');
+      $('.tabs-content > .content[internal-destination="' + id + '"]').addClass('visible');
+
+      $('.tabs-content .chapters.visible').removeClass('visible');
 
       // Set the tab to selected
-      $('.tabs-nav nav a.selected').removeClass('selected');
-      $('.tabs-nav nav:nth-of-type(' + (tab_index + 1) + ') a').addClass('selected');
+      $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
+      
+      $('.tabs-nav nav.top-nav').removeClass('selected');
+      $('.tabs-nav nav.top-nav > a').removeClass('selected');
+
+      
+      $('.tabs-nav nav.top-nav[internal-destination="' + id + '"]').addClass('selected');
+      $('.tabs-nav nav.top-nav[internal-destination="' + id + '"] > a').addClass('selected');
+  });
+
+
+   $('#handbook-holder').on('click', '.tabs-nav nav.sub-nav > a',function(e) {
+      const nav_elements = $('.tabs-nav nav.sub-nav > a');
+      var id=$(this).closest('nav').attr('internal-destination');
+      console.log("sub nav ID = " + id);
+
+      // hide everything else
+      $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
+
+      $('.tabs-content .chapters.visible').removeClass('visible');
+      $('.tabs-content .chapters[internal-destination="' + id + '"]').addClass('visible');
+
+      // Set the tab to selected
+      $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
+      
+      $('.tabs-nav nav.sub-nav').removeClass('selected');
+      $('.tabs-nav nav.sub-nav > a').removeClass('selected');
+
+      
+      $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"]').addClass('selected');
+      $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
   });
   
   
