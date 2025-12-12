@@ -113,8 +113,16 @@
   .footnote {
     font-style: italic;
   }
-  a.footnote-link {
-    font-family: futura-pt;
+  sup:has(.footnote-link){    
+    background-color: #5c7292;
+    color:#fff;
+    border-radius: 1rem;
+    a.footnote-link {
+      font-family: futura-pt;
+      color:#fff;
+      padding: 0.25rem 0.3rem;
+      text-decoration:none;
+    }
   }
   .section-title {
     background-color: #5c7292;

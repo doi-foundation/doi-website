@@ -29,8 +29,15 @@
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
           </xsl:attribute>
-          <a class='handbook-nav'>
-           <xsl:value-of select="title"/>
+          <a class='handbook-nav'>     
+            <xsl:choose>
+              <xsl:when test="@id = 'preface' or @id = 'sec-glossary'">
+                <xsl:value-of select="title"/>
+              </xsl:when>
+              <xsl:otherwise>                
+                <xsl:value-of select="substring-after(@id,'sec')"/><xsl:text>&#xA0;</xsl:text><xsl:value-of select="title"/>
+              </xsl:otherwise>
+            </xsl:choose> 
           </a>
           <xsl:for-each select="section">
             <nav class='sub-nav'>
@@ -38,7 +45,7 @@
                 <xsl:value-of select="@id"/>
               </xsl:attribute>
               <a>
-                <xsl:value-of select="title"/>
+                <xsl:value-of select="substring-after(@id,'sec')"/><xsl:text>&#xA0;</xsl:text><xsl:value-of select="title"/>
               </a>  
             </nav>  
           </xsl:for-each>
