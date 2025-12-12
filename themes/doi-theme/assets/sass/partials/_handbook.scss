@@ -190,7 +190,11 @@
   }
 }
 
-.f_GlossaryTerm {
-	font-family: 'futura-pt-bold';
+.p_GlossaryTerm {
+  margin-bottom:0;
+
+  .f_GlossaryTerm {
+    font-family: 'futura-pt-bold';
+  }
 }
 
