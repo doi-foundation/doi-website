@@ -179,7 +179,7 @@ $(function() {
   function fixFootnotes() {
     $('.footnote sup').remove();
     $('.footnote-link').each(function(index) {
-      $('.footnote#' + $(this).attr('rid')).prepend("<sup>" + $(this).text() + " </sup>");
+      $('.footnote#' + $(this).attr('rid')).find($('.fn-id')).html("<sup>" + $(this).text() + "</sup>");
     });
   }
 

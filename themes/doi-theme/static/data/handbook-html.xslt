@@ -329,7 +329,11 @@
       <xsl:attribute name="id">
         <xsl:value-of select="@id"/>
       </xsl:attribute>   
-      <xsl:apply-templates select="node()"/>
+      <div class='fn-id'>
+      </div>
+      <div class='fn-content'>
+        <xsl:apply-templates select="node()"/>
+      </div>
     </div>
   </xsl:template>
   
