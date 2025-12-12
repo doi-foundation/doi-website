@@ -136,3 +136,12 @@ margin: ($standard-padding * 1) auto 0;
     }
     
 }
+
+section.single-top-lighter {
+    .row {
+        padding-top:0;
+    }
+    .left{
+        min-height:60px;
+    }
+}

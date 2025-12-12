@@ -1,5 +1,5 @@
 +++
-title = "handbook"
+title = "DOI® Handbook"
 date = "2019-03-26T08:47:11+01:00"
 draft = false
 layout = "handbook2025"
@@ -9,4 +9,3 @@ imagemain = "DOI Handbook"
 maintext = "The DOI Handbook includes all the technical information that DOI agencies and users need to know"
 subtext = "A new version was published in 2025."
 +++
-Testing testing

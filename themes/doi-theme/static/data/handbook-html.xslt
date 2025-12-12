@@ -88,11 +88,10 @@
   <!-- section: use <section> and render a heading if it has a title child -->
   <xsl:template match="section">
     <div class="content">
+      
       <xsl:attribute name="internal-destination">
         <xsl:value-of select="@id"/>
       </xsl:attribute>
-      
-           
 
       <xsl:if test="@*">
         <div class="attributes" style='display:none;'>
@@ -108,6 +107,18 @@
           <div class='section-title'><h2><xsl:value-of select="normalize-space(title)"/></h2></div>
           <div class='section-main'>
             <xsl:apply-templates select="node()[not(self::title)]"/>
+            
+            <div>
+              <h4>In this chapter</h4>
+            <ul>
+            <xsl:for-each select="section">
+              <li>
+                  <xsl:value-of select="title"/>
+              </li>  
+            </xsl:for-each>
+            </ul>
+            </div>
+          
           </div>
         </xsl:when>
         <xsl:otherwise>
@@ -119,7 +130,9 @@
   
   <!-- section: use <section> and render a heading if it has a title child -->
   <xsl:template match="section/section">
+
     <xsl:if test="count(ancestor::section)=1">
+      
         <div name='chapters' class='chapters'>
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
@@ -136,7 +149,7 @@
           <xsl:value-of select="@id"/>
         </xsl:attribute>
         <summary>
-          <xsl:value-of select="title"/>
+          <xsl:value-of select="substring-after(@id,'sec')"/><xsl:text>&#xA0;</xsl:text><xsl:value-of select="title"/>
         </summary>
         <xsl:apply-templates select="node()"/>
       </details>
