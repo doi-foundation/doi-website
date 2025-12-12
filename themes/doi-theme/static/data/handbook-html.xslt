@@ -325,16 +325,25 @@
       <xsl:apply-templates select="node()"/>
     </div>
   </xsl:template>
-
+  
+  
+  
+  <xsl:template match="index-term">    
+    <xsl:text>&#xA0;</xsl:text>    
+  </xsl:template>
+  <!--
   <xsl:template match="index-term">
     <a>
-      <xsl:attribute name="ref">
+      
+      <xsl:attribute name="internal-destination">
         <xsl:value-of select="@ref"/>
       </xsl:attribute>
+      <xsl:attribute name="class">internal-link</xsl:attribute>
       LINK TO->
         <xsl:apply-templates select="node()"/>
     </a>
   </xsl:template>
+  -->
   
   <!-- Text nodes: output as-is (with normalization) -->
   <xsl:template match="text()">
