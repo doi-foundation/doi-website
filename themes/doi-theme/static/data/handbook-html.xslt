@@ -279,7 +279,21 @@
     <xsl:text>&#xA0;</xsl:text>
   </xsl:template>
   
-  
+  <!-- footnotes -->
+  <xsl:template match="xref">
+    <a class='footnote-link'>
+      <xsl:attribute name="ref-type">
+        <xsl:value-of select="@ref-type"/>
+      </xsl:attribute>
+      <xsl:attribute name="rid">
+        <xsl:value-of select="@rid"/>
+      </xsl:attribute>
+      <xsl:attribute name="href">
+        #<xsl:value-of select="@rid"/>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
   
   <xsl:template match="tbx:termEntry">
     <p class="p_GlossaryTerm" style="page-break-after: avoid;">
@@ -296,7 +310,31 @@
   
   <xsl:template match="tbx:langSet | tbx:term | tbx:definition"/>
   
-  <xsl:template match="fn" />
+  <xsl:template match="sup">
+    <sup>
+      <xsl:apply-templates/>
+    </sup>
+    
+  </xsl:template>
+  
+  <xsl:template match="fn">
+    <div class='footnote'>   
+      <xsl:attribute name="id">
+        <xsl:value-of select="@id"/>
+      </xsl:attribute>   
+      <xsl:apply-templates select="node()"/>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="index-term">
+    <a>
+      <xsl:attribute name="ref">
+        <xsl:value-of select="@ref"/>
+      </xsl:attribute>
+      LINK TO->
+        <xsl:apply-templates select="node()"/>
+    </a>
+  </xsl:template>
   
   <!-- Text nodes: output as-is (with normalization) -->
   <xsl:template match="text()">

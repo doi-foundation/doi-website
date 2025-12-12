@@ -109,8 +109,12 @@
 }
 
 .tabs-content .content.visible{
+  position:relative;
   .footnote {
     font-style: italic;
+  }
+  a.footnote-link {
+    font-family: futura-pt;
   }
   .section-title {
     background-color: #5c7292;
