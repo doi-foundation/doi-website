@@ -92,6 +92,7 @@ $(function() {
       dataType: "xml",
       success: function (xsl) {
         xsltProcessor.importStylesheet(xsl);
+
       }
     });
 
@@ -110,6 +111,9 @@ $(function() {
         // Set the tab to selected
         $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
         $('.tabs-nav nav.top-nav:nth-of-type(1) a').addClass('selected');
+
+        
+        donav();
 
 
       }
@@ -182,6 +186,79 @@ $(function() {
       $('.footnote#' + $(this).attr('rid')).find($('.fn-id')).html("<sup>" + $(this).text() + "</sup>");
     });
   }
+
+  function donav() {
+    // search querystring for error param value
+    var matches = window.location.search.match(/xref=([\w.]+)/);
+
+    if (matches) {
+      // show the matching element
+      
+      console.log("matches = " + matches[1]);
+      
+      id =  'sec' + matches[1];
+
+      parts = matches[1].split('.');
+      levels = parts.length;
+
+      // top level navigation eg "?xref=5"
+      if (levels>=1) {
+        id = 'sec' + parts[0];
+        console.log("top nav ID = " + id);
+
+        $('.tabs-content .content.visible div.section-main > *:not(.chapters)').show();
+
+        $('.tabs > .content.visible').removeClass('visible');
+        $('.tabs-content > .content[internal-destination="' + id + '"]').addClass('visible');
+
+        $('.tabs-content .chapters.visible').removeClass('visible');
+
+        // Set the tab to selected
+        $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
+        
+        $('.tabs-nav nav.top-nav').removeClass('selected');
+        $('.tabs-nav nav.top-nav > a').removeClass('selected');
+        
+        $('.tabs-nav nav.top-nav[internal-destination="' + id + '"]').addClass('selected');
+        $('.tabs-nav nav.top-nav[internal-destination="' + id + '"] > a').addClass('selected');
+      }
+      if (levels>=2) {
+        
+        id = 'sec' + parts[0] + '.' + parts[1];
+        fixFootnotes();
+        const nav_elements = $('.tabs-nav nav.sub-nav > a');
+        console.log("sub nav ID = " + id);
+
+        // hide everything else
+        $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
+
+        $('.tabs-content .chapters.visible').removeClass('visible');
+        $('.tabs-content .chapters[internal-destination="' + id + '"]').addClass('visible');
+
+        $($('.tabs-content .chapters[internal-destination="' + id + '"].visible .footnote').get().reverse()).each(function(el) {
+          $(this).appendTo('.tabs-content .chapters[internal-destination="' + id + '"].visible');
+        });
+
+        // Set the tab to selected
+        $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
+        
+        $('.tabs-nav nav.sub-nav').removeClass('selected');
+        $('.tabs-nav nav.sub-nav > a').removeClass('selected');
+
+        
+        $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"]').addClass('selected');
+        $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
+      }
+    }
+
+    
+    if (levels>=3) {
+      id = 'sec' + parts[0] + '.' + parts[1] + '.' + parts[2];
+      console.log("sub sub nav ID = " + id);
+      $('details').removeAttr('open');
+      $('.chapter-chapters[internal-destination="' + id + '"]').attr('open', '');
+    }
+  };
 
   
   
