@@ -57,32 +57,23 @@ $(function() {
         });
       }
     }
-
-
-
   }); 
 
-
-  
-
   function commaSeparateNumber(val){
-  while (/(\d+)(\d{3})/.test(val.toString())){
-    val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-  }
-  return val;
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
   }
 });
 
-(function($) {
-
-  
+(function($) { 
     if (!('XSLTProcessor' in window)) {
       console.log('XSLTProcessor does not appear to be available in this browser. Please try another.');
       return;
     }else{
       console.log('XSLTProcessor available.');
     }
-
     
     const xsltProcessor = new XSLTProcessor();
     //XSLT file
@@ -92,7 +83,6 @@ $(function() {
       dataType: "xml",
       success: function (xsl) {
         xsltProcessor.importStylesheet(xsl);
-
       }
     });
 
@@ -102,6 +92,8 @@ $(function() {
       url: "/data/DOIHandbook.xml",
       dataType: "xml",
       success: function (xml) {
+
+        // transform the xml with the xslt
         const fragment = xsltProcessor.transformToFragment(xml, document);
         $("#handbook-holder").html(fragment);
 
@@ -111,17 +103,16 @@ $(function() {
         // Set the tab to selected
         $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
         $('.tabs-nav nav.top-nav:nth-of-type(1) a').addClass('selected');
-
         
         donav();
-
-
+      },
+      error: function (xml) {
+        console.log("An error occurred in translation");
       }
     });
     
 
   // separated out the clicks - this one for the left top level nav
-
   $('#handbook-holder').on('click', '.tabs-nav nav.top-nav > a',function(e) {
       const nav_elements = $('.tabs-nav nav.top-nav > a');
       var id=$(this).closest('nav').attr('internal-destination');
@@ -249,15 +240,16 @@ $(function() {
         $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"]').addClass('selected');
         $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
       }
+      if (levels>=3) {
+        id = 'sec' + parts[0] + '.' + parts[1] + '.' + parts[2];
+        console.log("sub sub nav ID = " + id);
+        $('details').removeAttr('open');
+        $('.chapter-chapters[internal-destination="' + id + '"]').attr('open', '');
+      }
     }
 
     
-    if (levels>=3) {
-      id = 'sec' + parts[0] + '.' + parts[1] + '.' + parts[2];
-      console.log("sub sub nav ID = " + id);
-      $('details').removeAttr('open');
-      $('.chapter-chapters[internal-destination="' + id + '"]').attr('open', '');
-    }
+   
   };
 
   
