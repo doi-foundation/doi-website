@@ -48,8 +48,7 @@
                 downloaded from the DOI<sup>®</sup> web site as a convenience for companies, organizations and
                 the press. Inclusion of this logo should not be used to imply DOI<sup>®</sup> Foundation's
                 endorsement of the company, product or services.</p>
-            <p> For more information, see the Trademark Policy
-                (https://www.doi.org/resources/130718-trademark-policy.pdf). </p>
+            <p> For more information, see the Trademark Policy (https://www.doi.org/resources/130718-trademark-policy.pdf). </p>
         </section>
     </front>
     <body>
@@ -95,7 +94,7 @@
                     assists business analysts and developers in designing and developing
                     applications based on the DOI System.</list-item>
                 <list-item>Chapter 8: Defining RA and Registrant Policies This chapter assists the
-                    Registra-tion Agencies or registrants in defining their own policies. </list-item>
+                    Registration Agencies or registrants in defining their own policies.</list-item>
                 <list-item>Chapter 9: Operating and Maintaining the RA Services This chapter assists
                     the Registration Agency's service operations team in performing service
                     operation tasks.</list-item>
@@ -115,15 +114,15 @@
                     version 3.0 June 2022.
                     https://www.dona.net/sites/default/files/2022-06/DO-IRPV3.0--2022-06-30.pdf
                     Notice: The DOI Foundation welcomes the publication of the Digital Object
-                    Iden-tifier Resolution Protocol (DO-IRP). This specification is made available
+                    Identifier Resolution Protocol (DO-IRP). This specification is made available
                     by DONA, a Swiss Foundation set up to govern the Handle System® (as used by the
-                    DOI in-frastructure) and promote associated specifications. The Handle System
+                    DOI infrastructure) and promote associated specifications. The Handle System
                     was previously specified only in "informative" documents and the publication of
                     proven, normative documents that remove features that were never implemented
                     will increase the robustness and reliability of the DOI infrastructure. This
                     infrastructure is used over 12 billion times a year to resolve over 300 million
                     DOI names across the different sectors that rely on it. Most users access the
-                    DOI in-frastructure through the resilient network of web proxies at
+                    DOI infrastructure through the resilient network of web proxies at
                     https://doi.org and never encounter the Handle System directly, but this
                     publication will ensure that the DOI System remains world-class into the future.
                 </list-item>
@@ -204,7 +203,7 @@
             <section id="sec1.3">
                 <title>Identifier/Resolution System within the Handle System</title>
                 <p>For its resolution services, the DOI System is an implementation of the Handle
-                    System , a general-purpose distributed information system designed to provide an
+                    System, a general-purpose distributed information system designed to provide an
                     efficient, extensible, and secured global name service for use on networks such
                     as the Internet. </p>
                 <section id="sec1.3.1">
@@ -309,7 +308,7 @@
                             scope as possible, and it is applicable to any entity identifiable by
                             the DOI System. </list-item>
                         <list-item>Allowed values for Referent types and sub-types are managed with
-                            over-sight of the DOI Foundation</list-item>
+                            oversight of the DOI Foundation</list-item>
                         <list-item>Basic Metadata sufficient to define what the referent is must be
                             specified per sub-type</list-item>
                         <list-item>Where more than one registration agency assigns DOIs to a
@@ -662,7 +661,7 @@
                                         Foundation also ensures that the doi.org domain is part of
                                         the persistent technical infrastructure, including mirroring
                                         and load balancing to ensure optimal availability for HTTPS
-                                        requests to the DOI Proxy. </p>
+                                        requests to the DOI Proxy.</p>
                                     <p>The Handle System is governed by the DONA Foundation which is
                                         committed to ensure the system continuity. The Handle System
                                         is an open standard, so anyone can build/use a Handle
@@ -805,7 +804,7 @@
                         Its application is used by publishers and societies to enable cross-citation
                         of scholarly publications.</list-item>
                     <list-item>DataCite provides DOI name services for referencing and sharing
-                        research out-puts and resources, primarily research data sets, text and
+                        research outputs and resources, primarily research data sets, text and
                         samples.</list-item>
                     <list-item>The Entertainment ID Registry (EIDR) provides identifiers and
                         associated metadata that are used in the commercial film and video industry,
@@ -872,7 +871,7 @@
                         <list-item>to maintain the DOI System technical infrastructure and data in
                             accordance with the needs of the users</list-item>
                         <list-item>to establish guidelines regarding allocation, registration,
-                            maintenance and dis-semination of DOI names</list-item>
+                            maintenance and dissemination of DOI names</list-item>
                         <list-item>to continuously adapt the DOI Handbook and guidelines to meet the
                             needs of the market</list-item>
                         <list-item>to respond to enquiries and information requests related to ISO
@@ -954,7 +953,7 @@
                             Standard. </list-item>
                         <list-item>Provide granularity rules that specify under which circumstances
                             changes to a referent or its metadata, including its ownership,
-                            generally requires the assign-ment of a new DOI name</list-item>
+                            generally requires the assignment of a new DOI name</list-item>
                         <list-item>publish rules to aid persistence of identification (for example,
                             requirements for maintenance of records, default resolution
                             services)</list-item>
@@ -983,7 +982,7 @@
                             System operates, and establishing working relationships with the
                             responsible organizations and projects to ensure that appropriate
                             co-operation is fostered to mutual benefit and that parallel
-                            develop-ments do not remain in ignorance of one another.</list-item>
+                            developments do not remain in ignorance of one another.</list-item>
                         <list-item>role as the formal Registration Authority of the ISO/IEC MPEG21
                             Rights Data Dictionary This standard is not a requirement for DOI System
                             use. For further information, send questions to
@@ -1028,11 +1027,11 @@
                             membership transfers from the General to the RA category. </list-item>
                         <list-item>
                             <bold>Registration Agency Membership</bold> This membership is only
-                            available to organizations who have successfully under-gone the process
+                            available to organizations who have successfully undergone the process
                             of becoming a Registration Agency (RA) (see 2.2.5). The primary role of
                             RAs is to provide services and applications to registrants by allocating
                             DOI prefixes, registering DOI names and providing the necessary
-                            in-frastructure to allow registrants to declare and maintain System
+                            infrastructure to allow registrants to declare and maintain System
                             Metadata and DOI records. For more information about RAs, see
                             2.2.</list-item>
                         <list-item>
@@ -1054,7 +1053,7 @@
                     <p>General, Registration Agency and Charter members are entitled to vote in
                         annual DOI Foundation's elections within their own category of membership
                         (There are no differences in member rights and benefits between Charter and
-                        General.). Affili-ate membership does not carry voting rights.</p>
+                        General.). Affiliate membership does not carry voting rights.</p>
                     <p>More information is available on the membership classes on the <ext-link
                             xlink:href="https://www.doi.org/the-community/who-are-the-members-and-users"
                             >DOI web site</ext-link>.</p>
@@ -1086,7 +1085,7 @@
                         <list-item>If a General member subsequently is appointed as a Registration
                             Agency (RA), their membership transfers from the General to the RA
                             category, and any unexpired portion of the previous General membership
-                            fee is credited to their RA mem-bership dues</list-item>
+                            fee is credited to their RA membership dues</list-item>
                     </list>
                     <p>NOTE: In general, it is likely that the cost of fees will be deductible as a
                         business expense of the joining entity. The detailed question of
@@ -1111,7 +1110,7 @@
                     <subtitle>TRIAL PREFIX</subtitle>
                     <p>On joining the DOI Foundation, a unique DOI prefix is available for
                         experimental purposes for each member. The number of DOI names allocated
-                        with this experi-mental prefix will be subject to review and may be limited
+                        with this experimental prefix will be subject to review and may be limited
                         at the discretion of the DOI Foundation. If further DOI prefixes are
                         required for non-experimental purposes, members must work with one of the
                         Registration Agency members. Trial prefix use is particularly intended for
@@ -1165,7 +1164,7 @@
                     <p>The Board meets regularly. Issues which any member feels should be considered
                         by the Board should first be brought to the attention of the Managing Agent
                         or a Board member. Board meetings are open to all members who may attend as
-                        ob-servers and participate but not vote, except for designated closed
+                        observers and participate but not vote, except for designated closed
                         Executive Sessions.</p>
                     <p>The DOI representative of each organization will represent the organization
                         at all Board meetings and in voting issues. Substitution of another
@@ -1182,23 +1181,23 @@
                     person or organization who has requested and received the registration of a
                     particular DOI name.</p>
                 <p>This section explains the role and function of Registration Agencies in the DOI
-                    Sys-tem, including operational and technical requirements and policies. A list
-                    of cur-rent Registration Agencies and their areas of coverage is available on
+                    System, including operational and technical requirements and policies. A list
+                    of current Registration Agencies and their areas of coverage is available on
                     the <ext-link xlink:href="https://www.doi.org/registration_agencies.html">DOI
                         web site</ext-link>.</p>
                 <section id="sec2.2.1">
                     <title>Roles of a Registration Agency</title>
                     <p>A Registration Agency (RA) provides services to one or several communities of
-                        us-ers. A community is loosely defined, but could be any group of parties
+                        users. A community is loosely defined, but could be any group of parties
                         sharing a common application or interest, under any organizational
-                        structures (public, pri-vate sector, not-for profit, regulator, etc).</p>
+                        structures (public, private sector, not-for profit, regulator, etc).</p>
                     <p>The services an RA provides to their users include:</p>
                     <list>
                         <list-item>allocating prefixes</list-item>
                         <list-item>registering DOI names and providing the necessary infrastructure
-                            to allow regis-trants to declare and maintain System Metadata and DOI
+                            to allow registrants to declare and maintain System Metadata and DOI
                             record (in other words, use of the DOI System)</list-item>
-                        <list-item>· services not directly involving the DOI System which add value,
+                        <list-item>services not directly involving the DOI System which add value,
                             for example: management of a database of related data with facilities
                             for look-up from metadata to DOI name</list-item>
                     </list>
@@ -1251,7 +1250,7 @@
                     </list>
                     <p>Operational costs of the system are borne directly or indirectly by the
                         registrants. The business model adopted by an individual RA is a matter for
-                        the RA alone, pro-vided that it complies with the DOI Foundation's
+                        the RA alone, provided that it complies with the DOI Foundation's
                         policies.</p>
                     <p content-type="note">RAs may choose to provide other DOI System-related
                         services to registrants, without limitation as long as they conform with DOI
@@ -1275,7 +1274,7 @@
                     <p>Exclusivity of DOI name registration rights covering either a specific
                         geographic territory or a wide area of application in general (for example,
                         audio) will not normally be granted to any Registration Agency (RA).
-                        Exceptions are possible, for ex-ample where the RA is mandated to operate as
+                        Exceptions are possible, for example where the RA is mandated to operate as
                         a service for an existing closed community and will not offer their
                         registration services outside that community. DOI applications often overlap
                         and in the digital world any number of categorisations are possible, which
@@ -1311,7 +1310,7 @@
                                     trademarks</list-item>
                                 <list-item>sub-licenses to exercise all rights in the implementation
                                     technologies (such as the Handle System) required for the
-                                    fulfillment of RA's rights and obliga-tions as an RA under the
+                                    fulfillment of RA's rights and obligations as an RA under the
                                     DOI System </list-item>
                             </list>
                         </list-item>
@@ -1368,12 +1367,12 @@
                             interested in becoming a General Member of the DOI Foundation with a
                             view to developing an RA application are encouraged to contact the DOI
                             Foundation for an exploratory discussion. See also the detailed DOI
-                            mem-bership information in 2.1.5. </list-item>
+                            membership information in 2.1.5. </list-item>
                         <list-item>have made a successful application to the DOI Board to be
                             appointed as an RA All appointments as an RA are made at the discretion
-                            of the Board of the Foun-dation. It is unlikely that an application
-                            simply to register DOI names without of-fering additional services
-                            utilising these registered DOI names will be accepta-ble or successful.
+                            of the Board of the Foundation. It is unlikely that an application
+                            simply to register DOI names without offering additional services
+                            utilising these registered DOI names will be acceptable or successful.
                             Potential applicants are strongly encouraged to review one or more of
                             the existing RAs for examples of services and operations. See also
                             2.2.2. </list-item>
@@ -1417,13 +1416,13 @@
                     <title>Policy Formulation Process</title>
                     <p>Policies are developed within the context of the DOI Foundation's By-laws and
                         Charter. Within this scope, formal agreements are in place between the DOI
-                        Foun-dation and its partners. Individual policies are then defined
+                        Foundation and its partners. Individual policies are then defined
                         consistent with these agreements.</p>
                     <p>Policy development takes place through discussion at regular strategy and
                         members meetings of the DOI Foundation, and sometimes through working groups
                         tasked with reviewing specific areas. All proposed changes in the Core
                         Specification or policies will be presented initially to the RA Working
-                        Group (RAWG) for dis-cussion and approval under such quorum and voting
+                        Group (RAWG) for discussion and approval under such quorum and voting
                         procedures as may be agreed by the RAWG members. Changes approved by the
                         RAWG must then be approved by the DOI Foundation's Board.</p>
                 </section>
@@ -1515,7 +1514,7 @@
                                         <p>Procedures relating to patent rights and claims among
                                             Registration Agencies (RA): to enable the DOI System to
                                             be available to all who want to use it on equal terms;
-                                            to preserve and protect the collective invest-ment in
+                                            to preserve and protect the collective investment in
                                             the DOI System and standard; and to allow RAs to develop
                                             added-value services and features. The DOI Foundation
                                             does not itself hold any patent rights in the DOI
@@ -1535,7 +1534,7 @@
                                     </td>
                                     <td>
                                         <p>This policy concerns confidentiality of data such as
-                                            us-age statistics and information about individual DOI
+                                            usage statistics and information about individual DOI
                                             name resolution, for the DOI Foundation and the
                                             Registration Agencies.</p>
                                     </td>
@@ -1553,8 +1552,8 @@
                                     </td>
                                     <td>
                                         <p>General requirements and procedures for resolving
-                                            conflicts between Registration Agencies and encour-aging
-                                            collaboration, to the benefit of the DOI commu-nity.</p>
+                                            conflicts between Registration Agencies and encouraging
+                                            collaboration, to the benefit of the DOI community.</p>
                                     </td>
                                     <td>
                                         <p>
@@ -1571,7 +1570,7 @@
                                     <td>
                                         <p>Requirements for support and functionality of proxy
                                             servers by Registration Agencies, including those
-                                            run-ning instances of the DOI Proxy Server and their own
+                                            running instances of the DOI Proxy Server and their own
                                             local proxies, and support for the Default Proxy and the
                                             functionality of the Default Proxy.</p>
                                     </td>
@@ -1639,13 +1638,13 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>ISO 26324: In-formation and documenta-tion — Digital
+                                        <p>ISO 26324: In-formation and documentation — Digital
                                             object identifi-er system</p>
                                     </td>
                                     <td>
                                         <p>ISO 26324 specifies the syntax, description and
-                                            resolu-tion functional components of the digital object
-                                            identi-fier system, and the general principles for the
+                                            resolution functional components of the digital object
+                                            identifier system, and the general principles for the
                                             creation, registration and administration of DOI
                                             names.</p>
                                     </td>
@@ -1700,7 +1699,7 @@
                     names. For example:</p>
                 <list>
                     <list-item>the character "Á" (LATIN CAPITAL LETTER A WITH ACUTE) can be encoded
-                        ei-ther on its own or as the character "A" (LATIN CAPITAL LETTER A) followed
+                        either on its own or as the character "A" (LATIN CAPITAL LETTER A) followed
                         by the combining character ◌́ (COMBINING ACUTE ACCENT);</list-item>
                     <list-item>multiple schemes (UTF-8, UTF-16 or UTF-32) can be used when
                         serializing a DOI name to bytes for interchange between
@@ -1709,7 +1708,7 @@
                         CAPITAL LETTER A WITH RING ABOVE.</list-item>
                 </list>
                 <p>To avoid these pitfalls, this document specifies the syntax of a DOI name as a
-                    se-quence of Unicode code points, where each code point is an integer between 0
+                    sequence of Unicode code points, where each code point is an integer between 0
                     and 0x10FFFF, and the fundamental unit of encoding in Unicode.</p>
             </section>
             <section id="sec3.3">
@@ -1720,7 +1719,7 @@
                     <p>A DOI name consists of an ordered sequence of code points of the Graphic
                         type, as specified in the Unicode Standard. The Graphic type includes all
                         code points that are letter, mark, number, punctuation, symbol and spaces.
-                        It excludes, for ex-ample, control code points such as U+0009 HORIZONTAL
+                        It excludes, for example, control code points such as U+0009 HORIZONTAL
                         TABULATION.</p>
                     <p>The sequence is further arranged in a DOI prefix and a DOI suffix separated
                         by U+002F SOLIDUS.</p>
@@ -1738,7 +1737,7 @@
                         prefix, “10” is the directory indicator and “5594” is the registrant
                         code.</p>
                     <p>The directory indicator consists of a sequence of digits between 0 and 9. It
-                        is usual-ly equal to “10” but other directory indicators may be used in the
+                        is usually equal to “10” but other directory indicators may be used in the
                         future by the DOI Foundation.</p>
                     <p>The registrant code consists of sequences of digits between 0 and 9,
                         separated by U+002E FULL STOP.</p>
@@ -1783,7 +1782,7 @@
                         block. It does not restrict DOI names to containing only uppercase or
                         lowercase letters.</p>
                     <p>EXAMPLE 1: The following DOI names are equivalent because U+0053 LATIN
-                        CAPI-TAL LETTER S and U+0073 LATIN SMALL LETTER S are considered
+                        CAPITAL LETTER S and U+0073 LATIN SMALL LETTER S are considered
                         identical:</p>
                     <list list-type="undecorated">
                         <list-item>10.5594/SMPTE.ST2067-21.2020</list-item>
@@ -1860,7 +1859,7 @@
                         syntax if the DOI prefix and suffix consist solely of unreserved characters
                         as defined in IETF RFC 3986. </p>
                     <p>NOTE: This presentation can be ambiguous since multiple code points or
-                        sequenc-es of code points can result in similar presentations. For example,
+                        sequences of code points can result in similar presentations. For example,
                         U+002D HYPHEN-MINUS, U+2212 MINUS SIGN and U+2013 EN DASH are rendered as
                         similar glyphs. As another example, the abstract character "á" can be
                         represented by either the code point U+00E1 or the sequence of code points
@@ -1882,7 +1881,7 @@
                         uses the "doi" namespace, as specified in the Namespace Registration for
                         Digital Object Identifier (DOI).</p>
                     <p>EXAMPLE The DOI name "10.26321/á.gutiérrez.zarza.02.2018.03" can be
-                        present-ed in the URN form
+                        presented in the URN form
                         "urn:doi:10.1006/%C3%A1.guti%C3%A9rrez.zarza.02.2018.03".</p>
                 </section>
                 <section id="sec3.4.4">
@@ -1891,12 +1890,12 @@
                         URL shall be created by percent-encoding the result of concatenating the
                         string "https://doi.org/" with the percent-encoded DOI name (see 3.8).</p>
                     <p>EXAMPLE The DOI name "10.26321/á.gutiérrez.zarza.02.2018.03" can be
-                        present-ed in the HTTP PROXY form
+                        presented in the HTTP PROXY form
                         "https://doi.org/10.1006/%C3%A1.guti%C3%A9rrez.zarza.02.2018.03</p>
                     <p>As detailed in 1.5.1, issuing an HTTP GET request at that URL resolves the
                         DOI name.</p>
                     <p>Other HTTP proxy forms starting with the string "https://dx.doi.org" are
-                        dep-recated.</p>
+                        deprecated.</p>
                 </section>
                 <section id="sec3.4.5">
                     <title>Other</title>
@@ -1951,7 +1950,7 @@
                     objectives: preventing conflict with characters with special meaning in URLs,
                     e.g., “/”, and mapping non-US-ASCII characters to a sequence of US-ASCII
                     characters.</p>
-                <p>The percent-encoded representation of a DOI name is formed by first apply-ing the
+                <p>The percent-encoded representation of a DOI name is formed by first applying the
                     following algorithm to each of its prefix and suffix separately:</p>
                 <list list-type="numbered">
                     <list-item>the ordered sequence of Unicode code points of the DOI Prefix or
@@ -2022,7 +2021,7 @@
                         <list-item>Within the DOI System itself, the DOI name is an opaque string.
                             No definitive information relating to the other identifier scheme should
                             be inferred from the specific character string used for a DOI name, and
-                            the DOI name is not guaran-teed to be usable in any non-DOI applications
+                            the DOI name is not guaranteed to be usable in any non-DOI applications
                             designed for the other identifier scheme.</list-item>
                         <list-item>Specific syntax rules for the incorporation of an existing
                             identifier from another scheme shall be maintained by the ISO 26324
@@ -2035,9 +2034,9 @@
                         scheme.</p>
                     <list>
                         <list-item>Example 1 10.978.86123/45678 shows a possible incorporation of an
-                            ISBN (978-86-123-4567-8) into a DOI prefix and suffix. </list-item>
+                            ISBN (978-86-123-4567-8) into a DOI prefix and suffix.</list-item>
                         <list-item>Example 2 10.1038/issn.1476-4687 shows a DOI suffix using an
-                            ISSN. </list-item>
+                            ISSN.</list-item>
                         <list-item>Example 3 10.97812345/99990 is a DOI name. It cannot be validly
                             submitted to an ISBN point-of-sale ordering system, or converted to a
                             GS1 bar code for use as an ISBN bar code. It does not conform to the
@@ -2142,15 +2141,15 @@
                 <section id="sec4.2.1">
                     <title>General Requirements on Metadata</title>
                     <p>According to ISO 26324, the referent shall be described unambiguously and
-                        pre-cisely by System Metadata, based on a structured data model that enables
+                        precisely by System Metadata, based on a structured data model that enables
                         the referent of a DOI name to be associated with metadata of any desired
                         degree of precision and granularity to support identification, description
-                        and services asso-ciated with a referent. This is designed to do the
+                        and services associated with a referent. This is designed to do the
                         following:</p>
                     <list>
                         <list-item>promote interoperability within networks of DOI users by enabling
                             independent systems to exchange information and initiate actions from
-                            each other in trans-actions involving DOI names Since DOI names can be
+                            each other in transactions involving DOI names Since DOI names can be
                             assigned to any type of object, such interoperability can be across
                             different types of content (for example, audiovisual, music and text). </list-item>
                         <list-item>ensure minimum standards of quality of administration of DOI
@@ -2164,7 +2163,7 @@
                         functions:</p>
                     <list>
                         <list-item>generic mechanism for handling complex metadata for all different
-                            types of in-tellectual property For example, instead of treating sound
+                            types of intellectual property For example, instead of treating sound
                             carriers, books, videos, and photographs as fundamentally different
                             things with different (if similar) characteristics, they are all
                             recognized as creative works with different values of the same
@@ -2175,7 +2174,7 @@
                                 <list-item>media (for example, books, serials, audio, audiovisual,
                                     software, abstract works, visual material)</list-item>
                                 <list-item>functions (for example, cataloguing, discovery, workflow,
-                                    and rights man-agement)</list-item>
+                                    and rights management)</list-item>
                                 <list-item>levels of metadata (from simple to complex)</list-item>
                                 <list-item>semantic barriers</list-item>
                                 <list-item>linguistic barriers</list-item>
@@ -2236,12 +2235,12 @@
                         insofar as input metadata must support the minimum requirements implicit in
                         the DOI System Metadata. RAs may specify their own metadata schemes and
                         messages, or use any existing schemes in whole or part for their input and
-                        service metadata decla-rations.</p>
+                        service metadata declarations.</p>
                     <subtitle>POLICY ON DOI NAME ADMINISTRATION</subtitle>
                     <p>The second aim of DOI data model policy is to ensure minimum standards of
                         quality of administration of DOI names by Registration Agencies (RA),and
                         facilitate the administration of the DOI System as a whole. This aim may
-                        also be seen as support-ing the first aim of interoperability, but it
+                        also be seen as supporting the first aim of interoperability, but it
                         specifically addresses the need to ensure that a prospective RA is competent
                         to issue DOI names responsibly and that ambiguous DOI names do not enter the
                         network.</p>
@@ -2251,7 +2250,7 @@
                         and is fundamentally sound enough to support interoperability within the
                         network. In addition, the policy requires that RAs maintain a record of the
                         date of allocation of a DOI name, and the identity of the registrant on
-                        whose behalf the DOI name was allo-cated.</p>
+                        whose behalf the DOI name was allocated.</p>
                     <p>The existence of a System Metadata expression for each DOI name helps with
                         the goal of persistence since this ensures that the referent for each DOI
                         name is described sufficient for the referent to be known. So, the referent
@@ -2291,14 +2290,14 @@
                     <p>The purpose of the System Metadata is to allow:</p>
                     <list>
                         <list-item>recognition Recognition in this context means that the System
-                            Metadata should be suffi-cient to show clearly what kind of thing is the
-                            DOI referent (by various classifica-tions), and allow a user to identify
+                            Metadata should be sufficient to show clearly what kind of thing is the
+                            DOI referent (by various classifications), and allow a user to identify
                             with reasonable accuracy the particular thing (by various names,
                             identifiers and relationships). These two are complementary, for it is
                             possible to know that something is (for example) a movie or a DVD
                             without knowing that it is "Casablanca", and vice versa. Recognition is
                             required for the discovery of referents, and also to provide information
-                            to a user when a ref-erent is discovered, whether by intent or accident.
+                            to a user when a referent is discovered, whether by intent or accident.
                             The user of metadata may be a person or a machine. The structure of the
                             System Metadata is sufficient to provide a unique description of a
                             referent (disambiguation), since further specialized metadata elements
@@ -2311,7 +2310,7 @@
                             interoperability </list-item>
                         <list-item>interoperability Interoperability in this context means that
                             System Metadata from different DOI Registration Agencies may be combined
-                            or queried by the same software ap-plication without requiring semantic
+                            or queried by the same software application without requiring semantic
                             mapping or transformation. Interoperability is achieved when data
                             elements or their values are common to diverse metadata schemas. The
                             System Metadata provides this directly by mandating a common set of core
@@ -2332,12 +2331,12 @@
                     <p>Registration Agencies can request:</p>
                     <list>
                         <list-item>the addition of new terms to the DOI System Metadata model, or
-                            the publica-tion of additional metadata schemas</list-item>
+                            the publication of additional metadata schemas</list-item>
                         <list-item>the addition of new values to open lists of values of the DOI
                             SubTypes and/or Basic Metadata specification</list-item>
                     </list>
                     <p>Authority to make changes in the existing DOI specifications lies with the
-                        Metada-ta Working Group. A fundamental role of the DOI Foundation is to
+                        Metadata Working Group. A fundamental role of the DOI Foundation is to
                         provide assurance to users that the changes have been peer-reviewed, tested
                         in practical implementations, and are based on sound principles. </p>
                     <p>For more information, see 7.4.</p>
@@ -2347,7 +2346,7 @@
                 <title>Metadata Interoperability</title>
                 <p>The aim of DOI System Metadata model policy is to promote interoperability within
                     the network of DOI name users. It does this by providing ways of achieving
-                    seman-tic compatibility between different Registration Agencies.</p>
+                    semantic compatibility between different Registration Agencies.</p>
                 <section id="sec4.4.1">
                     <title>Motivations for Interoperability</title>
                     <p>Standardization of any kind is driven by a need for interoperability. If a
@@ -2358,7 +2357,7 @@
                         declarations, and its providers and users should conform to them. Such a
                         situation is described as restricted use of the DOI System, and applies
                         typically where an organization becomes an RA for the specific purpose of
-                        issuing DOI names for use only within its own private organiza-tion.</p>
+                        issuing DOI names for use only within its own private organization.</p>
                     <p>However, such isolation is unusual. Normally, when a DOI name is issued to a
                         referent, one fundamental assumption may be made about interoperability: the
                         RA or the referent provider may wish (now or in the future) that the DOI
@@ -2373,7 +2372,7 @@
                     <p>As the RA network grows, such requirements are emerging, and where specific
                         opportunities do not yet exist they are anticipated. In such circumstances
                         neither the RA nor the referent provider wishes to issue a second DOI name
-                        for the refer-ent, nor to provide and capture the input metadata all over
+                        for the referent, nor to provide and capture the input metadata all over
                         again from its source.</p>
                 </section>
                 <section id="sec4.4.2">
@@ -2383,11 +2382,11 @@
                         RA — is subject to the metadata policy:</p>
                     <list>
                         <list-item>The System Metadata ensures that the minimum set of metadata held
-                            by differ-ent RAs is consistent.</list-item>
+                            by different RAs is consistent.</list-item>
                     </list>
                     <p>The figure below shows what applications can assume about a referent across
-                        reg-istration agencies. In this example, of the application can process
-                        System Metada-ta about a DOI name managed by RA1 and another managed by RA2.
+                        registration agencies. In this example, of the application can process
+                        System Metadata about a DOI name managed by RA1 and another managed by RA2.
                         To be able to process this metadata, the application uses the System
                         Metadata Model agreed between registration agencies. The System Metadata is
                         intended to allow development of cross RA applications.</p>
@@ -2409,7 +2408,7 @@
                     underlying objective of the Semantic Web and Linked Data: that the Web should be
                     seen as a medium for structured, interlinked and machine-processable
                     information, as much as, in its current form, a network of documents presenting
-                    the information for human consumption. </p>
+                    the information for human consumption.</p>
                 <p>The DOI System Metadata exists to provide a basis of good practice and a start
                     point for the integration of metadata for different DOI referents. Initiatives
                     such as Linked Open Data provide further essential infrastructure, but only in
@@ -2444,7 +2443,7 @@
                         <list-item>unique identification: the specification by an identifier string
                             of one and only one referent</list-item>
                         <list-item>functional granularity: it shall be possible to separately
-                            resolve a referent when-ever it needs to be distinguished</list-item>
+                            resolve a referent whenever it needs to be distinguished</list-item>
                         <list-item>data typing: The extensible definition of constraints placed upon
                             the interpretation of certain data entries in a resolution record, such
                             that data values with similar constraints can be grouped and treated in
@@ -2538,7 +2537,7 @@
                     <p>To resolve a Handle, a Handle System client will first connect to the GHR
                         which will redirect it to the LHS responsible for the requested Handle. </p>
                     <p>To understand in more details how the GHR and LHS work, it is necessary to
-                        intro-duce first the prefix Handle concept.</p>
+                        introduce first the prefix Handle concept.</p>
                     <subtitle>INTRODUCTION TO PREFIX HANDLES (0.NA PREFIX)</subtitle>
                     <p>Specific Handles are used in the Handle System to represent the prefixes:</p>
                     <list>
@@ -2569,7 +2568,7 @@
                     <list>
                         <list-item>first-level resolution of Handles The GHR is the first access
                             point for any client requesting a Handle resolution. Based on the prefix
-                            Handles hosted in the GHR, it redirects the client to the Lo-cal Handle
+                            Handles hosted in the GHR, it redirects the client to the Local Handle
                             Service (LHS) responsible for this Handle. </list-item>
                         <list-item>administration for its assigned credential prefix The MPA GHR
                             Service allows the creation and maintenance by an authorized
@@ -2694,7 +2693,7 @@
                         more technical expertise on the part of the RA. If an RA is interested in
                         running a DOI LHS it is wise to schedule a technical overview meeting with
                         the staff of the DOI technical support service provider. To set this up or
-                        to answer any questions please send email to the DOI technical sup-port
+                        to answer any questions please send email to the DOI technical support
                         service provider at doi-admin@doi.org.</p>
                 </section>
             </section>
@@ -2704,7 +2703,7 @@
                     is required. A DOI resolver is a client of the Handle System. </p>
                 <section id="sec5.3.1">
                     <title>DOI Proxy</title>
-                    <p>FOOTNOTE: An earlier proxy address (https://dx.doi.org) is deprecated and its
+                    <p>An earlier proxy address (https://dx.doi.org) is deprecated and its
                         use is discouraged.</p>
                     <p>With the HTTPS Proxy Server of the DOI System (https://doi.org) , users can
                         resolve DOI names from any standard web browser by using the URL syntax. For
@@ -2725,7 +2724,7 @@
                     <p>The DOI Proxy consists of multiple servers running at multiple locations,
                         with the load distributed evenly across all servers. </p>
                     <p content-type="note">The core DOI name resolution service is used by the DOI
-                        Proxy but is not constrained by the DOI Proxy. </p>
+                        Proxy but is not constrained by the DOI Proxy.</p>
                     <subtitle>DOI PROXY RESOLUTION FUNCTION</subtitle>
                     <p>The DOI Proxy supports the single and multiple DOI resolutions: see 5.4. </p>
                     <p>The resolution process is as follows:</p>
@@ -2737,10 +2736,10 @@
                         <list-item>The DOI Proxy requests the DOI name resolution from the GHR (or
                             retrieves it from its cache, if the record is in its cache and no
                             authoritative query is done) which redirects it to the responsible DOI
-                            LHS. Before sending the resolution re-quest, the DOI Proxy decodes the
+                            LHS. Before sending the resolution request, the DOI Proxy decodes the
                             percent-encoded DOI name if necessary (see Error! Reference source not
-                            found.). </list-item>
-                        <list-item>The responsible DOI LHS returns the DOI record to the DOI Proxy. </list-item>
+                            found.).</list-item>
+                        <list-item>The responsible DOI LHS returns the DOI record to the DOI Proxy.</list-item>
                         <list-item>The actions performed by the DOI Proxy depend on the query
                             parameters. Typically:<list>
                                 <list-item>If the DOI record contains a 10320/LOC element then the
@@ -2755,11 +2754,11 @@
                     <p content-type="note">To speed resolution, the proxy servers cache DOI record
                         values, with the TTL (Time To Live) set to one hour. This means that if a
                         DOI record value is changed, it can take up to one hour before the new value
-                        is returned. This setting is specific to the current proxy sys-tem and
+                        is returned. This setting is specific to the current proxy system and
                         different DOI software clients could be configured to behave differently.
-                        The de-fault Handle Record TTL setting is 24 hours, which is a common TTL
+                        The default Handle Record TTL setting is 24 hours, which is a common TTL
                         for Internet applications. While the one hour setting currently holds for
-                        the DOI proxy, it would be best to design var-ious DOI workflows assuming
+                        the DOI proxy, it would be best to design various DOI workflows assuming
                         the more conservative 24 hour period.</p>
                     <subtitle>DOI PROXY MAINTENANCE COMMITMENT</subtitle>
                     <p>The DOI technical support service provider and the DOI Foundation are
@@ -2767,7 +2766,7 @@
                         component to maintaining the integrity of the millions of instances of DOI
                         name-based web links. Maintaining the utility of those links over time will
                         require maintaining both the core DOI System and the specific gateway
-                        service, doi.org, that those links refer-ence and so use to gain access to
+                        service, doi.org, that those links reference and so use to gain access to
                         the core DOI System. This, of course, is not at all unique and is just
                         another variation on the Internet theme of layering services on top of one
                         another. doi.org is itself dependent on the Domain Name System (DNS), which
@@ -2776,18 +2775,18 @@
                 <section id="sec5.3.2">
                     <title>Custom DOI Resolvers</title>
                     <p>Additional DOI resolvers can be built and additional methods can be used to
-                        ac-cess the core DOI name resolution system without interfering in any way
+                        access the core DOI name resolution system without interfering in any way
                         with the ongoing operation of the DOI Proxy. For more information, see
                         7.5.</p>
                 </section>
                 <section id="sec5.3.3">
                     <title>DOI REST API</title>
                     <p>The DOI REST API allows programmatic access to DOI name resolution services
-                        us-ing HTTP(S). A REST API request can be made by performing a standard HTTP
+                        using HTTP(S). A REST API request can be made by performing a standard HTTP
                         GET. The API returns JSON. </p>
                     <p>The DOI REST API provides specifications for using the Handle System but
                         avoids the need for users to address the Handle System directly and in
-                        depth. The API en-sures the portability of any code written to address DOI
+                        depth. The API ensures the portability of any code written to address DOI
                         System services and applications.</p>
                     <p>For technical details, see 10.3.</p>
                     <p content-type="note">In addition to Java, API libraries are available for
@@ -2826,7 +2825,7 @@
                         formatted in RDF/XML which can be interpreted by the DOI resolver to
                         retrieve the resources to be returned to the resolution requester. For
                         example, a resource may be selected according to the context of the request
-                        (in particular, to the country of the re-quester). For more information, see
+                        (in particular, to the country of the requester). For more information, see
                         10.4. </p>
                     <p>The following figure shows a DOI record containing a 10320/LOC element used
                         to retrieve URL(s). The 10320/LOC element could also be stored at prefix
@@ -2841,7 +2840,7 @@
                     <p>The multiple DOI resolution process is as follows:</p>
                     <list list-type="numbered">
                         <list-item>A requester (user or application process) sends an HTTP request
-                            to the DOI re-solver.</list-item>
+                            to the DOI resolver.</list-item>
                         <list-item>The DOI resolver sends a resolution request of the DOI name to
                             the GHR. The GHR redirects the resolver to the responsible DOI LHS which
                             returns the DOI record to the resolver.</list-item>
@@ -2866,10 +2865,10 @@
                     <p>Two URLs are involved in the parameter passing feature:</p>
                     <list>
                         <list-item>the referrer URL: URL sent by the requester (referrer) to the DOI
-                            Proxy and con-taining the DOI name to be resolved and the context
+                            Proxy and containing the DOI name to be resolved and the context
                             information</list-item>
                         <list-item>the referent URL: URL registered in the respective DOI record (by
-                            the referent) and which may also contain parameters </list-item>
+                            the referent) and which may also contain parameters</list-item>
                     </list>
                     <p>The DOI Proxy combines the referrer URL with the referent URL to create the
                         out-bound link. It supports two different methods:</p>
@@ -2890,7 +2889,7 @@
                         https://www.publisher.org/resource9876?param1=12345%26param2=6789 </p>
                     <p>If the referent URL already contains parameters then they may conflict with
                         the urlappend values. In the above example, the urlappend should start with
-                        an am-persand character rather than a question mark character.</p>
+                        an ampersand character rather than a question mark character.</p>
                 </section>
                 <section id="sec5.4.4">
                     <title><index-term ref="sec5.4.4">Content Negotiation</index-term></title>
@@ -2898,7 +2897,7 @@
                         make it possible to serve different representations of a resource at the
                         same URL, so that the content rendering software can specify which version
                         fits their capabilities the best. In the context of the DOI System, content
-                        negotiation allows making a re-quest that favors content types specific to a
+                        negotiation allows making a request that favors content types specific to a
                         particular Registration Agency (RA) but which will also degrade to respond
                         with a more standard content type for other RAs. </p>
                     <p>A content negotiated request to a DOI resolver is much like a standard
@@ -2914,7 +2913,7 @@
                         corresponds to the content type "application/rdf+xml") is used in the DOI
                         record to specify the redi-rection to the respective metadata service. If
                         the DOI resolver does not support this content type then it will redirect to
-                        the URL defined in the URL element (con-tent type "text/html"). This is
+                        the URL defined in the URL element (content type "text/html"). This is
                         illustrated in the DOI name example below. </p>
                     <fig id="fig17">
                         <label>Figure 17</label>
@@ -2947,7 +2946,7 @@
                         service provider:</p>
                     <list>
                         <list-item>If the problem is with the Handle System, the DOI technical
-                            support service pro-vider responds to the sender appropriately. </list-item>
+                            support service provider responds to the sender appropriately.</list-item>
                         <list-item>If the DOI name is not found, a special handling is performed
                             (see below).</list-item>
                     </list>
@@ -2957,13 +2956,13 @@
                         do not exist. In that case, a response page is displayed with:</p>
                     <list>
                         <list-item>details about the error To further assist users, the error
-                            response system checks to see if a user has at-tempted to resolve a DOI
+                            response system checks to see if a user has attempted to resolve a DOI
                             prefix only, or a DOI that contains multiple slashes or a trailing slash
-                            which might be causing the error, and advises the user according-ly. </list-item>
+                            which might be causing the error, and advises the user accordingly.</list-item>
                         <list-item>the possibility for the user to send a report to the responsible
                             RA If required by an RA, the technical support service provider can
                             configure the DOI Proxy to automatically report the error message to the
-                            responsible RA </list-item>
+                            responsible RA</list-item>
                     </list>
                 </section>
             </section>
@@ -2983,7 +2982,7 @@
                     new shortcut, or return the existing shortcut if one has already been
                     created.</p>
                 <p>For automated purposes, the shortDOI service can also be used by simply
-                    append-ing the original DOI name to the URL for the service. A format parameter
+                    appending the original DOI name to the URL for the service. A format parameter
                     can be used to specify how information is to be returned. For further
                     information, see the <ext-link xlink:href="https://shortdoi.org"
                         >shortDOI</ext-link> service web page.</p>
@@ -3061,13 +3060,13 @@
                     pairs associated with a DOI name, and multiples of the same type.</p>
                 <p>Associating XML, or other machine readable data with a DOI name, expands the
                     utility of multiple resolution even further, adding features, and offering more
-                    op-tions for negotiating content, and facilitating the creation of Linked Data
-                    applica-tions.</p>
+                    options for negotiating content, and facilitating the creation of Linked Data
+                    applications.</p>
                 <p content-type="note">New types should, but are not required to, be registered in
                     the Handle System as Handles. As a general rule types containing a slash (for
                     example, 10320/LOC) should be considered full Handles and those without a slash
                     (for example, URL) should be assumed to be suffixes under the 0.TYPE prefix
-                    (with the previous example: 0.TYPE/URL). The type Han-dle Record may define the
+                    (with the previous example: 0.TYPE/URL). The type Handle Record may define the
                     syntax, structure, possible semantics, or any other necessary descriptive
                     characteristics of the corresponding value field. For more information, see the
                         <ext-link
@@ -3088,7 +3087,7 @@
                         document, the user might be given the option to view the document, view
                         document metadata, share the document by emailing the URL to an associate,
                         visit the author's blog, etc. For a dataset, the choices offered to the user
-                        on the landing page may include viewing the com-plete dataset, viewing only
+                        on the landing page may include viewing the complete dataset, viewing only
                         selected data, or some other choice of interaction with the dataset based on
                         the information made available to a client via resolution of the DOI
                         name.</p>
@@ -3129,11 +3128,11 @@
                     <list>
                         <list-item>ignore type 10320/LOC In that case, the DOI Proxy would resolve
                             10.1525/bio.2009.59.5.9 and select the URL value
-                            https://www.jstor.org/stable/25502450. This action would be per-formed
-                            by any DOI resolver not knowing the type 10320/LOC. </list-item>
+                            https://www.jstor.org/stable/25502450. This action would be performed
+                            by any DOI resolver not knowing the type 10320/LOC.</list-item>
                         <list-item>resolve 10.1525/bio.2009.59.5.9 and return to the user both of
                             the URLs in the cr_type attributes in the 10320/LOC value, letting the
-                            user choose the next ac-tion (choose-by mechanism)</list-item>
+                            user choose the next action (choose-by mechanism)</list-item>
                         <list-item>resolve 10.1525/bio.2009.59.5.9?locatt=country:gb In that case,
                             the DOI Proxy would determine the user's geographic location from their
                             IP address. It would then select the URL
@@ -3154,12 +3153,12 @@
                     link and make use of data from multiple web sources without the need to deal
                     with many different proprietary and incompatible application programming
                     interfaces (APIs), and use of HTTP(S) to request data in structured form meant
-                    for machines instead of human-readable displays. </p>
+                    for machines instead of human-readable displays.</p>
                 <p>In Linked Data applications, evaluation of the HTTP(S) request that comes in to
                     the proxy service determines if it is a request for content of form
                     application/rdf+xml, or one of a few similar types that are commonly understood
                     to be a request for Linked Data. These requests for special content types would
-                    come from automat-ed processes or special "linked data" browsers and would not
+                    come from automated processes or special "linked data" browsers and would not
                     normally come from end users. The utility of this, of course, is that it allows
                     outside developers to query the extensive and reliable set of metadata records
                     held by Registration Agencies (RA) to build value-added services.</p>
@@ -3167,7 +3166,7 @@
                     that return metadata in a common machine-readable format. A significant
                     advantage of applying Linked Data principles and technologies to DOI-registered
                     material is that it is "data worth linking to": it is curated, value-added,
-                    data, which is man-aged, corrected, updated and consistently maintained by RAs.
+                    data, which is managed, corrected, updated and consistently maintained by RAs.
                     It is also persistent, so avoiding "bit-rot". In practice, the quality of Linked
                     data implementations is only as good as the data you are linking to, and the
                     meaning and contextualization of the link you use. The DOI System can offer
@@ -3194,7 +3193,7 @@
                 <p>In some cases, applications may require the identification of fragments of an
                     entity, rather than the full entity. Each such fragment may be assigned a
                     separate DOI name if it is practical and useful to do so (for example, if a
-                    specific table within a book is likely to be re-used many times). However, this
+                    specific table within a book is likely to be reused many times). However, this
                     may not always be possible: there are also cases where one wishes to identify in
                     principle any fragment of this entity as it becomes needed on the fly. For such
                     cases, use may be made of Template Handles (see section 11 in the <ext-link
@@ -3256,7 +3255,7 @@
                                         of a specific application of the DOI System, and this is a
                                         role of Registration Agencies (RA). This deceptively easy
                                         question (usually known as "granularity") is one of the most
-                                        diffi-cult encountered in all discussions about identifiers
+                                        difficult encountered in all discussions about identifiers
                                         (but the one most commonly overlooked) and an answer is
                                         often much more difficult than it might at first appear. The
                                         answer to when two things are "the same thing" is entirely
@@ -3282,7 +3281,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>What metada-ta are we associating with this DOI name?</p>
+                                    <p>What metadata are we associating with this DOI name?</p>
                                 </td>
                                 <td>
                                     <p>Without an explicit structured metadata layer, an identifier
@@ -3299,7 +3298,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>What are the interoperabil-ity requirements?</p>
+                                    <p>What are the interoperability requirements?</p>
                                 </td>
                                 <td>
                                     <p>The DOI System has a mechanism for interoperability with
@@ -3349,7 +3348,7 @@
                     level of redirection. In addition to simply resolving a DOI name and getting
                     back a single URL, DOI registration agencies may offer multiple resolution
                     services, linking a DOI name to multiple options about the referent (for
-                    example, bibliographic metada-ta), and those options may include requests for
+                    example, bibliographic metadata), and those options may include requests for
                     particular representations of metadata, or metadata useable only for particular
                     contexts</p>
                 <p>Developers may choose to put all or most of the information provided by the
@@ -3382,7 +3381,7 @@
                 <list>
                     <list-item>Avoid re-inventing the wheel: if it appears that you need to devise a
                         new identifier scheme, examine whether the problem can be avoided by
-                        re-using existing identifiers.</list-item>
+                        reusing existing identifiers.</list-item>
                     <list-item>If a new scheme is needed, consider if an existing protocol or
                         identifier registry can be harnessed to implement your scheme.</list-item>
                     <list-item>Register your scheme with an appropriate public namespace
@@ -3472,7 +3471,7 @@
                         operation of a Local Handle Service (LHS) or other client applications in
                         interacting with the Handle System client software or the GHR (see 5.1). In
                         the event an organization or individual wishes to use its own interface
-                        software, it is their responsibility to ensure that these inter-faces remain
+                        software, it is their responsibility to ensure that these interfaces remain
                         compatible with the current Handle System interface specification.</p>
                     <p content-type="note">The <code>net.handle.apps.simple</code> package has a
                         number of examples of how to use the Handle client library. Contact the
@@ -3579,7 +3578,7 @@
                         that the integrity of the DOI System as a whole is maintained at the highest
                         possible level (delivering reliable and consistent results to users). This
                         includes ensuring that the DOI record is accurate and up-to-date and that
-                        the System Metadata is con-sistent and complies with appropriate DOI data
+                        the System Metadata is consistent and complies with appropriate DOI data
                         model standards. </p>
                     <p>The general steps of the DOI name registration process are:</p>
                     <list list-type="numbered">
@@ -3622,17 +3621,17 @@
                     following:</p>
                 <list>
                     <list-item>An administrator must be designated for each prefix (or set of
-                        prefixes): the pre-fix administrator can create DOI names under their
+                        prefixes): the prefix administrator can create DOI names under their
                         prefix. The DOI technical support service provider also maintains
                         administrative permission for the prefix. This is intended as backup for
                         administration. Note that the creation of derived prefixes can only be done
-                        by the technical support service provider. </list-item>
+                        by the technical support service provider.</list-item>
                 </list>
                 <p content-type="note">The technical support service provider configures the prefix
                     administrators in the prefix Handle (see 10.5).</p>
                 <list>
                     <list-item>Secure maintenance of private keys must be ensured by each
-                        administrator. </list-item>
+                        administrator.</list-item>
                     <list-item>Service configuration changes must be timely reported to the DOI
                         technical support service provider.</list-item>
                     <list-item>The RA must inform the technical support service provider and the DOI
@@ -3670,7 +3669,7 @@
                         contain the service information for the LHS. As per the instructions in the
                         distribution, you will need to send the file to the DOI technical support
                         service provider at doi-admin@doi.org. Name, organization name, and the fact
-                        that the request is com-ing from a DOI RA is important so that the technical
+                        that the request is coming from a DOI RA is important so that the technical
                         support service provider knows to create prefixes that begin with 10.</p>
                 </section>
                 <section id="sec9.5.2">
@@ -3678,9 +3677,9 @@
                     <p>You are responsible for modification of the configuration of your LHS to
                         allow a secondary server installation at the DOI technical support service
                         provider. The secondary server will house a complete database of the your
-                        DOI names. This re-quires a minor change in the server's configuration file.
+                        DOI names. This requires a minor change in the server's configuration file.
                         This will be coordinated by the technical support service provider. After
-                        setup is complete a regularly execut-ing task (for instance, a cron job)
+                        setup is complete a regularly executing task (for instance, a cron job)
                         will be created to check to see if the secondary server is able to connect
                         to your server. If there is problem with the connection (for example, your
                         server is shut down) you will be notified by email and expected to correct
@@ -3697,7 +3696,7 @@
                         is in effect. The term "system" as used below refers to those components run
                         by each administrator, and the interaction of these components with the
                         Global Handle Registry (GHR) and the users of the Local Handle Service
-                        (LHS). Operational goals for administrators in-clude:</p>
+                        (LHS). Operational goals for administrators include:</p>
                     <list>
                         <list-item>Ensuring compatibility and smooth interaction among system
                             components</list-item>
@@ -3713,7 +3712,7 @@
                         LHS.</p>
                     <p content-type="note">A number of utilities for low-level maintenance of a
                         Handle server are available such as net.handle.apps.tools and
-                        net.handle.apps.site_tool. Contact the DOI tech-nical support service
+                        net.handle.apps.site_tool. Contact the DOI technical support service
                         provider at doi-admin@doi.org.</p>
                 </section>
             </section>
@@ -3731,7 +3730,7 @@
                 <p>The individual DOI names stay the same, it means that what the DOI name
                     identifies is not changed. This is a fundamental requirement. The DOI name
                     prefix does NOT change (recall that a prefix is not meaningful, but is initially
-                    assigned to a reg-istrant for convenience in generating DOI names only; no
+                    assigned to a registrant for convenience in generating DOI names only; no
                     reverse look-up can be inferred to a prefix). The administrative value is
                     changed in order for the new owner to modify its data elements (most likely the
                     URL element). Both registrants involved in the transfer need to send email to
@@ -3857,7 +3856,7 @@
                                     <td>
                                         <p>The general type of the referent (examples: creative
                                             work, party, event). This is an open list</p>
-                                        <p>FOOTNOTE Registration Agencies can request the addition
+                                        <p>Registration Agencies can request the addition
                                             of new allowed values to open lists (see 4.3.4).</p>
                                     </td>
                                 </tr>
@@ -3870,11 +3869,11 @@
                                     </td>
                                     <td>
                                         <p>Specific type of the referent as used by registration
-                                            agen-cies to enumerate things to which a DOI name is
+                                            agencies to enumerate things to which a DOI name is
                                             registered. This list is maintained at
                                             https://doi.org/10.1000/282. </p>
                                         <p>This is an open list </p>
-                                        <p>FOOTNOTE Registration Agencies can request the addition
+                                        <p>Registration Agencies can request the addition
                                             of new allowed values to open lists (see 4.3.4).</p>
 
                                     </td>
@@ -3945,7 +3944,7 @@
                                     <td>
                                         <p>Code assigned to denote the name of the agency
                                             (authorized by the ISO 26324 Registration Authority)
-                                            that is-sued this DOI name. </p>
+                                            that issued this DOI name. </p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -4055,7 +4054,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>in-dex=&lt;value&gt;</p>
+                                    <p>index=&lt;value&gt;</p>
                                 </td>
                                 <td>
                                     <p>Resolve the DOI record element at the specified index value
@@ -4081,7 +4080,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>urlap-pend=&lt;value&gt;</p>
+                                    <p>urlappend=&lt;value&gt;</p>
                                 </td>
                                 <td>
                                     <p>Append the value of this parameter to the end of the URL used
@@ -4097,7 +4096,7 @@
                                 </td>
                                 <td>
                                     <p>In case of a multiple resolution: use this key:value pair for
-                                        the in-terpretation of the 10320/LOC element.</p>
+                                        the interpretation of the 10320/LOC element.</p>
                                 </td>
                                 <td>
                                     <p>5.4.2</p>
@@ -4204,8 +4203,8 @@
                                 <tr>
                                     <td>
                                         <p>index</p>
-                                        <p>FOOTNOTE The index and type query parameters can be used
-                                            together: any element which match-es any of the
+                                        <p>The index and type query parameters can be used
+                                            together: any element which matches any of the
                                             specified indexes or types is returned</p>
                                     </td>
                                     <td>
@@ -4218,7 +4217,7 @@
                                 <tr>
                                     <td>
                                         <p>type</p>
-                                        <p>FOOTNOTE The index and type query parameters can be used
+                                        <p>The index and type query parameters can be used
                                             together: any element which matches any of the specified
                                             indexes or types is returned</p>
                                     </td>
@@ -4415,7 +4414,7 @@
                                             no matching locations are found then locations that have
                                             no country attribute are selected. </p>
                                         <p>Note: The https://hdl.handle.net and https://doi.org
-                                            Proxies de-termine the country of the requester using a
+                                            Proxies determine the country of the requester using a
                                                 <ext-link
                                                 xlink:href="https://www.maxmind.com/en/geoip2-services-and-databases"
                                                 >GeoIP</ext-link> lookup.</p>
@@ -4600,7 +4599,7 @@
                                     </td>
                                     <td>
                                         <list list-type="numbered">
-                                            <list-item>The resolver applies the locatt meth-od with
+                                            <list-item>The resolver applies the locatt method with
                                                 id="1". It selects https://www1.example.com/ and
                                                 stops (single matching selection).</list-item>
                                         </list>
@@ -4615,7 +4614,7 @@
                                     </td>
                                     <td>
                                         <list list-type="numbered">
-                                            <list-item>The resolver applies the locatt meth-od with
+                                            <list-item>The resolver applies the locatt method with
                                                 id="0". It selects https://uk.example.com/ and stops
                                                 (single matching selection).</list-item>
                                         </list>
@@ -4630,7 +4629,7 @@
                                     </td>
                                     <td>
                                         <list list-type="numbered">
-                                            <list-item>The resolver applies the locatt meth-od with
+                                            <list-item>The resolver applies the locatt method with
                                                 country="gb". It selects https://uk.example.com/ and
                                                 stops (single matching selection).</list-item>
                                         </list>
@@ -4646,10 +4645,10 @@
                                     </td>
                                     <td>
                                         <list list-type="numbered">
-                                            <list-item>The resolver applies the locatt meth-od with
+                                            <list-item>The resolver applies the locatt method with
                                                 country="us": no URL can be selected.</list-item>
                                             <list-item>The resolver applies the country method with
-                                                the country of the re-quester: no URL can be
+                                                the country of the requester: no URL can be
                                                 selected.</list-item>
                                             <list-item>The resolver applies the weighted method to
                                                 https://www1.example.com/ and
@@ -4672,7 +4671,7 @@
                     <p>Any location information (information specified through a 10320/LOC element)
                         that applies to all or most DOI names under a prefix can be stored at prefix
                         level: this information applies to all DOI names under that prefix. If
-                        specific location in-formation is stored at DOI name level then this
+                        specific location information is stored at DOI name level then this
                         information overrides information stored at prefix level.</p>
                     <p>Location information is stored at prefix level by using the HS_NAMESPACE
                         element in the record of the prefix Handle (0.NA/&lt;prefix&gt;): the
@@ -4755,7 +4754,7 @@
                                 </td>
                                 <td>
                                     <p>Prefix administrator of the DOI technical support service
-                                        pro-vider: can create and delete Handles (DOI names) under
+                                        provider: can create and delete Handles (DOI names) under
                                         prefix 10.1009; can create and delete prefixes deriving from
                                         10.1009.</p>
                                 </td>
@@ -4941,7 +4940,7 @@
                 <tbx:termEntry>
                     <tbx:langSet xml:lang="en">
                         <tbx:definition>A virtual service consisting of Handle System services and
-                            web proxies located and con-figured to provide highly reliable
+                            web proxies located and configured to provide highly reliable
                             resolution, administration, and backup for all DOI
                             names.</tbx:definition>
                         <tbx:term>DOI Directory</tbx:term>
@@ -5023,7 +5022,7 @@
                     <tbx:langSet xml:lang="en">
                         <tbx:definition>The technology used as the resolution component of the DOI
                             system. The Handle System is a general-purpose distributed information
-                            system designed to provide an efficient, exten-sible, and secured global
+                            system designed to provide an efficient, extensible, and secured global
                             name service for use on networks such as the Internet. The Handle System
                             is a particular implementation of the DO-IRP (Digital Object -
                             Identifier / Resolution Protocol) which is part of the Digital Object
@@ -5035,7 +5034,7 @@
                     <tbx:langSet xml:lang="en">
                         <tbx:definition>Hypertext Transfer Protocol. An application layer protocol
                             in the Internet protocol suite model for distributed, collaborative,
-                            hypermedia information systems. HTTP is the founda-tion of data
+                            hypermedia information systems. HTTP is the foundation of data
                             communication for the World Wide Web, where hypertext documents include
                             hyperlinks to other resources that the user can easily access, for
                             example by a mouse click or by tapping the screen in a web
@@ -5046,9 +5045,9 @@
                 <tbx:termEntry>
                     <tbx:langSet xml:lang="en">
                         <tbx:definition>Hypertext Transfer Protocol Secure. An extension of HTTP. It
-                            is used for secure communica-tion over a computer network, and is widely
-                            used on the Internet. In HTTPS, the communi-cation protocol is encrypted
-                            using Transport Layer Security (TLS) or, formerly, Secure Sock-ets Layer
+                            is used for secure communication over a computer network, and is widely
+                            used on the Internet. In HTTPS, the communication protocol is encrypted
+                            using Transport Layer Security (TLS) or, formerly, Secure Sockets Layer
                             (SSL). </tbx:definition>
                         <tbx:term>HTTPS</tbx:term>
                     </tbx:langSet>
@@ -5075,7 +5074,7 @@
                 <tbx:termEntry>
                     <tbx:langSet xml:lang="en">
                         <tbx:definition>ISO 26324 Information and documentation — Digital object
-                            identifier system. The interna-tional standard published by ISO which
+                            identifier system. The international standard published by ISO which
                             specifies the DOI System. The 2025 document is the third edition and
                             revises the original document published in 2012.</tbx:definition>
                         <tbx:term>ISO 26324</tbx:term>
@@ -5108,7 +5107,7 @@
                 <tbx:termEntry>
                     <tbx:langSet xml:lang="en">
                         <tbx:definition>Specific data associated with a referent within the DOI
-                            System based on a structured da-ta model that enables the referent of
+                            System based on a structured data model that enables the referent of
                             the DOI name to be associated with data of any desired degree of
                             precision and granularity to support identification, description and
                             services.</tbx:definition>

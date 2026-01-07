@@ -104,9 +104,20 @@
     display: block;
   }
 
-  .tabs > .content p { padding-bottom: 2px;}
+  .tabs > .content p { 
+    padding-bottom: 2px;
+    &.note {
+      &:before {
+        content: "NOTE ";
+        color:  #FAB608;
+        font-weight:bold;
+      }
+      border: 1px solid grey;
+      padding: 10px;
+    }
+  }
 
-  .tabs > .content p:last-of-type { padding-bottom: 0px; }
+  .tabs > .content p:not(.note):last-of-type { padding-bottom: 0px; }
 }
 
 .tabs-content .content.visible{
