@@ -119,6 +119,8 @@ $(function() {
       console.log("ID = " + id);
       
       $('.tabs-content .content.visible div.section-main > *:not(.chapters)').show();
+       
+      $('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters)').show();
 
       $('.tabs > .content.visible').removeClass('visible');
       $('.tabs-content > .content[internal-destination="' + id + '"]').addClass('visible');
