@@ -130,6 +130,9 @@ $(function() {
       
       $('.tabs-nav nav.top-nav').removeClass('selected');
       $('.tabs-nav nav.top-nav > a').removeClass('selected');
+      $('.tabs-nav nav.sub-nav').removeClass('selected');
+      $('.tabs-nav nav.sub-nav > a').removeClass('selected');
+      $('.tabs-content .chapters.visible .sub-chapters').removeClass('visible');
       
       $('.tabs-nav nav.top-nav[internal-destination="' + id + '"]').addClass('selected');
       $('.tabs-nav nav.top-nav[internal-destination="' + id + '"] > a').addClass('selected');
@@ -146,6 +149,9 @@ $(function() {
     // hide everything else
     $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
 
+    // reshow the chapter info if hidden by sub-sub-nav
+    $('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters)').show();
+
     $('.tabs-content .chapters.visible').removeClass('visible');
     $('.tabs-content .chapters[internal-destination="' + id + '"]').addClass('visible');
 
@@ -158,10 +164,42 @@ $(function() {
     
     $('.tabs-nav nav.sub-nav').removeClass('selected');
     $('.tabs-nav nav.sub-nav > a').removeClass('selected');
+    $('.tabs-content .chapters.visible .sub-chapters').removeClass('visible');
 
     
     $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"]').addClass('selected');
     $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
+  });
+
+  // and this one for the left sub sub navs.
+  $('#handbook-holder').on('click', '.tabs-nav nav.sub-nav nav.sub-sub-nav > a',function(e) {
+    fixFootnotes();
+    const nav_elements = $('.tabs-nav nav.sub-nav nav.sub-sub-nav  > a');
+    var id=$(this).closest('nav').attr('internal-destination');
+    console.log("sub sub nav ID = " + id);
+
+    // hide everything else
+    $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
+
+    // hide things in the sub nav when in this sub-sub-chapters
+    $('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters, h3)').hide();
+
+    $('.tabs-content .chapters.visible .sub-chapters').removeClass('visible');
+    $('.tabs-content .sub-chapters[internal-destination="' + id + '"]').addClass('visible');
+
+    $($('.tabs-content .chapters[internal-destination="' + id + '"].visible .footnote').get().reverse()).each(function(el) {
+      $(this).appendTo('.tabs-content .chapters[internal-destination="' + id + '"].visible');
+    });
+
+    // Set the tab to selected
+    $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
+    
+    //$('.tabs-nav nav.sub-nav').removeClass('selected');
+    $('.tabs-nav nav.sub-nav > a').removeClass('selected');
+
+    
+    $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"]').addClass('selected');
+    $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
   });
 
   // some general nav stuff
@@ -243,8 +281,14 @@ $(function() {
       if (levels>=3) {
         id = 'sec' + parts[0] + '.' + parts[1] + '.' + parts[2];
         console.log("sub sub nav ID = " + id);
-        $('details').removeAttr('open');
-        $('.chapter-chapters[internal-destination="' + id + '"]').attr('open', '');
+        
+        //$('.tabs-nav nav.sub-nav').removeClass('selected');
+        $('.tabs-nav nav.sub-nav > a').removeClass('selected');
+        
+        $('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters, h3)').hide();        
+        $('.tabs-content .sub-chapters[internal-destination="' + id + '"]').addClass('visible');
+        $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"]').addClass('selected');
+        $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
       }
     }
 

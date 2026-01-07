@@ -47,6 +47,17 @@
               <a>
                 <xsl:value-of select="substring-after(@id,'sec')"/><xsl:text>&#xA0;</xsl:text><xsl:value-of select="title"/>
               </a>  
+              
+              <xsl:for-each select="section">
+                <nav class='sub-sub-nav'>
+                  <xsl:attribute name="internal-destination">
+                    <xsl:value-of select="@id"/>
+                  </xsl:attribute>
+                  <a>
+                    <xsl:value-of select="substring-after(@id,'sec')"/><xsl:text>&#xA0;</xsl:text><xsl:value-of select="title"/>
+                  </a>  
+                  </nav>  
+              </xsl:for-each>
             </nav>  
           </xsl:for-each>
         </nav>
@@ -141,8 +152,19 @@
         </div>
     </xsl:if> 
   </xsl:template>
-  <!-- section: use <section> and render a heading if it has a title child -->
+  
   <xsl:template match="section/section/section">
+    <xsl:if test="count(ancestor::section)=2">
+      <div name='sub-chapters' class='sub-chapters'>
+        <xsl:attribute name="internal-destination">
+          <xsl:value-of select="@id"/>
+        </xsl:attribute>
+        <xsl:apply-templates select="node()"/>
+      </div>
+    </xsl:if> 
+  </xsl:template>
+  <!-- section: use <section> and render a heading if it has a title child -->
+  <!--<xsl:template match="section/section/section">
     <xsl:if test="count(ancestor::section)=2">
       <details name='chapter-chapters' class='chapter-chapters'>
         <xsl:attribute name="internal-destination">
@@ -154,7 +176,7 @@
         <xsl:apply-templates select="node()"/>
       </details>
     </xsl:if> 
-  </xsl:template>
+  </xsl:template>-->
   
   
   <!-- paragraph variants -->
@@ -163,6 +185,12 @@
       <xsl:if test="@type">
         <xsl:attribute name="class">
           <xsl:value-of select="@type"/>
+        </xsl:attribute>
+      </xsl:if>
+      
+      <xsl:if test="@content-type">
+        <xsl:attribute name="class">
+          <xsl:value-of select="@content-type"/>
         </xsl:attribute>
       </xsl:if>
       <xsl:apply-templates/>

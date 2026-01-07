@@ -78,6 +78,11 @@
     width:100%;
     font-size:16px;
   }
+  nav.sub-sub-nav {
+    margin-left:40px;
+    width:100%;
+    font-size:15px;
+  }
 
   nav a:hover,
   nav a.selected {
@@ -88,7 +93,14 @@
   .top-nav .sub-nav {
     display:none;
   }
+  .top-nav .sub-nav .sub-sub-nav{
+    display:none;
+  }
+
   .top-nav.selected .sub-nav {
+    display:flex;
+  }
+  .top-nav.selected .sub-nav.selected .sub-sub-nav {
     display:flex;
   }
 
@@ -118,6 +130,8 @@
   }
 
   .tabs > .content p:not(.note):last-of-type { padding-bottom: 0px; }
+
+  
 }
 
 .tabs-content .content.visible{
@@ -152,6 +166,12 @@
     }
   }
   .chapters {
+    display:none;
+    &.visible {
+      display:block;
+    }
+  }
+  .sub-chapters {
     display:none;
     &.visible {
       display:block;
