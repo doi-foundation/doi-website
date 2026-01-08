@@ -167,12 +167,13 @@
   }
   .chapters {
     display:none;
+    position: relative;
     &.visible {
       display:block;
     }
   }
   .sub-chapters {
-    display:none;
+    display:block;
     &.visible {
       display:block;
     }

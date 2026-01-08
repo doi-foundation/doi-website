@@ -171,6 +171,9 @@ $(function() {
     
     $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"]').addClass('selected');
     $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
+    
+    var $parentDiv = $('.tabs-content');
+    $parentDiv.animate({ scrollTop: 0 });
   });
 
   // and this one for the left sub sub navs.
@@ -184,7 +187,7 @@ $(function() {
     $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
 
     // hide things in the sub nav when in this sub-sub-chapters
-    $('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters, h3)').hide();
+    //$('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters, h3)').hide();
 
     $('.tabs-content .chapters.visible .sub-chapters').removeClass('visible');
     $('.tabs-content .sub-chapters[internal-destination="' + id + '"]').addClass('visible');
@@ -202,6 +205,11 @@ $(function() {
     
     $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"]').addClass('selected');
     $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
+    
+    // Scroll to the top
+    var $parentDiv = $('.tabs-content');
+    var $innerListItem = $('.tabs-content .content.visible div.section-main .chapters.visible .sub-chapters[internal-destination="' + id + '"]');
+    $parentDiv.animate({ scrollTop: $innerListItem.position().top + 90 });
   });
 
   // some general nav stuff
@@ -287,10 +295,16 @@ $(function() {
         //$('.tabs-nav nav.sub-nav').removeClass('selected');
         $('.tabs-nav nav.sub-nav > a').removeClass('selected');
         
-        $('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters, h3)').hide();        
+        //$('.tabs-content .content.visible div.section-main .chapters.visible > *:not(.sub-chapters, h3)').hide();        
         $('.tabs-content .sub-chapters[internal-destination="' + id + '"]').addClass('visible');
         $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"]').addClass('selected');
         $('.tabs-nav nav.sub-nav nav.sub-sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
+
+        
+        // Scroll to the top
+        var $parentDiv = $('.tabs-content');
+        var $innerListItem = $('.tabs-content .content.visible div.section-main .chapters.visible .sub-chapters[internal-destination="' + id + '"]');
+        $parentDiv.animate({ scrollTop: $innerListItem.position().top - 30});
       }
     }
 
