@@ -1,6 +1,6 @@
 # ideal image dimensions are 500px wide by no more than 500px high (but shorter height is OK)
 # images should ideally be square and work on a white background
-image: "/images/communities/BruceCropped.png"
+image: "/images/communities/DOI Logo Icon-RGB.png"
 
 # imagestyle can either be "square", "round", "" or the line can be totally deleted. The latter 2 options will then default to round anyway.
 imagestyle: "round"
