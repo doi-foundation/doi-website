@@ -304,7 +304,7 @@ $(function() {
         // Scroll to the top
         var $parentDiv = $('.tabs-content');
         var $innerListItem = $('.tabs-content .content.visible div.section-main .chapters.visible .sub-chapters[internal-destination="' + id + '"]');
-        $parentDiv.animate({ scrollTop: $innerListItem.position().top - 30});
+        $parentDiv.animate({ scrollTop: $innerListItem.position().top + 90});
       }
     }
 
