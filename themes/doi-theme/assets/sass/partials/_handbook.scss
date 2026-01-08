@@ -121,10 +121,10 @@
     &.note {
       &:before {
         content: "NOTE ";
-        color:  #FAB608;
+        color: #000;
         font-weight:bold;
       }
-      border: 1px solid grey;
+      background-color: #fef9eb;
       padding: 10px;
     }
   }
