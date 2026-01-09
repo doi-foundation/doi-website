@@ -15,7 +15,8 @@ type = "handbook"
 
 The DOI Handbook is the main source of information about the DOI System (DOI https://doi.org/10.1000/182 identifies the latest current version of the handbook). It describes the DOI System at business and technical levels and assists the community in understanding the system and Registration Agencies (RA) in providing services based on the system.
 
-The DOI Handbook is available in HTML <link to microsite> and PDF <link to file> formats.
+The DOI Handbook is available in HTML and PDF formats.
+The version of record is the PDF. 
 
 Please [contact us](mailto:info@doi.org) if you have any questions or comments on the DOI Handbook
 
