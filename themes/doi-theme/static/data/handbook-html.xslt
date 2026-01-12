@@ -139,9 +139,16 @@
             <xsl:if test="$sectiontitle!='Preface'">      
               <div>
                 <h4>In this chapter</h4>
-                <ul>
+                <ul class='chapter-list'>
                 <xsl:for-each select="section">
                   <li>
+                      <xsl:attribute name="internal-destination">
+                        <xsl:value-of select="@id"/>
+                      </xsl:attribute>
+                      <xsl:if test="@id != 'preface' and @id != 'sec-glossary'">
+                        <xsl:value-of select="substring-after(@id,'sec')"/>
+                        <xsl:text>&#xA0;</xsl:text>
+                      </xsl:if>
                       <xsl:value-of select="title"/>
                   </li>  
                 </xsl:for-each>

@@ -147,10 +147,13 @@ $(function() {
 
 
   // and this one for the left sub navs.
-  $('#handbook-holder').on('click', '.tabs-nav nav.sub-nav > a',function(e) {
+  $('#handbook-holder').on('click', '.tabs-nav nav.sub-nav > a, ul.chapter-list li',function(e) {
     fixFootnotes();
     const nav_elements = $('.tabs-nav nav.sub-nav > a');
     var id=$(this).closest('nav').attr('internal-destination');
+    if (!id) {
+      id = $(this).attr('internal-destination');
+    }
     console.log("sub nav ID = " + id);
 
     // hide everything else

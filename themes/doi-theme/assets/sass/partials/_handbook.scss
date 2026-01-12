@@ -52,6 +52,12 @@
     &.alpha {
       list-style-type:lower-alpha;
     }
+    &.chapter-list {
+    list-style-type:none;
+    li {
+      cursor:pointer;
+    }
+  }
   }
 
   .prevnextnav {
