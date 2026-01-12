@@ -1,5 +1,5 @@
 title: "THE DOI FOUNDATION OFFERS SIMPLE SCALABILITY"
-maintext: "The DOI System is an implementation of the Handle System which was developed by the Corporation for National Research Initiatives (CNRI) in the United States in the early 1990s. It is a simple and elegant way of registering and resolving unique identifiers. This means that we can scale to cope with enormous loads; more than 1 billion DOIs are resolved every month."
+maintext: "The DOI System is an implementation of the Handle System which was developed by the Corporation for National Research Initiatives (CNRI) in the United States in the early 1990s. It is a simple and elegant way of registering and resolving unique identifiers. This means that we can scale to cope with enormous loads; more than 3 billion DOIs are resolved every month."
 image: "/images/BINARY ICONS-01.png"
 background_image: ""
 background_color: "#eee"

@@ -13,6 +13,17 @@ imagemain = "News Archive"
 
 [< back to the Resources page](/the-identifier/resources/)
 
+
+### The Rosenblum Award for Scholarly Publishing Impact (March 2025)
+The DOI Foundation is delighted that the scholarly publishing community has chosen to honour Bruce Rosenblum. His work with Crossref on their metadata deposit schema and reference matching helped to build Crossref as a robust system that links research objects, entities, and actions, creating a lasting and reusable scholarly record. 
+ 
+We are very grateful to the award committee for recognising and celebrating the role of DOI infrastructure in the scholarly publishing ecosystem. It is easy to take infrastructure for granted, simply because it is there and it just works. However, it only works because of the hard work and dedication of people like Bruce and the spirit of collaboration between everyone involved. 
+ 
+It is a tribute to this spirit of collaboration and inclusivity, that over the years the DOI System has expanded beyond scholarly publishing community to applications in entertainment, standards, the built environment, natural history collections and, most recently, talent identity. Since its inception 25 years ago, DOIs have been resolved more than 100 billion times by humans and their machines all over the world. Truly something to celebrate. 
+
+[Learn More](https://rosenblumaward.org/)
+
+
 ### Welcoming RAiD as General Member (September 2023)
 The Research Activity Identifier (RAiD) has joined the DOI Foundation as a General Member. RAiD is a persistent identifier and global registry dedicated to research projects. It is governed by ISO standard 23527:2022 with the Australian Research Data Commons (ARDC) as the Registration Authority and lead developer of the system. RAiD provides a system to store, update, share, and link project information across the research community. ARDC and DataCite have partnered to deliver RAiD services. RAiD is being integrated with European Open Science Cloud infrastructure via the FAIRCORE4EOSC program.  
 

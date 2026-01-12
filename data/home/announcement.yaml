@@ -1,19 +1,19 @@
 # ideal image dimensions are 500px wide by no more than 500px high (but shorter height is OK)
 # images should ideally be square and work on a white background
-image: "/images/communities/BruceCropped.png"
+image: "/images/communities/DOI Logo Icon-RGB.png"
 
 # imagestyle can either be "square", "round", "" or the line can be totally deleted. The latter 2 options will then default to round anyway.
 imagestyle: "round"
 
-title: "The Rosenblum Award for Scholarly Publishing Impact"
+title: "DOI Proxy Milestone"
 maintext: "
-The DOI Foundation is delighted that the scholarly publishing community has chosen to honour Bruce Rosenblum. His work with Crossref on their metadata deposit schema and reference matching helped to build Crossref as a robust system that links research objects, entities, and actions, creating a lasting and reusable scholarly record.  
+In December 2025, we passed the 3 Billion proxy resolution mark with a total of 3,071,362,438 resolutions for the month.  Proxy resolutions have steadily increased over the years but nevertheless this is a significant milestone. To put it into perspective, it means that DOIs are resolved more than 1146 times a second or say it another way a DOI is resolved at the doi.org proxy once every 0.37 microseconds.  
 <br>
 <br>
-We are very grateful to the award committee for recognising and celebrating the role of DOI infrastructure in the scholarly publishing ecosystem. It is easy to take infrastructure for granted, simply because it is there and it just works. However, it only works because of the hard work and dedication of people like Bruce and the spirit of collaboration between everyone involved.  
+We know that a lot of this usage comes from machines rather than humans but we can’t be sure how much. 19% of this usage comes from machines that have identified themselves as such but we’re pretty sure this is a low estimate of the amount of machine use. 
 <br>
 <br>
-It is a tribute to this spirit of collaboration and inclusivity, that over the years the DOI System has expanded beyond scholarly publishing community to applications in entertainment, standards, the built environment, natural history collections and, most recently, talent identity. Since its inception 25 years ago, DOIs have been resolved more than 100 billion times by humans and their machines all over the world. Truly something to celebrate.
+This astonishing level of proxy use is a tribute to our resilient and scalable infrastructure that was built and is maintained by the Corporation for National Research Initiatives (CNRI) on our behalf.
 "
 linktext: "Learn more"
-linkurl: "https://rosenblumaward.org"
+linkurl: "https://www.doi.org/the-identifier/resources/factsheets/doi-system-and-the-handle-system"

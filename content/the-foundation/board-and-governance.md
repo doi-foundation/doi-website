@@ -149,7 +149,7 @@ Ginny Hendricks is Chief Program Officer at Crossref where she has built a commu
 
 ### KISTI {#KISTI}
 
-{{< figure src="/images/board/jinseop.jpg" title="Jin-seop Shin" height="100px" >}}
+{{< figure src="/images/board/jin-seop.jpg" title="Jin-seop Shin" height="100px" >}}
 
 Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Placeholder:
 Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Jinseop is Director of Korea DOI center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come.
