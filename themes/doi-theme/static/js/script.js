@@ -113,9 +113,12 @@ $(function() {
     
 
   // separated out the clicks - this one for the left top level nav
-  $('#handbook-holder').on('click', '.tabs-nav nav.top-nav > a',function(e) {
+  $('#handbook-holder').on('click', '.tabs-nav nav.top-nav > a, .prevnextnav .prev, .prevnextnav .next',function(e) {
       const nav_elements = $('.tabs-nav nav.top-nav > a');
       var id=$(this).closest('nav').attr('internal-destination');
+      if (!id) {
+        id = $(this).attr('internal-destination');
+      }
       console.log("ID = " + id);
       
       $('.tabs-content .content.visible div.section-main > *:not(.chapters)').show();
@@ -222,6 +225,7 @@ $(function() {
     $('html body').scrollTop($('.footnote#' + $(this).attr('rid')).offset().top);
   });
 
+  //--------------------------------------------------------------------------------------------------------
   function fixFootnotes() {
     $('.footnote sup').remove();
     $('.footnote-link').each(function(index) {
@@ -230,6 +234,7 @@ $(function() {
   }
 
 
+  //--------------------------------------------------------------------------------------------------------
   function genPrevNextLevelN() {
     console.log('genprevnext level 1');
     var nextsection=$('.content.visible').next()
@@ -237,8 +242,11 @@ $(function() {
     var nextsectiontitle=nextsection.find('.section-title').text();
     if (!nextsectionid) {
       $('.content.visible .prevnextnav .next .nexttext').text('');
+      $('.content.visible .prevnextnav .next').css('visibility','hidden');
     } else {
       $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
+      $('.content.visible .prevnextnav .next').attr('internal-destination',nextsectionid);
+      $('.content.visible .prevnextnav .next').css('visibility','visible');
     }
     
     var prevsection=$('.content.visible').prev()
@@ -246,11 +254,15 @@ $(function() {
     var prevsectiontitle=prevsection.find('.section-title').text();
     if (!prevsectionid) {
       $('.content.visible .prevnextnav .prev .prevtext').text('');
+      $('.content.visible .prevnextnav .prev').css('visibility','hidden');
     } else {
       $('.content.visible .prevnextnav .prev .prevtext').text(prevsectiontitle);
+      $('.content.visible .prevnextnav .prev').attr('internal-destination',prevsectionid);
+      $('.content.visible .prevnextnav .prev').css('visibility','visible');
     }
   }
 
+  //--------------------------------------------------------------------------------------------------------
   function genPrevNextLevelNN() {
     console.log('genprevnext level 2');
     var nextchapter=$('.chapters.visible').next()
@@ -265,7 +277,7 @@ $(function() {
     } else {
       $('.content.visible .prevnextnav .next .nexttext').text(nextchaptertitle);
     }
-    
+        
     var prevchapter=$('.chapters.visible').prev()
     var prevchapterid=prevchapter.attr('internal-destination');
     var prevchaptertitle=prevchapter.find('h3:first').text();
@@ -279,8 +291,7 @@ $(function() {
     }
   }
 
-
-
+  //--------------------------------------------------------------------------------------------------------
   function donav() {
     // search querystring for error param value
     var matches = window.location.search.match(/xref=([\w.]+)/);

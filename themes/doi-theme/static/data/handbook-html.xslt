@@ -155,7 +155,7 @@
       </xsl:choose>
       <div class='prevnextnav'>
         <div class='prev'>
-          Prev
+          Previous
           <div class='prevtext'>ppp</div>
         </div>
         <div class='next'>

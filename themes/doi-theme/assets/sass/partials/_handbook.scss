@@ -62,8 +62,12 @@
     .prev,.next {
       border:1px solid lightgrey;
       flex-basis:50%;
-      border-radius:10px;
-      padding:10px;
+      padding:10px 20px;
+      &:hover {
+        cursor:pointer;
+        background-color:#5c7292;
+        color:#fff;
+      }
     }
     .prev {
       
