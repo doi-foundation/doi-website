@@ -113,7 +113,7 @@ $(function() {
     
 
   // separated out the clicks - this one for the left top level nav
-  $('#handbook-holder').on('click', '.tabs-nav nav.top-nav > a, .prevnextnav .prev, .prevnextnav .next',function(e) {
+  $('#handbook-holder').on('click', '.tabs-nav nav.top-nav > a, .prevnextnav .prev.levelN, .prevnextnav .next.levelN',function(e) {
       const nav_elements = $('.tabs-nav nav.top-nav > a');
       var id=$(this).closest('nav').attr('internal-destination');
       if (!id) {
@@ -147,7 +147,7 @@ $(function() {
 
 
   // and this one for the left sub navs.
-  $('#handbook-holder').on('click', '.tabs-nav nav.sub-nav > a, ul.chapter-list li',function(e) {
+  $('#handbook-holder').on('click', '.tabs-nav nav.sub-nav > a, ul.chapter-list li, .prevnextnav .prev.levelNN, .prevnextnav .next.levelNN',function(e) {
     fixFootnotes();
     const nav_elements = $('.tabs-nav nav.sub-nav > a');
     var id=$(this).closest('nav').attr('internal-destination');
@@ -239,7 +239,11 @@ $(function() {
 
   //--------------------------------------------------------------------------------------------------------
   function genPrevNextLevelN() {
-    console.log('genprevnext level 1');
+    console.log('genprevnext level 1');    
+    
+    $('.content.visible .prevnextnav > div').removeClass('levelNN');
+    $('.content.visible .prevnextnav > div').removeClass('levelN');
+
     var nextsection=$('.content.visible').next()
     var nextsectionid=nextsection.attr('internal-destination');
     var nextsectiontitle=nextsection.find('.section-title').text();
@@ -250,6 +254,7 @@ $(function() {
       $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
       $('.content.visible .prevnextnav .next').attr('internal-destination',nextsectionid);
       $('.content.visible .prevnextnav .next').css('visibility','visible');
+      $('.content.visible .prevnextnav .next').addClass('levelN');
     }
     
     var prevsection=$('.content.visible').prev()
@@ -262,13 +267,17 @@ $(function() {
       $('.content.visible .prevnextnav .prev .prevtext').text(prevsectiontitle);
       $('.content.visible .prevnextnav .prev').attr('internal-destination',prevsectionid);
       $('.content.visible .prevnextnav .prev').css('visibility','visible');
+      $('.content.visible .prevnextnav .prev').addClass('levelN');
     }
   }
 
   //--------------------------------------------------------------------------------------------------------
   function genPrevNextLevelNN() {
+    $('.content.visible .prevnextnav > div').removeClass('levelNN');
+    $('.content.visible .prevnextnav > div').removeClass('levelN');
+
     console.log('genprevnext level 2');
-    var nextchapter=$('.chapters.visible').next()
+    var nextchapter=$('.chapters.visible').next();
     var nextchapterid=nextchapter.attr('internal-destination');
     var nextchaptertitle=nextchapter.find('h3:first').text();
     if (!nextchapterid) {
@@ -276,29 +285,46 @@ $(function() {
       var nextsection=$('.content.visible').next()
       var nextsectionid=nextsection.attr('internal-destination');
       var nextsectiontitle=nextsection.find('.section-title').text();
+      $('.content.visible .prevnextnav .next').attr('internal-destination',nextsectionid);
+      $('.content.visible .prevnextnav .next').addClass('levelN');
       $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
-    } else {
-      $('.content.visible .prevnextnav .next .nexttext').text(nextchaptertitle);
+    } else {      
+      $('.content.visible .prevnextnav .next .nexttext').text(nextchaptertitle);      
+      $('.content.visible .prevnextnav .next').attr('internal-destination',nextchapterid);
+      $('.content.visible .prevnextnav .next').css('visibility','visible');
+      $('.content.visible .prevnextnav .next').addClass('levelNN');
     }
         
     var prevchapter=$('.chapters.visible').prev()
     var prevchapterid=prevchapter.attr('internal-destination');
     var prevchaptertitle=prevchapter.find('h3:first').text();
     if (!prevchapterid) {
-      var prevsection=$('.content.visible').prev()
+      var prevsection=$('.content.visible');
       var prevsectionid=prevsection.attr('internal-destination');
       var prevsectiontitle=prevsection.find('.section-title').text();
       $('.content.visible .prevnextnav .prev .prevtext').text(prevsectiontitle);
+      $('.content.visible .prevnextnav .prev').addClass('levelN');
+      $('.content.visible .prevnextnav .prev').attr('internal-destination',prevsectionid);
     } else {
       $('.content.visible .prevnextnav .prev .prevtext').text(prevchaptertitle);
+      $('.content.visible .prevnextnav .prev').attr('internal-destination',prevchapterid);
+      $('.content.visible .prevnextnav .prev').css('visibility','visible');
+      $('.content.visible .prevnextnav .prev').addClass('levelNN');
     }
+  }
+
+  //--------------------------------------------------------------------------------------------------------
+  function checkDepth(xref) {
+    parts = xref.split('.');
+    levels = parts.length;
+
+    return levels;
   }
 
   //--------------------------------------------------------------------------------------------------------
   function donav() {
     // search querystring for error param value
     var matches = window.location.search.match(/xref=([\w.]+)/);
-
     
     genPrevNextLevelN();
 
