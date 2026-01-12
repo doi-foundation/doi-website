@@ -285,9 +285,13 @@ $(function() {
       var nextsection=$('.content.visible').next()
       var nextsectionid=nextsection.attr('internal-destination');
       var nextsectiontitle=nextsection.find('.section-title').text();
-      $('.content.visible .prevnextnav .next').attr('internal-destination',nextsectionid);
-      $('.content.visible .prevnextnav .next').addClass('levelN');
-      $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
+      if (!nextsectionid) { // the end        
+        $('.content.visible .prevnextnav .next').css('visibility','hidden');
+      } else {
+        $('.content.visible .prevnextnav .next').attr('internal-destination',nextsectionid);
+        $('.content.visible .prevnextnav .next').addClass('levelN');
+        $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
+      }
     } else {      
       $('.content.visible .prevnextnav .next .nexttext').text(nextchaptertitle);      
       $('.content.visible .prevnextnav .next').attr('internal-destination',nextchapterid);
