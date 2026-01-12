@@ -138,6 +138,8 @@ $(function() {
       
       $('.tabs-nav nav.top-nav[internal-destination="' + id + '"]').addClass('selected');
       $('.tabs-nav nav.top-nav[internal-destination="' + id + '"] > a').addClass('selected');
+
+      genPrevNextLevelN();
   });
 
 
@@ -225,6 +227,22 @@ $(function() {
       $('.footnote#' + $(this).attr('rid')).find($('.fn-id')).html("<sup>" + $(this).text() + "</sup>");
     });
   }
+
+
+  function genPrevNextLevelN() {
+    console.log('genprevnext');
+    var nextsection=$('.content.visible').next()
+    var nextsectionid=nextsection.attr('internal-destination');
+    var nextsectiontitle=nextsection.find('.section-title').text();
+    $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
+    
+    var prevsection=$('.content.visible').prev()
+    var prevsectionid=prevsection.attr('internal-destination');
+    var prevsectiontitle=prevsection.find('.section-title').text();
+    $('.content.visible .prevnextnav .prev .prevtext').text(prevsectiontitle);
+  }
+
+
 
   function donav() {
     // search querystring for error param value

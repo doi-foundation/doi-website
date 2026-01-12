@@ -121,7 +121,7 @@
         <xsl:when test="title">
           <div class='section-title'>
             <h2>              
-              <xsl:if test="@id!='preface'">
+              <xsl:if test="@id != 'preface' and @id != 'sec-glossary'">
                 <xsl:value-of select="substring-after(@id,'sec')"/> - 
               </xsl:if>
               <xsl:value-of select="normalize-space(title)"/>
@@ -154,8 +154,14 @@
         </xsl:otherwise>
       </xsl:choose>
       <div class='prevnextnav'>
-        <div class='prev'>Prev</div>
-        <div class='next'>Next</div>
+        <div class='prev'>
+          Prev
+          <div class='prevtext'>ppp</div>
+        </div>
+        <div class='next'>
+          Next
+          <div class='nexttext'>nnn</div>
+        </div>
       </div>
     </div>
   </xsl:template>
