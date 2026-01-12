@@ -75,12 +75,16 @@
   
   <!-- title element: render as an H1 (first occurence) or H2 otherwise -->
   <xsl:template match="title">
+    <xsl:param name="sectionid" />
     <xsl:choose>
       <xsl:when test="not(preceding::title)">
         <h2><xsl:value-of select="normalize-space(.)"/></h2>
       </xsl:when>
       <xsl:otherwise>
-        <h3><xsl:value-of select="normalize-space(.)"/></h3>
+        <h3>  
+          <xsl:value-of select="substring-after($sectionid,'sec')"/> - 
+          <xsl:value-of select="normalize-space(.)"/>
+        </h3>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -116,7 +120,12 @@
       <xsl:choose>         
         <xsl:when test="title">
           <div class='section-title'>
-            <h2><xsl:value-of select="normalize-space(title)"/></h2>
+            <h2>              
+              <xsl:if test="@id!='preface'">
+                <xsl:value-of select="substring-after(@id,'sec')"/> - 
+              </xsl:if>
+              <xsl:value-of select="normalize-space(title)"/>
+            </h2>
           </div>
           <div class='section-main'>
             <xsl:apply-templates select="node()[not(self::title)]"/>            
@@ -159,7 +168,11 @@
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
           </xsl:attribute>
-          <xsl:apply-templates select="node()"/>
+          <xsl:apply-templates select="node()">
+            <xsl:with-param name="sectionid">
+              <xsl:value-of select="@id"/>
+            </xsl:with-param> 
+          </xsl:apply-templates>
         </div>
     </xsl:if> 
   </xsl:template>
@@ -170,7 +183,11 @@
         <xsl:attribute name="internal-destination">
           <xsl:value-of select="@id"/>
         </xsl:attribute>
-        <xsl:apply-templates select="node()"/>
+        <xsl:apply-templates select="node()">          
+          <xsl:with-param name="sectionid">
+            <xsl:value-of select="@id"/>
+          </xsl:with-param> 
+        </xsl:apply-templates>
       </div>
     </xsl:if> 
   </xsl:template>
