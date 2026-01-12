@@ -115,20 +115,28 @@
       
       <xsl:choose>         
         <xsl:when test="title">
-          <div class='section-title'><h2><xsl:value-of select="normalize-space(title)"/></h2></div>
+          <div class='section-title'>
+            <h2><xsl:value-of select="normalize-space(title)"/></h2>
+          </div>
           <div class='section-main'>
-            <xsl:apply-templates select="node()[not(self::title)]"/>
+            <xsl:apply-templates select="node()[not(self::title)]"/>            
             
-            <div>
-              <h4>In this chapter</h4>
-            <ul>
-            <xsl:for-each select="section">
-              <li>
-                  <xsl:value-of select="title"/>
-              </li>  
-            </xsl:for-each>
-            </ul>
-            </div>
+            <xsl:variable name="sectiontitle">
+              <xsl:value-of select="normalize-space(title)"/>
+            </xsl:variable>
+
+            <xsl:if test="$sectiontitle!='Preface'">      
+              <div>
+                <h4>In this chapter</h4>
+                <ul>
+                <xsl:for-each select="section">
+                  <li>
+                      <xsl:value-of select="title"/>
+                  </li>  
+                </xsl:for-each>
+                </ul>
+              </div>
+            </xsl:if>
           
           </div>
         </xsl:when>
@@ -136,6 +144,10 @@
           <xsl:apply-templates select="node()"/>
         </xsl:otherwise>
       </xsl:choose>
+      <div class='prevnextnav'>
+        <div class='prev'>Prev</div>
+        <div class='next'>Next</div>
+      </div>
     </div>
   </xsl:template>
   
@@ -143,7 +155,6 @@
   <xsl:template match="section/section">
 
     <xsl:if test="count(ancestor::section)=1">
-      
         <div name='chapters' class='chapters'>
           <xsl:attribute name="internal-destination">
             <xsl:value-of select="@id"/>
@@ -200,13 +211,23 @@
   <!-- list / item -->
   <xsl:template match="list">
     <xsl:choose>
-      <xsl:when test="@type = 'ordered' or @ordered = 'true'">
+      <xsl:when test="@list-type = 'numbered' or @ordered = 'true'">
         <ol>
+          <xsl:if test="@list-type">
+            <xsl:attribute name="class">
+              <xsl:value-of select="@list-type"/>
+            </xsl:attribute>
+          </xsl:if>
           <xsl:apply-templates select="list-item"/>
         </ol>
       </xsl:when>
       <xsl:otherwise>
         <ul>
+          <xsl:if test="@list-type">
+            <xsl:attribute name="class">
+              <xsl:value-of select="@list-type"/>
+            </xsl:attribute>
+          </xsl:if>
           <xsl:apply-templates select="list-item"/>
         </ul>
       </xsl:otherwise>
