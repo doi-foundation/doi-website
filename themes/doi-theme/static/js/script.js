@@ -176,6 +176,7 @@ $(function() {
     
     var $parentDiv = $('.tabs-content');
     $parentDiv.animate({ scrollTop: 0 });
+    genPrevNextLevelNN();
   });
 
   // and this one for the left sub sub navs.
@@ -230,16 +231,52 @@ $(function() {
 
 
   function genPrevNextLevelN() {
-    console.log('genprevnext');
+    console.log('genprevnext level 1');
     var nextsection=$('.content.visible').next()
     var nextsectionid=nextsection.attr('internal-destination');
     var nextsectiontitle=nextsection.find('.section-title').text();
-    $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
+    if (!nextsectionid) {
+      $('.content.visible .prevnextnav .next .nexttext').text('');
+    } else {
+      $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
+    }
     
     var prevsection=$('.content.visible').prev()
     var prevsectionid=prevsection.attr('internal-destination');
     var prevsectiontitle=prevsection.find('.section-title').text();
-    $('.content.visible .prevnextnav .prev .prevtext').text(prevsectiontitle);
+    if (!prevsectionid) {
+      $('.content.visible .prevnextnav .prev .prevtext').text('');
+    } else {
+      $('.content.visible .prevnextnav .prev .prevtext').text(prevsectiontitle);
+    }
+  }
+
+  function genPrevNextLevelNN() {
+    console.log('genprevnext level 2');
+    var nextchapter=$('.chapters.visible').next()
+    var nextchapterid=nextchapter.attr('internal-destination');
+    var nextchaptertitle=nextchapter.find('h3:first').text();
+    if (!nextchapterid) {
+      // check for next section since we are at last chapter
+      var nextsection=$('.content.visible').next()
+      var nextsectionid=nextsection.attr('internal-destination');
+      var nextsectiontitle=nextsection.find('.section-title').text();
+      $('.content.visible .prevnextnav .next .nexttext').text(nextsectiontitle);
+    } else {
+      $('.content.visible .prevnextnav .next .nexttext').text(nextchaptertitle);
+    }
+    
+    var prevchapter=$('.chapters.visible').prev()
+    var prevchapterid=prevchapter.attr('internal-destination');
+    var prevchaptertitle=prevchapter.find('h3:first').text();
+    if (!prevchapterid) {
+      var prevsection=$('.content.visible').prev()
+      var prevsectionid=prevsection.attr('internal-destination');
+      var prevsectiontitle=prevsection.find('.section-title').text();
+      $('.content.visible .prevnextnav .prev .prevtext').text(prevsectiontitle);
+    } else {
+      $('.content.visible .prevnextnav .prev .prevtext').text(prevchaptertitle);
+    }
   }
 
 
@@ -247,6 +284,9 @@ $(function() {
   function donav() {
     // search querystring for error param value
     var matches = window.location.search.match(/xref=([\w.]+)/);
+
+    
+    genPrevNextLevelN();
 
     if (matches) {
       // show the matching element
@@ -278,6 +318,7 @@ $(function() {
         
         $('.tabs-nav nav.top-nav[internal-destination="' + id + '"]').addClass('selected');
         $('.tabs-nav nav.top-nav[internal-destination="' + id + '"] > a').addClass('selected');
+        genPrevNextLevelN();
       }
       if (levels>=2) {
         
@@ -305,6 +346,7 @@ $(function() {
         
         $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"]').addClass('selected');
         $('.tabs-nav nav.sub-nav[internal-destination="' + id + '"] > a').addClass('selected');
+        genPrevNextLevelNN();
       }
       if (levels>=3) {
         id = 'sec' + parts[0] + '.' + parts[1] + '.' + parts[2];
