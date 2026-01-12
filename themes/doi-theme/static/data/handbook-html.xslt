@@ -82,7 +82,8 @@
       </xsl:when>
       <xsl:otherwise>
         <h3>  
-          <xsl:value-of select="substring-after($sectionid,'sec')"/> - 
+          <xsl:value-of select="substring-after($sectionid,'sec')"/>
+          <xsl:text>&#xA0;</xsl:text>
           <xsl:value-of select="normalize-space(.)"/>
         </h3>
       </xsl:otherwise>
@@ -122,7 +123,8 @@
           <div class='section-title'>
             <h2>              
               <xsl:if test="@id != 'preface' and @id != 'sec-glossary'">
-                <xsl:value-of select="substring-after(@id,'sec')"/> - 
+                <xsl:value-of select="substring-after(@id,'sec')"/>
+                <xsl:text>&#xA0;</xsl:text>
               </xsl:if>
               <xsl:value-of select="normalize-space(title)"/>
             </h2>
