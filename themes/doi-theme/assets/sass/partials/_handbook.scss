@@ -61,6 +61,23 @@
   }
 
   .prevnextnav {
+    &.top {
+      padding-bottom:20px;
+      justify-content: flex-end;
+      .prev,.next {
+        flex-basis: auto;
+      }
+      .prev {
+        &:before {
+          content: "« ";
+        }
+      }
+      .next {
+        &:after {
+          content: " »";
+        }
+      }
+    }
     padding-top:40px;
     display:flex;
     justify-content:space-between;

@@ -129,6 +129,16 @@
               <xsl:value-of select="normalize-space(title)"/>
             </h2>
           </div>
+          
+          <div class='prevnextnav top'>
+            <div class='prev'>
+              Previous
+            </div>
+            <div class='next'>
+              Next
+            </div>
+          </div>
+
           <div class='section-main'>
             <xsl:apply-templates select="node()[not(self::title)]"/>            
             
