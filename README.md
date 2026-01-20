@@ -36,5 +36,13 @@ should probably be changed to
 
 This can be done at any time in the run up to making the new site live as the only thing it affects is the URLs in the live build - it does not deploy it anywhere else but may result in some missing links etc on the www-new.doi.org.
 
+### Handbook XML Process
+Late 2025, early 2026 the DOI Handbook pages became automatically generated via an XSLT file that takes the xml contents and formats them in an easily navigable interactive HTML structure.
+Any updates to the source handbook XML can be dropped into the repo at 
+
+[```/themes/doi-theme/static/data```](https://github.com/doi-foundation/doi-website/tree/development/themes/doi-theme/static/data)
+
+replacing the existing ```DOIHandbook.xml``` and the following build/deploy will update onto the staging/live site.
+New features in the XML file itself (eg specific highlighting of a term/paragraph) would need coded for in the ```handbook-html.xslt``` file.
 
 [githubworkflow]: https://img.shields.io/github/workflow/status/bcgwebdesign/timetable/GitHub%20Pages?style=flat-square
