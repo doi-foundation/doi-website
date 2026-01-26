@@ -1,6 +1,7 @@
 +++
 title = "DOI® Handbook"
-date = "2019-03-26T08:47:11+01:00"
+date = "2026-01-26"
+aliases = ["/doi-handbook/HTML/"]
 draft = false
 layout = "handbook2025"
 # the following section is for the header
