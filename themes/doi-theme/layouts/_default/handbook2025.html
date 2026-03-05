@@ -1,0 +1,20 @@
+{{ define "main" }}	
+	<main aria-role="main">
+		<header class="single-header">
+		</header>
+		{{ with .Params }}
+			{{ partial "single/top-handbook.html" . }}
+		{{ end }}
+		<div class="page-content single">
+			<article>
+				<div>
+					{{ .Content }}
+
+                    <div id='handbook-holder' class="tab-container">Setting up the handbook...</div>
+                    
+				</div>
+			</article>
+		</div>
+        {{ partial "socials-side.html" . }}
+	</main>
+{{ end }}
