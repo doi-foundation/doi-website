@@ -23,7 +23,14 @@
   <xsl:template match="/standard">
     
     <!-- bookmarks -->
-    <div class='tabs-nav col'>
+    <div class='tabs-nav col'>      
+        <input type='checkbox' id='handbook-menu-checkbox'/>
+        <div class="handbook-hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      
       <xsl:for-each select="body/section">
         <nav class='top-nav'>
           <xsl:attribute name="internal-destination">
