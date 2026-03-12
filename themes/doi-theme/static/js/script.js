@@ -103,6 +103,8 @@ $(function() {
         // Set the tab to selected
         $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
         $('.tabs-nav nav.top-nav:nth-of-type(1) a').addClass('selected');
+
+        console.log('XML transform successful');
         
         donav();
       },
