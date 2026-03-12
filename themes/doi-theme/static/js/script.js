@@ -68,12 +68,16 @@ $(function() {
 });
 
 (function($) { 
+
+  if($("#handbook-holder").length) {
+
     if (!('XSLTProcessor' in window)) {
       console.log('XSLTProcessor does not appear to be available in this browser. Please try another.');
       return;
     }else{
       console.log('XSLTProcessor available.');
     }
+    
     
     const xsltProcessor = new XSLTProcessor();
     //XSLT file
@@ -104,15 +108,14 @@ $(function() {
         $('.tabs-nav nav.top-nav a.selected').removeClass('selected');
         $('.tabs-nav nav.top-nav:nth-of-type(1) a').addClass('selected');
 
-        console.log('XML transform successful');
-        
         donav();
       },
       error: function (xml) {
         console.log("An error occurred in translation");
       }
     });
-    
+  }
+      
 
   // separated out the clicks - this one for the left top level nav
   $('#handbook-holder').on('click', '.tabs-nav nav.top-nav > a, .prevnextnav .prev.levelN, .prevnextnav .next.levelN',function(e) {
@@ -121,7 +124,7 @@ $(function() {
       if (!id) {
         id = $(this).attr('internal-destination');
       }
-      console.log("ID = " + id);
+      //console.log("ID = " + id);
       
       $('.tabs-content .content.visible div.section-main > *:not(.chapters)').show();
        
@@ -156,7 +159,7 @@ $(function() {
     if (!id) {
       id = $(this).attr('internal-destination');
     }
-    console.log("sub nav ID = " + id);
+    //console.log("sub nav ID = " + id);
 
     // hide everything else
     $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
@@ -192,7 +195,7 @@ $(function() {
     fixFootnotes();
     const nav_elements = $('.tabs-nav nav.sub-nav nav.sub-sub-nav  > a');
     var id=$(this).closest('nav').attr('internal-destination');
-    console.log("sub sub nav ID = " + id);
+    //console.log("sub sub nav ID = " + id);
 
     // hide everything else
     $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
@@ -226,7 +229,7 @@ $(function() {
   // some general nav stuff
   //footnotes
   $('#handbook-holder').on('click', '.footnote-link',function(e) {
-    console.log($(this).attr('rid'));
+    //console.log($(this).attr('rid'));
     $('html body').scrollTop($('.footnote#' + $(this).attr('rid')).offset().top);
   });
 
@@ -241,7 +244,7 @@ $(function() {
 
   //--------------------------------------------------------------------------------------------------------
   function genPrevNextLevelN() {
-    console.log('genprevnext level 1');    
+    //console.log('genprevnext level 1');    
     
     $('.content.visible .prevnextnav > div').removeClass('levelNN');
     $('.content.visible .prevnextnav > div').removeClass('levelN');    
@@ -294,7 +297,7 @@ $(function() {
     $('.content.visible .prevnextnav.top > div').removeClass('levelNN');
     $('.content.visible .prevnextnav.top > div').removeClass('levelN');
 
-    console.log('genprevnext level 2');
+    //console.log('genprevnext level 2');
     var nextchapter=$('.chapters.visible').next();
     var nextchapterid=nextchapter.attr('internal-destination');
     var nextchaptertitle=nextchapter.find('h3:first').text();
@@ -368,7 +371,7 @@ $(function() {
     if (matches) {
       // show the matching element
       
-      console.log("matches = " + matches[1]);
+      //console.log("matches = " + matches[1]);
       
       id =  'sec' + matches[1];
 
@@ -378,7 +381,7 @@ $(function() {
       // top level navigation eg "?xref=5"
       if (levels>=1) {
         id = 'sec' + parts[0];
-        console.log("top nav ID = " + id);
+        //console.log("top nav ID = " + id);
 
         $('.tabs-content .content.visible div.section-main > *:not(.chapters)').show();
 
@@ -402,7 +405,7 @@ $(function() {
         id = 'sec' + parts[0] + '.' + parts[1];
         fixFootnotes();
         const nav_elements = $('.tabs-nav nav.sub-nav > a');
-        console.log("sub nav ID = " + id);
+        //console.log("sub nav ID = " + id);
 
         // hide everything else
         $('.tabs-content .content.visible div.section-main > *:not(.chapters)').hide();
@@ -427,7 +430,7 @@ $(function() {
       }
       if (levels>=3) {
         id = 'sec' + parts[0] + '.' + parts[1] + '.' + parts[2];
-        console.log("sub sub nav ID = " + id);
+        //console.log("sub sub nav ID = " + id);
         
         //$('.tabs-nav nav.sub-nav').removeClass('selected');
         $('.tabs-nav nav.sub-nav > a').removeClass('selected');
