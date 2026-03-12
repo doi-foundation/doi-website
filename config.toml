@@ -45,6 +45,8 @@ invalidateCDN = true
 # An arbitrary name for this target.
 name = "s3_live"
 URL = "s3://www-doi-org?region=us-west-2"
+cloudFrontDistributionID = "E27D2XMN04P68J"
+invalidateCDN = true
 
 
 # [[deployment.matchers]] configure behavior for files that match the Pattern.
