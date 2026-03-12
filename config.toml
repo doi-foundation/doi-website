@@ -38,11 +38,15 @@ order = [".jpg$", ".gif$"]
 [[deployment.targets]]
 name = "s3_staging"
 URL = "s3://staging.doi.org?region=us-west-2"
+cloudFrontDistributionID = "E3TM1QMABN1GQC"
+invalidateCDN = true
 
 [[deployment.targets]]
 # An arbitrary name for this target.
 name = "s3_live"
 URL = "s3://www-doi-org?region=us-west-2"
+cloudFrontDistributionID = "E27D2XMN04P68J"
+invalidateCDN = true
 
 
 # [[deployment.matchers]] configure behavior for files that match the Pattern.
