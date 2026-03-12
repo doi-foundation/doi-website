@@ -38,6 +38,8 @@ order = [".jpg$", ".gif$"]
 [[deployment.targets]]
 name = "s3_staging"
 URL = "s3://staging.doi.org?region=us-west-2"
+cloudFrontDistributionID = "E3TM1QMABN1GQC"
+invalidateCDN = true
 
 [[deployment.targets]]
 # An arbitrary name for this target.
