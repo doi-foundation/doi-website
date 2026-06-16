@@ -4,6 +4,11 @@ languageCode = 'en-us'
 title = 'DOI Foundation WIP site'
 theme = "doi-theme"
 
+# Hugo v0.162+ blocks HTML content files by default; the handbook data
+# dictionary is authored as raw HTML under content/.
+[security]
+allowContent = ['.*']
+
 enableRobotsTXT = true
 
 [params]
