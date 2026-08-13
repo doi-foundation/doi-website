@@ -1,19 +1,17 @@
 # ideal image dimensions are 500px wide by no more than 500px high (but shorter height is OK)
 # images should ideally be square and work on a white background
-image: "/images/communities/DOI Logo Icon-RGB.png"
+image: "/images/board/jclark.jpg"
 
-# imagestyle can either be "square", "round", "" or the line can be totally deleted. The latter 2 options will then default to round anyway.
-imagestyle: "round"
+# imagestyle can either be "square", "round", "photo", "" or the line can be totally deleted.
+# Use "photo" for a portrait: the image fills the circle rather than sitting padded inside it.
+imagestyle: "photo"
 
-title: "DOI Proxy Milestone"
+title: "Jonathan Clark"
 maintext: "
-In December 2025, we passed the 3 Billion proxy resolution mark with a total of 3,071,362,438 resolutions for the month.  Proxy resolutions have steadily increased over the years but nevertheless this is a significant milestone. To put it into perspective, it means that DOIs are resolved more than 1146 times a second or say it another way a DOI is resolved at the doi.org proxy once every 0.37 microseconds.  
+It is with great sadness that we share that Jonathan Clark died suddenly on August 11, 2026. Jonathan had been the Managing Agent of the DOI Foundation since 2015. Over those years, he guided the DOI Foundation with a steady hand and was a generous colleague to many across our community.
 <br>
 <br>
-We know that a lot of this usage comes from machines rather than humans but we can’t be sure how much. 19% of this usage comes from machines that have identified themselves as such but we’re pretty sure this is a low estimate of the amount of machine use. 
+Our thoughts are with his family, friends, and the many individuals and organizations he worked alongside. We will share a fuller tribute to Jonathan soon.
 <br>
 <br>
-This astonishing level of proxy use is a tribute to our resilient and scalable infrastructure that was built and is maintained by the Corporation for National Research Initiatives (CNRI) on our behalf.
-"
-linktext: "Learn more"
-linkurl: "https://www.doi.org/the-identifier/resources/factsheets/doi-system-and-the-handle-system"
+The DOI system and services continue to operate normally under the direction of the DOI Foundation Board."
