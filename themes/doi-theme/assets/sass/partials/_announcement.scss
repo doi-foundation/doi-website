@@ -53,6 +53,30 @@ section.home-announcement {
             
                 }
             }
+
+            // For portraits rather than logos: the image fills the circle and is
+            // clipped to it, instead of sitting padded inside a white disc.
+            &.photo {
+                border-radius: 50%;
+                overflow: hidden;
+                line-height: 0;
+                margin-bottom: ($standard-padding);
+
+                img {
+                    padding: 0;
+                    display: block;
+                    width: 240px;
+                    height: 240px;
+                    max-width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+
+                    @media (max-width: $break-small) {
+                        width: 180px;
+                        height: 180px;
+                    }
+                }
+            }
         }
     }
     
