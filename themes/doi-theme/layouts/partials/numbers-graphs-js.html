@@ -48,7 +48,8 @@
           renderResolutionsBotPercent(doiResolutions);
           renderResolutionsConnegPercent(doiResolutions);
 
-          google.charts.load('current', { 'packages': ['corechart','line','table','geochart'] });
+          // 52 is the frozen April 2023 release. 'current' moves under us.
+          google.charts.load('52', { 'packages': ['corechart', 'geochart'] });
 
           try{
             google.charts.setOnLoadCallback(function() {renderResolutionsChart(doiResolutions)}); 

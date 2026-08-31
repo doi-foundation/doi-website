@@ -23,18 +23,18 @@ CNRI is the sysadmin and Cazinc is the webadmin. Roles refined as:
 - Analytics 
 
 ## Deployment
-Deployment will be managed by a github action - depending on the branch pushed it will be to either of the S3 bucket endpoints that represent the staging and 'new-live' websites.
 
-There is a line in the github actions build file [build.yml](https://github.com/doi-foundation/doi-website/blob/main/.github/workflows/build.yml) that will need edited for when we are ready to build to the live URL.
-When running hugo you can supply the URL that the site is being build for and this will be utilized in various internal links on the site. At the moment this is set to https://www-new.doi.org - it should be changed to whatever the live URL is expected to be so any future pushes to the main branch are directed to the correct url
+Push `staging` and the Action in [`.github/workflows/build.yml`](https://github.com/doi-foundation/doi-website/blob/main/.github/workflows/build.yml) builds to https://staging.doi.org/. Push `main` and it goes to https://www.doi.org/. Each job passes `--baseURL` so links match that host. The `baseURL` in `config.toml` is only for local work.
 
-```run: hugo -v --baseURL "https://www-new.doi.org/"```
+The deploy will not delete more than 256 files from the bucket, and it stops if `public/` has fewer than 1500 files. A good build is a bit over 2400. We used to pass `--maxDeletes -1`, which would have emptied the live bucket if a build went thin. If you really need to delete a lot of files, raise `--maxDeletes` in that PR and put it back afterwards.
 
-should probably be changed to 
+### How CI installs Hugo
 
-```run: hugo -v --baseURL "https://www.doi.org/"```
+Hugo 0.137 pulled `hugo deploy` out of the extended binary, so S3 deploys need the `extended_withdeploy` build. `peaceiris/actions-hugo` still cannot install that. We ran a fork (`deining/actions-hugo`) that could, but it is stuck on Node 20, and GitHub hosted runners drop Node 20 on 16 September 2026. After that the fork just fails. Upstream is on Node 24 now and still has no `withdeploy`.
 
-This can be done at any time in the run up to making the new site live as the only thing it affects is the URLs in the live build - it does not deploy it anywhere else but may result in some missing links etc on the www-new.doi.org.
+The workflow grabs the official Linux tarball from [Hugo's releases](https://github.com/gohugoio/hugo/releases) and checks the SHA-256 against the sums file in that release. Checkout is `actions/checkout@v6`, which runs on Node 24. v2 and v4 still use Node 20.
+
+`HUGO_VERSION` at the top of `build.yml` is the pin. Don't set it to `latest`. We already got caught once when a Hugo release changed the build (0.162 started blocking HTML content files). Try the new version locally first, then bump the pin.
 
 ### Handbook XML Process
 Late 2025, early 2026 the DOI Handbook pages became automatically generated via an XSLT file that takes the xml contents and formats them in an easily navigable interactive HTML structure.
