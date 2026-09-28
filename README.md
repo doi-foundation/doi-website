@@ -28,6 +28,17 @@ Push `staging` and the Action in [`.github/workflows/build.yml`](https://github.
 
 The deploy will not delete more than 256 files from the bucket, and it stops if `public/` has fewer than 1500 files. A good build is a bit over 2400. We used to pass `--maxDeletes -1`, which would have emptied the live bucket if a build went thin. If you really need to delete a lot of files, raise `--maxDeletes` in that PR and put it back afterwards.
 
+### Cache purging
+
+Staging sits behind CloudFront only, and `hugo deploy` invalidates it (`invalidateCDN` in `config.toml`).
+
+Live sits behind Cloudflare, which fetches from CloudFront. Hugo can't purge Cloudflare, so the live job does both caches itself after the deploy. It invalidates CloudFront, waits for that to finish, and then purges `www.doi.org` from Cloudflare. If Cloudflare were purged first it would just fetch the old pages from CloudFront again. The purge is by hostname, so the rest of the doi.org zone is not touched.
+
+The live job needs these repo secrets:
+- `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY`, allowed `s3` writes plus `cloudfront:CreateInvalidation` and `cloudfront:GetInvalidation`
+- `CLOUDFLARE_API_TOKEN`, a token with only Zone → Cache Purge on the doi.org zone
+- `CLOUDFLARE_ZONE_ID`, the doi.org zone ID
+
 ### How CI installs Hugo
 
 Hugo 0.137 pulled `hugo deploy` out of the extended binary, so S3 deploys need the `extended_withdeploy` build. `peaceiris/actions-hugo` still cannot install that. We ran a fork (`deining/actions-hugo`) that could, but it is stuck on Node 20, and GitHub hosted runners drop Node 20 on 16 September 2026. After that the fork just fails. Upstream is on Node 24 now and still has no `withdeploy`.
