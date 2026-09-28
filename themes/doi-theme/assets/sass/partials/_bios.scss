@@ -1,5 +1,10 @@
 .bios {
-    
+    display: flow-root;
+
+    .col {
+        display: flow-root;
+    }
+
     h3 {
         clear: left;
     }
