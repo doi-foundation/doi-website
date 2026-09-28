@@ -181,6 +181,7 @@ The current members of the Executive Committee are:
 - **Matt Buys, DataCite *(Vice-Chair)***
 - **Richard Kroon, EIDR**
 - **Ann Li, Airiti**
+- **Raymond Drewry, Guest observer**
 {{% /column %}}
 
 
