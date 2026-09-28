@@ -10,17 +10,6 @@ imagemain = "Board & Governance"
 
 The Board appoints a Managing Agent to manage the day-to-day operations and is responsible for all aspects of management of the DOI system, including policy formulation and standards maintenance.
 
-{{% bios %}}
-
-{{< figure src="/images/board/jclark.jpg" title="Jonathan Clark" height="100px" >}}
-Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jonathan also works as an independent advisor on strategy and innovation. He is a Guest Lecturer and External Examiner for the Masters in Imagineering and the Strategic Events Management programmes at the Breda University of Applied Sciences. Prior to this he worked at Elsevier for 20 years in various positions in publishing, marketing and technology. He holds a BSc and PhD in Chemical Engineering from the University of Newcastle-upon-Tyne. Jonathan was Chair and Director of the DOI Foundation from 2005-2010. He lives mostly in Croatia.
-
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="orcid" %}}
-{{% social-link title="LinkedIn" url="http://www.linkedin.com/in/jonathanmtclark" icon="linkedin" %}}
-
-{{% /bios %}}
-
-
 {{% block-blue %}}
 
 ## Board Directors
@@ -37,12 +26,13 @@ Jonathan Clark has been the Managing Agent for the DOI Foundation since 2015. Jo
 {{% /column %}}
 
 {{% column %}}
-- [Raymond Drewry, EIDR](#EIDR)
+- [Richard Kroon, EIDR](#EIDR)
 - [Will Kreth, HAND](#HAND)
 - [Hideaki Takeda, JaLC](#JaLC)
-- [Jinseop Shin, KISTI](#KISTI)
+- [Eun Jee Lee, KISTI](#KISTI)
 - [Paola Mazzucchi, mEDRA *(Chair)*](#mEDRA)
 - [Jan Planovsky, Publications Office of the European Union](#OP)
+- [Raymond Drewry, Guest observer](#Guest)
 {{% /column %}}
 
 {{% /row %}}
@@ -94,10 +84,9 @@ Matt leads the team at DataCite who provide the means to create, find, cite, con
 
 ### EIDR {#EIDR}
 
-{{< figure src="/images/board/raymond.jpg" title="Raymond Drewry" height="100px" >}}
+{{< figure src="/images/board/richard.jpg" title="Richard Kroon" height="100px" >}}
 
-
-Raymond is Principal Scientist at Movielabs. He has been in the industry for more than 25 years primarily as a technologist. He has designed and implemented systems that range from the first fully interactive digital cable network in Europe, through the first-ever networked digital video system for journalists at an international sporting event, to real-time robotics systems for special effects and mechanical-industrial performance pieces. Before joining MovieLabs Raymond was CTO at Aggregator TV, a UK-based IPTV content company, and before that CTO and VP of engineering at Liberate Technologies. He has also been Director of Technology for New Media at Sybase; Principal Engineer and Architect for graphics systems at Digital Equipment Corporation. His patents, publications, and contributions to technical standards cover distributed multimedia systems and graphics hardware and software. Raymond has a BA in Classics (Latin) and Computer Science from Yale University.
+Richard W. Kroon is the Sr. Director of Technical Operations for the Entertainment Identifier Registry (EIDR). Prior to EIDR, he held senior positions with the Motion Picture Association of America (MPAA), Technicolor, MovieLabs, and Southbay Motion Picture Technologies. In addition to being an award-winning videographer and the recipient of the Digital Entertainment Group (DEG) Technology Leadership Award, Mr. Kroon is the author of numerous technical papers and several books, including A/V A to Z and 3D A-to-Z. Mr. Kroon has a BS in Computer Science from the University of Southern California (USC), an MBA from Auburn University, an MA in Media and Communications Psychology from Touro University Worldwide (TUW), and post-graduate certificates in Film and Television from UCLA Extension’s Entertainment Studies. He lives in Los Angeles, California with his wife, Melanie, and a variable number of cats.
 
 <br>
 
@@ -149,14 +138,9 @@ Ginny Hendricks is Chief Program Officer at Crossref where she has built a commu
 
 ### KISTI {#KISTI}
 
-{{< figure src="/images/board/jin-seop.jpg" title="Jin-seop Shin" height="100px" >}}
+{{< figure src="/images/board/eun-jee.jpg" title="Eun Jee Lee" height="100px" >}}
 
-Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Placeholder:
-Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come. Jinseop is Director of Korea DOI center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come.
-
-Jinseop is Director of Korea DOI Center & Senior Researcher at Digital Curation Center, KISTI. Full bio to come.
-
-...
+Eun Jee leads the Data Planning Team within the Data Curation Center at the Korea Institute of Science and Technology Information (KISTI). She supervises a team responsible for data governance and contributes to DOI-related initiatives within KISTI’s research information infrastructure. Her work focuses on enhancing the reliability, discoverability, and interoperability of research outputs by curating them into AI-ready data, supporting the development of AI-driven research infrastructure. She is particularly interested in strengthening the role of persistent identifiers in connecting research outputs, institutions, and data resources across the scholarly communication ecosystem.
 
 <br>
 
@@ -175,6 +159,14 @@ Will is the CEO and founder of HAND. Formerly: executive director of EIDR, direc
 
 Jan has been working for EU institutions (Eurostat and Publications Office) since 2005. Currently, he is Head of unit “Data Operations and Enrichment Services”, ensuring the appropriate quality of metadata for EU publications so that they are findable by their intended audience and can provide a sound basis for AI-based solutions. Jan supervises the team in charge of keeping the DOI Registration Agency operational. He lives in Luxembourg.
 
+<br>
+
+### Guest observer {#Guest}
+
+{{< figure src="/images/board/raymond.jpg" title="Raymond Drewry" height="100px" >}}
+
+Raymond is Principal Scientist at Movielabs. He has been in the industry for more than 25 years primarily as a technologist. He has designed and implemented systems that range from the first fully interactive digital cable network in Europe, through the first-ever networked digital video system for journalists at an international sporting event, to real-time robotics systems for special effects and mechanical-industrial performance pieces. Before joining MovieLabs Raymond was CTO at Aggregator TV, a UK-based IPTV content company, and before that CTO and VP of engineering at Liberate Technologies. He has also been Director of Technology for New Media at Sybase; Principal Engineer and Architect for graphics systems at Digital Equipment Corporation. His patents, publications, and contributions to technical standards cover distributed multimedia systems and graphics hardware and software. Raymond has a BA in Classics (Latin) and Computer Science from Yale University.
+
 {{% /column %}}
 
 {{% /row %}}
@@ -187,7 +179,7 @@ The current members of the Executive Committee are:
 - **Paola Mazzucchi, mEDRA *(Chair)***
 - **Ginny Hendricks, Crossref *(Treasurer)***
 - **Matt Buys, DataCite *(Vice-Chair)***
-- **Raymond Drewry, EIDR**
+- **Richard Kroon, EIDR**
 - **Ann Li, Airiti**
 {{% /column %}}
 
