@@ -32,7 +32,6 @@ The Board appoints a Managing Agent to manage the day-to-day operations and is r
 - [Eun Jee Lee, KISTI](#KISTI)
 - [Paola Mazzucchi, mEDRA *(Chair)*](#mEDRA)
 - [Jan Planovsky, Publications Office of the European Union](#OP)
-- [Raymond Drewry, Guest observer](#Guest)
 {{% /column %}}
 
 {{% /row %}}
@@ -159,14 +158,6 @@ Will is the CEO and founder of HAND. Formerly: executive director of EIDR, direc
 
 Jan has been working for EU institutions (Eurostat and Publications Office) since 2005. Currently, he is Head of unit “Data Operations and Enrichment Services”, ensuring the appropriate quality of metadata for EU publications so that they are findable by their intended audience and can provide a sound basis for AI-based solutions. Jan supervises the team in charge of keeping the DOI Registration Agency operational. He lives in Luxembourg.
 
-<br>
-
-### Guest observer {#Guest}
-
-{{< figure src="/images/board/raymond.jpg" title="Raymond Drewry" height="100px" >}}
-
-Raymond is Principal Scientist at Movielabs. He has been in the industry for more than 25 years primarily as a technologist. He has designed and implemented systems that range from the first fully interactive digital cable network in Europe, through the first-ever networked digital video system for journalists at an international sporting event, to real-time robotics systems for special effects and mechanical-industrial performance pieces. Before joining MovieLabs Raymond was CTO at Aggregator TV, a UK-based IPTV content company, and before that CTO and VP of engineering at Liberate Technologies. He has also been Director of Technology for New Media at Sybase; Principal Engineer and Architect for graphics systems at Digital Equipment Corporation. His patents, publications, and contributions to technical standards cover distributed multimedia systems and graphics hardware and software. Raymond has a BA in Classics (Latin) and Computer Science from Yale University.
-
 {{% /column %}}
 
 {{% /row %}}
@@ -179,7 +170,6 @@ The current members of the Executive Committee are:
 - **Paola Mazzucchi, mEDRA *(Chair)***
 - **Ginny Hendricks, Crossref *(Treasurer)***
 - **Matt Buys, DataCite *(Vice-Chair)***
-- **Richard Kroon, EIDR**
 - **Ann Li, Airiti**
 - **Raymond Drewry, Guest observer**
 {{% /column %}}
