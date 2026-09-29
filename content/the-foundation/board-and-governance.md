@@ -42,76 +42,15 @@ The Board appoints a Managing Agent to manage the day-to-day operations and is r
 
 {{% bios %}}
 
-{{% row %}}
-
-{{% column %}}
-
+{{% bio %}}
 ### Airiti {#Airiti}
 
 {{< figure src="/images/board/jieh.jpg" title="Jieh Hsiang" height="100px" >}}
 
 Jieh is a Distinguished Professor of Computer Science at the National Taiwan University. He is also the director of the NTU Research Center for Digital Humanities, the first such center in the Sinophone world. He has received a PhD in computer science from the University of Illinois at Urbana Champaign, and had served 6 years as the University Librarian of NTU and 8 years as the Director of NTU Press. Before returning to Taiwan, he was a full professor in Computer Science at Stony Brook University. Dr. Jieh Hsiang has been on the advisory board of several national and international institutions and agencies. He was the first President of the Taiwanese Association of Digital Humanities, as well as a past President of the Taiwanese Association of Artificial Intelligence.
+{{% /bio %}}
 
-<br>
-
-### Chinese DOI {#China}
-
-{{< figure src="/images/board/qiao.jpg" title="Qiao Xiaodong" height="100px" >}}
-
-Having been working for ISTIC for over 30 years, Qiao is in charge of the daily operation of WanfangData Co. Ltd., which is invested by ISTIC and one of most important on-line academic information providers in China. Before that, Qiao was the Chief Engineer of ISTIC, responsible for design, development, operation and popularization of the digital library platforms of both National S&T Library (NSTL) and ISTIC. He has been working with International Committee of S&T Information for about 10 years and is the vice chairman of it now.
-
-<br>
-
-### CNKI {#CNKI}
-
-{{< figure src="/images/board/hong.jpg" title="Hong Xiao" height="100px" >}}
-
-Hong Xiao now serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. XIAO Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
-
-<br>
-
-### DataCite {#DataCite}
-
-{{< figure src="/images/board/matt.jpg" title="Matt Buys" height="100px" >}}
-
-Matt leads the team at DataCite who provide the means to create, find, cite, connect, and use research globally. DataCite is a global community that share a common interest: to ensure that research outputs and resources are openly available and connected so that their reuse can advance knowledge across and between disciplines, now and in the future. Prior to joining DataCite, Matt was the Director of Engagement at ORCID where he played an important role in growing the community into an international-scale research effort.
-
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-7234-3684" icon="orcid" %}}
-{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/matthew-buys/" icon="linkedin" %}}
-
-<br>
-
-### EIDR {#EIDR}
-
-{{< figure src="/images/board/richard.jpg" title="Richard Kroon" height="100px" >}}
-
-Richard W. Kroon is the Sr. Director of Technical Operations for the Entertainment Identifier Registry (EIDR). Prior to EIDR, he held senior positions with the Motion Picture Association of America (MPAA), Technicolor, MovieLabs, and Southbay Motion Picture Technologies. In addition to being an award-winning videographer and the recipient of the Digital Entertainment Group (DEG) Technology Leadership Award, Mr. Kroon is the author of numerous technical papers and several books, including A/V A to Z and 3D A-to-Z. Mr. Kroon has a BS in Computer Science from the University of Southern California (USC), an MBA from Auburn University, an MA in Media and Communications Psychology from Touro University Worldwide (TUW), and post-graduate certificates in Film and Television from UCLA Extension’s Entertainment Studies. He lives in Los Angeles, California with his wife, Melanie, and a variable number of cats.
-
-<br>
-
-### JaLC {#JaLC}
-
-{{< figure src="/images/board/hideaki.jpg" title="Hideaki Takeda" height="100px" >}}
-
-Hideaki Takeda is a professor at National Institute of Informatics (NII) Japan, and a professor at the Graduate University for Advanced Studies (Sokendai). He received Dr. Eng. degrees from the University of Tokyo, Japan in 1991. His major research topic is Artificial Intelligence, in particular, Semantic Web. His interest also includes Scholarly Communication. He is currently the chair of Japan Link Center, a Board Member of CLOCKSS and a member of Membership Advisory Board of arXiv.
-
-{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="orcid" %}}
-
-<br>
-
-### mEDRA {#mEDRA}
-{{< figure src="/images/board/paola.jpg" title="Paola Mazzucchi" height="100px" >}}
-
-Paola has been working in the publishing and content industry since 2000 with a particular focus on the role played by technology and innovation in the digital value chain, building bridges between the pure content-centered approach and the technology centered approach. Since 2005, Paola oversees the daily operations of mEDRA DOI RA and leads the IT team behind the DOI RA infrastructure, the Italian ISBN Agency, the LIA service for the creation of accessible content for visually impaired readers. Paola loves metadata, identifiers and standards and happily engages with standard settings organizations such as EDItEUR, ISO, W3C and the DOI Foundation that she is Chairing since 2015.
-
-Her true-real life passions, however, are her two sons, hiking, good food and heavy metal music, not always in this exact order, though. Paola lives in Milan, Italy.
-
-{{% /column %}}
-
-{{% column %}}
-
-<br>
-
+{{% bio %}}
 ### BSI Identify {#BSI}
 
 {{< figure src="/images/board/willjm.jpg" title="Will Johnson-Marshall" height="100px" >}}
@@ -119,9 +58,25 @@ Her true-real life passions, however, are her two sons, hiking, good food and he
 Will is the Head of Operational Delivery for BSI Identify. Will and his team have the substantial mission to create and then establish BSI Identify as the trusted persistent registry for construction products, supporting the industry with digital traceability. He is responsible for all operational aspects including the technical design of the service and supporting customers to create a positive onboarding and ongoing experience. Will has worked for BSI for twenty years gaining substantial commercial experience within technical publishing and in delivering public interest and innovation programmes. Based in London, UK, Will holds a BEng in Chemical Engineering from the University of Birmingham.
 
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/will-johnson-marshall-6a3b562" icon="linkedin" %}}
+{{% /bio %}}
 
-<br>
+{{% bio %}}
+### Chinese DOI {#China}
 
+{{< figure src="/images/board/qiao.jpg" title="Qiao Xiaodong" height="100px" >}}
+
+Having been working for ISTIC for over 30 years, Qiao is in charge of the daily operation of WanfangData Co. Ltd., which is invested by ISTIC and one of most important on-line academic information providers in China. Before that, Qiao was the Chief Engineer of ISTIC, responsible for design, development, operation and popularization of the digital library platforms of both National S&T Library (NSTL) and ISTIC. He has been working with International Committee of S&T Information for about 10 years and is the vice chairman of it now.
+{{% /bio %}}
+
+{{% bio %}}
+### CNKI {#CNKI}
+
+{{< figure src="/images/board/hong.jpg" title="Hong Xiao" height="100px" >}}
+
+Hong Xiao now serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. XIAO Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
+{{% /bio %}}
+
+{{% bio %}}
 ### Crossref {#Crossref}
 {{< figure src="/images/board/ginny.jpg" title="Ginny Hendricks" height="100px" >}}
 
@@ -130,19 +85,28 @@ Ginny Hendricks is Chief Program Officer at Crossref where she has built a commu
 {{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="square-bluesky" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/hendricks/" icon="linkedin" %}}
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0002-0353-2702" icon="orcid" %}}
+{{% /bio %}}
 
-<br>
+{{% bio %}}
+### DataCite {#DataCite}
 
-<br>
+{{< figure src="/images/board/matt.jpg" title="Matt Buys" height="100px" >}}
 
-### KISTI {#KISTI}
+Matt leads the team at DataCite who provide the means to create, find, cite, connect, and use research globally. DataCite is a global community that share a common interest: to ensure that research outputs and resources are openly available and connected so that their reuse can advance knowledge across and between disciplines, now and in the future. Prior to joining DataCite, Matt was the Director of Engagement at ORCID where he played an important role in growing the community into an international-scale research effort.
 
-{{< figure src="/images/board/eun-jee.jpg" title="Eun Jee Lee" height="100px" >}}
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-7234-3684" icon="orcid" %}}
+{{% social-link title="LinkedIn" url="https://www.linkedin.com/in/matthew-buys/" icon="linkedin" %}}
+{{% /bio %}}
 
-Eun Jee leads the Data Planning Team within the Data Curation Center at the Korea Institute of Science and Technology Information (KISTI). She supervises a team responsible for data governance and contributes to DOI-related initiatives within KISTI’s research information infrastructure. Her work focuses on enhancing the reliability, discoverability, and interoperability of research outputs by curating them into AI-ready data, supporting the development of AI-driven research infrastructure. She is particularly interested in strengthening the role of persistent identifiers in connecting research outputs, institutions, and data resources across the scholarly communication ecosystem.
+{{% bio %}}
+### EIDR {#EIDR}
 
-<br>
+{{< figure src="/images/board/richard.jpg" title="Richard Kroon" height="100px" >}}
 
+Richard W. Kroon is the Sr. Director of Technical Operations for the Entertainment Identifier Registry (EIDR). Prior to EIDR, he held senior positions with the Motion Picture Association of America (MPAA), Technicolor, MovieLabs, and Southbay Motion Picture Technologies. In addition to being an award-winning videographer and the recipient of the Digital Entertainment Group (DEG) Technology Leadership Award, Mr. Kroon is the author of numerous technical papers and several books, including A/V A to Z and 3D A-to-Z. Mr. Kroon has a BS in Computer Science from the University of Southern California (USC), an MBA from Auburn University, an MA in Media and Communications Psychology from Touro University Worldwide (TUW), and post-graduate certificates in Film and Television from UCLA Extension’s Entertainment Studies. He lives in Los Angeles, California with his wife, Melanie, and a variable number of cats.
+{{% /bio %}}
+
+{{% bio %}}
 ### HAND {#HAND}
 
 {{< figure src="/images/board/willk.jpg" title="Will Kreth" height="100px" >}}
@@ -150,17 +114,43 @@ Eun Jee leads the Data Planning Team within the Data Curation Center at the Kore
 Will is the CEO and founder of HAND. Formerly: executive director of EIDR, director of metadata at Showtime Networks, and director of video product management at Charter/Time Warner (participated in CableLabs unique ID working group, contributing to EIDR’s early formation).  Current working group co-chair at DDEX.net - developing interoperability standards for the future of music’s metadata supply-chain, and current co-chair of the standards register WG of the Metaverse Standards Forum. Additionally, Will was a co-founder of Wired magazine, and worked with educational software developers at the Apple Multimedia Lab.
 
 {{% social-link title="LinkedIn" url="http://www.linkedin.com/in/willkreth" icon="linkedin" %}}
-<br>
+{{% /bio %}}
 
+{{% bio %}}
+### JaLC {#JaLC}
+
+{{< figure src="/images/board/hideaki.jpg" title="Hideaki Takeda" height="100px" >}}
+
+Hideaki Takeda is a professor at National Institute of Informatics (NII) Japan, and a professor at the Graduate University for Advanced Studies (Sokendai). He received Dr. Eng. degrees from the University of Tokyo, Japan in 1991. His major research topic is Artificial Intelligence, in particular, Semantic Web. His interest also includes Scholarly Communication. He is currently the chair of Japan Link Center, a Board Member of CLOCKSS and a member of Membership Advisory Board of arXiv.
+
+{{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="orcid" %}}
+{{% /bio %}}
+
+{{% bio %}}
+### KISTI {#KISTI}
+
+{{< figure src="/images/board/eun-jee.jpg" title="Eun Jee Lee" height="100px" >}}
+
+Eun Jee leads the Data Planning Team within the Data Curation Center at the Korea Institute of Science and Technology Information (KISTI). She supervises a team responsible for data governance and contributes to DOI-related initiatives within KISTI’s research information infrastructure. Her work focuses on enhancing the reliability, discoverability, and interoperability of research outputs by curating them into AI-ready data, supporting the development of AI-driven research infrastructure. She is particularly interested in strengthening the role of persistent identifiers in connecting research outputs, institutions, and data resources across the scholarly communication ecosystem.
+{{% /bio %}}
+
+{{% bio %}}
+### mEDRA {#mEDRA}
+
+{{< figure src="/images/board/paola.jpg" title="Paola Mazzucchi" height="100px" >}}
+
+Paola has been working in the publishing and content industry since 2000 with a particular focus on the role played by technology and innovation in the digital value chain, building bridges between the pure content-centered approach and the technology centered approach. Since 2005, Paola oversees the daily operations of mEDRA DOI RA and leads the IT team behind the DOI RA infrastructure, the Italian ISBN Agency, the LIA service for the creation of accessible content for visually impaired readers. Paola loves metadata, identifiers and standards and happily engages with standard settings organizations such as EDItEUR, ISO, W3C and the DOI Foundation that she is Chairing since 2015.
+
+Her true-real life passions, however, are her two sons, hiking, good food and heavy metal music, not always in this exact order, though. Paola lives in Milan, Italy.
+{{% /bio %}}
+
+{{% bio %}}
 ### Publications Office of the European Union {#OP}
 
 {{< figure src="/images/board/jan.jpg" title="Jan Planovsky" height="100px" >}}
 
 Jan has been working for EU institutions (Eurostat and Publications Office) since 2005. Currently, he is Head of unit “Data Operations and Enrichment Services”, ensuring the appropriate quality of metadata for EU publications so that they are findable by their intended audience and can provide a sound basis for AI-based solutions. Jan supervises the team in charge of keeping the DOI Registration Agency operational. He lives in Luxembourg.
-
-{{% /column %}}
-
-{{% /row %}}
+{{% /bio %}}
 
 {{% /bios %}}
 

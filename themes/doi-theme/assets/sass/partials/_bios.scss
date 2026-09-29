@@ -1,35 +1,48 @@
 .bios {
-    display: flow-root;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // Half the number of .bio items, rounded up, so items fill the
+    // left column first and then the right (newspaper order) while
+    // each horizontal pair shares a row.
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+    column-gap: 4rem;
+    row-gap: 2.5rem;
+    align-items: start;
 
-    .col {
+    @media (max-width: $break-medium) {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-auto-flow: row;
+    }
+
+    .bio {
         display: flow-root;
+        min-width: 0;
     }
 
     h3 {
-        clear: left;
+        margin-top: 0;
     }
 
-    figure { 
-        
+    figure {
         float: left;
-        padding-right: 1em;
-        
+        margin: 0 1em 0.5em 0;
+
         img {
             border-radius: 50%;
+            width: 200px;
             height: 200px;
+            object-fit: cover;
         }
     }
-    
-    >[class~='row']:first-of-type {
-        padding-top: 0;
-    }
-    
+
     .bio-link {
         display: block;
-        
+
         .fa, .fa-brands {
             margin-right: .75em;
         }
     }
-    
+
 }
