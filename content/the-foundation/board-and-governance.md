@@ -8,8 +8,6 @@ imagetop = "The Foundation"
 imagemain = "Board & Governance"
 +++
 
-The Board appoints a Managing Agent to manage the day-to-day operations and is responsible for all aspects of management of the DOI system, including policy formulation and standards maintenance.
-
 {{% block-blue %}}
 
 ## Board Directors
