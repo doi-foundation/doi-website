@@ -99,7 +99,7 @@ Matt leads the team at DataCite who provide the means to create, find, cite, con
 {{% /bio %}}
 
 {{% bio %}}
-### EIDR {#EIDR}
+### Entertainment ID Registry (EIDR) {#EIDR}
 
 {{< figure src="/images/board/richard.jpg" title="Richard Kroon" height="100px" >}}
 
@@ -161,7 +161,7 @@ The current members of the Executive Committee are:
 - **Ginny Hendricks, Crossref *(Treasurer)***
 - **Matt Buys, DataCite *(Vice-Chair)***
 - **Ann Li, Airiti**
-- **Raymond Drewry, Guest observer**
+- **Raymond Drewry, Observer**
 {{% /column %}}
 
 
