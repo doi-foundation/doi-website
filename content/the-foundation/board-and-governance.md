@@ -3,10 +3,12 @@ title = "Board & Governance"
 draft = false
 # the following section is for the header
 maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent. The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, Vice-Chair and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
-subtext = "Scroll down to view current board directors, the Executive Committee and to see our founding and governing documents such as charter and by-laws."
-imagetop = "The Foundation"
+subtext = ""
 imagemain = "Board & Governance"
 +++
+
+Scroll down to view current Board of Directors, the Executive Committee, and to view our founding and governing documents such as charter and by-laws."
+imagetop = "The Foundation
 
 {{% block-blue %}}
 
@@ -78,7 +80,7 @@ Hong Xiao serves as Vice President of CNKI, as well as Editor-in-chief of China 
 ### Crossref {#Crossref}
 {{< figure src="/images/board/ginny.jpg" title="Ginny Hendricks" height="100px" >}}
 
-Ginny Hendricks is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications. She helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and became Crossref's representative on the DOI Foundation board in 2025, also serving as its Treasurer.
+Ginny is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications. She helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and serves as Treasurue on the DOI Foundation board and Executive Committee.
 
 {{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="square-bluesky" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/hendricks/" icon="linkedin" %}}
@@ -119,7 +121,7 @@ Will is the CEO and founder of HAND. Formerly: executive director of EIDR, direc
 
 {{< figure src="/images/board/hideaki.jpg" title="Hideaki Takeda" height="100px" >}}
 
-Hideaki Takeda is a professor at National Institute of Informatics (NII) Japan, and a professor at the Graduate University for Advanced Studies (Sokendai). He received Dr. Eng. degrees from the University of Tokyo, Japan in 1991. His major research topic is Artificial Intelligence, in particular, Semantic Web. His interest also includes Scholarly Communication. He is currently the chair of Japan Link Center, a Board Member of CLOCKSS and a member of Membership Advisory Board of arXiv.
+Hideaki is a professor at National Institute of Informatics (NII) Japan, and a professor at the Graduate University for Advanced Studies (Sokendai). He received Dr. Eng. degrees from the University of Tokyo, Japan in 1991. His major research topic is Artificial Intelligence, in particular, Semantic Web. His interest also includes Scholarly Communication. He is currently the chair of Japan Link Center, a Board Member of CLOCKSS and a member of Membership Advisory Board of arXiv.
 
 {{% social-link title="ORCID iD" url="https://orcid.org/0000-0001-9551-9662" icon="orcid" %}}
 {{% /bio %}}
@@ -137,9 +139,7 @@ Eun Jee leads the Data Planning Team within the Data Curation Center at the Kore
 
 {{< figure src="/images/board/paola.jpg" title="Paola Mazzucchi" height="100px" >}}
 
-Paola has been working in the publishing and content industry since 2000 with a particular focus on the role played by technology and innovation in the digital value chain, building bridges between the pure content-centered approach and the technology centered approach. Since 2005, Paola oversees the daily operations of mEDRA DOI RA and leads the IT team behind the DOI RA infrastructure, the Italian ISBN Agency, the LIA service for the creation of accessible content for visually impaired readers. Paola loves metadata, identifiers and standards and happily engages with standard settings organizations such as EDItEUR, ISO, W3C and the DOI Foundation that she is Chairing since 2015.
-
-Her true-real life passions, however, are her two sons, hiking, good food and heavy metal music, not always in this exact order, though. Paola lives in Milan, Italy.
+Paola has been working in the publishing and content industry since 2000 with a particular focus on the role played by technology and innovation in the digital value chain, building bridges between the pure content-centered approach and the technology centered approach. Since 2005, Paola oversees the daily operations of mEDRA DOI RA and leads the IT team behind the DOI RA infrastructure, the Italian ISBN Agency, the LIA service for the creation of accessible content for visually impaired readers. Paola loves metadata, identifiers and standards and happily engages with standard settings organizations such as EDItEUR, ISO, W3C and the DOI Foundation that she is Chairing since 2015. Her true-real life passions, however, are her two sons, hiking, good food and heavy metal music, not always in this exact order, though. Paola lives in Milan, Italy.
 {{% /bio %}}
 
 {{% bio %}}
