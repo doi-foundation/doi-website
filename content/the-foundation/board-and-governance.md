@@ -80,7 +80,7 @@ Hong Xiao serves as Vice President of CNKI, as well as Editor-in-chief of China 
 ### Crossref {#Crossref}
 {{< figure src="/images/board/ginny.jpg" title="Ginny Hendricks" height="100px" >}}
 
-Ginny is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications. She helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and serves as Treasurue on the DOI Foundation board and Executive Committee.
+Ginny is Chief Program Officer at Crossref where she has built a community-first approach to membership and technical support, product and metadata development, and global engagement and communications. She helps guide Crossref's mission to make all research objects easy to find, cite, link and assess through their vision of an open Research Nexus. Before joining Crossref in 2015, Ginny consulted with publishing and library technologists to build user-centred discovery and analysis platforms. She has co-founded and supports several open infrastructure initiatives and serves as Treasurer on the DOI Foundation board and Executive Committee.
 
 {{% social-link title="Bluesky" url="https://bsky.app/profile/ginsta.bsky.social" icon="square-bluesky" %}}
 {{% social-link title="LinkedIn" url="https://www.linkedin.com/in/hendricks/" icon="linkedin" %}}
