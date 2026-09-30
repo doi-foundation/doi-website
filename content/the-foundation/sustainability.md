@@ -13,7 +13,7 @@ The DOI Foundation operates on an annual budget of around $1 million USD. All re
 
 About 70% of our expenses are used for the running and maintenance of the DOI System infrastructure.
 
-We maintain a reserve fund to support long-term sustainability. This is managed by the Executive Committee and overseen by the Audit Committee
+We maintain a reserve fund to support long-term sustainability. This is managed by the Executive Committee and overseen by the Audit Committee.
 
 Each year we strive to generate a small net operating income and have been able to do so nearly every year. Below is an overview of how this has changed over time.
 

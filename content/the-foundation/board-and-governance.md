@@ -15,7 +15,7 @@ imagemain = "Board & Governance"
 {{% row %}}
 
 {{% column %}}
-- [Jieh Hsiang, Airiti](#Airiti)
+- [Yenhsuen (Ann) Li, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
 - [Qiao Xiaodong, Chinese DOI](#China)
 - [Hong Xiao, CNKI](#CNKI)
@@ -43,15 +43,15 @@ imagemain = "Board & Governance"
 {{% bio %}}
 ### Airiti {#Airiti}
 
-{{< figure src="/images/board/jieh.jpg" title="Jieh Hsiang" height="100px" >}}
+{{< figure src="/images/board/ann-li.jpg" title="Yenhsuen (Ann) Li" height="100px" >}}
 
-Jieh is a Distinguished Professor of Computer Science at the National Taiwan University. He is also the director of the NTU Research Center for Digital Humanities, the first such center in the Sinophone world. He has received a PhD in computer science from the University of Illinois at Urbana Champaign, and had served 6 years as the University Librarian of NTU and 8 years as the Director of NTU Press. Before returning to Taiwan, he was a full professor in Computer Science at Stony Brook University. Dr. Jieh Hsiang has been on the advisory board of several national and international institutions and agencies. He was the first President of the Taiwanese Association of Digital Humanities, as well as a past President of the Taiwanese Association of Artificial Intelligence.
+Ann leads the product development business group at Airiti, overseeing the company's academic and e-book services. Serving as Airiti's primary liaison for international cooperation, Ann is deeply committed to aligning Taiwan’s academic infrastructure with global standards. Her core focus is on elevating the international visibility of local research outputs and empowering the global scientific community through innovative, interconnected digital services. In addition to representing Airiti on the Board, Ann also serves on the Executive Committee of the DOI Foundation.
 {{% /bio %}}
 
 {{% bio %}}
 ### BSI Identify {#BSI}
 
-{{< figure src="/images/board/willjm.jpg" title="Will Johnson-Marshall" height="100px" >}}
+{{< figure src="/images/board/will-jm.jpg" title="Will Johnson-Marshall" height="100px" >}}
 
 Will is the Head of Operational Delivery for BSI Identify. Will and his team have the substantial mission to create and then establish BSI Identify as the trusted persistent registry for construction products, supporting the industry with digital traceability. He is responsible for all operational aspects including the technical design of the service and supporting customers to create a positive onboarding and ongoing experience. Will has worked for BSI for twenty years gaining substantial commercial experience within technical publishing and in delivering public interest and innovation programmes. Based in London, UK, Will holds a BEng in Chemical Engineering from the University of Birmingham.
 
@@ -158,7 +158,7 @@ The current members of the Executive Committee are:
 - **Paola Mazzucchi, mEDRA *(Chair)***
 - **Ginny Hendricks, Crossref *(Treasurer)***
 - **Matt Buys, DataCite *(Vice-Chair)***
-- **Ann Li, Airiti**
+- **Yenhsuen (Ann) Li, Airiti**
 - **Raymond Drewry, Observer**
 {{% /column %}}
 
