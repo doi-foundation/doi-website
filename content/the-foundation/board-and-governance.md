@@ -71,7 +71,7 @@ Having been working for ISTIC for over 30 years, Qiao is in charge of the daily 
 
 {{< figure src="/images/board/hong.jpg" title="Hong Xiao" height="100px" >}}
 
-Hong Xiao now serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. XIAO Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
+Hong Xiao serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. XIAO Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
 {{% /bio %}}
 
 {{% bio %}}
@@ -101,7 +101,7 @@ Matt leads the team at DataCite who provide the means to create, find, cite, con
 
 {{< figure src="/images/board/richard.jpg" title="Richard Kroon" height="100px" >}}
 
-Richard W. Kroon is the Sr. Director of Technical Operations for the Entertainment Identifier Registry (EIDR). Prior to EIDR, he held senior positions with the Motion Picture Association of America (MPAA), Technicolor, MovieLabs, and Southbay Motion Picture Technologies. In addition to being an award-winning videographer and the recipient of the Digital Entertainment Group (DEG) Technology Leadership Award, Mr. Kroon is the author of numerous technical papers and several books, including A/V A to Z and 3D A-to-Z. Mr. Kroon has a BS in Computer Science from the University of Southern California (USC), an MBA from Auburn University, an MA in Media and Communications Psychology from Touro University Worldwide (TUW), and post-graduate certificates in Film and Television from UCLA Extension’s Entertainment Studies. He lives in Los Angeles, California with his wife, Melanie, and a variable number of cats.
+Richard is the Sr. Director of Technical Operations for the Entertainment Identifier Registry (EIDR). Prior to EIDR, he held senior positions with the Motion Picture Association of America (MPAA), Technicolor, MovieLabs, and Southbay Motion Picture Technologies. In addition to being an award-winning videographer and the recipient of the Digital Entertainment Group (DEG) Technology Leadership Award, Mr. Kroon is the author of numerous technical papers and several books, including A/V A to Z and 3D A-to-Z. Mr. Kroon has a BS in Computer Science from the University of Southern California (USC), an MBA from Auburn University, an MA in Media and Communications Psychology from Touro University Worldwide (TUW), and post-graduate certificates in Film and Television from UCLA Extension’s Entertainment Studies. He lives in Los Angeles, California with his wife, Melanie, and a variable number of cats.
 {{% /bio %}}
 
 {{% bio %}}
