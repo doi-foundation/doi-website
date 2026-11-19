@@ -2,13 +2,11 @@
 title = "Board & Governance"
 draft = false
 # the following section is for the header
-maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members charged with governing the DOI Foundation and appointing a Managing Agent. The Board meets several times a year to oversee the strategic and fiscal health of the organisation; board meetings are open to senior staff at member or agency organisations but only the Board Directors vote. There is also an Executive Committee, a Chair, Vice-Chair and a Treasurer. The members of the Board are not remunerated for their services to the foundation."
-subtext = ""
+maintext = "The Foundation's elected Board of Directors is made up of Registration Agencies and Members. It governs the DOI Foundation and meets several times a year to oversee the organisation's strategic and fiscal health. Directors are not remunerated."
+subtext = "Board meetings are open to senior staff at member and agency organisations, though only Directors vote. There is also an Executive Committee, with a Chair, Vice-Chair and Treasurer. Scroll down for the current Board and our governing documents."
+imagetop = "The Foundation"
 imagemain = "Board & Governance"
 +++
-
-Scroll down to view current Board of Directors, the Executive Committee, and to view our founding and governing documents such as charter and by-laws."
-imagetop = "The Foundation
 
 {{% block-blue %}}
 
@@ -19,8 +17,8 @@ imagetop = "The Foundation
 {{% column %}}
 - [Yenhsuen (Ann) Li, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
-- [Lijun Wang, Chinese DOI](#China)
-- [Hong Xiao, CNKI](#CNKI)
+- [Wang Lijun, China DOI](#China)
+- [Xiao Hong, CNKI](#CNKI)
 - [Ginny Hendricks, Crossref *(Treasurer)*](#Crossref)
 - [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
 {{% /column %}}
@@ -61,19 +59,19 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 {{% /bio %}}
 
 {{% bio %}}
-### Chinese DOI {#China}
+### China DOI {#China}
 
-{{< figure src="/images/board/lijun-wang.jpg" title="Lijun Wang" height="100px" >}}
+{{< figure src="/images/board/wang-lijun.jpg" title="Wang Lijun" height="100px" >}}
 
-Lijun heads the Information Theory and Methodology Research Center at the Institute of Scientific and Technical Information of China (ISTIC). She leads her team on data analysis and governance, and directs research related to Chinese DOI. Her long-standing research focuses on data mining and innovation mapping, and she works with her team to advance large language model applications for government decision-making support and industrial empowerment.
+Lijun heads the Information Theory and Methodology Research Center at the Institute of Scientific and Technical Information of China (ISTIC). She leads her team on data analysis and governance, and directs research related to China DOI. Her long-standing research focuses on data mining and innovation mapping, and she works with her team to advance large language model applications for government decision-making support and industrial empowerment.
 {{% /bio %}}
 
 {{% bio %}}
 ### CNKI {#CNKI}
 
-{{< figure src="/images/board/hong.jpg" title="Hong Xiao" height="100px" >}}
+{{< figure src="/images/board/hong.jpg" title="Xiao Hong" height="100px" >}}
 
-Hong Xiao serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. XIAO Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
+Xiao Hong serves as Vice President of CNKI, as well as Editor-in-chief of China Academic Journals (CD Edition) Electronic Publishing House Co., Ltd., the publishing entity of CNKI. Prior to high management of CNKI, he was successively in charge of Shanghai Information Center for Life Sciences, Journal Publishing Center of Science Press, and Science China Press, Chinese Academy of Sciences. Xiao Hong is a State Council Special Allowance Expert, with profound experiences spanning STM publishing, scientometrics research, subject information management, and academic resources’ global dissemination during the past three decades.
 {{% /bio %}}
 
 {{% bio %}}
