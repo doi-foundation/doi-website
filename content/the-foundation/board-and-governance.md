@@ -19,7 +19,7 @@ imagetop = "The Foundation
 {{% column %}}
 - [Yenhsuen (Ann) Li, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
-- [Qiao Xiaodong, Chinese DOI](#China)
+- [Lijun Wang, Chinese DOI](#China)
 - [Hong Xiao, CNKI](#CNKI)
 - [Ginny Hendricks, Crossref *(Treasurer)*](#Crossref)
 - [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
@@ -63,9 +63,9 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 {{% bio %}}
 ### Chinese DOI {#China}
 
-{{< figure src="/images/board/qiao.jpg" title="Qiao Xiaodong" height="100px" >}}
+{{< figure src="/images/board/lijun-wang.jpg" title="Lijun Wang" height="100px" >}}
 
-Having been working for ISTIC for over 30 years, Qiao is in charge of the daily operation of WanfangData Co. Ltd., which is invested by ISTIC and one of most important on-line academic information providers in China. Before that, Qiao was the Chief Engineer of ISTIC, responsible for design, development, operation and popularization of the digital library platforms of both National S&T Library (NSTL) and ISTIC. He has been working with International Committee of S&T Information for about 10 years and is the vice chairman of it now.
+Lijun heads the Information Theory and Methodology Research Center at the Institute of Scientific and Technical Information of China (ISTIC). She leads her team on data analysis and governance, and directs research related to Chinese DOI. Her long-standing research focuses on data mining and innovation mapping, and she works with her team to advance large language model applications for government decision-making support and industrial empowerment.
 {{% /bio %}}
 
 {{% bio %}}
