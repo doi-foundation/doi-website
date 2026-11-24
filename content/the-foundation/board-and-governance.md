@@ -17,7 +17,7 @@ imagemain = "Board & Governance"
 {{% column %}}
 - [Yenhsuen (Ann) Li, Airiti](#Airiti)
 - [Will Johnson-Marshall, BSI Identify](#BSI)
-- [Wang Lijun, China DOI](#China)
+- [Wang Lijun, Chinese DOI](#China)
 - [Xiao Hong, CNKI](#CNKI)
 - [Ginny Hendricks, Crossref *(Treasurer)*](#Crossref)
 - [Matt Buys, DataCite *(Vice-Chair)*](#DataCite)
@@ -59,11 +59,11 @@ Will is the Head of Operational Delivery for BSI Identify. Will and his team hav
 {{% /bio %}}
 
 {{% bio %}}
-### China DOI {#China}
+### Chinese DOI {#China}
 
 {{< figure src="/images/board/wang-lijun.jpg" title="Wang Lijun" height="100px" >}}
 
-Lijun heads the Information Theory and Methodology Research Center at the Institute of Scientific and Technical Information of China (ISTIC). She leads her team on data analysis and governance, and directs research related to China DOI. Her long-standing research focuses on data mining and innovation mapping, and she works with her team to advance large language model applications for government decision-making support and industrial empowerment.
+Lijun heads the Information Theory and Methodology Research Center at the Institute of Scientific and Technical Information of China (ISTIC). She leads her team on data analysis and governance, and directs research related to Chinese DOI. Her long-standing research focuses on data mining and innovation mapping, and she works with her team to advance large language model applications for government decision-making support and industrial empowerment.
 {{% /bio %}}
 
 {{% bio %}}
